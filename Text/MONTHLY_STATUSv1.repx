@@ -1,0 +1,619 @@
+﻿/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>D:\Program Files (x86)\Thermo\SampleManager\12.2.1\Exe\DevExpress.XtraReports.v18.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>18.2</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.XtraReport">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAADAAAAAAAAAFBBRFBBRFBb0c0T2evxZRhGY3YAAAAAhgAAAEMAAACVAQAAPnIAaQBjAGgAVABlAHgAdAAxAC4AUwBlAHIAaQBhAGwAaQB6AGEAYgBsAGUAUgB0AGYAUwB0AHIAaQBuAGcAAAAAAD5yAGkAYwBoAFQAZQB4AHQAMgAuAFMAZQByAGkAYQBsAGkAegBhAGIAbABlAFIAdABmAFMAdAByAGkAbgBnADsCAAA+cgBpAGMAaABUAGUAeAB0ADMALgBTAGUAcgBpAGEAbABpAHoA
+/// YQBiAGwAZQBSAHQAZgBTAHQAcgBpAG4AZwBWBAAAAbgEZXdCY0FISUFkQUJtQURFQVhBQmhBRzRBY3dCcEFGd0FZUUJ1QUhNQWFRQmpBSEFBWndBeEFESUFOUUF5QUZ3QVpBQmxBR1lBWmdBd0FIc0FYQUJtQUc4QWJnQjBBSFFBWWdCc0FIc0FYQUJtQURBQVhBQm1BRzRBYVFCc0FGd0FaZ0JqQUdnQVlRQnlBSE1BWlFCMEFEQUFJQUJXQUdVQWNnQmtBR0VBYmdCaEFEc0FmUUI3QUZ3QVpnQXhBRndBWmdCdUFHa0FiQUFnQUZRQWFRQnRBR1VBY3dBZ0FFNEFaUUIzQUNBQVVnQnZBRzBBWVFCdUFEc0FmUUI5QUEwQUNnQjdBRndBWXdCdkFHd0Fid0J5QUhRQVlnQnNBQ0FBT3dCY0FISUFaUUJrQURBQVhBQm5BSElBWlFCbEFHNEFNQUJjQUdJQWJBQjFBR1VBTUFBN0FI
+/// MEFEUUFLQUZ3QWRnQnBBR1VBZHdCckFHa0FiZ0JrQURRQVhBQjFBR01BTVFCY0FIQUFZUUJ5QUdRQVhBQmpBR1lBTVFCY0FHd0FZUUJ1QUdjQU1RQXdBRE1BTXdCY0FHSUFYQUJtQURBQVhBQm1BSE1BTVFBMkFDQUFUUUJ2QUc0QWRBQm9BR3dBZVFBZ0FITUFkQUJoQUhRQWRRQnpBRndBWXdCbUFEQUFYQUJpQURBQVhBQm1BREVBWEFCbUFITUFNZ0EwQUZ3QWNBQmhBSElBRFFBS0FIMEFEUUFLQUE9PQGYBGV3QmNBSElBZEFCbUFERUFYQUJoQUc0QWN3QnBBRndBWVFCdUFITUFhUUJqQUhBQVp3QXhBRElBTlFBeUFGd0FaQUJsQUdZQVpnQXdBSHNBWEFCbUFHOEFiZ0IwQUhRQVlnQnNBSHNBWEFCbUFEQUFYQUJtQUc0QWFRQnNBRndBWmdCakFHZ0FZUUJ5QUhNQVpR
+/// QjBBREFBSUFCV0FHVUFjZ0JrQUdFQWJnQmhBRHNBZlFCN0FGd0FaZ0F4QUZ3QVpnQnVBR2tBYkFBZ0FGUUFhUUJ0QUdVQWN3QWdBRTRBWlFCM0FDQUFVZ0J2QUcwQVlRQnVBRHNBZlFCOUFBMEFDZ0I3QUZ3QVl3QnZBR3dBYndCeUFIUUFZZ0JzQUNBQU93QmNBSElBWlFCa0FEQUFYQUJuQUhJQVpRQmxBRzRBTUFCY0FHSUFiQUIxQUdVQU1BQTdBSDBBRFFBS0FGd0FkZ0JwQUdVQWR3QnJBR2tBYmdCa0FEUUFYQUIxQUdNQU1RQmNBSEFBWVFCeUFHUUFYQUJqQUdZQU1RQmNBR3dBWVFCdUFHY0FNUUF3QURNQU13QmNBR0lBWEFCbUFEQUFYQUJtQUhNQU1RQTJBQ0FBVkFCdkFGd0FZd0JtQURBQVhBQmlBREFBWEFCbUFERUFYQUJtQUhNQU1nQTBBRndBY0FCaEFISUFE
+/// UUFLQUgwQURRQUtBQT09AbQFZXdCY0FISUFkQUJtQURFQVhBQmhBRzRBY3dCcEFGd0FZUUJ1QUhNQWFRQmpBSEFBWndBeEFESUFOUUF5QUZ3QVpBQmxBR1lBWmdBd0FIc0FYQUJtQUc4QWJnQjBBSFFBWWdCc0FIc0FYQUJtQURBQVhBQm1BRzRBYVFCc0FDQUFWZ0JsQUhJQVpBQmhBRzRBWVFBN0FIMEFld0JjQUdZQU1RQmNBR1lBYmdCcEFHd0FYQUJtQUdNQWFBQmhBSElBY3dCbEFIUUFNQUFnQUZZQVpRQnlBR1FBWVFCdUFHRUFPd0I5QUgwQURRQUtBSHNBWEFCakFHOEFiQUJ2QUhJQWRBQmlBR3dBSUFBN0FGd0FjZ0JsQUdRQU1BQmNBR2NBY2dCbEFHVUFiZ0F3QUZ3QVlnQnNBSFVBWlFBd0FEc0FmUUFOQUFvQVhBQjJBR2tBWlFCM0FHc0FhUUJ1QUdRQU5BQmNB
+/// SFVBWXdBeEFGd0FjQUJoQUhJQVpBQmNBR01BWmdBeEFGd0FiQUJoQUc0QVp3QXhBREFBTXdBekFGd0FaZ0F3QUZ3QVpnQnpBREVBTmdBZ0FGUUFYQUJtQURFQUlBQTlBQ0FBVkFCbEFITUFkQUFnQUVNQWJ3QjFBRzRBZEFCY0FIQUFZUUJ5QUEwQUNnQlRBRU1BSUFBOUFDQUFVd0IwQUdFQWNnQjBBQ0FBZEFCdkFDQUFRd0J2QUcwQWNBQnNBR1VBZEFCbEFGd0FjQUJoQUhJQURRQUtBRU1BUVFBZ0FEMEFJQUJEQUc4QWJRQndBR3dBWlFCMEFHVUFJQUIwQUc4QUlBQkJBSFVBZEFCb0FHOEFjZ0JwQUhNQVpRQmNBSEFBWVFCeUFBMEFDZ0JjQUdZQU1BQmNBSEFBWVFCeUFBMEFDZ0I5QUEwQUNnQT0=</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class XtraReport : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.PageHeaderBand pageHeaderBand1;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLine line1;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRRichText richText2;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRRichText richText1;
+        private DevExpress.XtraReports.UI.DetailBand detailBand1;
+        private DevExpress.XtraReports.UI.PageFooterBand pageFooterBand1;
+        private DevExpress.XtraReports.UI.XRRichText richText3;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
+        private DevExpress.XtraReports.UI.XRPivotGrid pivotGrid2;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField1;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField2;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField3;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField fieldStartComp;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField fieldCompAuth;
+        private DevExpress.XtraReports.UI.XRPivotGrid pivotGrid1;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField fieldMonYr;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField fieldAnalysis;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField fieldTestNumber;
+        private DevExpress.XtraReports.UI.XRControlStyle HeaderText;
+        private DevExpress.XtraReports.UI.XRControlStyle Data;
+        private DevExpress.XtraReports.UI.XRControlStyle Static;
+        private DevExpress.XtraReports.UI.XRControlStyle StaticHeading;
+        private DevExpress.XtraReports.UI.XRControlStyle MainTitle;
+        private DevExpress.XtraReports.UI.XRControlStyle SubTitle;
+        private DevExpress.XtraReports.UI.XRControlStyle Caption;
+        private DevExpress.XtraReports.UI.XRControlStyle HeadFootText;
+        private DevExpress.XtraReports.UI.XRControlStyle DataRow;
+        private DevExpress.XtraReports.UI.XRControlStyle DataRowAlternate;
+        private DevExpress.XtraReports.UI.XRControlStyle ColumnHeading;
+        private DevExpress.XtraReports.UI.XRControlStyle DataHeading;
+        private DevExpress.XtraReports.UI.XRControlStyle CaptionHeading;
+        private DevExpress.XtraReports.UI.CalculatedField calculatedField1;
+        private DevExpress.XtraReports.Parameters.Parameter paramUser;
+        private DevExpress.XtraReports.Parameters.Parameter paramTimeStamp;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportID;
+        private DevExpress.XtraReports.Parameters.Parameter paramOperatorName;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportName;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportDescription;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportEntity;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportIdentity;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportVersion;
+        private DevExpress.XtraReports.Parameters.Parameter paramReportStatus;
+        private DevExpress.XtraReports.Parameters.Parameter DateFrom;
+        private DevExpress.XtraReports.Parameters.Parameter DateTo;
+        private DevExpress.XtraReports.Parameters.Parameter SampleType;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public XtraReport() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.XtraReport");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.pageHeaderBand1 = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
+            this.pageFooterBand1 = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line1 = new DevExpress.XtraReports.UI.XRLine();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.richText2 = new DevExpress.XtraReports.UI.XRRichText();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.richText1 = new DevExpress.XtraReports.UI.XRRichText();
+            this.richText3 = new DevExpress.XtraReports.UI.XRRichText();
+            this.pivotGrid2 = new DevExpress.XtraReports.UI.XRPivotGrid();
+            this.pivotGrid1 = new DevExpress.XtraReports.UI.XRPivotGrid();
+            this.pivotGridField1 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField2 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField3 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.fieldStartComp = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.fieldCompAuth = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.fieldMonYr = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.fieldAnalysis = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.fieldTestNumber = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.HeaderText = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.Data = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.Static = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.StaticHeading = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.MainTitle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.SubTitle = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.Caption = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.HeadFootText = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.DataRow = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.DataRowAlternate = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.ColumnHeading = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.DataHeading = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.CaptionHeading = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.calculatedField1 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.paramUser = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramTimeStamp = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportID = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramOperatorName = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportName = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportDescription = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportEntity = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportIdentity = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportVersion = new DevExpress.XtraReports.Parameters.Parameter();
+            this.paramReportStatus = new DevExpress.XtraReports.Parameters.Parameter();
+            this.DateFrom = new DevExpress.XtraReports.Parameters.Parameter();
+            this.DateTo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SampleType = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this.richText2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richText1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richText3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // pageHeaderBand1
+            // 
+            this.pageHeaderBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label3,
+                        this.line1,
+                        this.label2,
+                        this.richText2,
+                        this.label1,
+                        this.richText1});
+            this.pageHeaderBand1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.pageHeaderBand1.HeightF = 31.24997F;
+            this.pageHeaderBand1.Name = "pageHeaderBand1";
+            // 
+            // detailBand1
+            // 
+            this.detailBand1.Font = new System.Drawing.Font("Verdana", 8F);
+            this.detailBand1.HeightF = 2.083333F;
+            this.detailBand1.Name = "detailBand1";
+            // 
+            // pageFooterBand1
+            // 
+            this.pageFooterBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.richText3});
+            this.pageFooterBand1.Font = new System.Drawing.Font("Verdana", 8F);
+            this.pageFooterBand1.Name = "pageFooterBand1";
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.pivotGrid2,
+                        this.pivotGrid1});
+            this.GroupHeader1.HeightF = 445.8334F;
+            this.GroupHeader1.KeepTogether = true;
+            this.GroupHeader1.Name = "GroupHeader1";
+            // 
+            // label3
+            // 
+            this.label3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+                        new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?SampleType")});
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(668.75F, 0F);
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label3.SizeF = new System.Drawing.SizeF(253.125F, 23F);
+            this.label3.Text = "label3";
+            // 
+            // line1
+            // 
+            this.line1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 22.99999F);
+            this.line1.Name = "line1";
+            this.line1.SizeF = new System.Drawing.SizeF(646.875F, 4.166687F);
+            // 
+            // label2
+            // 
+            this.label2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+                        new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?DateTo")});
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(470.8333F, 0F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label2.SizeF = new System.Drawing.SizeF(111.4583F, 23F);
+            this.label2.Text = "label2";
+            this.label2.TextFormatString = "{0:MM/dd/yyyy}";
+            // 
+            // richText2
+            // 
+            this.richText2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.richText2.LocationFloat = new DevExpress.Utils.PointFloat(431.25F, 0F);
+            this.richText2.Name = "richText2";
+            this.richText2.SerializableRtfString = resources.GetString("richText2.SerializableRtfString");
+            this.richText2.SizeF = new System.Drawing.SizeF(39.58331F, 23F);
+            // 
+            // label1
+            // 
+            this.label1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+                        new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?DateFrom")});
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(321.875F, 0F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label1.SizeF = new System.Drawing.SizeF(109.375F, 23F);
+            this.label1.Text = "label1";
+            this.label1.TextFormatString = "{0:MM/dd/yyyy}";
+            // 
+            // richText1
+            // 
+            this.richText1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.richText1.LocationFloat = new DevExpress.Utils.PointFloat(51.04167F, 0F);
+            this.richText1.Name = "richText1";
+            this.richText1.SerializableRtfString = resources.GetString("richText1.SerializableRtfString");
+            this.richText1.SizeF = new System.Drawing.SizeF(212.5F, 23F);
+            // 
+            // richText3
+            // 
+            this.richText3.Font = new System.Drawing.Font("Verdana", 8F);
+            this.richText3.LocationFloat = new DevExpress.Utils.PointFloat(69.79166F, 0F);
+            this.richText3.Name = "richText3";
+            this.richText3.SerializableRtfString = resources.GetString("richText3.SerializableRtfString");
+            this.richText3.SizeF = new System.Drawing.SizeF(231.25F, 58.41667F);
+            // 
+            // pivotGrid2
+            // 
+            this.pivotGrid2.Appearance.Cell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid2.Appearance.CustomTotalCell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid2.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid2.Appearance.FieldValue.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid2.Appearance.FieldValueGrandTotal.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid2.Appearance.FieldValueTotal.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid2.Appearance.GrandTotalCell.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid2.Appearance.Lines.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid2.Appearance.TotalCell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid2.Fields.AddRange(new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField[] {
+                        this.pivotGridField1,
+                        this.pivotGridField2,
+                        this.pivotGridField3,
+                        this.fieldStartComp,
+                        this.fieldCompAuth});
+            this.pivotGrid2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 252.0834F);
+            this.pivotGrid2.Name = "pivotGrid2";
+            this.pivotGrid2.OptionsPrint.FilterSeparatorBarPadding = 3;
+            this.pivotGrid2.OptionsPrint.PrintDataHeaders = DevExpress.Utils.DefaultBoolean.False;
+            this.pivotGrid2.SizeF = new System.Drawing.SizeF(940F, 193.75F);
+            // 
+            // pivotGrid1
+            // 
+            this.pivotGrid1.Appearance.Cell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.CustomTotalCell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid1.Appearance.FieldValue.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pivotGrid1.Appearance.FieldValueGrandTotal.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.FieldValueTotal.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.GrandTotalCell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.Lines.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Appearance.TotalCell.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.pivotGrid1.Fields.AddRange(new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField[] {
+                        this.fieldMonYr,
+                        this.fieldAnalysis,
+                        this.fieldTestNumber});
+            this.pivotGrid1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.pivotGrid1.Name = "pivotGrid1";
+            this.pivotGrid1.OptionsPrint.FilterSeparatorBarPadding = 3;
+            this.pivotGrid1.OptionsPrint.PrintDataHeaders = DevExpress.Utils.DefaultBoolean.False;
+            this.pivotGrid1.SizeF = new System.Drawing.SizeF(889.9999F, 229.1666F);
+            // 
+            // pivotGridField1
+            // 
+            this.pivotGridField1.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.pivotGridField1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.pivotGridField1.AreaIndex = 0;
+            this.pivotGridField1.Caption = "MonYr";
+            this.pivotGridField1.FieldName = "MonYr";
+            this.pivotGridField1.Name = "pivotGridField1";
+            this.pivotGridField1.Width = 40;
+            // 
+            // pivotGridField2
+            // 
+            this.pivotGridField2.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.pivotGridField2.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.pivotGridField2.AreaIndex = 0;
+            this.pivotGridField2.FieldName = "Analysis";
+            this.pivotGridField2.Name = "pivotGridField2";
+            this.pivotGridField2.Width = 80;
+            // 
+            // pivotGridField3
+            // 
+            this.pivotGridField3.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.pivotGridField3.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.pivotGridField3.AreaIndex = 0;
+            this.pivotGridField3.Caption = "T";
+            this.pivotGridField3.FieldName = "TestNumber";
+            this.pivotGridField3.Name = "pivotGridField3";
+            this.pivotGridField3.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Count;
+            this.pivotGridField3.Width = 30;
+            // 
+            // fieldStartComp
+            // 
+            this.fieldStartComp.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldStartComp.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldStartComp.AreaIndex = 1;
+            this.fieldStartComp.Caption = "SC";
+            this.fieldStartComp.CellFormat.FormatString = "###.#";
+            this.fieldStartComp.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.fieldStartComp.FieldName = "StartComp";
+            this.fieldStartComp.Name = "fieldStartComp";
+            this.fieldStartComp.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Average;
+            this.fieldStartComp.Width = 30;
+            // 
+            // fieldCompAuth
+            // 
+            this.fieldCompAuth.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldCompAuth.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldCompAuth.AreaIndex = 2;
+            this.fieldCompAuth.Caption = "CA";
+            this.fieldCompAuth.CellFormat.FormatString = "###.#";
+            this.fieldCompAuth.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.fieldCompAuth.FieldName = "CompAuth";
+            this.fieldCompAuth.Name = "fieldCompAuth";
+            this.fieldCompAuth.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Average;
+            this.fieldCompAuth.Width = 30;
+            // 
+            // fieldMonYr
+            // 
+            this.fieldMonYr.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldMonYr.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldMonYr.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldMonYr.AreaIndex = 0;
+            this.fieldMonYr.FieldName = "MonYr";
+            this.fieldMonYr.Name = "fieldMonYr";
+            this.fieldMonYr.Width = 60;
+            // 
+            // fieldAnalysis
+            // 
+            this.fieldAnalysis.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldAnalysis.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldAnalysis.Appearance.FieldValue.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldAnalysis.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldAnalysis.AreaIndex = 0;
+            this.fieldAnalysis.FieldName = "Analysis";
+            this.fieldAnalysis.Name = "fieldAnalysis";
+            this.fieldAnalysis.Width = 80;
+            // 
+            // fieldTestNumber
+            // 
+            this.fieldTestNumber.Appearance.Cell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldTestNumber.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldTestNumber.Appearance.FieldValue.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.fieldTestNumber.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldTestNumber.AreaIndex = 0;
+            this.fieldTestNumber.CellFormat.FormatString = "###.#";
+            this.fieldTestNumber.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.fieldTestNumber.FieldName = "TestNumber";
+            this.fieldTestNumber.Name = "fieldTestNumber";
+            this.fieldTestNumber.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Count;
+            this.fieldTestNumber.Width = 40;
+            // 
+            // HeaderText
+            // 
+            this.HeaderText.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.HeaderText.Font = new System.Drawing.Font("Verdana", 7F);
+            this.HeaderText.Name = "HeaderText";
+            this.HeaderText.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.HeaderText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Data
+            // 
+            this.Data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(151)))));
+            this.Data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.Data.Font = new System.Drawing.Font("Verdana", 7F);
+            this.Data.Name = "Data";
+            this.Data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.Data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Static
+            // 
+            this.Static.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(210)))), ((int)(((byte)(225)))));
+            this.Static.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.Static.Font = new System.Drawing.Font("Verdana", 7F);
+            this.Static.Name = "Static";
+            this.Static.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Static.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // StaticHeading
+            // 
+            this.StaticHeading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(210)))), ((int)(((byte)(225)))));
+            this.StaticHeading.Font = new System.Drawing.Font("Verdana", 7.25F, System.Drawing.FontStyle.Bold);
+            this.StaticHeading.Name = "StaticHeading";
+            this.StaticHeading.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // MainTitle
+            // 
+            this.MainTitle.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.MainTitle.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
+            this.MainTitle.Name = "MainTitle";
+            this.MainTitle.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.MainTitle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // SubTitle
+            // 
+            this.SubTitle.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.SubTitle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTitle.Name = "SubTitle";
+            this.SubTitle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // Caption
+            // 
+            this.Caption.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.Caption.Font = new System.Drawing.Font("Verdana", 7F, System.Drawing.FontStyle.Bold);
+            this.Caption.Name = "Caption";
+            this.Caption.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
+            this.Caption.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // HeadFootText
+            // 
+            this.HeadFootText.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.HeadFootText.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeadFootText.Name = "HeadFootText";
+            this.HeadFootText.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.HeadFootText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // DataRow
+            // 
+            this.DataRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(151)))));
+            this.DataRow.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.DataRow.Font = new System.Drawing.Font("Verdana", 7F);
+            this.DataRow.Name = "DataRow";
+            this.DataRow.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.DataRow.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // DataRowAlternate
+            // 
+            this.DataRowAlternate.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.DataRowAlternate.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.DataRowAlternate.Font = new System.Drawing.Font("Verdana", 7F);
+            this.DataRowAlternate.Name = "DataRowAlternate";
+            this.DataRowAlternate.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.DataRowAlternate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // ColumnHeading
+            // 
+            this.ColumnHeading.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.ColumnHeading.Font = new System.Drawing.Font("Verdana", 7F, System.Drawing.FontStyle.Bold);
+            this.ColumnHeading.Name = "ColumnHeading";
+            this.ColumnHeading.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
+            this.ColumnHeading.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // DataHeading
+            // 
+            this.DataHeading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(228)))), ((int)(((byte)(151)))));
+            this.DataHeading.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.DataHeading.Font = new System.Drawing.Font("Verdana", 10F);
+            this.DataHeading.Name = "DataHeading";
+            this.DataHeading.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.DataHeading.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // CaptionHeading
+            // 
+            this.CaptionHeading.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.CaptionHeading.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
+            this.CaptionHeading.Name = "CaptionHeading";
+            this.CaptionHeading.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
+            this.CaptionHeading.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // calculatedField1
+            // 
+            this.calculatedField1.Name = "calculatedField1";
+            // 
+            // paramUser
+            // 
+            this.paramUser.Name = "paramUser";
+            this.paramUser.ValueInfo = "GWALTERS";
+            this.paramUser.Visible = false;
+            // 
+            // paramTimeStamp
+            // 
+            this.paramTimeStamp.Name = "paramTimeStamp";
+            this.paramTimeStamp.ValueInfo = "9/22/2018 4:48 PM";
+            this.paramTimeStamp.Visible = false;
+            // 
+            // paramReportID
+            // 
+            this.paramReportID.Name = "paramReportID";
+            this.paramReportID.ValueInfo = "XtraReport";
+            this.paramReportID.Visible = false;
+            // 
+            // paramOperatorName
+            // 
+            this.paramOperatorName.Name = "paramOperatorName";
+            this.paramOperatorName.ValueInfo = "Gwalters";
+            this.paramOperatorName.Visible = false;
+            // 
+            // paramReportName
+            // 
+            this.paramReportName.Name = "paramReportName";
+            this.paramReportName.ValueInfo = "Monthly Status";
+            this.paramReportName.Visible = false;
+            // 
+            // paramReportDescription
+            // 
+            this.paramReportDescription.Name = "paramReportDescription";
+            this.paramReportDescription.ValueInfo = "Montlhy status";
+            this.paramReportDescription.Visible = false;
+            // 
+            // paramReportEntity
+            // 
+            this.paramReportEntity.Name = "paramReportEntity";
+            this.paramReportEntity.ValueInfo = "COMPLETED_MONTH_TESTS";
+            this.paramReportEntity.Visible = false;
+            // 
+            // paramReportIdentity
+            // 
+            this.paramReportIdentity.Name = "paramReportIdentity";
+            this.paramReportIdentity.ValueInfo = "NBC_MONTHLY_STATUS         1";
+            this.paramReportIdentity.Visible = false;
+            // 
+            // paramReportVersion
+            // 
+            this.paramReportVersion.Name = "paramReportVersion";
+            this.paramReportVersion.ValueInfo = "         1";
+            this.paramReportVersion.Visible = false;
+            // 
+            // paramReportStatus
+            // 
+            this.paramReportStatus.Name = "paramReportStatus";
+            this.paramReportStatus.ValueInfo = "Authorise";
+            this.paramReportStatus.Visible = false;
+            // 
+            // DateFrom
+            // 
+            this.DateFrom.Description = "Start";
+            this.DateFrom.Name = "DateFrom";
+            this.DateFrom.Type = typeof(System.DateTime);
+            // 
+            // DateTo
+            // 
+            this.DateTo.Description = "End Date";
+            this.DateTo.Name = "DateTo";
+            this.DateTo.Type = typeof(System.DateTime);
+            // 
+            // SampleType
+            // 
+            this.SampleType.Description = "QC vs all samples";
+            this.SampleType.Name = "SampleType";
+            // 
+            // XtraReport
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.pageHeaderBand1,
+                        this.detailBand1,
+                        this.pageFooterBand1,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1,
+                        this.GroupHeader1});
+            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
+                        this.calculatedField1});
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(100, 50, 100, 100);
+            this.Name = "XtraReport";
+            this.PageHeight = 850;
+            this.PageWidth = 1100;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.paramUser,
+                        this.paramTimeStamp,
+                        this.paramReportID,
+                        this.paramOperatorName,
+                        this.paramReportName,
+                        this.paramReportDescription,
+                        this.paramReportEntity,
+                        this.paramReportIdentity,
+                        this.paramReportVersion,
+                        this.paramReportStatus,
+                        this.DateFrom,
+                        this.DateTo,
+                        this.SampleType});
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.HeaderText,
+                        this.Data,
+                        this.Static,
+                        this.StaticHeading,
+                        this.MainTitle,
+                        this.SubTitle,
+                        this.Caption,
+                        this.HeadFootText,
+                        this.DataRow,
+                        this.DataRowAlternate,
+                        this.ColumnHeading,
+                        this.DataHeading,
+                        this.CaptionHeading});
+            this.Version = "18.2";
+            ((System.ComponentModel.ISupportInitialize)(this.richText2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richText1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richText3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
