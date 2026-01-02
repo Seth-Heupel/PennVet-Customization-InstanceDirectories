@@ -1,0 +1,29 @@
+SET COMPILE_OPTION DECLARE
+
+JOIN LIBRARY $LIB_LIST_RESULT
+
+{ This definition is required at the top of all calculations }
+
+{******************************************************************************}
+
+GLOBAL ROUTINE calculation ( current_sample         ,
+                                     current_test_number    ,
+                                     current_component_name )
+
+{
+*     Calculates the Standard Deviation of the values contained in the first
+*     list result encountered on the analysis
+*
+*******************************************************************************}
+
+      DECLARE list_result_component
+
+      list_result_component = SELECT result . name
+                                    WHERE ( test_number = current_test_number )
+                                    AND   ( result_type = "L"                 )
+                                    ORDER ON order_number
+
+      RETURN( lib_list_result_standard_deviation ( current_test_number   ,
+                                                   list_result_component ) )
+
+ENDROUTINE

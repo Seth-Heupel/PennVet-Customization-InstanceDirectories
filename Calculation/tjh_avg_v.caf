@@ -1,0 +1,19 @@
+﻿
+{ This definition is required at the top of all calculations }
+
+GLOBAL ROUTINE calculation ( current_sample,
+			     current_test_number,
+			     current_component_name )
+
+    comp_1 = RESULT_VALUE ( current_sample, current_test_number, "Value 1" )
+    comp_2 = RESULT_VALUE ( current_sample, current_test_number, "Value 2" )
+    comp_3 = RESULT_VALUE ( current_sample, current_test_number, "Value 3" )
+
+    IF ( comp_1 <> EMPTY ) AND ( comp_2 <> EMPTY ) AND ( comp_3 <> EMPTY ) THEN
+        ave = ( comp_1 + comp_2 + comp_3 ) / 3
+        return ( ave )
+    ELSE
+        RETURN
+    ENDIF
+
+ENDROUTINE

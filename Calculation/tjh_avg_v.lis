@@ -1,0 +1,32 @@
+﻿SampleManager version 12.2                               13-AUG-2019 14:00:55.97
+D:\Thermo\SampleManager\Server\PETRLSM\calculation\tjh_avg_v.lis      Page     1
+
+     1: 
+     2: { This definition is required at the top of all calculations }
+     3: 
+     4: GLOBAL ROUTINE calculation ( current_sample,
+     5: 			     current_test_number,
+     6: 			     current_component_name )
+     7: 
+     8:     comp_1 = RESULT_VALUE ( current_sample, current_test_number, "Value 1" )
+     9:     comp_2 = RESULT_VALUE ( current_sample, current_test_number, "Value 2" )
+    10:     comp_3 = RESULT_VALUE ( current_sample, current_test_number, "Value 3" )
+    11: 
+    12:     IF ( comp_1 <> EMPTY ) AND ( comp_2 <> EMPTY ) AND ( comp_3 <> EMPTY ) THEN
+    13:         ave = ( comp_1 + comp_2 + comp_3 ) / 3
+    14:         return ( ave )
+    15:     ELSE
+    16:         RETURN
+    17:     ENDIF
+    18: 
+    19: ENDROUTINE
+
+Format uses 7 variable(s), named as follows:
+
+        AVE
+        COMP1
+        COMP2
+        COMP3
+        CURRENTCOMPONENTNAME
+        CURRENTSAMPLE
+        CURRENTTESTNUMBER

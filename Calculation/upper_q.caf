@@ -1,0 +1,21 @@
+SET COMPILE_OPTION DECLARE
+
+JOIN LIBRARY $AQL
+JOIN LIBRARY $LIB_UTILS
+
+{ This definition is required at the top of all calculations }
+
+GLOBAL ROUTINE calculation ( current_sample         ,
+                             current_test_number    ,
+                             current_component_name )
+
+        DECLARE quality_statistic
+
+        quality_statistic = aql_get_quality_statistic ( current_sample         ,
+                                                      current_test_number    ,
+                                                      current_component_name ,
+                                                                        "UPPER"                )
+
+        RETURN( quality_statistic )
+
+ENDROUTINE
