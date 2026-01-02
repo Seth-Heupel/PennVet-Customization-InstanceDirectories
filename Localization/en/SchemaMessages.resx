@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CollectionOn" xml:space="preserve">
+    <value>Collection On</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="LinksTo" xml:space="preserve">
+    <value>Links To</value>
+  </data>
+  <data name="SchemaCollectionNodeIdentityCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaCollectionNodeIdentityDescription" xml:space="preserve">
+    <value>Identity of collection</value>
+  </data>
+  <data name="SchemaCollectionNodeIdentityName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkCollectionCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkCollectionDescription" xml:space="preserve">
+    <value>Link field for the collection</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkCollectionName" xml:space="preserve">
+    <value>Link Field</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkTableCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkTableDescription" xml:space="preserve">
+    <value>Link table for the collection</value>
+  </data>
+  <data name="SchemaCollectionNodeLinkTableName" xml:space="preserve">
+    <value>Link Table</value>
+  </data>
+  <data name="SchemaFieldNodeAliasesCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeAliasesDescription" xml:space="preserve">
+    <value>The alias attribute can be used to assign one or more alternative names to the field. Example: a..z</value>
+  </data>
+  <data name="SchemaFieldNodeAliasesName" xml:space="preserve">
+    <value>Aliases</value>
+  </data>
+  <data name="SchemaFieldNodeAllowedCharsCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeAllowedCharsDescription" xml:space="preserve">
+    <value>Specify a set of acceptable characters for a text or identity field.</value>
+  </data>
+  <data name="SchemaFieldNodeAllowedCharsName" xml:space="preserve">
+    <value>Allowed Chars</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueBoolName" xml:space="preserve">
+    <value>Default Bool Value</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueDateName" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueDescription" xml:space="preserve">
+    <value>The DEFAULT attribute defines a default value for the field. This value appears when the prompt is displayed</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueIntegerName" xml:space="preserve">
+    <value>Default Integer Value</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueName" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValuePackedDecimalName" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultValueRealName" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="SchemaFieldNodeDescendingCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeDescendingDescription" xml:space="preserve">
+    <value>The DESCENDING attribute specifies the sort order for records retrieved from the database</value>
+  </data>
+  <data name="SchemaFieldNodeDescendingName" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="SchemaFieldNodeFalseWordCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeFalseWordDescription" xml:space="preserve">
+    <value>The TRUE_WORD and FALSE_WORD attributes define the values that will be displayed for the true and false values stored in a Boolean field</value>
+  </data>
+  <data name="SchemaFieldNodeFalseWordName" xml:space="preserve">
+    <value>False Word</value>
+  </data>
+  <data name="SchemaFieldNodeFieldFlagCategory" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveEndDateFieldDescription" xml:space="preserve">
+    <value>A field with the active_end_date keyword contains the date when the record is last active</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveEndDateFieldName" xml:space="preserve">
+    <value>Is Active End Date Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveFlagFieldDescription" xml:space="preserve">
+    <value>A field with the active_flag keyword acts as a control flag that indicates whether a record is active</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveFlagFieldName" xml:space="preserve">
+    <value>Is Active Flag Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveStartDateFieldDescription" xml:space="preserve">
+    <value>A field with the active_start_date keyword contains the date when the record is first active</value>
+  </data>
+  <data name="SchemaFieldNodeIsActiveStartDateFieldName" xml:space="preserve">
+    <value>Is Active Start Date Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsApprovalStatusFieldDescription" xml:space="preserve">
+    <value>The approval_status keyword specifies that the field contains an approval status value for an entity that must be approved before it can be used.</value>
+  </data>
+  <data name="SchemaFieldNodeIsApprovalStatusFieldName" xml:space="preserve">
+    <value>Is Approval Status Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsBrowseFieldDescription" xml:space="preserve">
+    <value>The display_browse fields appear as additional columns to the right of the primary_browse field column in the SampleManager Browse screen. Multiple fields can be designated as display_browse fields</value>
+  </data>
+  <data name="SchemaFieldNodeIsBrowseFieldName" xml:space="preserve">
+    <value>Is Browse Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsGroupFieldDescription" xml:space="preserve">
+    <value>Flag that this field is used for the group</value>
+  </data>
+  <data name="SchemaFieldNodeIsGroupFieldName" xml:space="preserve">
+    <value>Is Group Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsGuidDescription" xml:space="preserve">
+    <value>Field is a guid</value>
+  </data>
+  <data name="SchemaFieldNodeIsGuidName" xml:space="preserve">
+    <value>Is Guid</value>
+  </data>
+  <data name="SchemaFieldNodeIsHasAttachmentsFieldDescription" xml:space="preserve">
+    <value>A field with the has_attachments keyword indicates whether a record has one or more associated attachments</value>
+  </data>
+  <data name="SchemaFieldNodeIsHasAttachmentsFieldName" xml:space="preserve">
+    <value>Is the Has Attachments Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsInspectionFieldDescription" xml:space="preserve">
+    <value>The inspection keyword specifies that the field can contain the identity of an inspection plan that defines an inspection process that must be carried out before the entity can be used</value>
+  </data>
+  <data name="SchemaFieldNodeIsInspectionFieldName" xml:space="preserve">
+    <value>Is Inspection Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsKeyDescription" xml:space="preserve">
+    <value>The field is a key, either for this table or a foreign table</value>
+  </data>
+  <data name="SchemaFieldNodeIsKeyName" xml:space="preserve">
+    <value>Is Key</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiableFieldDescription" xml:space="preserve">
+    <value>fields. Records in tables that have a Modifiable field can be modified by users with less than system-level authority when the Modifiable field value is TRUE</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiableFieldName" xml:space="preserve">
+    <value>Is Modifiable Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiedByFieldDescription" xml:space="preserve">
+    <value>The modified_by keyword can be applied to fields that link to the Identity field in the personnel table</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiedByFieldName" xml:space="preserve">
+    <value>Is Modified By Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiedOnFieldDescription" xml:space="preserve">
+    <value>The modified_on keyword can be applied to date fields. The field value will be automatically updated with the current date whenever a record is modified.</value>
+  </data>
+  <data name="SchemaFieldNodeIsModifiedOnFieldName" xml:space="preserve">
+    <value>Is Modified On Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsNameFieldDescription" xml:space="preserve">
+    <value>The Name keyword specifies that the field is used as the name field for the table</value>
+  </data>
+  <data name="SchemaFieldNodeIsNameFieldName" xml:space="preserve">
+    <value>Is Name Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsOrderFieldDescription" xml:space="preserve">
+    <value>The ordering keyword can be applied to packed decimal fields to allow them to be used for ordering</value>
+  </data>
+  <data name="SchemaFieldNodeIsOrderFieldName" xml:space="preserve">
+    <value>Is Order Field</value>
+  </data>
+  <data name="SchemaFieldNodeIsVersionFieldDescription" xml:space="preserve">
+    <value>The version_number keyword specifies that the field contains a version number for a versioned entity.</value>
+  </data>
+  <data name="SchemaFieldNodeIsVersionFieldName" xml:space="preserve">
+    <value>Is Version Field</value>
+  </data>
+  <data name="SchemaFieldNodeLinkFieldCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeLinkFieldDescription" xml:space="preserve">
+    <value>Field this field will link to in the foreign table</value>
+  </data>
+  <data name="SchemaFieldNodeLinkFieldName" xml:space="preserve">
+    <value>Link Field</value>
+  </data>
+  <data name="SchemaFieldNodeLinksToParentCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeLinksToParentDescription" xml:space="preserve">
+    <value>The PARENT keyword indicates that the link is to a table containing records that have "ownership" of the records in the current table</value>
+  </data>
+  <data name="SchemaFieldNodeLinksToParentName" xml:space="preserve">
+    <value>Links to Parent Field</value>
+  </data>
+  <data name="SchemaFieldNodeLinkTableCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeLinkTableDescription" xml:space="preserve">
+    <value>The foreign table the field will link to</value>
+  </data>
+  <data name="SchemaFieldNodeLinkTableName" xml:space="preserve">
+    <value>Link Table</value>
+  </data>
+  <data name="SchemaFieldNodeLowerLimitCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeLowerLimitDescription" xml:space="preserve">
+    <value>The LOWER_LIMIT and UPPER_LIMIT attributes can be used to assign minimum and maximum allowed values for fields with a datatype of integer, real, date or interval</value>
+  </data>
+  <data name="SchemaFieldNodeLowerLimitName" xml:space="preserve">
+    <value>Lower Limit</value>
+  </data>
+  <data name="SchemaFieldNodeNameCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeNameDescription" xml:space="preserve">
+    <value>The name of the field</value>
+  </data>
+  <data name="SchemaFieldNodeParentTableCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeParentTableDescription" xml:space="preserve">
+    <value>The parent table the field can link to</value>
+  </data>
+  <data name="SchemaFieldNodeParentTableName" xml:space="preserve">
+    <value>Parent Table</value>
+  </data>
+  <data name="SchemaFieldNodePhraseDisplayDescriptionCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePhraseDisplayDescriptionDescription" xml:space="preserve">
+    <value>PHRASE links the field to an entry in the phrase_header table</value>
+  </data>
+  <data name="SchemaFieldNodePhraseDisplayDescriptionName" xml:space="preserve">
+    <value>Phrase Display Description</value>
+  </data>
+  <data name="SchemaFieldNodePhraseIsValidCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePhraseIsValidDescription" xml:space="preserve">
+    <value>If the VALID qualifier is present, a phrase chosen from the drop-down list is the only acceptable value for the field.</value>
+  </data>
+  <data name="SchemaFieldNodePhraseIsValidName" xml:space="preserve">
+    <value>Phrase Is Valid</value>
+  </data>
+  <data name="SchemaFieldNodePhraseTypeCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePhraseTypeDescription" xml:space="preserve">
+    <value>The PROMPT_TYPE attribute can be used to link a field to a phrase, or to a library containing a user-defined routine</value>
+  </data>
+  <data name="SchemaFieldNodePhraseTypeName" xml:space="preserve">
+    <value>Phrase Type</value>
+  </data>
+  <data name="SchemaFieldNodePromptLibraryCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePromptLibraryDescription" xml:space="preserve">
+    <value>The library of the user_defined attribute specifies a library and routine that will be called every time there is a prompt for a particular field</value>
+  </data>
+  <data name="SchemaFieldNodePromptLibraryName" xml:space="preserve">
+    <value>Prompt Library</value>
+  </data>
+  <data name="SchemaFieldNodePromptRoutineCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePromptRoutineDescription" xml:space="preserve">
+    <value>The routine of the user_defined attribute specifies a library and routine that will be called every time there is a prompt for a particular field</value>
+  </data>
+  <data name="SchemaFieldNodePromptRoutineName" xml:space="preserve">
+    <value>Prompt Routine</value>
+  </data>
+  <data name="SchemaFieldNodePromptTypeCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePromptTypeDescription" xml:space="preserve">
+    <value>The PROMPT_TYPE user_defined attribute specifies a library and routine that will be called every time there is a prompt for a particular field</value>
+  </data>
+  <data name="SchemaFieldNodePromptTypeName" xml:space="preserve">
+    <value>Prompt Type</value>
+  </data>
+  <data name="SchemaFieldNodeReadOnlyCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeReadOnlyDescription" xml:space="preserve">
+    <value>The READ_ONLY attribute defines a field as being read only.</value>
+  </data>
+  <data name="SchemaFieldNodeReadOnlyName" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="SchemaFieldNodeTableNameName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaFieldNodeTableTextualLengthName" xml:space="preserve">
+    <value>Textual Length</value>
+  </data>
+  <data name="SchemaFieldNodeTextualLengthCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeTextualLengthDescription" xml:space="preserve">
+    <value>Text field of n characters.</value>
+  </data>
+  <data name="SchemaFieldNodeTrueWordCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeTrueWordDescription" xml:space="preserve">
+    <value>The TRUE_WORD and FALSE_WORD attributes define the values that will be displayed for the true and false values stored in a Boolean field</value>
+  </data>
+  <data name="SchemaFieldNodeTrueWordName" xml:space="preserve">
+    <value>True Word</value>
+  </data>
+  <data name="SchemaFieldNodeUpperLimitCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeUpperLimitDescription" xml:space="preserve">
+    <value>The LOWER_LIMIT and UPPER_LIMIT attributes can be used to assign minimum and maximum allowed values for fields with a datatype of integer, real, date or interval</value>
+  </data>
+  <data name="SchemaFieldNodeUpperLimitName" xml:space="preserve">
+    <value>Upper Limit</value>
+  </data>
+  <data name="SchemaLayoutNodeCommentCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaLayoutNodeCommentDescription" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="SchemaLayoutNodeCommentName" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsOracleCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsOracleDescription" xml:space="preserve">
+    <value>Whether the database is of Oracle type</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsOracleName" xml:space="preserve">
+    <value>Database is Oracle</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsSqlServerCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsSqlServerDescription" xml:space="preserve">
+    <value>Whether the database is of SQL Server type</value>
+  </data>
+  <data name="SchemaLayoutNodeDbaseIsSqlServerName" xml:space="preserve">
+    <value>Database is SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeEofCommentCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaLayoutNodeEofCommentDescription" xml:space="preserve">
+    <value>Comments at end of schema</value>
+  </data>
+  <data name="SchemaLayoutNodeEofCommentName" xml:space="preserve">
+    <value>End Comments</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationIngresCategory" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationIngresDescription" xml:space="preserve">
+    <value>Index Defaults location for Ingres</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationIngresName" xml:space="preserve">
+    <value>Index Defaults Ingres</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationOracleCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationOracleDescription" xml:space="preserve">
+    <value>Index default location for Oracle</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationRdbCategory" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationRdbDescription" xml:space="preserve">
+    <value>Index Defaults location for RDB</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationRdbName" xml:space="preserve">
+    <value>Index Defaults Rdb</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationSqlServerCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationSqlServerDescription" xml:space="preserve">
+    <value>Index Defaults location for SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationSqlServerName" xml:space="preserve">
+    <value>Index Defaults SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeMinimumDateCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeMinimumDateDescription" xml:space="preserve">
+    <value>The minimum date for the database</value>
+  </data>
+  <data name="SchemaLayoutNodeMinimumDateName" xml:space="preserve">
+    <value>Minimum Date</value>
+  </data>
+  <data name="SchemaLayoutNodeName" xml:space="preserve">
+    <value>Schema Layout</value>
+  </data>
+  <data name="SchemaLayoutNodeNameCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaLayoutNodeNameDescription" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaLayoutNodeNameName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaLayoutNodePackedDecimalAsIntegerCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodePackedDecimalAsIntegerDescription" xml:space="preserve">
+    <value>Packed Decimals identified as Integers</value>
+  </data>
+  <data name="SchemaLayoutNodePackedDecimalAsIntegerName" xml:space="preserve">
+    <value>Packed Decimal As Integer</value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationCaseSensitiveCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationCaseSensitiveDescription" xml:space="preserve">
+    <value>SQL Collation </value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationCaseSensitiveName" xml:space="preserve">
+    <value>SQL Collation Case Sensitive</value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationDescription" xml:space="preserve">
+    <value>SQL Collation</value>
+  </data>
+  <data name="SchemaLayoutNodeSqlCollationName" xml:space="preserve">
+    <value>SQL Collation</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationIngresCategory" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationIngresDescription" xml:space="preserve">
+    <value>Table Default Location for Ingres</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationIngresName" xml:space="preserve">
+    <value>Table Defaults Ingres</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationOracleCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationOracleDescription" xml:space="preserve">
+    <value>Table Default Location for Oracle</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationOracleName" xml:space="preserve">
+    <value>Table Defaults Oracle Location</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationRdbCategory" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationRdbDescription" xml:space="preserve">
+    <value>Table Default Location for RDB</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationRdbName" xml:space="preserve">
+    <value>Table Defaults Rdb</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationSqlServerCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationSqlServerDescription" xml:space="preserve">
+    <value>Table Default Location for SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeTableDefaultsLocationSqlServerName" xml:space="preserve">
+    <value>Table Defaults SQL Server</value>
+  </data>
+  <data name="SchemaLayoutNodeUseNVarCharCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaLayoutNodeUseNVarCharDescription" xml:space="preserve">
+    <value>SQL Server Use NVarchar</value>
+  </data>
+  <data name="SchemaLayoutNodeUseNVarCharName" xml:space="preserve">
+    <value>Use NVarchar</value>
+  </data>
+  <data name="SchemaTableCollectionNodeName" xml:space="preserve">
+    <value>Collection</value>
+  </data>
+  <data name="SchemaTableFieldAutoName" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="SchemaTableFieldBoolNodeName" xml:space="preserve">
+    <value>Boolean Field</value>
+  </data>
+  <data name="SchemaTableFieldBoolNodeShortName" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="SchemaTableFieldDateNodeName" xml:space="preserve">
+    <value>Date Field</value>
+  </data>
+  <data name="SchemaTableFieldDateNodeShortName" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="SchemaTableFieldIdentityNodeName" xml:space="preserve">
+    <value>Identity Field</value>
+  </data>
+  <data name="SchemaTableFieldIdentityNodeShortName" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="SchemaTableFieldIntegerNodeName" xml:space="preserve">
+    <value>Integer Field</value>
+  </data>
+  <data name="SchemaTableFieldIntegerNodeShortName" xml:space="preserve">
+    <value>Int</value>
+  </data>
+  <data name="SchemaTableFieldIntervalNode" xml:space="preserve">
+    <value>Interval Field</value>
+  </data>
+  <data name="SchemaTableFieldIntervalShortNode" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="SchemaTableFieldLinkNodeName" xml:space="preserve">
+    <value>Link Field</value>
+  </data>
+  <data name="SchemaTableFieldNodeName" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="SchemaTableFieldPackedDecimalNodeName" xml:space="preserve">
+    <value>Packed Decimal Field</value>
+  </data>
+  <data name="SchemaTableFieldPackedDecimalNodeShortName" xml:space="preserve">
+    <value>PackedDecimal</value>
+  </data>
+  <data name="SchemaTableFieldRealNodeName" xml:space="preserve">
+    <value>Real Field</value>
+  </data>
+  <data name="SchemaTableFieldRealNodeShortName" xml:space="preserve">
+    <value>Real</value>
+  </data>
+  <data name="SchemaTableFieldTextNodeName" xml:space="preserve">
+    <value>Text Field</value>
+  </data>
+  <data name="SchemaTableFieldTextNodeShortName" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="SchemaTableNodeAliasesCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeAliasesDescription" xml:space="preserve">
+    <value>Aliases for the table</value>
+  </data>
+  <data name="SchemaTableNodeAutoName" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="SchemaTableNodeCommentCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaTableNodeCommentDescription" xml:space="preserve">
+    <value>Comment on the table</value>
+  </data>
+  <data name="SchemaTableNodeDataSourceCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeDataSourceDescription" xml:space="preserve">
+    <value>Datasource </value>
+  </data>
+  <data name="SchemaTableNodeName" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="SchemaTableNodeNoBufferCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeNoBufferDescription" xml:space="preserve">
+    <value>The NOBUFFER attribute disables the buffering facility for the table</value>
+  </data>
+  <data name="SchemaTableNodeNoIndexCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeNoIndexDescription" xml:space="preserve">
+    <value>The NOINDEX attribute stops the convert_table program from automatically creating an index for the unique key fields on the table.</value>
+  </data>
+  <data name="SchemaTableNodePhysicalNameCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodePhysicalNameDescription" xml:space="preserve">
+    <value>The PHYSICAL_NAME attribute can be used to assign a name to the table for use by the underlying database</value>
+  </data>
+  <data name="SchemaTableNodePromptDescriptionCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodePromptDescriptionDescription" xml:space="preserve">
+    <value>The PROMPT_DESCRIPTION attribute can be used to associate descriptive text with a table</value>
+  </data>
+  <data name="SchemaTableNodeReadOnlyCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeReadOnlyDescription" xml:space="preserve">
+    <value>The READ_ONLY attribute defines the table as read-only.</value>
+  </data>
+  <data name="SchemaTableNodeRenamedTableCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeRenamedTableDescription" xml:space="preserve">
+    <value>The old name for the table, which has the new name specified by the name field on this table</value>
+  </data>
+  <data name="SchemaTableNodeTableAliasesName" xml:space="preserve">
+    <value>Aliases</value>
+  </data>
+  <data name="SchemaTableNodeTableCommentName" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="SchemaTableNodeTableDataSourceName" xml:space="preserve">
+    <value>Data Source Name</value>
+  </data>
+  <data name="SchemaTableNodeTableNameCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaTableNodeTableNameDescription" xml:space="preserve">
+    <value>The table name</value>
+  </data>
+  <data name="SchemaTableNodeTableNoBufferName" xml:space="preserve">
+    <value>No Buffer</value>
+  </data>
+  <data name="SchemaTableNodeTableNoIndexName" xml:space="preserve">
+    <value>No Index</value>
+  </data>
+  <data name="SchemaTableNodeTablePhysicalNameName" xml:space="preserve">
+    <value>Physical Name</value>
+  </data>
+  <data name="SchemaTableNodeTablePromptDescriptionName" xml:space="preserve">
+    <value>Prompt Description</value>
+  </data>
+  <data name="SchemaTableNodeTableReadOnlyName" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="SchemaTableNodeTableRenamedTableName" xml:space="preserve">
+    <value>Renamed Table Name</value>
+  </data>
+  <data name="SchemaTableNodeTableSetCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeTableSetDescription" xml:space="preserve">
+    <value>The TABLESET attribute specifies which tableset the committed table is associated with</value>
+  </data>
+  <data name="SchemaTableNodeTableTableNameName" xml:space="preserve">
+    <value>Table Name</value>
+  </data>
+  <data name="SchemaTableNodeTableTableSetName" xml:space="preserve">
+    <value>Table Set</value>
+  </data>
+  <data name="IndexOn" xml:space="preserve">
+    <value>Index On</value>
+  </data>
+  <data name="SchemaIndexNodeIdentityCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaIndexNodeIdentityDescription" xml:space="preserve">
+    <value>The nodes identity</value>
+  </data>
+  <data name="SchemaIndexNodeIdentityName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaIndexNodeLinkFieldsCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaIndexNodeLinkFieldsDescription" xml:space="preserve">
+    <value>The list of fields the index uses</value>
+  </data>
+  <data name="SchemaIndexNodeLinkFieldsName" xml:space="preserve">
+    <value>Link Fields</value>
+  </data>
+  <data name="SchemaTableIndexNodeName" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="SchemaViewNodeAliasesCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeAliasesDescription" xml:space="preserve">
+    <value>Aliases for the view</value>
+  </data>
+  <data name="SchemaViewNodeDataSourceCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeDataSourceDescription" xml:space="preserve">
+    <value>View data source</value>
+  </data>
+  <data name="SchemaViewNodeName" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="SchemaViewNodeNoBufferCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeNoBufferDescription" xml:space="preserve">
+    <value>The NOBUFFER attribute disables the buffering facility for the table</value>
+  </data>
+  <data name="SchemaViewNodeNoIndexCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeNoIndexDescription" xml:space="preserve">
+    <value>The NOINDEX attribute stops the convert_table program from automatically creating an index for the unique key fields on the table.</value>
+  </data>
+  <data name="SchemaViewNodeOracleSelectClauseCategory" xml:space="preserve">
+    <value>Select Clauses</value>
+  </data>
+  <data name="SchemaViewNodeOracleSelectClauseDescription" xml:space="preserve">
+    <value>Specific select SQL statement for Oracle</value>
+  </data>
+  <data name="SchemaViewNodeOracleSelectClauseName" xml:space="preserve">
+    <value>Oracle Specific Select Clause</value>
+  </data>
+  <data name="SchemaViewNodePhysicalNameCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodePhysicalNameDescription" xml:space="preserve">
+    <value>The PHYSICAL_NAME attribute can be used to assign a name to the view for use by the underlying database</value>
+  </data>
+  <data name="SchemaViewNodePromptDescriptionCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodePromptDescriptionDescription" xml:space="preserve">
+    <value>The PROMPT_DESCRIPTION attribute can be used to associate descriptive text with a view</value>
+  </data>
+  <data name="SchemaViewNodeReadOnlyCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeReadOnlyDescription" xml:space="preserve">
+    <value>The READ_ONLY attribute defines the table as read-only.</value>
+  </data>
+  <data name="SchemaViewNodeRenamedTableCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeRenamedTableDescription" xml:space="preserve">
+    <value>The old name for the table, which has the new name specified by the name field on this table</value>
+  </data>
+  <data name="SchemaViewNodeSelectClauseCategory" xml:space="preserve">
+    <value>Select Clauses</value>
+  </data>
+  <data name="SchemaViewNodeSelectClauseDescription" xml:space="preserve">
+    <value>Specific select SQL statement for the default database</value>
+  </data>
+  <data name="SchemaViewNodeSelectClauseName" xml:space="preserve">
+    <value>Select Clause</value>
+  </data>
+  <data name="SchemaViewNodeSqlServerSelectClauseCategory" xml:space="preserve">
+    <value>Select Clauses</value>
+  </data>
+  <data name="SchemaViewNodeSqlServerSelectClauseDescription" xml:space="preserve">
+    <value>Specific select SQL statement for SQL Server</value>
+  </data>
+  <data name="SchemaViewNodeSqlServerSelectClauseName" xml:space="preserve">
+    <value>SQL Server Specific Select Clause</value>
+  </data>
+  <data name="SchemaViewNodeTableAliasesName" xml:space="preserve">
+    <value>Aliases</value>
+  </data>
+  <data name="SchemaViewNodeTableDataSourceName" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="SchemaViewNodeTableNameCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaViewNodeTableNameDescription" xml:space="preserve">
+    <value>The view name</value>
+  </data>
+  <data name="SchemaViewNodeTableNoBufferName" xml:space="preserve">
+    <value>No Buffer</value>
+  </data>
+  <data name="SchemaViewNodeTableNoIndexName" xml:space="preserve">
+    <value>No Index</value>
+  </data>
+  <data name="SchemaViewNodeTablePhysicalNameName" xml:space="preserve">
+    <value>Physical Name</value>
+  </data>
+  <data name="SchemaViewNodeTablePromptDescriptionName" xml:space="preserve">
+    <value>Prompt Description</value>
+  </data>
+  <data name="SchemaViewNodeTableReadOnlyName" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="SchemaViewNodeTableRenamedTableName" xml:space="preserve">
+    <value>Renamed Table</value>
+  </data>
+  <data name="SchemaViewNodeTableTableNameName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultTextValueCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultTextValueDescription" xml:space="preserve">
+    <value>The DEFAULT attribute defines a default value for the field. This value appears when the prompt is displayed</value>
+  </data>
+  <data name="SchemaFieldNodeDefaultTextValueName" xml:space="preserve">
+    <value>Default Text Value</value>
+  </data>
+  <data name="SchemaFieldNodeIsRemoveFlagDescription" xml:space="preserve">
+    <value>A field with the remove_flag keyword acts as a control flag that indicates whether a record is a removed record</value>
+  </data>
+  <data name="SchemaFieldNodeIsRemoveFlagName" xml:space="preserve">
+    <value>Is Remove Field</value>
+  </data>
+  <data name="SchemaTableCollectionNodeAutoName" xml:space="preserve">
+    <value>Collection</value>
+  </data>
+  <data name="SchemaFieldBlobNodeName" xml:space="preserve">
+    <value>Blob Field</value>
+  </data>
+  <data name="SchemaTableFieldBlobNodeShortName" xml:space="preserve">
+    <value>Blob</value>
+  </data>
+  <data name="SchemaViewFieldBoolNodeName" xml:space="preserve">
+    <value>View Boolean</value>
+  </data>
+  <data name="SchemaViewFieldBoolNodeShortName" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="SchemaViewFieldDateNodeName" xml:space="preserve">
+    <value>View Date</value>
+  </data>
+  <data name="SchemaViewFieldDateNodeShortName" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="SchemaViewFieldIdentityNodeName" xml:space="preserve">
+    <value>View Identity</value>
+  </data>
+  <data name="SchemaViewFieldIdentityNodeShortName" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="SchemaViewFieldIntegerNodeName" xml:space="preserve">
+    <value>View Integer</value>
+  </data>
+  <data name="SchemaViewFieldIntegerNodeShortName" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="SchemaViewFieldIntervalNode" xml:space="preserve">
+    <value>View Interval</value>
+  </data>
+  <data name="SchemaViewFieldLinkNodeName" xml:space="preserve">
+    <value>View Link</value>
+  </data>
+  <data name="SchemaViewFieldPackedDecimalNodeName" xml:space="preserve">
+    <value>View Packed Decimal</value>
+  </data>
+  <data name="SchemaViewFieldPackedDecimalNodeShortName" xml:space="preserve">
+    <value>Packed Decimal</value>
+  </data>
+  <data name="SchemaViewFieldRealNodeName" xml:space="preserve">
+    <value>View Real</value>
+  </data>
+  <data name="SchemaViewFieldTextNodeName" xml:space="preserve">
+    <value>View Text</value>
+  </data>
+  <data name="SchemaViewFieldTextNodeShortName" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="SchemaFieldNodeIsPrimaryBrowseFieldDescription" xml:space="preserve">
+    <value>Primary_browse specifies that the field is used as the main browse field for the table</value>
+  </data>
+  <data name="SchemaFieldNodeIsPrimaryBrowseFieldName" xml:space="preserve">
+    <value>Is Primary Browse</value>
+  </data>
+  <data name="SchemaTableIndexNodeAutoName" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="SchemaViewFieldAutoName" xml:space="preserve">
+    <value>View_Field</value>
+  </data>
+  <data name="SchemaViewFieldIntervalShortNode" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="SchemaViewFieldRealNodeShortName" xml:space="preserve">
+    <value>Real</value>
+  </data>
+  <data name="SchemaViewNodeAutoName" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="CollectionsFolderName" xml:space="preserve">
+    <value>Collections</value>
+  </data>
+  <data name="FieldsFolderName" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="IndiciesFolderName" xml:space="preserve">
+    <value>Indices</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="DifferencesOn" xml:space="preserve">
+    <value>Differences Between</value>
+  </data>
+  <data name="AnyNonCommittedChangesWillBeLost" xml:space="preserve">
+    <value>All non-committed changes on this entity will be lost - continue?</value>
+  </data>
+  <data name="DeleteSelectedItem" xml:space="preserve">
+    <value>Delete selected item?</value>
+  </data>
+  <data name="MovingItemOfThisTypeHasNoEffect" xml:space="preserve">
+    <value>Moving this item will have no effect and change will be not reflected when schema layout is next loaded</value>
+  </data>
+  <data name="RebuildQuestion" xml:space="preserve">
+    <value>Rebuild?</value>
+  </data>
+  <data name="SelectEntity" xml:space="preserve">
+    <value>Select Entity</value>
+  </data>
+  <data name="SchemaFieldNodePromptDescriptionCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodePromptDescriptionDescription" xml:space="preserve">
+    <value>The PROMPT_DESCRIPTION attribute can be used to associate descriptive text with a field via a message ID</value>
+  </data>
+  <data name="SchemaFieldNodePromptDescriptionName" xml:space="preserve">
+    <value>Prompt Description</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete?</value>
+  </data>
+  <data name="SchemaFieldNodeAsCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaFieldNodeAsDescription" xml:space="preserve">
+    <value>The as keyword is used when the target field is part of a composite key</value>
+  </data>
+  <data name="SchemaFieldNodeAsName" xml:space="preserve">
+    <value>As</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SelectTable" xml:space="preserve">
+    <value>Select Table</value>
+  </data>
+  <data name="ForeignKey" xml:space="preserve">
+    <value>Table Link</value>
+  </data>
+  <data name="SelectEntityForMerge" xml:space="preserve">
+    <value>Select schema for merge</value>
+  </data>
+  <data name="SelectParentTable" xml:space="preserve">
+    <value>Select parent table</value>
+  </data>
+  <data name="SelectSchemaForDifferences" xml:space="preserve">
+    <value>Select schema for comparison. The resultant schema will show the additional tables, views and fields.</value>
+  </data>
+  <data name="DuplicateNameWarning" xml:space="preserve">
+    <value>Name conflicts with another item</value>
+  </data>
+  <data name="IllegalNameFormat" xml:space="preserve">
+    <value>Illegal name format</value>
+  </data>
+  <data name="NameCannotBeBlank" xml:space="preserve">
+    <value>Name cannot be blank</value>
+  </data>
+  <data name="ValidationFailure" xml:space="preserve">
+    <value>Validation failed. There are errors in the schema design.</value>
+  </data>
+  <data name="ValidationSuccess" xml:space="preserve">
+    <value>Validation succeeded. The schema can be successfully committed.</value>
+  </data>
+  <data name="NothingSelected" xml:space="preserve">
+    <value>Nothing selected</value>
+  </data>
+  <data name="AllowedCharactersAreATOZNoughtToNineUnderscore" xml:space="preserve">
+    <value>Invalid character entered - allowed characters are A-Z 0-9 and _</value>
+  </data>
+  <data name="CommitQuestion" xml:space="preserve">
+    <value>Are you sure you want to commit changes to database - faults in schema design can result in loss of data?</value>
+  </data>
+  <data name="CommitSuccess" xml:space="preserve">
+    <value>Committed successfully</value>
+  </data>
+  <data name="CommitTitle" xml:space="preserve">
+    <value>Commit?</value>
+  </data>
+  <data name="SchemaLayoutNodeIndexDefaultsLocationOracleName" xml:space="preserve">
+    <value>Index Defaults location for Oracle</value>
+  </data>
+  <data name="ForeignKeySelfLinkError" xml:space="preserve">
+    <value>Foreign key cannot be from source table</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="ErrorOnField" xml:space="preserve">
+    <value>Error processing field. Please check for design fault on</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="Committing" xml:space="preserve">
+    <value>Committing</value>
+  </data>
+  <data name="DetectingDifferences" xml:space="preserve">
+    <value>Comparing</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Saving</value>
+  </data>
+  <data name="Validating" xml:space="preserve">
+    <value>Validating</value>
+  </data>
+  <data name="WritingStructure" xml:space="preserve">
+    <value>Writing</value>
+  </data>
+  <data name="SchemaFieldNodeBrowseOrderCategory" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="SchemaFieldNodeBrowseOrderDescription" xml:space="preserve">
+    <value>The order of the browses on the entity</value>
+  </data>
+  <data name="SchemaFieldNodeBrowseOrderName" xml:space="preserve">
+    <value>Browse Order</value>
+  </data>
+  <data name="DeleteNode" xml:space="preserve">
+    <value>Delete Item</value>
+  </data>
+  <data name="Goto" xml:space="preserve">
+    <value>Follow link</value>
+  </data>
+  <data name="CantDeleteThis" xml:space="preserve">
+    <value>This item cannot be deleted</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="AlreadyImported" xml:space="preserve">
+    <value>This schema has already been imported. You must save the current schema before trying to import this schema again, or cancel and try again</value>
+  </data>
+  <data name="As" xml:space="preserve">
+    <value>As</value>
+  </data>
+  <data name="Isolate" xml:space="preserve">
+    <value>Show isolated</value>
+  </data>
+  <data name="CheckingSchema" xml:space="preserve">
+    <value>Checking</value>
+  </data>
+  <data name="CommitFailure" xml:space="preserve">
+    <value>Commit Failed! Please check schema and database priviledges allow creation/dropping of tables</value>
+  </data>
+  <data name="CommittingStructure" xml:space="preserve">
+    <value>Committing</value>
+  </data>
+  <data name="GeneratingSchema" xml:space="preserve">
+    <value>Generating</value>
+  </data>
+  <data name="WritingSchema" xml:space="preserve">
+    <value>Writing</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="LockedSchema" xml:space="preserve">
+    <value>The schema is now locked. Please save and close to commit the changes.</value>
+  </data>
+  <data name="LockedSchemaCaption" xml:space="preserve">
+    <value>Locked Schema</value>
+  </data>
+  <data name="SchemaTableNodeTableUnmanagedName" xml:space="preserve">
+    <value>Unmanaged</value>
+  </data>
+  <data name="SchemaTableNodeUnmanagedCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaTableNodeUnmanagedDescription" xml:space="preserve">
+    <value>The Unmanaged attribute is used when SampleManager needs to use a table that is managed by an external system. The table definition is added to structure.txt so that the data in the table is available within SampleManager.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAttachments" xml:space="preserve">
+    <value>Save associated attachments</value>
+  </data>
+  <data name="SchemaFieldNodeOverrideCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeOverrideDescription" xml:space="preserve">
+    <value>The OVERRIDE attribute allows the field to accept values outside the range defined by the LOWER_LIMIT and UPPER_LIMIT.</value>
+  </data>
+  <data name="SchemaFieldNodeOverrideName" xml:space="preserve">
+    <value>Override</value>
+  </data>
+  <data name="SchemaTableNodeOracleLocationCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaTableNodeOracleLocationDescription" xml:space="preserve">
+    <value>The database_LOCATION attribute defines where the table should be stored in the underlying database.</value>
+  </data>
+  <data name="SchemaTableNodeOracleLocationName" xml:space="preserve">
+    <value>Oracle Location</value>
+  </data>
+  <data name="SchemaTableNodeOracleSpecificCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaTableNodeOracleSpecificDescription" xml:space="preserve">
+    <value>The database_SPECIFIC attribute allows you to pass specific instructions to the underlying database.</value>
+  </data>
+  <data name="SchemaTableNodeOracleSpecificName" xml:space="preserve">
+    <value>Oracle Specific</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerLocationCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerLocationDescription" xml:space="preserve">
+    <value>The database_LOCATION attribute defines where the table should be stored in the underlying database.</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerLocationName" xml:space="preserve">
+    <value>SQL Server Location</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerSpecificCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerSpecificDescription" xml:space="preserve">
+    <value>The database_SPECIFIC attribute allows you to pass specific instructions to the underlying database.</value>
+  </data>
+  <data name="SchemaTableNodeSqlServerSpecificName" xml:space="preserve">
+    <value>SQL Server Specific</value>
+  </data>
+  <data name="SchemaIndexNodeOracleLocationCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaIndexNodeOracleLocationDescription" xml:space="preserve">
+    <value>The database_LOCATION attribute defines where the index should be stored in the underlying database.</value>
+  </data>
+  <data name="SchemaIndexNodeOracleLocationName" xml:space="preserve">
+    <value>Oracle Location</value>
+  </data>
+  <data name="SchemaIndexNodeOracleSpecificCategory" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="SchemaIndexNodeOracleSpecificDescription" xml:space="preserve">
+    <value>The database_SPECIFIC attribute allows you to pass specific instructions to the underlying database.</value>
+  </data>
+  <data name="SchemaIndexNodeOracleSpecificName" xml:space="preserve">
+    <value>Oracle Specific</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerLocationCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerLocationDescription" xml:space="preserve">
+    <value>The database_LOCATION attribute defines where the index should be stored in the underlying database.</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerLocationName" xml:space="preserve">
+    <value>SQL Server Location</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerSpecificCategory" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerSpecificDescription" xml:space="preserve">
+    <value>The database_SPECIFIC attribute allows you to pass specific instructions to the underlying database.</value>
+  </data>
+  <data name="SchemaIndexNodeSqlServerSpecificName" xml:space="preserve">
+    <value>SQL Server Specific</value>
+  </data>
+  <data name="SchemaIndexNodeUniqueCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SchemaIndexNodeUniqueDescription" xml:space="preserve">
+    <value>The optional Unqiue attribute specifies that each row of the index must be unique.</value>
+  </data>
+  <data name="SchemaIndexNodeUniqueName" xml:space="preserve">
+    <value>Unique</value>
+  </data>
+  <data name="SchemaFieldNodeFormatCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaFieldNodeFormatDescription" xml:space="preserve">
+    <value>The format_string is composed of '9' characters and an optional '.' character, and defines the maximum number of digits that can appear to the left and right of the decimal point. For example, '999.9' allows up to three digits to the left of the decimal point and a single digit to the right.</value>
+  </data>
+  <data name="SchemaFieldNodeFormatName" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="SchemaFieldNodeIsAssignableDescription" xml:space="preserve">
+    <value>The field indicates whether a record can be assigned in a prompt that uses a hierarchical browse.</value>
+  </data>
+  <data name="SchemaFieldNodeIsAssignableName" xml:space="preserve">
+    <value>Is Assignable</value>
+  </data>
+  <data name="SchemaFieldNodeIsFullDescriptionFieldDescription" xml:space="preserve">
+    <value>If a table has a full_description field, the Details text files associated with entities in that table are stored in the database. The presence of the full_description field overrides the storage location in the file system that is defined in the property sheet definition or LTE report.</value>
+  </data>
+  <data name="SchemaFieldNodeIsFullDescriptionFieldName" xml:space="preserve">
+    <value>Is Full Description</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="NotAuthorizedText" xml:space="preserve">
+    <value>The schema approval status is not at 'Authorise'. The schema will need to be approved in order to commit.</value>
+  </data>
+  <data name="NotAuthorizedTitle" xml:space="preserve">
+    <value>Schema not authorised</value>
+  </data>
+  <data name="NotSavedText" xml:space="preserve">
+    <value>The schema has to be saved in order to commit changes</value>
+  </data>
+  <data name="NotSavedTitle" xml:space="preserve">
+    <value>Schema not saved</value>
+  </data>
+  <data name="InvalidGuidLength" xml:space="preserve">
+    <value>The textual length must be 36 for this field to be a valid Guid. Set the length and set the IsGuid flag</value>
+  </data>
+  <data name="NVarCharChangeText" xml:space="preserve">
+    <value>If the value of this field is changed from FALSE to TRUE, convert table will change all the text fields in the database to nvarchar fields when it processes a table. Existing data will be preserved.
+You must make a full backup of your database before changing and committing this value!
+Do you wish to continue?</value>
+  </data>
+  <data name="NVarCharChangeTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="AddChildTableName" xml:space="preserve">
+    <value>Please enter child table name</value>
+  </data>
+  <data name="AddCollectionName" xml:space="preserve">
+    <value>Please enter collection name</value>
+  </data>
+  <data name="AddFieldName" xml:space="preserve">
+    <value>Please enter field name</value>
+  </data>
+  <data name="AddIndexName" xml:space="preserve">
+    <value>Please enter index name</value>
+  </data>
+  <data name="AddLabTableName" xml:space="preserve">
+    <value>Please enter name for lab table</value>
+  </data>
+  <data name="AddTableName" xml:space="preserve">
+    <value>Please enter table name</value>
+  </data>
+  <data name="AddViewFieldName" xml:space="preserve">
+    <value>Please enter view field name</value>
+  </data>
+  <data name="AddViewName" xml:space="preserve">
+    <value>Please enter view name</value>
+  </data>
+  <data name="BlobLink" xml:space="preserve">
+    <value>Blob Link</value>
+  </data>
+  <data name="SchemaFieldNodePromptNoIdentitiesCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="SchemaFieldNodePromptNoIdentitiesDescription" xml:space="preserve">
+    <value>If the NOIDENTITIES qualifier is used, the phrase text is displayed in the drop-down list at the phrase entry field and stored in the database. This is space consuming so this format should be reserved for phrases such as audit reasons.</value>
+  </data>
+  <data name="SchemaFieldNodePromptNoIdentitiesName" xml:space="preserve">
+    <value>No Identities</value>
+  </data>
+  <data name="CategoryPhrase" xml:space="preserve">
+    <value>Category Phrase</value>
+  </data>
+  <data name="ComboPhrase" xml:space="preserve">
+    <value>Combo Phrase</value>
+  </data>
+  <data name="SelectPhrase" xml:space="preserve">
+    <value>Select Phrase</value>
+  </data>
+  <data name="StatusPhrase" xml:space="preserve">
+    <value>Status Phrase</value>
+  </data>
+  <data name="TableReferenceNotFound" xml:space="preserve">
+    <value>Table reference not found. Reference to the table '{0}' prevents this schema fragment from being rendered. Merge into schema containing this table to write schema.</value>
+  </data>
+  <data name="LiveSchemaName" xml:space="preserve">
+    <value>Live Schema</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="SchemaFieldNodeCaseSensitiveCategory" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="SchemaFieldNodeCaseSensitiveDescription" xml:space="preserve">
+    <value>The case sensitive attribute indicates that a field is case sensitive.</value>
+  </data>
+  <data name="SchemaFieldNodeCaseSensitiveName" xml:space="preserve">
+    <value>Is Case Sensitive</value>
+  </data>
+  <data name="InvalidFormat" xml:space="preserve">
+    <value>Invalid number format</value>
+  </data>
+  <data name="SchemaLayoutNodeDefaultLanguageCategory" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="SchemaLayoutNodeDefaultLanguageDescription" xml:space="preserve">
+    <value>The default (neutral) language of the system.</value>
+  </data>
+  <data name="SchemaLayoutNodeDefaultLanguageName" xml:space="preserve">
+    <value>Default Language</value>
+  </data>
+  <data name="SchemaLayoutNodeSupportedLanguagesCategory" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="SchemaLayoutNodeSupportedLanguagesDescription" xml:space="preserve">
+    <value>A comma separated list of the supported language codes</value>
+  </data>
+  <data name="SchemaLayoutNodeSupportedLanguagesName" xml:space="preserve">
+    <value>Supported Languages</value>
+  </data>  
+    <data name="SchemaLayoutNodeAutoTranslateNameCategory" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="SchemaLayoutNodeAutoTranslateNameDescription" xml:space="preserve">
+    <value>Automatically translate name fields</value>
+  </data>
+  <data name="SchemaLayoutNodeAutoTranslateNameName" xml:space="preserve">
+    <value>Auto Translate Names</value>
+  </data>
+    <data name="SchemaFieldNodeIsTranslatableName" xml:space="preserve">
+    <value>Use Translations</value>
+  </data>
+  <data name="SchemaFieldNodeIsTranslatableDescription" xml:space="preserve">
+    <value>If checked then this field will be internationalizable and support translations</value>
+  </data>
+  <data name="SchemaViewNodeTableUnmanagedName" xml:space="preserve">
+    <value>Unmanaged</value>
+  </data>
+  <data name="SchemaViewNodeUnmanagedCategory" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="SchemaViewNodeUnmanagedDescription" xml:space="preserve">
+    <value>The Unmanaged attribute is used when SampleManager needs to use a view that is managed by an external system. The view definition is added to structure.txt so that the view is available within SampleManager.</value>
+  </data>
+</root>

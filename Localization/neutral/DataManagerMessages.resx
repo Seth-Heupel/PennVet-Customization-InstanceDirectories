@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EntityCopyNameFormat" xml:space="preserve">
+    <value>{0} Copy</value>
+  </data>
+  <data name="DataItemLinksNoType" xml:space="preserve">
+    <value>No Entity Type Specified - please update your menu definition.</value>
+  </data>
+  <data name="DataItemLinksTitle" xml:space="preserve">
+    <value>Data Item Links - {0}</value>
+  </data>
+  <data name="DataPackageSelectCaption" xml:space="preserve">
+    <value>{0} Data Package</value>
+  </data>
+  <data name="DataPackageSelectText" xml:space="preserve">
+    <value>Select a Data Package to perform the '{0}' action.</value>
+  </data>
+  <data name="ErrorActionInvalid" xml:space="preserve">
+    <value>Action '{0}' is not supported for '{1}' entity type.</value>
+  </data>
+  <data name="LinkActionCancelText" xml:space="preserve">
+    <value>User cancelled the link operation. No link was created.</value>
+  </data>
+  <data name="LinkAlreadyExistText" xml:space="preserve">
+    <value>Data Item and the {0} selected are already linked.</value>
+  </data>
+  <data name="LinkCreatedSuccessText" xml:space="preserve">
+    <value>Data Item and {0} record linked successfully.</value>
+  </data>
+  <data name="LinkDataItemCaption" xml:space="preserve">
+    <value>Link Data Item</value>
+  </data>
+  <data name="LinkDataItemSelectText" xml:space="preserve">
+    <value>Select the Data Item to link.</value>
+  </data>
+  <data name="LinkDataPackageDataItemSelectText" xml:space="preserve">
+    <value>Select the Data Item from the Data Package to link.</value>
+  </data>
+  <data name="LinkDataPackageNoItems" xml:space="preserve">
+    <value>The Data Package does not contain any Data Item.</value>
+  </data>
+  <data name="LinkEntityRecordSelectText" xml:space="preserve">
+    <value>Select the {0} to link to the Data Item.</value>
+  </data>
+  <data name="PackagingRuleSelectCaption" xml:space="preserve">
+    <value>Package Now...</value>
+  </data>
+  <data name="PackagingRuleSelectText" xml:space="preserve">
+    <value>Select a Packaging Rule to perform a manual packaging.</value>
+  </data>
+  <data name="ReConvertConfirmCaption" xml:space="preserve">
+    <value>ReConvert</value>
+  </data>
+  <data name="ReConvertConfirmText" xml:space="preserve">
+    <value>This operation will update all existing conversions and package properties using the latest rules. Do you want to continue?</value>
+  </data>
+  <data name="ReConvertSuccessCaption" xml:space="preserve">
+    <value>ReConvert Completed</value>
+  </data>
+  <data name="ReConvertSuccessText" xml:space="preserve">
+    <value>ReConvert action completed successfully</value>
+  </data>
+  <data name="ReMapConfirmCaption" xml:space="preserve">
+    <value>ReMap</value>
+  </data>
+  <data name="ReMapConfirmText" xml:space="preserve">
+    <value>This operation will update all existing package properties using the latest rules. Do you want to continue?</value>
+  </data>
+  <data name="ReMapSuccessCaption" xml:space="preserve">
+    <value>ReMap Completed</value>
+  </data>
+  <data name="ReMapSuccessText" xml:space="preserve">
+    <value>ReMap action completed successfully</value>
+  </data>
+  <data name="DuplicateComputerName" xml:space="preserve">
+    <value>Duplicate computer name '{0}', please make the computer name unique.</value>
+  </data>
+  <data name="ExportEventsFilePromptDescription" xml:space="preserve">
+    <value>Please select a folder into which the event entries will be exported.</value>
+  </data>
+  <data name="DeleteEventsTitle" xml:space="preserve">
+    <value>Delete Events</value>
+  </data>
+  <data name="DeleteEventsNoDataText" xml:space="preserve">
+    <value>No events deleted.</value>
+  </data>
+  <data name="MessagingServiceConnectFail" xml:space="preserve">
+    <value>Connection to Messaging Service on '{0}' cannot be established.</value>
+  </data>
+  <data name="MessagingServiceConnectSuccess" xml:space="preserve">
+    <value>Connection to Messaging Service on '{0}' established.</value>
+  </data>
+  <data name="SignDataPackageCaption" xml:space="preserve">
+    <value>Sign Data Package</value>
+  </data>
+  <data name="SignDataPackageSelectText" xml:space="preserve">
+    <value>Select the Data Package to sign.</value>
+  </data>
+  <data name="SignDataPackageNoChecksumFieldsText" xml:space="preserve">
+    <value>Data Package cannot be signed. No Checksum fields set for the Data Package.</value>
+  </data>
+  <data name="SignDataPackageDescription" xml:space="preserve">
+    <value>Sign Data Package action.</value>
+  </data>
+  <data name="SignDataPackageReason" xml:space="preserve">
+    <value>Sign Data Package</value>
+  </data>
+  <data name="SignDataPackageNoRecordText" xml:space="preserve">
+    <value>No Data Package selected to sign.</value>
+  </data>
+  <data name="NodeDataItemName" xml:space="preserve">
+    <value>Data Item Workflow</value>
+  </data>
+  <data name="NodeDataItemDescription" xml:space="preserve">
+    <value>Creates a new Data Item.</value>
+  </data>
+  <data name="NodeDataPackageName" xml:space="preserve">
+    <value>Data Package Workflow</value>
+  </data>
+  <data name="NodeDataPackageDescription" xml:space="preserve">
+    <value>Creates a new Data Package.</value>
+  </data>
+  <data name="NodeDataItemCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeDataPackageCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeDataItemNameFormat" xml:space="preserve">
+    <value>Data Item Workflow</value>
+  </data>
+  <data name="NodeDataPackageNameFormat" xml:space="preserve">
+    <value>Data Package Workflow</value>
+  </data>
+  <data name="DataPackageExecutedError" xml:space="preserve">
+    <value>Data Package workflow has been executed directly, this is not permitted.</value>
+  </data>
+  <data name="DataItemExecutedError" xml:space="preserve">
+    <value>Data Item workflow has been executed directly, this is not permitted.</value>
+  </data>
+  <data name="PackagingRulePropertyError" xml:space="preserve">
+    <value>Error reading property {0} from Packaging Rule {1}({2}) : {3}</value>
+  </data>
+  <data name="PackagingRuleConverterPropertyError" xml:space="preserve">
+    <value>Error reading property {0} from Converter {1} of Packaging Rule {2}({3}) : {4}</value>
+  </data>
+  <data name="ErrorActionCaption" xml:space="preserve">
+    <value>{0} Error</value>
+  </data>
+  <data name="ErrorActionSingleSelection" xml:space="preserve">
+    <value>Action '{0}' for '{1}' entity type cannot be executed for multiple records.</value>
+  </data>
+  <data name="ErrorActionNoDataItems" xml:space="preserve">
+    <value>Action '{0}' cannot be executed for Data Packages without Data Items.</value>
+  </data>
+  <data name="ErrorActionDifferentDataPackage" xml:space="preserve">
+    <value>Action '{0}' cannot be executed for {1} of different Data Packages.</value>
+  </data>
+  <data name="DeleteConfirmCaption" xml:space="preserve">
+    <value>Data Package Deletion</value>
+  </data>
+  <data name="DeleteConfirmText" xml:space="preserve">
+    <value>This operation will delete the data packages permanently. Do you want to continue?</value>
+  </data>
+  <data name="DeleteReasonCaption" xml:space="preserve">
+    <value>Data Package Deletion</value>
+  </data>
+  <data name="DeleteReasonText" xml:space="preserve">
+    <value>Enter the reason for deletion:</value>
+  </data>
+  <data name="DeleteDataPackageTransaction" xml:space="preserve">
+    <value>Delete action executed for Data Package '{0}'.</value>
+  </data>
+  <data name="DeleteDataPackageNoReason" xml:space="preserve">
+    <value>Operation aborted. Data Package deletion cannot be performed without a reason.</value>
+  </data>
+  <data name="ErrorActionDisable" xml:space="preserve">
+    <value>Action '{0}' disabled in the system. Check your configuration items.</value>
+  </data>
+  <data name="LicenseErrorCaption" xml:space="preserve">
+    <value>License Error</value>
+  </data>
+  <data name="LicenseErrorCaptureSources" xml:space="preserve">
+    <value>Licensed number of Capture Sources already reached.</value>
+  </data>
+  <data name="MaxEventsRowCountIsZero" xml:space="preserve">
+    <value>The maximum Number of Events allowed is 0. Check your configuration Items.</value>
+  </data>
+  <data name="MaxEventsRowCountTitle" xml:space="preserve">
+    <value>Maximum Number of Events</value>
+  </data>
+  <data name="SaveEventsNoDataText" xml:space="preserve">
+    <value>No events saved.</value>
+  </data>
+  <data name="SaveEventsTitle" xml:space="preserve">
+    <value>Save Events</value>
+  </data>
+  <data name="CaptureSourcePasswordText" xml:space="preserve">
+    <value>Enter password for accessing Custom Source database:</value>
+  </data>
+  <data name="CaptureSourcePasswordCaption" xml:space="preserve">
+    <value>Custom Source - Edit Password</value>
+  </data>
+  <data name="DeleteAgentComputerTitle" xml:space="preserve">
+    <value>Delete Agent Computer</value>
+  </data>
+  <data name="DeleteAgentComputerUsedByCaptureSource" xml:space="preserve">
+    <value>Cannot delete Agent Computer because it is in use by Capture Source {0}</value>
+  </data>
+  <data name="DeleteServerComputerTitle" xml:space="preserve">
+    <value>Delete Server Computer</value>
+  </data>
+  <data name="DeleteServerComputerUsedByDataDestination" xml:space="preserve">
+    <value>Cannot delete Server Computer because it is in use by Data Destination {0}</value>
+  </data>
+  <data name="AgentComputerSelectText" xml:space="preserve">
+    <value>Select a Agent Computer to perform the '{0}' action.</value>
+  </data>
+  <data name="ServerComputerSelectText" xml:space="preserve">
+    <value>Select a Server Computer to perform the '{0}' action.</value>
+  </data>
+  <data name="KeyFileSpecMissingCaption" xml:space="preserve">
+    <value>Key File Spec Missing</value>
+  </data>
+  <data name="KeyFileSpecMissingText" xml:space="preserve">
+    <value>Key File Spec cannot be empty for a file based rule.</value>
+  </data>
+  <data name="SweepRepeatIntervalZeroCaption" xml:space="preserve">
+    <value>Invalid Repeat Interval</value>
+  </data>
+  <data name="SweepRepeatIntervalZeroText" xml:space="preserve">
+    <value>Repeat Interval cannot be zero.</value>
+  </data>
+  <data name="SearchCountText" xml:space="preserve">
+    <value>{0} records found.</value>
+  </data>
+  <data name="SearchExecuteQueryError" xml:space="preserve">
+    <value>Error executing query for entity type '{0}'</value>
+  </data>
+  <data name="SearchInvalidEntityType" xml:space="preserve">
+    <value>Invalid Entity Type for Task.</value>
+  </data>
+  <data name="SearchCaption" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchFormTitle" xml:space="preserve">
+    <value>{0} Search</value>
+  </data>
+  <data name="SearchQueryCancel" xml:space="preserve">
+    <value>Search operation canceled by user.</value>
+  </data>
+  <data name="SearchBusyDialogDescription" xml:space="preserve">
+    <value>Searching data ...</value>
+  </data>
+  <data name="SearchBusyDialogCaption" xml:space="preserve">
+    <value>{0} Search</value>
+  </data>
+  <data name="LinkCreateConfirmText" xml:space="preserve">
+    <value>Are you sure to link the Data Item with the record: {0} ?</value>
+  </data>
+  <data name="CaptureSourceSelectText" xml:space="preserve">
+    <value>Select a Capture Source to perform the '{0}' action.</value>
+  </data>
+  <data name="DeleteCaptureSourceTitle" xml:space="preserve">
+    <value>Delete Capture Source</value>
+  </data>
+  <data name="DeleteCaptureSourceConfirmText" xml:space="preserve">
+    <value>This operation will delete the Capture Source permanently. Do you want to continue?</value>
+  </data>
+  <data name="DeleteAgentComputerConfirmText" xml:space="preserve">
+    <value>This operation will delete the Agent Computer permanently. Do you want to continue?</value>
+  </data>
+  <data name="DeleteServerComputerConfirmText" xml:space="preserve">
+    <value>This operation will delete the Server Computer permanently. Do you want to continue?</value>
+  </data>
+  <data name="DeleteCaptureSourceSuccess" xml:space="preserve">
+    <value>The Capture Source was deleted successfully.</value>
+  </data>
+  <data name="DeleteAgentComputerSuccess" xml:space="preserve">
+    <value>The Agent Computer was deleted successfully.</value>
+  </data>
+  <data name="DeleteServerComputerSuccess" xml:space="preserve">
+    <value>The Server Computer was deleted successfully.</value>
+  </data>
+  <data name="GamlViewerResetZoom" xml:space="preserve">
+    <value>Fit to window</value>
+  </data>
+  <data name="GamlViewerSendToEnvision" xml:space="preserve">
+    <value>Send to Envision...</value>
+  </data>
+  <data name="DmNodeDataItemExpressionName" xml:space="preserve">
+    <value>Data Item Expression</value>
+  </data>
+  <data name="DmNodeFileDataItemExpressionDescription" xml:space="preserve">
+    <value>The expression to match the data item in the package. If the expression does not match any item the node return false</value>
+  </data>
+  <data name="DmNodeFileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="DmNodeFileTypeDescription" xml:space="preserve">
+    <value>The file to retreive </value>
+  </data>
+  <data name="NodeDmGetDataPackageContentsCategory" xml:space="preserve">
+    <value>Integration</value>
+  </data>
+  <data name="NodeDmGetDataPackageContentsDescription" xml:space="preserve">
+    <value>Gets a data item from the data package and publishes the data to the workflow as a data source</value>
+  </data>
+  <data name="NodeDmGetDataPackageContentsName" xml:space="preserve">
+    <value>Get Data Item Contents</value>
+  </data>
+  <data name="WfNodeEnterSampleResultsCaption" xml:space="preserve">
+    <value>Enter Sample Results from GAML</value>
+  </data>
+  <data name="WfNodeEnterSampleResultsDescription" xml:space="preserve">
+    <value>Workflow to enter sample result values from GAML</value>
+  </data>
+  <data name="WfNodeEnterResultsErrorEntity" xml:space="preserve">
+    <value>Invalid entity type '{0}'</value>
+  </data>
+  <data name="WfNodeEnterResultsErrorException" xml:space="preserve">
+    <value>Exception error: '{0}'</value>
+  </data>
+  <data name="WfNodeEnterSampleResultsSet" xml:space="preserve">
+    <value>Results set for Sample with Id Text '{0}'</value>
+  </data>
+  <data name="WfNodeEnterTestResultsCaption" xml:space="preserve">
+    <value>Enter Test Results from GAML</value>
+  </data>
+  <data name="WfNodeEnterTestResultsDescription" xml:space="preserve">
+    <value>Workflow to enter test result values from GAML</value>
+  </data>
+  <data name="WfNodeLinkEntityCaption" xml:space="preserve">
+    <value>Link to Entity</value>
+  </data>
+  <data name="WfNodeLinkEntityDescription" xml:space="preserve">
+    <value>Workflow to set existings links found in DM_GAML entities schema</value>
+  </data>
+  <data name="WfNodeLinkEntityError" xml:space="preserve">
+    <value>Error setting link in child '{0}' to parent '{1}'</value>
+  </data>
+  <data name="WfNodeLinkEntityErrorException" xml:space="preserve">
+    <value>Exception error: '{0}'</value>
+  </data>
+  <data name="WfNodeLinkEntityErrorFormula" xml:space="preserve">
+    <value>Error creating text from formula '{0}'</value>
+  </data>
+  <data name="WfNodeLinkEntityErrorNoEntity" xml:space="preserve">
+    <value>The entity specified is not available within the available parameters</value>
+  </data>
+  <data name="WfNodeLinkEntityErrorNoEntityMatch" xml:space="preserve">
+    <value>Formula condition did not return a match '{0}' for Entity '{1}'</value>
+  </data>
+  <data name="WfNodeLinkEntityErrorNoProperty" xml:space="preserve">
+    <value>The linked property has not been specified</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterEntityCaption" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterEntityDescription" xml:space="preserve">
+    <value>Parent entity</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterPropertyCaption" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterPropertyDescription" xml:space="preserve">
+    <value>Parent entity property</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterPropertyValueCaption" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="WfNodeLinkEntityParameterPropertyValueDescription" xml:space="preserve">
+    <value>Property value to search</value>
+  </data>
+  <data name="WfNodeLinkEntityTraceLinkCreated" xml:space="preserve">
+    <value>Link created in child '{0}' to parent '{1}'</value>
+  </data>
+  <data name="WfNodeParmAnalysisSourceEntityCaption" xml:space="preserve">
+    <value>Analysis source table</value>
+  </data>
+  <data name="WfNodeParmAnalysisSourceEntityDescription" xml:space="preserve">
+    <value>Entity containing the field that will be used to find the analysis</value>
+  </data>
+  <data name="WfNodeParmAnalysisSourceEntityFieldCaption" xml:space="preserve">
+    <value>Analysis source field</value>
+  </data>
+  <data name="WfNodeParmAnalysisSourceEntityFieldyDescription" xml:space="preserve">
+    <value>Selected entity field that will be used to find the analysis</value>
+  </data>
+  <data name="WfNodeParmLinkGamlCaption" xml:space="preserve">
+    <value>Link GAML</value>
+  </data>
+  <data name="WfNodeParmLinkGamlDescription" xml:space="preserve">
+    <value>Flag indicating if workflow should set existing links found in DM_GAML entities schema</value>
+  </data>
+  <data name="WfNodeParmResultAllowAdHocCaption" xml:space="preserve">
+    <value>Result allow ad-hoc</value>
+  </data>
+  <data name="WfNodeParmResultAllowAdHocDescription" xml:space="preserve">
+    <value>Flag indicating that workflow should create components when not found</value>
+  </data>
+  <data name="WfNodeParmResultNameSourceEntityCaption" xml:space="preserve">
+    <value>Result name source table</value>
+  </data>
+  <data name="WfNodeParmResultNameSourceEntityFieldCaption" xml:space="preserve">
+    <value>Result name source field</value>
+  </data>
+  <data name="WfNodeParmResultNameSourceEntityFieldDescription" xml:space="preserve">
+    <value>Selected entity field that will be used to find the result name</value>
+  </data>
+  <data name="WfNodeParmResultNameSourceEntityyDescription" xml:space="preserve">
+    <value>Entity containing the field that will be used to find the result name</value>
+  </data>
+  <data name="WfNodeParmResultValueSourceEntityCaption" xml:space="preserve">
+    <value>Result value source table</value>
+  </data>
+  <data name="WfNodeParmResultValueSourceEntityDescription" xml:space="preserve">
+    <value>Entity containing the field that will be used to get the result value</value>
+  </data>
+  <data name="WfNodeParmResultValueSourceEntityFieldCaption" xml:space="preserve">
+    <value>Result value source field</value>
+  </data>
+  <data name="WfNodeParmResultValueSourceEntityFieldDescription" xml:space="preserve">
+    <value>Selected entity field that will be used to get the result value</value>
+  </data>
+  <data name="WfNodeParmSampleSourceEntityCaption" xml:space="preserve">
+    <value>Sample source table</value>
+  </data>
+  <data name="WfNodeParmSampleSourceEntityDescription" xml:space="preserve">
+    <value>Entity containing the field that will be used to find the sample</value>
+  </data>
+  <data name="WfNodeParmSampleSourceEntityFieldCaption" xml:space="preserve">
+    <value>Sample source field</value>
+  </data>
+  <data name="WfNodeParmSampleSourceEntityFieldDescription" xml:space="preserve">
+    <value>Selected entity field that will be used to find the sample</value>
+  </data>
+  <data name="WfNodeParmTestSourceEntityCaption" xml:space="preserve">
+    <value>Test source table</value>
+  </data>
+  <data name="WfNodeParmTestSourceEntityDescription" xml:space="preserve">
+    <value>Entity containing the field that will be used to find the test</value>
+  </data>
+  <data name="WfNodeParmTestSourceEntityFieldCaption" xml:space="preserve">
+    <value>Test source field</value>
+  </data>
+  <data name="WfNodeParmTestSourceEntityFieldyDescription" xml:space="preserve">
+    <value>Selected entity field that will be used to find the test</value>
+  </data>
+  <data name="WorkflowToolboxCategory" xml:space="preserve">
+    <value>Data Manager</value>
+  </data>
+  <data name="WfNodeEnterResultsErrorParameters" xml:space="preserve">
+    <value>Invalid or incomplete input parameters</value>
+  </data>
+</root>

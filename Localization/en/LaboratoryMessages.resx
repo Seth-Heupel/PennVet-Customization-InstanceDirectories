@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InstrumentCheckCalib" xml:space="preserve">
+    <value>
+The following instruments require calibration
+
+</value>
+  </data>
+  <data name="InstrumentCheckCalibComplete" xml:space="preserve">
+    <value>
+The following instruments require completion of their calibration
+
+</value>
+  </data>
+  <data name="InstrumentCheckIntro" xml:space="preserve">
+    <value>This is an automated message from the SampleManager background processor.\n</value>
+  </data>
+  <data name="InstrumentCheckPartsCalib" xml:space="preserve">
+    <value>
+The following instrument parts require calibration
+
+</value>
+  </data>
+  <data name="InstrumentCheckPartsService" xml:space="preserve">
+    <value>
+The following instrument parts require servicing
+
+</value>
+  </data>
+  <data name="InstrumentCheckService" xml:space="preserve">
+    <value>
+The following instruments require servicing
+
+</value>
+  </data>
+  <data name="InstrumentCheckSubject" xml:space="preserve">
+    <value>Instrument Maintenance</value>
+  </data>
+  <data name="LocationsSecondaryLocations" xml:space="preserve">
+    <value>"{0}" has the following locations.</value>
+  </data>
+  <data name="LocationTypesSecondaryLocationsLabel" xml:space="preserve">
+    <value>The following types of locations may be found in "{0}".</value>
+  </data>
+  <data name="LocationTypesWhereFoundLabel" xml:space="preserve">
+    <value>"{0}" may be found in the following types of locations:</value>
+  </data>
+  <data name="SchedulePointEventFormat" xml:space="preserve">
+    <value>{0}/{1} at {2} for {3}</value>
+  </data>
+  <data name="SchedulePointEventFormat2" xml:space="preserve">
+    <value>{0}/{1} at {2}</value>
+  </data>
+  <data name="SchedulePointEventTestFormat" xml:space="preserve">
+    <value>Analysis : {0}</value>
+  </data>
+  <data name="SchedulePointEventTestFormat2" xml:space="preserve">
+    <value>Analysis : {0} x{1}</value>
+  </data>
+  <data name="SchedulePointTestScheduleFormat" xml:space="preserve">
+    <value>Test Schedule : {0}</value>
+  </data>
+  <data name="StockCheckEmpty" xml:space="preserve">
+    <value>
+The following stock batches are empty
+
+</value>
+  </data>
+  <data name="StockCheckExpire" xml:space="preserve">
+    <value>
+The following stock batches are due to expire
+
+</value>
+  </data>
+  <data name="StockCheckExpired" xml:space="preserve">
+    <value>
+The following stock batches have expired
+
+</value>
+  </data>
+  <data name="StockCheckIntro" xml:space="preserve">
+    <value>This is an automated message from the SampleManager background processor.\n</value>
+  </data>
+  <data name="StockCheckReorder" xml:space="preserve">
+    <value>
+The following stocks require re-ordering
+
+</value>
+  </data>
+  <data name="StockCheckSubject" xml:space="preserve">
+    <value>Stock Inventory Report</value>
+  </data>
+  <data name="SyntaxItemDateNode" xml:space="preserve">
+    <value>Current date in a specified format.</value>
+  </data>
+  <data name="SyntaxItemDateParameter" xml:space="preserve">
+    <value>Date format to get the textual representation of the date.</value>
+  </data>
+  <data name="SyntaxItemFormatNode" xml:space="preserve">
+    <value>Format the concatenated value returned after processing child items.</value>
+  </data>
+  <data name="SyntaxItemFormatParameter" xml:space="preserve">
+    <value>Date or Numeric format to get the textual representation of date or numbers.</value>
+  </data>
+  <data name="SyntaxItemFunctionNode" xml:space="preserve">
+    <value>Apply String formatting function to the concatenated value returned after processing children items.</value>
+  </data>
+  <data name="SyntaxItemFunctionParameter" xml:space="preserve">
+    <value>Function to apply.</value>
+  </data>
+  <data name="SyntaxItemIncrementFormatParameter" xml:space="preserve">
+    <value>Number of digits will be included in the increment value.</value>
+  </data>
+  <data name="SyntaxItemIncrementMajorParameter" xml:space="preserve">
+    <value>Increment based on Major value.</value>
+  </data>
+  <data name="SyntaxItemIncrementMinorParameter" xml:space="preserve">
+    <value>Increment based on Minor value, left blank if you want to define the Minor based on child items.</value>
+  </data>
+  <data name="SyntaxItemIncrementNode" xml:space="preserve">
+    <value>Increment for a given combination of two values, allow generation of unique values.</value>
+  </data>
+  <data name="SyntaxItemPropertyNode" xml:space="preserve">
+    <value>Entity Property value from chosen entity.</value>
+  </data>
+  <data name="SyntaxItemPropertyParameter" xml:space="preserve">
+    <value>Property field value.</value>
+  </data>
+  <data name="SyntaxItemRootNode" xml:space="preserve">
+    <value>Add items to create your syntax.</value>
+  </data>
+  <data name="SyntaxItemSyntaxNode" xml:space="preserve">
+    <value>Identity of current Syntax.</value>
+  </data>
+  <data name="SyntaxItemTextNode" xml:space="preserve">
+    <value>Free text.</value>
+  </data>
+  <data name="SyntaxItemTextParameter" xml:space="preserve">
+    <value>Textual value.</value>
+  </data>
+  <data name="TrainingCheckIntro" xml:space="preserve">
+    <value>This is an automated message from the SampleManager background processor.\n</value>
+  </data>
+  <data name="TrainingCheckRequirements" xml:space="preserve">
+    <value>
+Requirements for the training course {0}, {1}
+</value>
+  </data>
+  <data name="TrainingCheckRetrain" xml:space="preserve">
+    <value>
+	Operators due for retraining
+
+</value>
+  </data>
+  <data name="TrainingCheckRetrainPast" xml:space="preserve">
+    <value>
+	Operators past their retraining date
+
+</value>
+  </data>
+  <data name="TrainingCheckSubject" xml:space="preserve">
+    <value>Training Course Requirements Report</value>
+  </data>
+  <data name="TrainingCheckTrain" xml:space="preserve">
+    <value>
+	Operators requiring initial training
+
+</value>
+  </data>
+  <data name="AttachmentLinkValid" xml:space="preserve">
+    <value>Please specify a name and link for the attachment</value>
+  </data>
+  <data name="AttachmentLink" xml:space="preserve">
+    <value>Link Attachment</value>
+  </data>
+  <data name="AttachmentNoteValid" xml:space="preserve">
+    <value>Please specify a name for the attachment</value>
+  </data>
+  <data name="AttachmentFound" xml:space="preserve">
+    <value>Please specify a different name for the attachment</value>
+  </data>
+  <data name="AttachmentNote" xml:space="preserve">
+    <value>Note Attachment</value>
+  </data>
+  <data name="AttachmentLinkBrowse" xml:space="preserve">
+    <value>Link File</value>
+  </data>
+  <data name="AttachmentFileBrowse" xml:space="preserve">
+    <value>Attach File</value>
+  </data>
+  <data name="AttachmentFileValid" xml:space="preserve">
+    <value>Please specify a name and file for the attachment</value>
+  </data>
+  <data name="AttachmentFile" xml:space="preserve">
+    <value>File Attachment</value>
+  </data>
+  <data name="AttachmentNewVersion" xml:space="preserve">
+    <value>New version created</value>
+  </data>
+  <data name="AttachmentHeader" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="AttachmentNoVersion" xml:space="preserve">
+    <value>No previous version to compare!</value>
+  </data>
+  <data name="AttachmentNoFile" xml:space="preserve">
+    <value>Unable to open the attachment as no file has been specified</value>
+  </data>
+  <data name="AttachmentNoLink" xml:space="preserve">
+    <value>Unable to navigate to the link as it is blank</value>
+  </data>
+  <data name="PageNoPageExtension" xml:space="preserve">
+    <value>The Page Extension prompt is blank. This page will not be added to a property sheet. Do you want to continue?</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Page Extension</value>
+  </data>
+  <data name="AttachmentNewMenu" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="AttachmentFilePattern" xml:space="preserve">
+    <value>All Files (*.*) | *.*</value>
+  </data>
+  <data name="InvalidRmbTarget" xml:space="preserve">
+    <value>Invalid RMB Target. Child RMB's can only be added to Groups.</value>
+  </data>
+  <data name="CopyAttachmentsToNewVersion" xml:space="preserve">
+    <value>Copy latest attachments to new version</value>
+  </data>
+  <data name="EntityVersionError" xml:space="preserve">
+    <value>Failed to load an active version of the {0}: '{1}'</value>
+  </data>
+  <data name="EntityVersionErrorTitle" xml:space="preserve">
+    <value>Error Loading Active Version</value>
+  </data>
+  <data name="EditAttachmentsTitle" xml:space="preserve">
+    <value>Edit Attachments - {0}</value>
+  </data>
+  <data name="EditAttachmentsNoType" xml:space="preserve">
+    <value>No Entity Type Specified - please update your menu definition.</value>
+  </data>
+  <data name="AttachmentFileNotFound" xml:space="preserve">
+    <value>Attachment file not found.</value>
+  </data>
+  <data name="TemplateFieldsCategory" xml:space="preserve">
+    <value>Template Properties</value>
+  </data>
+  <data name="InternalFieldsCategory" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ExportFolderPromptDescription" xml:space="preserve">
+    <value>Please select a folder into which the selected Entities will be exported:</value>
+  </data>
+  <data name="ExportSuccessTitle" xml:space="preserve">
+    <value>Export Completed</value>
+  </data>
+  <data name="ExportSuccessCaption" xml:space="preserve">
+    <value>{0} items exported</value>
+  </data>
+  <data name="ExportGettingReferencies" xml:space="preserve">
+    <value>Getting referenced data...</value>
+  </data>
+  <data name="ExportNoFolderCaption" xml:space="preserve">
+    <value>Please specify an output folder for the exported files.</value>
+  </data>
+  <data name="ExportNoFolderTitle" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ExportNoFilesError" xml:space="preserve">
+    <value>No files exported</value>
+  </data>
+  <data name="ExportError" xml:space="preserve">
+    <value>Export Error</value>
+  </data>
+  <data name="ExportNoDataCaption" xml:space="preserve">
+    <value>No data found to export.</value>
+  </data>
+  <data name="ExportNoDataTitle" xml:space="preserve">
+    <value>Export Data</value>
+  </data>
+  <data name="FolderLockCabinet" xml:space="preserve">
+    <value>Failed to lock cabinet</value>
+  </data>
+  <data name="ParseRawCommandError" xml:space="preserve">
+    <value>Cannot parse the input string. Composite keys not supported</value>
+  </data>
+  <data name="TestSchedAssignAnalysisError" xml:space="preserve">
+    <value>Cannot assign Analysis to Schedule Entry! Test Schedule Entry Type is set to Schedule.</value>
+  </data>
+  <data name="TestSchedAssignScheduleError" xml:space="preserve">
+    <value>Cannot assign Schedule to Schedule Entry! Test Schedule Entry Type is set to Analysis.</value>
+  </data>
+  <data name="InvalidReportTemplateTitle" xml:space="preserve">
+    <value>Invalid Report Template</value>
+  </data>
+  <data name="InvalidReportTemplate" xml:space="preserve">
+    <value>The Report Template '{0}' specified is invalid</value>
+  </data>
+  <data name="InvalidCriteriaTitle" xml:space="preserve">
+    <value>Invalid Criteria</value>
+  </data>
+  <data name="InvalidCriteria" xml:space="preserve">
+    <value>The Criteria '{0}' specified is invalid - check the table name matches the report template table '{1}'</value>
+  </data>
+  <data name="InvalidEmailOperatorTitle" xml:space="preserve">
+    <value>Invalid Email Operator</value>
+  </data>
+  <data name="InvalidEmailOperator" xml:space="preserve">
+    <value>The Operator '{0}' specified is invalid</value>
+  </data>
+  <data name="InvalidOperatorEmailTitle" xml:space="preserve">
+    <value>Invalid Operator Email</value>
+  </data>
+  <data name="InvalidOperatorEmail" xml:space="preserve">
+    <value>The Operator '{0}' specified does not have a valid email address</value>
+  </data>
+  <data name="InvalidDestinationTitle" xml:space="preserve">
+    <value>Invalid Destination</value>
+  </data>
+  <data name="InvalidDestination" xml:space="preserve">
+    <value>The Destination '{0}' specified is invalid</value>
+  </data>
+  <data name="InvalidPrinterEmailTitle" xml:space="preserve">
+    <value>Invalid Printer Email</value>
+  </data>
+  <data name="InvalidPrinterEmail" xml:space="preserve">
+    <value>The Destination '{0}' specified does not have a valid email address</value>
+  </data>
+  <data name="InvalidOperatorOrDestinationTitle" xml:space="preserve">
+    <value>Invalid Printer Email</value>
+  </data>
+  <data name="InvalidOperatorOrDestination" xml:space="preserve">
+    <value>Please specify either a valid Operator or a valid Destination</value>
+  </data>
+  <data name="SampleMergeError" xml:space="preserve">
+    <value>Sample Merge</value>
+  </data>
+  <data name="SampleMergeSelectSamplesError" xml:space="preserve">
+    <value>Select a few samples</value>
+  </data>
+  <data name="SampleMergeNoWorkflowError" xml:space="preserve">
+    <value>Workflow not present for sample</value>
+  </data>
+  <data name="SampleMergeWrongWorkflowError" xml:space="preserve">
+    <value>Samples must be from the same workflow</value>
+  </data>
+  <data name="SampleMergeMissingActionError" xml:space="preserve">
+    <value>Missing Action Type</value>
+  </data>
+  <data name="SampleMergeFindSampleError" xml:space="preserve">
+    <value>Unable to find selected sample</value>
+  </data>
+  <data name="WorkflowActionParamsWrongNumber" xml:space="preserve">
+    <value>Wrong number of params, specify ACTION and optionally Required STATE</value>
+  </data>
+  <data name="WorkflowActionParamsInvalidAction" xml:space="preserve">
+    <value>Invalid action type</value>
+  </data>
+  <data name="WorkflowActionParamsInvalidState" xml:space="preserve">
+    <value>Invalid State</value>
+  </data>
+  <data name="WorkflowProxySelectedWorkflowError" xml:space="preserve">
+    <value>Workflow Proxy requires a selected workflow</value>
+  </data>
+  <data name="WorkflowProxyDisplayModifyError" xml:space="preserve">
+    <value>Workflow Proxy only works for Display/Modify</value>
+  </data>
+  <data name="TreeDisplayFormulaError" xml:space="preserve">
+    <value>Invalid Formula</value>
+  </data>
+  <data name="SchedulePointEventSubjectFormat" xml:space="preserve">
+    <value>{0:t} {1}</value>
+  </data>
+  <data name="SampleLoginThreadExceptionCaption" xml:space="preserve">
+    <value>Error during processing</value>
+  </data>
+  <data name="PageSelectedNoPageExtension" xml:space="preserve">
+    <value>The selected page does not have an associated PageExtension. This page will not be shown until this is fixed.</value>
+  </data>
+  <data name="FileInUse" xml:space="preserve">
+    <value>Unable to access selected file. File may be in use or you do not have permission to access the file. Please try closing any programs that may be locking it, or contact your system administrator.</value>
+  </data>
+  <data name="ImportFailed" xml:space="preserve">
+    <value>The import failed</value>
+  </data>
+  <data name="ImportInvalidFile" xml:space="preserve">
+    <value>Invalid file selected</value>
+  </data>
+  <data name="ImportNoWarnings" xml:space="preserve">
+    <value>There were no warnings or errors</value>
+  </data>
+  <data name="ImportPleaseSelectFile" xml:space="preserve">
+    <value>Please select a file</value>
+  </data>
+  <data name="ImportSucceeded" xml:space="preserve">
+    <value>The import succeeded</value>
+  </data>
+  <data name="ImportSuccessMessageTemplate" xml:space="preserve">
+    <value>The import {0}. {1}</value>
+  </data>
+  <data name="ImportWarnings" xml:space="preserve">
+    <value>There were the following warnings/errors:</value>
+  </data>
+  <data name="ImportConfirmationMessage" xml:space="preserve">
+    <value>Warning: This will import into {0} and overwrite any entities with same identity</value>
+  </data>
+  <data name="RMBInvalidUsing" xml:space="preserve">
+    <value>'{0}' is an invalid using identifier</value>
+  </data>
+  <data name="ExportNoEntitySelected" xml:space="preserve">
+    <value>No entity selected for export</value>
+  </data>
+  <data name="GeneralDoneMessage" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ImportCancelled" xml:space="preserve">
+    <value>Import cancelled by user</value>
+  </data>
+  <data name="ImportErrorReportFormat" xml:space="preserve">
+    <value>{0} with identity {1} {2} does not exist</value>
+  </data>
+  <data name="ExportEntityIsView" xml:space="preserve">
+    <value>This entity is a view and cannot be exported.</value>
+  </data>
+  <data name="ImportAllocatedNewFolderNumber" xml:space="preserve">
+    <value>Allocated new folder number: '{0}': '{1}'</value>
+  </data>
+  <data name="ImportEntityDoesNotHaveField" xml:space="preserve">
+    <value>Warning: Entity {0} [{1}] does not have field {2}</value>
+  </data>
+  <data name="ImportEntityExcluded" xml:space="preserve">
+    <value>Entity '{0}': {1} excluded from import due to an error on child data</value>
+  </data>
+  <data name="ImportExpectedFileDefinition" xml:space="preserve">
+    <value>Expected file definition missed for Entity '{0}':'{1}'</value>
+  </data>
+  <data name="ImportExplorerFolderOverwriteMessage" xml:space="preserve">
+    <value>Allocate new folder number for this folder '{0} {1} {2}'? \r\nYes will allocate new number\r\nNo will overwrite existing explorer folder: '{3} {4}'</value>
+  </data>
+  <data name="ImportExplorerFolderOverwriteTitle" xml:space="preserve">
+    <value>Allocate New Folder Number?</value>
+  </data>
+  <data name="ImportFieldNotFound" xml:space="preserve">
+    <value>{0}' for field '{1}' not found for Entity Type node '{2}'</value>
+  </data>
+  <data name="ImportNonModifiableOverwrite" xml:space="preserve">
+    <value>The '{0}': {1} is set as non modifiable. Overwriting..</value>
+  </data>
+  <data name="ImportNonModifiableOverwriteNoPriviledge" xml:space="preserve">
+    <value>The '{0}': {1} is set as non modifiable. Need non-modifiable priviledge</value>
+  </data>
+  <data name="ImportNotAccessible" xml:space="preserve">
+    <value>'{0}': '{1}' not accessible. Did not import</value>
+  </data>
+  <data name="ImportOverwriteConfirmText" xml:space="preserve">
+    <value>'{0}':'{1}' already exists! Do you want to overwrite this existing entity?</value>
+  </data>
+  <data name="ImportOverwriteConfirmTitle" xml:space="preserve">
+    <value>Overwrite?</value>
+  </data>
+  <data name="ImportOverwriteEntityCancelled" xml:space="preserve">
+    <value>'{0}':'{1}' already existed and was not overwritten</value>
+  </data>
+  <data name="ImportOverwrittenEntity" xml:space="preserve">
+    <value>Overwritten entity: '{0}': '{1}'</value>
+  </data>
+  <data name="ImportSetAsRemoved" xml:space="preserve">
+    <value>The '{0}': '{1}' is set as removed. Overwriting..</value>
+  </data>
+  <data name="ExportSuccessCaptionSingular" xml:space="preserve">
+    <value>{0} item exported</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ImportAction_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ImportAction_New_Version" xml:space="preserve">
+    <value>New Version</value>
+  </data>
+  <data name="ImportAction_Overwrite" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="ImportAction_Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="ImportAction_Unset" xml:space="preserve">
+    <value>Unset</value>
+  </data>
+  <data name="ImportNothingToDo" xml:space="preserve">
+    <value>No actions selected</value>
+  </data>
+  <data name="ImportAction_New_Folder_Number" xml:space="preserve">
+    <value>New Folder Number</value>
+  </data>
+  <data name="ImportAlreadyExists" xml:space="preserve">
+    <value>already exists</value>
+  </data>
+  <data name="ImportErrorField" xml:space="preserve">
+    <value>Field '{0}' on entity '{1}' has value '{2}' which is invalid on this system</value>
+  </data>
+  <data name="ImportErrorLinkedField" xml:space="preserve">
+    <value>Linked entity '{0}' on entity '{1}' '{2}' has value '{3}' which is invalid on this system</value>
+  </data>
+  <data name="ImportErrorWorkflowNode" xml:space="preserve">
+    <value>Workflow Node '{0}' has invalid type '{1}' '{2}'</value>
+  </data>
+  <data name="ImportIsRemoved" xml:space="preserve">
+    <value>is removed</value>
+  </data>
+  <data name="ImportNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ImportOverwriteCaption" xml:space="preserve">
+    <value>Overwrite selected</value>
+  </data>
+  <data name="ImportOverwriteMessage" xml:space="preserve">
+    <value>Overwrite option has been selected - are you sure you want to continue?</value>
+  </data>
+  <data name="ImportError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ImportSkipped" xml:space="preserve">
+    <value>Skipped</value>
+  </data>
+  <data name="ImportSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="ImportFinished" xml:space="preserve">
+    <value>Import Finished</value>
+  </data>
+  <data name="ImportAction_New_Identity" xml:space="preserve">
+    <value>New Identity</value>
+  </data>
+  <data name="EntityTemplateDeleted" xml:space="preserve">
+    <value>Entity template '{0}' has been removed</value>
+  </data>
+  <data name="Export_ExplorerFolderCriteriaSavedExport" xml:space="preserve">
+    <value>It is recommended the criteria saved '{0}' is also exported</value>
+  </data>
+  <data name="Import_EnterNewIdentity" xml:space="preserve">
+    <value>Please specify a new identity for this entity</value>
+  </data>
+  <data name="Import_IdentityAlreadyExists" xml:space="preserve">
+    <value>Identity already exists - please enter a new unique identity</value>
+  </data>
+  <data name="NewIdentityRequired" xml:space="preserve">
+    <value>(Explorer folder criteria - new identity required)</value>
+  </data>
+  <data name="ExplorerFolderNewIdentityRequired" xml:space="preserve">
+    <value>As this is an explorer folder criteria a new identity will be required for data integrity</value>
+  </data>
+  <data name="ConfirmContinue" xml:space="preserve">
+    <value>Do you want to continue?</value>
+  </data>
+  <data name="LabSelectFileToOpen" xml:space="preserve">
+    <value>Select file for parsing</value>
+  </data>
+  <data name="LabAllFileFilter" xml:space="preserve">
+    <value>All Files|*.*</value>
+  </data>
+  <data name="IdentityAlreadyExistsCaption" xml:space="preserve">
+    <value>Identity already exists</value>
+  </data>
+  <data name="IdentityAlreadyExistsText" xml:space="preserve">
+    <value>A {0} with the entered identity already exists</value>
+  </data>
+  <data name="AutomaticallyCreatedPhrase" xml:space="preserve">
+    <value>Automatically created for Phrase {0}</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="NonAssignableLocation" xml:space="preserve">
+    <value>This location is not assignable. Do you want to continue?</value>
+  </data>
+  <data name="NonAssignableLocationTitle" xml:space="preserve">
+    <value>Location not assignable</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>Recent</value>
+  </data>
+  <data name="AllLocations" xml:space="preserve">
+    <value>All Locations</value>
+  </data>
+  <data name="LimitUnspecifiedAnalysis" xml:space="preserve">
+    <value>&#60;Unspecified&#62;</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="InstrumentCheckLaunchStart" xml:space="preserve">
+    <value>Starting Instrument Check Task...</value>
+  </data>
+  <data name="InstrumentCheckLaunchEnd" xml:space="preserve">
+    <value>Instrument Check Complete.</value>
+  </data>
+  <data name="InstrumentCheckInstrument" xml:space="preserve">
+    <value>Checking instrument {0}, {1}</value>
+  </data>
+  <data name="InstrumentCheckInstrumentStatus" xml:space="preserve">
+    <value>	Status is {0}</value>
+  </data>
+  <data name="InstrumentCheckInstPart" xml:space="preserve">
+    <value>Checking instrument Part {0}, {1}</value>
+  </data>
+  <data name="InstrumentCheckInstPartStatus" xml:space="preserve">
+    <value>	Status is {0}</value>
+  </data>
+  <data name="InstrumentCheckError" xml:space="preserve">
+    <value>Error occurred {0}</value>
+  </data>
+  <data name="InstrumentCheckMailSent" xml:space="preserve">
+    <value>Mail sent to {0}</value>
+  </data>
+  <data name="InstrumentCheckMailError" xml:space="preserve">
+    <value>Error sending mail {0}</value>
+  </data>
+  <data name="MaintenancePageInvalid" xml:space="preserve">
+    <value>Invalid use of this page, the entity {0} does not implement the IMaintained interface.</value>
+  </data>
+  <data name="MaintenancePageButtonAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="MaintenancePageButtonModify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="MaintenancePageButtonDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="InstrumentCheckMnt" xml:space="preserve">
+    <value>
+The following instruments require maintenance
+
+</value>
+  </data>
+  <data name="InstrumentCheckMntDue" xml:space="preserve">
+    <value>
+The following instruments will require maintenance
+
+</value>
+  </data>
+  <data name="InstrumentCheckPartMnt" xml:space="preserve">
+    <value>
+The following instrument parts require maintenance
+
+</value>
+  </data>
+  <data name="InstrumentCheckPartMntDue" xml:space="preserve">
+    <value>
+The following instrument parts will require maintenance
+
+</value>
+  </data>
+  <data name="MaintenanceCancelTitle" xml:space="preserve">
+    <value>Cancel Maintenance</value>
+  </data>
+  <data name="MaintenanceCancelError" xml:space="preserve">
+    <value>The selected maintenance '{0}' can't be stopped because it has a status of '{1}'</value>
+  </data>
+  <data name="MaintenanceCancelOne" xml:space="preserve">
+    <value>Multiple entries are not supported</value>
+  </data>
+  <data name="MaintenanceCancelNoMaintenance" xml:space="preserve">
+    <value>Unable to locate maintenance details for {0}</value>
+  </data>
+  <data name="MaintenanceCancelChooseTitle" xml:space="preserve">
+    <value>Select maintenance entry to cancel</value>
+  </data>
+  <data name="MaintenanceCancelChoose" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="MaintenanceWorkflowError" xml:space="preserve">
+    <value>Error locating workflow for maintenance enrty '{0}' : {1}</value>
+  </data>
+  <data name="MaintenanceNoParent" xml:space="preserve">
+    <value>Unable to locate parent for maintenance record, entity name {0}, identity {1}</value>
+  </data>
+  <data name="MaintenancePerformTitle" xml:space="preserve">
+    <value>Perform Maintenance</value>
+  </data>
+  <data name="MaintenancePerformOne" xml:space="preserve">
+    <value>Multiple entries are not supported</value>
+  </data>
+  <data name="MaintenancePerformInvalidEntityType" xml:space="preserve">
+    <value>The selected entity type {0} is invalid</value>
+  </data>
+  <data name="MaintenancePerformInvalidEntityStatus" xml:space="preserve">
+    <value>The selected maintenance '{0}' can't be started because it has a status of '{1}'</value>
+  </data>
+  <data name="MaintenancePerformNoMaintenance" xml:space="preserve">
+    <value>Unable to locate maintenance details for {0}</value>
+  </data>
+  <data name="MaintenancePerformChooseTitle" xml:space="preserve">
+    <value>Select maintenance entry</value>
+  </data>
+  <data name="MaintenancePerformChoose" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="MaintenanceCompleteTitle" xml:space="preserve">
+    <value>Complete Maintenance</value>
+  </data>
+  <data name="MaintenanceCompleteInvalid" xml:space="preserve">
+    <value>Maintenance entry is invalid for completion process.</value>
+  </data>
+  <data name="MaintenanceCompleteSampleStatus" xml:space="preserve">
+    <value>The maintenance sample is not authorized, would you like to complete the maintenance anyway?</value>
+  </data>
+  <data name="MaintenanceHistorySampleLogin" xml:space="preserve">
+    <value>{0}, sample {1} ({2}) was created</value>
+  </data>
+  <data name="MaintenanceHistoryComplete" xml:space="preserve">
+    <value>{0}, completed on {1} : {2}</value>
+  </data>
+  <data name="MaintenanceHistoryPerformed" xml:space="preserve">
+    <value>{0}, performed on {1} : {2}</value>
+  </data>
+  <data name="MaintenanceHistoryCancelled" xml:space="preserve">
+    <value>{0}, cancelled on {1} : {2}</value>
+  </data>
+  <data name="MaintenanceHistoryAdded" xml:space="preserve">
+    <value>{0}, has been added</value>
+  </data>
+  <data name="MaintenanceHistoryDeleted" xml:space="preserve">
+    <value>{0}, has been removed</value>
+  </data>
+  <data name="MaintenanceHistoryUnavailable" xml:space="preserve">
+    <value>{0}, has been marked as suspended</value>
+  </data>
+  <data name="MaintenanceHistoryRequired" xml:space="preserve">
+    <value>{0}, is require on {1}</value>
+  </data>
+  <data name="MaintenanceHistoryValid" xml:space="preserve">
+    <value>{0}, is currently valid</value>
+  </data>
+  <data name="MaintenanceHistoryInMaintenance" xml:space="preserve">
+    <value>{0}, is in maintenance</value>
+  </data>
+  <data name="InstrumentTemplateChanged" xml:space="preserve">
+    <value>Template has been changed to {0}</value>
+  </data>
+  <data name="InstrumentChangedUses" xml:space="preserve">
+    <value>Change to the use maintenance mode. Please save your changes then close and re-open this form.</value>
+  </data>
+  <data name="InstrumentChangedUsesHeader" xml:space="preserve">
+    <value>Change use maintenance mode</value>
+  </data>
+  <data name="InstrumentPartTemplateChanged" xml:space="preserve">
+    <value>Part Template has been changed to {0}</value>
+  </data>
+  <data name="InstrumentPartChangedUses" xml:space="preserve">
+    <value>Change to the use maintenance mode. Please save your changes then close and re-open this form.</value>
+  </data>
+  <data name="InstrumentPartChangedUsesHeader" xml:space="preserve">
+    <value>Change use maintenance mode</value>
+  </data>
+  <data name="InstrumentPartTemplateChangedUses" xml:space="preserve">
+    <value>Change to the use maintenance mode. Please save your changes then close and re-open this form.</value>
+  </data>
+  <data name="InstrumentPartTemplateChangedUsesHeader" xml:space="preserve">
+    <value>Change use maintenance mode</value>
+  </data>
+  <data name="InstrumentTemplateChangedUses" xml:space="preserve">
+    <value>Change to the use maintenance mode. Please save your changes then close and re-open this form.</value>
+  </data>
+  <data name="InstrumentTemplateChangedUsesHeader" xml:space="preserve">
+    <value>Change use maintenance mode</value>
+  </data>
+  <data name="MaintenanceUpdateError" xml:space="preserve">
+    <value>Error Updating maintenance details</value>
+  </data>
+  <data name="MasterMenuZero" xml:space="preserve">
+    <value>Procedure number cannot be 0</value>
+  </data>
+  <data name="MasterMenuZeroTitle" xml:space="preserve">
+    <value>Invalid procedure number</value>
+  </data>
+</root>

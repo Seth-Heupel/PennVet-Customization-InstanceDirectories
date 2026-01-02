@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="AddNew" xml:space="preserve">
+    <value>Add New...</value>
+  </data>
+  <data name="ButtonAbort" xml:space="preserve">
+    <value>&amp;Abort</value>
+  </data>
+  <data name="ButtonApply" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>&lt; Back</value>
+  </data>
+  <data name="ButtonBrowse" xml:space="preserve">
+    <value>&amp;Browse</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="ButtonDetailsHide" xml:space="preserve">
+    <value>Details &lt;&lt;</value>
+  </data>
+  <data name="ButtonDetailsShow" xml:space="preserve">
+    <value>Details &gt;&gt;</value>
+  </data>
+  <data name="ButtonFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="ButtonIgnore" xml:space="preserve">
+    <value>&amp;Ignore</value>
+  </data>
+  <data name="ButtonNext" xml:space="preserve">
+    <value>Next &gt;</value>
+  </data>
+  <data name="ButtonNo" xml:space="preserve">
+    <value>&amp;No</value>
+  </data>
+  <data name="ButtonOK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="ButtonPrint" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="ButtonRetry" xml:space="preserve">
+    <value>&amp;Retry</value>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>&amp;Yes</value>
+  </data>
+  <data name="ButtonYesAll" xml:space="preserve">
+    <value>Yes to &amp;All</value>
+  </data>
+  <data name="ButtonZero" xml:space="preserve">
+    <value>&amp;Zero</value>
+  </data>
+  <data name="ButtonLogin" xml:space="preserve">
+    <value>&amp;Login</value>
+  </data>
+  <data name="CrossTabGridAddColumn" xml:space="preserve">
+    <value>Add {0}</value>
+  </data>
+  <data name="CrossTabGridAddRow" xml:space="preserve">
+    <value>Add {0}</value>
+  </data>
+  <data name="CrossTabGridBestFit" xml:space="preserve">
+    <value>Best Fit</value>
+  </data>
+  <data name="CrossTabGridBestFitAll" xml:space="preserve">
+    <value>Best Fit (All)</value>
+  </data>
+  <data name="CrossTabGridCaption" xml:space="preserve">
+    <value>CrossTab Grid</value>
+  </data>
+  <data name="CrossTabGridColumnExists" xml:space="preserve">
+    <value>Column already exists!</value>
+  </data>
+  <data name="CrossTabGridDeleteColumn" xml:space="preserve">
+    <value>Delete {0}</value>
+  </data>
+  <data name="CrossTabGridDeleteRow" xml:space="preserve">
+    <value>Delete {0}</value>
+  </data>
+  <data name="CrossTabGridFillAll" xml:space="preserve">
+    <value>Fill All</value>
+  </data>
+  <data name="CrossTabGridFillLeft" xml:space="preserve">
+    <value>Fill Left</value>
+  </data>
+  <data name="CrossTabGridFillRight" xml:space="preserve">
+    <value>Fill Right</value>
+  </data>
+  <data name="CrossTabGridInsertColumn" xml:space="preserve">
+    <value>Insert {0}</value>
+  </data>
+  <data name="CrossTabGridInsertRow" xml:space="preserve">
+    <value>Insert {0}</value>
+  </data>
+  <data name="CrossTabGridModifyColumn" xml:space="preserve">
+    <value>Modify {0}</value>
+  </data>
+  <data name="CrossTabGridModifyRow" xml:space="preserve">
+    <value>Modify {0}</value>
+  </data>
+  <data name="CrossTabGridRowExists" xml:space="preserve">
+    <value>Row already exists!</value>
+  </data>
+  <data name="De_SelectAllCaption" xml:space="preserve">
+    <value>&amp;Deselect All</value>
+  </data>
+  <data name="FormMenuLocalization" xml:space="preserve">
+    <value>Localization</value>
+  </data>
+  <data name="FormMenuLocalizationMessage" xml:space="preserve">
+    <value>Create localized translation for a language</value>
+  </data>
+  <data name="GridButtonAddToolTip" xml:space="preserve">
+    <value>Add row</value>
+  </data>
+  <data name="GridButtonInsertToolTip" xml:space="preserve">
+    <value>Insert row</value>
+  </data>
+  <data name="GridButtonMoveDownToolTip" xml:space="preserve">
+    <value>Move row down</value>
+  </data>
+  <data name="GridButtonMoveUpToolTip" xml:space="preserve">
+    <value>Move row up</value>
+  </data>
+  <data name="GridButtonPropagateAllToolTip" xml:space="preserve">
+    <value>Fill Up &amp; Down</value>
+  </data>
+  <data name="GridButtonPropagateDownToolTip" xml:space="preserve">
+    <value>Fill Down</value>
+  </data>
+  <data name="GridButtonPropagateUpToolTip" xml:space="preserve">
+    <value>Fill Up</value>
+  </data>
+  <data name="GridButtonRemoveToolTip" xml:space="preserve">
+    <value>Delete row</value>
+  </data>
+  <data name="IntervalDays" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="IntervalHours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="IntervalMinutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="IntervalNegative" xml:space="preserve">
+    <value>Negative</value>
+  </data>
+  <data name="IntervalSeconds" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="SelectAllCaption" xml:space="preserve">
+    <value>Select &amp;All</value>
+  </data>
+  <data name="UnitHeaderCheckValue" xml:space="preserve">
+    <value>Invalid unit value!</value>
+  </data>
+  <data name="DataGridButtonAddToolTip" xml:space="preserve">
+    <value>Add Entity</value>
+  </data>
+  <data name="DataGridButtonInsertToolTip" xml:space="preserve">
+    <value>Insert Entity</value>
+  </data>
+  <data name="DataGridButtonMoveRightToolTip" xml:space="preserve">
+    <value>Move Entity Right</value>
+  </data>
+  <data name="DataGridButtonMoveDownToolTip" xml:space="preserve">
+    <value>Move Entity Down</value>
+  </data>
+  <data name="DataGridButtonMoveLeftToolTip" xml:space="preserve">
+    <value>Move Entity Left</value>
+  </data>
+  <data name="DataGridButtonMoveUpToolTip" xml:space="preserve">
+    <value>Move Entity Up</value>
+  </data>
+  <data name="DataGridButtonPropagateLeftRightToolTip" xml:space="preserve">
+    <value>Fill Left &amp; Right</value>
+  </data>
+  <data name="DataGridButtonPropagateUpDownToolTip" xml:space="preserve">
+    <value>Fill Up &amp; Down</value>
+  </data>
+  <data name="DataGridButtonPropagateRightToolTip" xml:space="preserve">
+    <value>Fill Right</value>
+  </data>
+  <data name="DataGridButtonPropagateDownToolTip" xml:space="preserve">
+    <value>Fill Down</value>
+  </data>
+  <data name="DataGridButtonPropagateLeftToolTip" xml:space="preserve">
+    <value>Fill Left</value>
+  </data>
+  <data name="DataGridButtonPropagateUpToolTip" xml:space="preserve">
+    <value>Fill Up</value>
+  </data>
+  <data name="DataGridButtonRemoveToolTip" xml:space="preserve">
+    <value>Delete Entity</value>
+  </data>
+  <data name="DataGridButtonTransposeToolTip" xml:space="preserve">
+    <value>Transpose</value>
+  </data>
+  <data name="UnboundGridButtonAddToolTip" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="UnboundGridButtonInsertToolTip" xml:space="preserve">
+    <value>Insert Row</value>
+  </data>
+  <data name="UnboundGridButtonMoveRightToolTip" xml:space="preserve">
+    <value>Move Right</value>
+  </data>
+  <data name="UnboundGridButtonMoveDownToolTip" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="UnboundGridButtonMoveLeftToolTip" xml:space="preserve">
+    <value>Move Left</value>
+  </data>
+  <data name="UnboundGridButtonMoveUpToolTip" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="UnboundGridButtonPropagateLeftRightToolTip" xml:space="preserve">
+    <value>Fill Left &amp; Right</value>
+  </data>
+  <data name="UnboundGridButtonPropagateUpDownToolTip" xml:space="preserve">
+    <value>Fill Up &amp; Down</value>
+  </data>
+  <data name="UnboundGridButtonPropagateRightToolTip" xml:space="preserve">
+    <value>Fill Right</value>
+  </data>
+  <data name="UnboundGridButtonPropagateDownToolTip" xml:space="preserve">
+    <value>Fill Down</value>
+  </data>
+  <data name="UnboundGridButtonPropagateLeftToolTip" xml:space="preserve">
+    <value>Fill Left</value>
+  </data>
+  <data name="UnboundGridButtonPropagateUpToolTip" xml:space="preserve">
+    <value>Fill Up</value>
+  </data>
+  <data name="UnboundGridButtonRemoveToolTip" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="UnboundGridButtonTransposeToolTip" xml:space="preserve">
+    <value>Transpose</value>
+  </data>
+  <data name="EntityTemplateInvalidFilterBy" xml:space="preserve">
+    <value>Cannot filter property '{0}' using '{1}'</value>
+  </data>
+  <data name="ErrorUnableToLogin" xml:space="preserve">
+    <value>Unable to Login : Invalid Server '{0}'</value>
+  </data>
+  <data name="ErrorXMLNotAvailable" xml:space="preserve">
+    <value>Xml output not available</value>
+  </data>
+  <data name="ErrorLabelTemplateDesignerEntityType" xml:space="preserve">
+    <value>Label template is not designed for use with the entity type of the passed data</value>
+  </data>
+  <data name="ErrorSecurityTitle" xml:space="preserve">
+    <value>Security Error</value>
+  </data>
+  <data name="ErrorInsufficientPrivileges" xml:space="preserve">
+    <value>Insufficient privileges to run menu option {0}</value>
+  </data>
+  <data name="ErrorTransferringHelp" xml:space="preserve">
+    <value>Error Transferring Help Mapping to Server</value>
+  </data>
+  <data name="ErrorWritingExportFile" xml:space="preserve">
+    <value>An error occurred writing the export file: \n\n</value>
+  </data>
+  <data name="ErrorCreatingResource" xml:space="preserve">
+    <value>Error Creating Resource Directory</value>
+  </data>
+  <data name="ErrorCommand" xml:space="preserve">
+    <value>Command Error</value>
+  </data>
+  <data name="ErrorVideoNotSupported" xml:space="preserve">
+    <value>Video Play is not yet supported.</value>
+  </data>
+  <data name="ErrorPlayingSound" xml:space="preserve">
+    <value>Error Playing Sound</value>
+  </data>
+  <data name="ErrorPlayingWebSound" xml:space="preserve">
+    <value>Error Playing Sound. Please check you have the correct resource file type and the instance has been synchronized. The web client only supports audio files in mp3 format.</value>
+  </data>
+  <data name="ErrorLocalSettings" xml:space="preserve">
+    <value>Local Settings</value>
+  </data>
+  <data name="ErrorReadingLocalSettings" xml:space="preserve">
+    <value>Error reading local setting {0} - {1}</value>
+  </data>
+  <data name="ErrorWritingLocalSettings" xml:space="preserve">
+    <value>Error writing local setting {0},{1} - {2}</value>
+  </data>
+  <data name="ErrorReadingLocalArray" xml:space="preserve">
+    <value>Error reading local array {0} - {1}</value>
+  </data>
+  <data name="ErrorWritingLocalArray" xml:space="preserve">
+    <value>Error writing local array {0} - {1}</value>
+  </data>
+  <data name="ErrorCreatingLocalDir" xml:space="preserve">
+    <value>Error creating settings directory {0} - {1}</value>
+  </data>
+  <data name="ExceptionInvalidMenuNumber" xml:space="preserve">
+    <value>Invalid menu number '{0}'</value>
+  </data>
+  <data name="ErrorFailedToLocateMenu" xml:space="preserve">
+    <value>Failed to locate menu procedure number {0}</value>
+  </data>
+  <data name="ErrorTooManyTableDefaults" xml:space="preserve">
+    <value>Too many table defaults for table {0}</value>
+  </data>
+  <data name="ErrorFailedToLocateFolderNumber" xml:space="preserve">
+    <value>Failed to locate folder number {0}</value>
+  </data>
+  <data name="ErrorLocateExplorer" xml:space="preserve">
+    <value>Failed to locate explorer aux report {0} for table {1}</value>
+  </data>
+  <data name="ErrorLocateCabinet" xml:space="preserve">
+    <value>Failed to locate cabinet {0}</value>
+  </data>
+  <data name="ErrorLocateInterface" xml:space="preserve">
+    <value>Failed to find interface {0} - does the form need importing?</value>
+  </data>
+  <data name="ErrorUnableToFindAction" xml:space="preserve">
+    <value>Unable to find the action required to perform the requested status change {0} to {1} for the {2}</value>
+  </data>
+  <data name="ErrorEntityUp" xml:space="preserve">
+    <value>Cannot move entity up collection!</value>
+  </data>
+  <data name="ErrorEntityDown" xml:space="preserve">
+    <value>Cannot move entity down collection!</value>
+  </data>
+  <data name="ErrorDuringCommit" xml:space="preserve">
+    <value>Error during commit - data not saved</value>
+  </data>
+  <data name="ErrorAccessDenied" xml:space="preserve">
+    <value>Access Denied</value>
+  </data>
+  <data name="ErrorAccessibleGroupList" xml:space="preserve">
+    <value>The linked data item is not in your accessible group list.</value>
+  </data>
+  <data name="ErrorMultipleMenusMatch" xml:space="preserve">
+    <value>Multiple menu items match the {0} action on the {1} table. Procedure numbers {2}.</value>
+  </data>
+  <data name="ErrorEntityIncorrectState" xml:space="preserve">
+    <value>The selected entity or entities are in the wrong state to start the task. The data needs to be saved.</value>
+  </data>
+  <data name="ErrorNoToolboxGroup" xml:space="preserve">
+    <value>ToolBox Group {0} does not exist on the client!</value>
+  </data>
+  <data name="ErrorNoToolboxItem" xml:space="preserve">
+    <value>ToolBox Item {0} does not exist on the client!</value>
+  </data>
+  <data name="ErrorSecondaryX" xml:space="preserve">
+    <value>Secondary X Axis {0} does not exist!</value>
+  </data>
+  <data name="ErrorSecondaryY" xml:space="preserve">
+    <value>Secondary Y Axis {0} does not exist!</value>
+  </data>
+  <data name="ErrorSecondary3DCharts" xml:space="preserve">
+    <value>Cannot add secondary axes to 3D Charts</value>
+  </data>
+  <data name="ErrorSettingUpCalendar" xml:space="preserve">
+    <value>Error setting up Calendar {0} : {1}</value>
+  </data>
+  <data name="ErrorDataboundEntityPrompt" xml:space="preserve">
+    <value>SampleManager could not create the databound entity prompt. This could be because the form entity type '{0}' does not match the entity in the current task.</value>
+  </data>
+  <data name="ErrorPromptValue" xml:space="preserve">
+    <value>Failed to get the prompt value.</value>
+  </data>
+  <data name="ErrorLoadingExtension" xml:space="preserve">
+    <value>Error loading extension page {0} for the form {1}</value>
+  </data>
+  <data name="ErrorEmail" xml:space="preserve">
+    <value>Email Error</value>
+  </data>
+  <data name="ErrorTemplateInvalid" xml:space="preserve">
+    <value>Report Template is Invalid</value>
+  </data>
+  <data name="ErrorUnitConvert" xml:space="preserve">
+    <value>UnitConvert error : {0}</value>
+  </data>
+  <data name="ErrorUnitValidate" xml:space="preserve">
+    <value>UnitValidate did not return a boolean while converting {0}</value>
+  </data>
+  <data name="ErrorSMTPMail" xml:space="preserve">
+    <value>SMTP error sending mail</value>
+  </data>
+  <data name="ErrorSMTPMailCode" xml:space="preserve">
+    <value>\r\nSMTP error sending mail\r\nError Code = {0}\r\nHost = {1}\r\nPort = {2}</value>
+  </data>
+  <data name="ErrorSendingMail" xml:space="preserve">
+    <value>Error Sending Email</value>
+  </data>
+  <data name="ErrorNoAttachment" xml:space="preserve">
+    <value>Attachment '{0}' does not exist</value>
+  </data>
+  <data name="ErrorImplementationOfTask" xml:space="preserve">
+    <value>Failed to find the implementation of task '{0}' for menu option {1}.</value>
+  </data>
+  <data name="ErrorSaveDesignerTask" xml:space="preserve">
+    <value>The {0} could not be saved : {1}</value>
+  </data>
+  <data name="ErrorConvertingPDF" xml:space="preserve">
+    <value>Error converting '{0}': {1}</value>
+  </data>
+  <data name="ErrorUnsupportedPDF" xml:space="preserve">
+    <value>Cannot convert '{0}': Unsupported file type</value>
+  </data>
+  <data name="ErrorAttachmentNotFile" xml:space="preserve">
+    <value>Invalid attempt to attach file! Attachment type must be FILE.</value>
+  </data>
+  <data name="ErrorAttachmentOpenNotFile" xml:space="preserve">
+    <value>Invalid attempt to open file attachment! Attachment type must be FILE.</value>
+  </data>
+  <data name="ErrorInvalidTableName" xml:space="preserve">
+    <value>Invalid Table Name : {0}</value>
+  </data>
+  <data name="ErrorTableDoesNotContainActive" xml:space="preserve">
+    <value>Table '{0}' does not contain all of the following ActiveStartDate, ActiveEndDate, ActiveFlag</value>
+  </data>
+  <data name="ErrorFailedToLogin" xml:space="preserve">
+    <value>Failed to login</value>
+  </data>
+  <data name="ErrorFailedToLoginNullResponse" xml:space="preserve">
+    <value>Null response from server.</value>
+  </data>
+  <data name="ErrorInvalidClientVersion" xml:space="preserve">
+    <value>Invalid client version</value>
+  </data>
+  <data name="ExceptionCreateEntityDefinition" xml:space="preserve">
+    <value>Please make sure you have run CreateEntityDefinition</value>
+  </data>
+  <data name="ExceptionFormatBeDate" xml:space="preserve">
+    <value>Invalid datatype {0} for {1} function, should be a date parameter</value>
+  </data>
+  <data name="ExceptionFormatStringNeeded" xml:space="preserve">
+    <value>FormatDate function requires a formatting string, user specified {0}</value>
+  </data>
+  <data name="ExceptionFormatDateError" xml:space="preserve">
+    <value>Formatting date {0} using formatting information {1} returned the error : {2}</value>
+  </data>
+  <data name="ExceptionFormatDefaultDateShouldBeDate" xml:space="preserve">
+    <value>Invalid datatype {0} for FormatDateDefault function, should be a date parameter</value>
+  </data>
+  <data name="ExceptionGlobalDoesNotExist" xml:space="preserve">
+    <value>Global {0} does not exist</value>
+  </data>
+  <data name="ExceptionSyntaxNotFound" xml:space="preserve">
+    <value>Syntax {0} not found.</value>
+  </data>
+  <data name="ExceptionSyntaxError" xml:space="preserve">
+    <value>Syntax {0} returned the error : {1}</value>
+  </data>
+  <data name="ExceptionSyntaxString" xml:space="preserve">
+    <value>Invalid datatype {0} for Syntax function, should be a string parameter</value>
+  </data>
+  <data name="ExceptionCommunicatingServer" xml:space="preserve">
+    <value>Problem communicating with the Server</value>
+  </data>
+  <data name="ExceptionMissingProgessForm" xml:space="preserve">
+    <value>Host Window Missing for Progress Form</value>
+  </data>
+  <data name="ExceptionUnableObtainMainWindow" xml:space="preserve">
+    <value>Unable to Obtain the MainWindow, it's probably closed.</value>
+  </data>
+  <data name="ExceptionDisconnected" xml:space="preserve">
+    <value>Disconnected from Server - Server process has exited unexpectedly</value>
+  </data>
+  <data name="ExceptionOperatorLookupFailed" xml:space="preserve">
+    <value>Failed to lookup current operator {0} in the personel table</value>
+  </data>
+  <data name="ExceptionUnknownMessageType" xml:space="preserve">
+    <value>Unknown security message type '{0}'</value>
+  </data>
+  <data name="ExceptionFailedGroupList" xml:space="preserve">
+    <value>Failed to load the group list</value>
+  </data>
+  <data name="ExceptionReadFailed" xml:space="preserve">
+    <value>SelectRead failed : {0}</value>
+  </data>
+  <data name="ExceptionFieldAssign" xml:space="preserve">
+    <value>Field '{0}' assignment failed - '{1}'</value>
+  </data>
+  <data name="ExceptionUpdateFailed" xml:space="preserve">
+    <value>Update failed : '{0}'</value>
+  </data>
+  <data name="ExceptionInsertAllocate" xml:space="preserve">
+    <value>InsertAllocate failed on table {0} : {1}</value>
+  </data>
+  <data name="ExceptionInsert" xml:space="preserve">
+    <value>Insert failed : {0}</value>
+  </data>
+  <data name="ExceptionDeleteAllocate" xml:space="preserve">
+    <value>DeleteAllocate failed on table {0} : {1}</value>
+  </data>
+  <data name="ExceptionDelete" xml:space="preserve">
+    <value>Delete failed : {0}</value>
+  </data>
+  <data name="ExceptionInvalidDatabase" xml:space="preserve">
+    <value>Invalid Database System</value>
+  </data>
+  <data name="ExceptionCannotCreateQuery" xml:space="preserve">
+    <value>Cannot create Query from none table based entity : {0}</value>
+  </data>
+  <data name="ExceptionEntityDefinitionNotExist" xml:space="preserve">
+    <value>Entity Definition '{0}' does not exist</value>
+  </data>
+  <data name="ExceptionNoDirectory" xml:space="preserve">
+    <value>Unable to find the {0} Directory</value>
+  </data>
+  <data name="ExceptionCheckGlobalVariable" xml:space="preserve">
+    <value>Error checking existence of global variable {0} : {1}</value>
+  </data>
+  <data name="ExceptionCreatingLock" xml:space="preserve">
+    <value>Error creating lock {0} : {1}</value>
+  </data>
+  <data name="ExceptionErrorUpdate" xml:space="preserve">
+    <value>The error '{0}' occurred during update of '{1}' entity '{2}' of table '{3}'</value>
+  </data>
+  <data name="ExceptionUniqueEntity" xml:space="preserve">
+    <value>More than one entity was returned using a query that should specify a unique entity</value>
+  </data>
+  <data name="ExceptionSingleValueProperty" xml:space="preserve">
+    <value>Error obtaining single value for property '{0}', entity defintion '{1}'</value>
+  </data>
+  <data name="ExceptionCustomContext" xml:space="preserve">
+    <value>Error calling custom context check for procedure {0}</value>
+  </data>
+  <data name="ExceptionNotReadRecord" xml:space="preserve">
+    <value>Could not read the record that provides the persistence for entity '{0}' (version {1}) of type '{2}'</value>
+  </data>
+  <data name="ExceptionCustomMenu" xml:space="preserve">
+    <value>Error adding custom menu items</value>
+  </data>
+  <data name="ExceptionNoEntityDefinitionTable" xml:space="preserve">
+    <value>Entity Definition or Table Name not specified</value>
+  </data>
+  <data name="ExceptionEntityTypePromptForEntity" xml:space="preserve">
+    <value>Invalid entity type {0} in call to PromptForEntity</value>
+  </data>
+  <data name="ExceptionSMXClass" xml:space="preserve">
+    <value>Error instantiating SMX class. Please check SMX.DLL is present and registered.</value>
+  </data>
+  <data name="ExceptionFailedBindPropertyEntityType" xml:space="preserve">
+    <value>Failed bind to property {0}. Entity type is not defined for the form.</value>
+  </data>
+  <data name="ExceptionFailedBindPropertyProperty" xml:space="preserve">
+    <value>Failed bind to property {0}. The property is not valid for entity type {1}.</value>
+  </data>
+  <data name="ExceptionUnboundColumn" xml:space="preserve">
+    <value>Cannot set unbound column value. Column '{0}'</value>
+  </data>
+  <data name="ExceptionNoChangeEntityType" xml:space="preserve">
+    <value>Cannot change the entity type when republishing the form entity</value>
+  </data>
+  <data name="ExceptionCustomEntityContext" xml:space="preserve">
+    <value>Error calling custom entity context check for procedure {0}</value>
+  </data>
+  <data name="ExceptionStringBrowseNotCreated" xml:space="preserve">
+    <value>String Browse not created in the Server Task. Check your task/form definition</value>
+  </data>
+  <data name="ExceptionStandardLibraryInitialised" xml:space="preserve">
+    <value>Standard Library has not been initialised</value>
+  </data>
+  <data name="ErrorOptimisticLockFailedUpdate" xml:space="preserve">
+    <value>"The {1} could not be updated. The entity {0} on table {1} was modified in another task or session."</value>
+  </data>
+  <data name="ErrorOptimisticLockFailedDelete" xml:space="preserve">
+    <value>"The {1} could not be deleted. The entity {0} on table {1} was modified in another task or session."</value>
+  </data>
+  <data name="ExceptionForceAuditNone" xml:space="preserve">
+    <value>Force Audit Failed : {0}</value>
+  </data>
+  <data name="ExceptionNullBlobId" xml:space="preserve">
+    <value>Null Reference Exception (Blob not found)</value>
+  </data>
+  <data name="ErrorAttachmentFileNotFound" xml:space="preserve">
+    <value>Unable to find the Attachment file '{0}' on the server</value>
+  </data>
+  <data name="ActiveRecord_Activating" xml:space="preserve">
+    <value>Activating {0}, Start Date = {1}, End Date = {2}</value>
+  </data>
+  <data name="ActiveRecord_ActivatingApprStat" xml:space="preserve">
+    <value>Activating {0}, Start Date = {1}, End Date = {2}, Approval Status = {3}</value>
+  </data>
+  <data name="ActiveRecord_Deactivating" xml:space="preserve">
+    <value>Deactivating {0}, Start Date = {1}, End Date = {2}</value>
+  </data>
+  <data name="ActiveRecord_DectivatingApprStat" xml:space="preserve">
+    <value>Deactivating {0}, Start Date = {1}, End Date = {2}, Approval Status = {3}</value>
+  </data>
+  <data name="ActiveRecord_Finishing" xml:space="preserve">
+    <value>Finished Active Record Task.</value>
+  </data>
+  <data name="ActiveRecord_ProcessingActive" xml:space="preserve">
+    <value>Processing Active Records for {0}</value>
+  </data>
+  <data name="ActiveRecord_ProcessingAll" xml:space="preserve">
+    <value>Processing all appropriate tables...</value>
+  </data>
+  <data name="ActiveRecord_ProcessingInactive" xml:space="preserve">
+    <value>Processing Inactive Records for {0}</value>
+  </data>
+  <data name="ActiveRecord_Starting" xml:space="preserve">
+    <value>Starting Active Record Task...</value>
+  </data>
+  <data name="ExceptionForceAuditInsert" xml:space="preserve">
+    <value>Force Audit Insert Failed : {0}</value>
+  </data>
+  <data name="ButtonSkip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="SMGridSearchCollapse" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="SMGridSearchExpand" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="SMGridSearchClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SMGridSearchFindButton" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="SMGridSearchClearButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="SMGridSearchNullPromptText" xml:space="preserve">
+    <value>Enter field name to filter on...</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+</root>

@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColumnNoRemoveCaption" xml:space="preserve">
+    <value>Cannot remove column</value>
+  </data>
+  <data name="ColumnNoRemoveMessage" xml:space="preserve">
+    <value>Cannot remove column. At least one column must be present within the Explorer Grid.</value>
+  </data>
+  <data name="DateGroupLastMonth" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="DateGroupLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="DateGroupNextWeek" xml:space="preserve">
+    <value>Next Week</value>
+  </data>
+  <data name="DateGroupToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="DateGroupTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="DateGroupWeeksAgo" xml:space="preserve">
+    <value>{0} Weeks Ago</value>
+  </data>
+  <data name="DateGroupWeeksAhead" xml:space="preserve">
+    <value>In {0} Weeks</value>
+  </data>
+  <data name="DateGroupYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="ExitCaption" xml:space="preserve">
+    <value>SampleManager</value>
+  </data>
+  <data name="ExitMessage" xml:space="preserve">
+    <value>You still have open windows, are you sure you want to exit?</value>
+  </data>
+  <data name="ExplorerPathItem" xml:space="preserve">
+    <value>{0} ({1} Item)</value>
+  </data>
+  <data name="ExplorerPathItems" xml:space="preserve">
+    <value>{0} ({1} Items)</value>
+  </data>
+  <data name="MenuCategoryFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="MenuCategoryHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="MenuCategoryLookAndFeel" xml:space="preserve">
+    <value>Look and Feel</value>
+  </data>
+  <data name="MenuCategoryMenus" xml:space="preserve">
+    <value>Menus</value>
+  </data>
+  <data name="MenuCategoryView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="MenuCategoryWindow" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="MenuDeleteFolder" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MenuHintBack" xml:space="preserve">
+    <value>Navigate Back</value>
+  </data>
+  <data name="MenuHintChangeMenu" xml:space="preserve">
+    <value>Change the menu and toolbar configuration.</value>
+  </data>
+  <data name="MenuHintChangeUser" xml:space="preserve">
+    <value>Log out of this session - and return to the Login Screen</value>
+  </data>
+  <data name="MenuHintCloseAll" xml:space="preserve">
+    <value>Close all Documents</value>
+  </data>
+  <data name="MenuHintDocAll" xml:space="preserve">
+    <value>Dock all Documents</value>
+  </data>
+  <data name="MenuHintExit" xml:space="preserve">
+    <value>Logout and close the application.</value>
+  </data>
+  <data name="MenuHintExplorer" xml:space="preserve">
+    <value>Shows or Hides the explorer data grid.</value>
+  </data>
+  <data name="MenuHintExportExcel" xml:space="preserve">
+    <value>Export Grid Contents to Excel. This is also accessible using the Shift-F12 shortcut key</value>
+  </data>
+  <data name="MenuHintExportMht" xml:space="preserve">
+    <value>Export Grid Contents to a Single Web Page file (MHT)</value>
+  </data>
+  <data name="MenuHintExportPdf" xml:space="preserve">
+    <value>Export Grid Contents to a PDF document</value>
+  </data>
+  <data name="MenuHintExportRtf" xml:space="preserve">
+    <value>Export Grid Contents to Rich Text Format</value>
+  </data>
+  <data name="MenuHintExportText" xml:space="preserve">
+    <value>Export Grid Contents to a Text File</value>
+  </data>
+  <data name="MenuHintExportXml" xml:space="preserve">
+    <value>Export Grid Contents to an XML File - this includes appropriate styles</value>
+  </data>
+  <data name="MenuHintFile" xml:space="preserve">
+    <value>File Menu</value>
+  </data>
+  <data name="MenuHintFontSelect" xml:space="preserve">
+    <value>Choose SampleManager Fonts
+</value>
+  </data>
+  <data name="MenuHintForwards" xml:space="preserve">
+    <value>Navigate Forwards</value>
+  </data>
+  <data name="MenuHintHelp" xml:space="preserve">
+    <value>Help Menu</value>
+  </data>
+  <data name="MenuHintHelpAbout" xml:space="preserve">
+    <value>Display Program Information</value>
+  </data>
+  <data name="MenuHintHelpContents" xml:space="preserve">
+    <value>Display Help Contents</value>
+  </data>
+  <data name="MenuHintHelpIndex" xml:space="preserve">
+    <value>Display Help Index</value>
+  </data>
+  <data name="MenuHintHelpSearch" xml:space="preserve">
+    <value>Search Help</value>
+  </data>
+  <data name="MenuHintLockSession" xml:space="preserve">
+    <value>Lock Session</value>
+  </data>
+  <data name="MenuHintNavigate" xml:space="preserve">
+    <value>Shows or Hides the navigator window.</value>
+  </data>
+  <data name="MenuHintNavigateBackTo" xml:space="preserve">
+    <value>Back to {0}</value>
+  </data>
+  <data name="MenuHintNavigateForwardTo" xml:space="preserve">
+    <value>Forward to {0}</value>
+  </data>
+  <data name="MenuHintNewMenu" xml:space="preserve">
+    <value>Add a new menu</value>
+  </data>
+  <data name="MenuHintPrint" xml:space="preserve">
+    <value>Print the current folder using the default report. You may use the F12 key to print screen and is available across the system</value>
+  </data>
+  <data name="MenuHintRebuild" xml:space="preserve">
+    <value>Performs a full refresh of the explorer windows.</value>
+  </data>
+  <data name="MenuHintReconnect" xml:space="preserve">
+    <value>Reconnect to this server as your current user</value>
+  </data>
+  <data name="MenuHintRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="MenuHintRun" xml:space="preserve">
+    <value>Run a VGL report</value>
+  </data>
+  <data name="MenuHintShowRemoved" xml:space="preserve">
+    <value>Shows or Hides deleted data in the explorer.</value>
+  </data>
+  <data name="MenuHintShowVersions" xml:space="preserve">
+    <value>Shows all versions or just the latest approved version.</value>
+  </data>
+  <data name="MenuHintSkinAsphaltWorld" xml:space="preserve">
+    <value>Set the default look and feel skin to The Asphalt World.</value>
+  </data>
+  <data name="MenuHintSkinCaramel" xml:space="preserve">
+    <value>Set the default look and feel skin to Caramel.</value>
+  </data>
+  <data name="MenuHintSkinImaginary" xml:space="preserve">
+    <value>Set the default look and feel skin to iMaginary.</value>
+  </data>
+  <data name="MenuHintSkinLilian" xml:space="preserve">
+    <value>Set the default look and feel skin to Lilian.</value>
+  </data>
+  <data name="MenuHintSkinMoneyTwins" xml:space="preserve">
+    <value>Set the default look and feel skin to Money Twins.</value>
+  </data>
+  <data name="MenuHintStatus" xml:space="preserve">
+    <value>Shows or Hides the status bar.</value>
+  </data>
+  <data name="MenuHintStyle3D" xml:space="preserve">
+    <value>Set the default look and feel to 3D style</value>
+  </data>
+  <data name="MenuHintStyleFlat" xml:space="preserve">
+    <value>Set the default look and feel to flat style</value>
+  </data>
+  <data name="MenuHintStyleOffice2003" xml:space="preserve">
+    <value>Set the default look and feel to Office 2003 style</value>
+  </data>
+  <data name="MenuHintStyleUltraFlat" xml:space="preserve">
+    <value>Set the default look and feel to ultra flat style</value>
+  </data>
+  <data name="MenuHintStyleXP" xml:space="preserve">
+    <value>Set the default look and feel style to windows XP.</value>
+  </data>
+  <data name="MenuHintTasks" xml:space="preserve">
+    <value>Shows or Hides the tasks window.</value>
+  </data>
+  <data name="MenuHintTileHorizontal" xml:space="preserve">
+    <value>Tile all Documents Horizontally</value>
+  </data>
+  <data name="MenuHintTileVertical" xml:space="preserve">
+    <value>Tile all Documents Vertically</value>
+  </data>
+  <data name="MenuHintUndocAll" xml:space="preserve">
+    <value>Undock all Document</value>
+  </data>
+  <data name="MenuHintUp" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="MenuHintView" xml:space="preserve">
+    <value>View Menu</value>
+  </data>
+  <data name="MenuHintWindow" xml:space="preserve">
+    <value>Window Menu</value>
+  </data>
+  <data name="MenuItemBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="MenuItemChangeMenu" xml:space="preserve">
+    <value>Change Menu...</value>
+  </data>
+  <data name="MenuItemChangeUser" xml:space="preserve">
+    <value>Change User</value>
+  </data>
+  <data name="MenuItemCloseAll" xml:space="preserve">
+    <value>C&amp;lose all Documents</value>
+  </data>
+  <data name="MenuItemCustomise" xml:space="preserve">
+    <value>&amp;Customise ...</value>
+  </data>
+  <data name="MenuItemDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="MenuItemDocAll" xml:space="preserve">
+    <value>&amp;Dock all Documents</value>
+  </data>
+  <data name="MenuItemExit" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="MenuItemExplorer" xml:space="preserve">
+    <value>&amp;Explorer Grid</value>
+  </data>
+  <data name="MenuItemExportExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="MenuItemExportMht" xml:space="preserve">
+    <value>Web Page</value>
+  </data>
+  <data name="MenuItemExportPdf" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="MenuItemExportRtf" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="MenuItemExportText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="MenuItemExportXml" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="MenuItemFile" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="MenuItemFontSelect" xml:space="preserve">
+    <value>Select Fonts</value>
+  </data>
+  <data name="MenuItemForwards" xml:space="preserve">
+    <value>Forwards</value>
+  </data>
+  <data name="MenuItemHelp" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="MenuItemHelpAbout" xml:space="preserve">
+    <value>&amp;About SampleManager...</value>
+  </data>
+  <data name="MenuItemHelpContents" xml:space="preserve">
+    <value>&amp;Contents...</value>
+  </data>
+  <data name="MenuItemHelpIndex" xml:space="preserve">
+    <value>&amp;Index...</value>
+  </data>
+  <data name="MenuItemHelpSearch" xml:space="preserve">
+    <value>&amp;Search...</value>
+  </data>
+  <data name="MenuItemLockSession" xml:space="preserve">
+    <value>&amp;Lock Session</value>
+  </data>
+  <data name="MenuItemNavigate" xml:space="preserve">
+    <value>&amp;Navigator</value>
+  </data>
+  <data name="MenuItemNewMenu" xml:space="preserve">
+    <value>New Menu</value>
+  </data>
+  <data name="MenuItemPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="MenuItemRebuild" xml:space="preserve">
+    <value>&amp;Rebuild Explorer</value>
+  </data>
+  <data name="MenuItemReconnect" xml:space="preserve">
+    <value>Reconnect</value>
+  </data>
+  <data name="MenuItemRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="MenuItemRename" xml:space="preserve">
+    <value>&amp;Rename</value>
+  </data>
+  <data name="MenuItemRun" xml:space="preserve">
+    <value>&amp;Run</value>
+  </data>
+  <data name="MenuItemShowRemoved" xml:space="preserve">
+    <value>Show &amp;Removed</value>
+  </data>
+  <data name="MenuItemShowVersions" xml:space="preserve">
+    <value>Show All Versions</value>
+  </data>
+  <data name="MenuItemSkinAsphaltWorld" xml:space="preserve">
+    <value>The Asphalt World</value>
+  </data>
+  <data name="MenuItemSkinCaramel" xml:space="preserve">
+    <value>Caramel</value>
+  </data>
+  <data name="MenuItemSkinImaginary" xml:space="preserve">
+    <value>iMaginary</value>
+  </data>
+  <data name="MenuItemSkinLilian" xml:space="preserve">
+    <value>Lilian</value>
+  </data>
+  <data name="MenuItemSkinMoneyTwins" xml:space="preserve">
+    <value>Money Twins</value>
+  </data>
+  <data name="MenuItemStatus" xml:space="preserve">
+    <value>&amp;Status</value>
+  </data>
+  <data name="MenuItemStyle3D" xml:space="preserve">
+    <value>Style 3D</value>
+  </data>
+  <data name="MenuItemStyleFlat" xml:space="preserve">
+    <value>Flat</value>
+  </data>
+  <data name="MenuItemStyleOffice2003" xml:space="preserve">
+    <value>Office 2003</value>
+  </data>
+  <data name="MenuItemStyleUltraFlat" xml:space="preserve">
+    <value>Ultra Flat</value>
+  </data>
+  <data name="MenuItemStyleXP" xml:space="preserve">
+    <value>Windows XP</value>
+  </data>
+  <data name="MenuItemTasks" xml:space="preserve">
+    <value>&amp;Tasks</value>
+  </data>
+  <data name="MenuItemTileHorizontal" xml:space="preserve">
+    <value>Tile all Documents Horizontally</value>
+  </data>
+  <data name="MenuItemTileVertical" xml:space="preserve">
+    <value>Tile all Documents Vertically</value>
+  </data>
+  <data name="MenuItemUndocAll" xml:space="preserve">
+    <value>&amp;Undock all Document</value>
+  </data>
+  <data name="MenuItemUp" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="MenuItemView" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="MenuItemWindow" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
+  <data name="MenuModifyFolder" xml:space="preserve">
+    <value>Modify Folder</value>
+  </data>
+  <data name="MenuNewFolder" xml:space="preserve">
+    <value>New Folder</value>
+  </data>
+  <data name="MenuInsertFolder" xml:space="preserve">
+    <value>Insert Folder</value>
+  </data>
+  <data name="MenuPromptForCriteria" xml:space="preserve">
+    <value>Prompt For Criteria</value>
+  </data>
+  <data name="MenuRebuildExplorer" xml:space="preserve">
+    <value>Rebuild</value>
+  </data>
+  <data name="MenuUnspecifiedCategory" xml:space="preserve">
+    <value>[Unspecified]</value>
+  </data>
+  <data name="NavigatorCaptionPersonalFolders" xml:space="preserve">
+    <value>Personal Folders</value>
+  </data>
+  <data name="NavigatorCaptionPublicFolders" xml:space="preserve">
+    <value>Public Folders</value>
+  </data>
+  <data name="PopupInvalidCaption" xml:space="preserve">
+    <value>Explorer refreshed</value>
+  </data>
+  <data name="PopupInvalidMessage" xml:space="preserve">
+    <value>Explorer has been refreshed please reselect the option</value>
+  </data>
+  <data name="PrintHeaderBy" xml:space="preserve">
+    <value>{0}
+Printed By {1}</value>
+  </data>
+  <data name="PrintHeaderBySort" xml:space="preserve">
+    <value>{0}
+Printed By {1}
+Sorted By {2}</value>
+  </data>
+  <data name="PropertiesPopupMenu" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ReportsPopupMenu" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="ResourcesDirectoryMessage" xml:space="preserve">
+    <value>Resource directory '{0}' does not exist! The report cannot contain any images.</value>
+  </data>
+  <data name="RMBFailedCaption" xml:space="preserve">
+    <value>Launch Failed</value>
+  </data>
+  <data name="RMBFailedMessage" xml:space="preserve">
+    <value>Unable to start option. Please check the security settings for this option.</value>
+  </data>
+  <data name="StatusCommitMode" xml:space="preserve">
+    <value>You are currently in {0} mode.</value>
+  </data>
+  <data name="StatusCommitModeTableset" xml:space="preserve">
+    <value>You are currently in {0} mode.
+The active tableset is {1}.</value>
+  </data>
+  <data name="StatusNewTask" xml:space="preserve">
+    <value>Creating new task...</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Ready.</value>
+  </data>
+  <data name="TaskMenuMyTasks" xml:space="preserve">
+    <value>My Tasks</value>
+  </data>
+  <data name="TaskMenuMyWorkspace" xml:space="preserve">
+    <value>My Workspace</value>
+  </data>
+  <data name="TaskMenuOtherPlaces" xml:space="preserve">
+    <value>Other Places</value>
+  </data>
+  <data name="TaskMenuPersonalFolders" xml:space="preserve">
+    <value>Personal Folders</value>
+  </data>
+  <data name="TaskMenuPublicFolders" xml:space="preserve">
+    <value>Public Folders</value>
+  </data>
+  <data name="UnassignedGroupName" xml:space="preserve">
+    <value>Unassigned</value>
+  </data>
+  <data name="WarningAlertCaption" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="WindowTitleExplorer" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="WindowTitleNavigator" xml:space="preserve">
+    <value>Navigator</value>
+  </data>
+  <data name="WindowTitleTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="MenuItemExportCsv" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="MenuHintExportCsv" xml:space="preserve">
+    <value>Export Grid Contents to a Comma Separated Values file (CSV).</value>
+  </data>
+  <data name="BrowseTitle" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="InvalidColorTitle" xml:space="preserve">
+    <value>Invalid Color Phrase</value>
+  </data>
+  <data name="InvalidColorText" xml:space="preserve">
+    <value>Invalid color phrase specified in the format conditions '{0}'.</value>
+  </data>
+  <data name="UpdatingCabinetTag" xml:space="preserve">
+    <value>Updating Explorer Cabinets... {0}%</value>
+  </data>
+  <data name="UpdatingFoldersTag" xml:space="preserve">
+    <value>Updating Explorer Folders... {0}%</value>
+  </data>
+  <data name="UpdatingRMBsTag" xml:space="preserve">
+    <value>Updating Explorer RMBs... {0}%</value>
+  </data>
+  <data name="UpdatingGroupsTag" xml:space="preserve">
+    <value>Updating Explorer Groups... {0}%</value>
+  </data>
+  <data name="UpdatingTemplatePropertiesTag" xml:space="preserve">
+    <value>Updating Template Properties... {0}%</value>
+  </data>
+  <data name="BuildingResourceFile" xml:space="preserve">
+    <value>Building Resource File, {0}</value>
+  </data>
+  <data name="CustomizeAddBarButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="CustomizeAssignShortcutButton" xml:space="preserve">
+    <value>Assign</value>
+  </data>
+  <data name="CustomizeBarNameText" xml:space="preserve">
+    <value>Toolbar Name</value>
+  </data>
+  <data name="CustomizeClearBarButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CustomizeClearBarCaption" xml:space="preserve">
+    <value>Clear Toolbar</value>
+  </data>
+  <data name="CustomizeClearBarMessage" xml:space="preserve">
+    <value>Are you sure you want to clear the '{0}' toolbar?</value>
+  </data>
+  <data name="CustomizeClearShortcutButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CustomizeCloseButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CustomizeCommandsPage" xml:space="preserve">
+    <value>Commands</value>
+  </data>
+  <data name="CustomizeDailyMenu" xml:space="preserve">
+    <value>Daily Toolbars</value>
+  </data>
+  <data name="CustomizeDailyOption" xml:space="preserve">
+    <value>&amp;Daily Toolbar Customize...</value>
+  </data>
+  <data name="CustomizeDeleteBarButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CustomizeDeleteBarCaption" xml:space="preserve">
+    <value>Delete Toolbar</value>
+  </data>
+  <data name="CustomizeDeleteBarMessage" xml:space="preserve">
+    <value>Are you sure you want to delete the '{0} toolbar?</value>
+  </data>
+  <data name="CustomizeFullMenusDelayText" xml:space="preserve">
+    <value>Show full menus after a short delay</value>
+  </data>
+  <data name="CustomizeFullMenusText" xml:space="preserve">
+    <value>Always show full menus</value>
+  </data>
+  <data name="CustomizeHotKeysMessage" xml:space="preserve">
+    <value>Press shortcut key(s)</value>
+  </data>
+  <data name="CustomizeItemSelectionMessage" xml:space="preserve">
+    <value>Selected Item</value>
+  </data>
+  <data name="CustomizeLargeIconsText" xml:space="preserve">
+    <value>Large icons</value>
+  </data>
+  <data name="CustomizeMenuAnimationsText" xml:space="preserve">
+    <value>Menu Animations</value>
+  </data>
+  <data name="CustomizeModifyBarGroup" xml:space="preserve">
+    <value>Modify Toolbar</value>
+  </data>
+  <data name="CustomizeNewBarGroup" xml:space="preserve">
+    <value>New Toolbar</value>
+  </data>
+  <data name="CustomizeOption" xml:space="preserve">
+    <value>&amp;Customize...</value>
+  </data>
+  <data name="CustomizeOptionsPage" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="CustomizeOthersGroup" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="CustomizePersonalizedGroup" xml:space="preserve">
+    <value>Personalized Menus and Toolbars</value>
+  </data>
+  <data name="CustomizeRenameBarButton" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="CustomizeScreenTipsText" xml:space="preserve">
+    <value>Show ScreenTips on toolbars</value>
+  </data>
+  <data name="CustomizeSelectLinkButton" xml:space="preserve">
+    <value>Select Item</value>
+  </data>
+  <data name="CustomizeShortcutInvalidCaption" xml:space="preserve">
+    <value>Shortcut Replacement</value>
+  </data>
+  <data name="CustomizeShortcutInvalidMessage" xml:space="preserve">
+    <value>The '{0}' shortcut cannot be assigned to the selected command, it is already assigned to another command used on menu. </value>
+  </data>
+  <data name="CustomizeShortcutKeysText" xml:space="preserve">
+    <value>Show shortcut keys in ScreenTips</value>
+  </data>
+  <data name="CustomizeShortcutReplaceCaption" xml:space="preserve">
+    <value>Shortcut Replacement</value>
+  </data>
+  <data name="CustomizeShortcutReplaceMessage" xml:space="preserve">
+    <value>The '{0}' shortcut is already assigned to a different command. Do you want to remove from it and assign to the selected one?</value>
+  </data>
+  <data name="CustomizeToolbarsPage" xml:space="preserve">
+    <value>Toolbars</value>
+  </data>
+  <data name="CustomizeWindowTitle" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="SaveDailyToolbarCaption" xml:space="preserve">
+    <value>Save Daily Toolbars</value>
+  </data>
+  <data name="SaveDailyToolbarMessage" xml:space="preserve">
+    <value>Do you want to save changes to Daily Toolbars?</value>
+  </data>
+  <data name="MenuTooltip" xml:space="preserve">
+    <value>Procedure Number: {0}{1}Description: {2}</value>
+  </data>
+  <data name="CustomizationToolbarDescription" xml:space="preserve">
+    <value>Use this page to create and manage toolbars. Use the Commands page to add or remove items from a toolbar or menu, and the Selected Items page to view information about an item.</value>
+  </data>
+  <data name="CustomizationToolbarTitle" xml:space="preserve">
+    <value>Adding toolbars</value>
+  </data>
+  <data name="CustomizationCommandsDescription" xml:space="preserve">
+    <value>To add an item to a menu or toolbar, select the item in the grid and drag it to the required position. Use Find to locate items quickly.</value>
+  </data>
+  <data name="CustomizationCommandsTitle" xml:space="preserve">
+    <value>Adding commands</value>
+  </data>
+  <data name="CustomizationNewMenuDescription" xml:space="preserve">
+    <value>To create a new menu, drag the New Menu button onto the main menu bar.</value>
+  </data>
+  <data name="CustomizationNewMenuTitle" xml:space="preserve">
+    <value>Menu Link</value>
+  </data>
+  <data name="CustomizationNewMenuButton" xml:space="preserve">
+    <value>New Menu</value>
+  </data>
+  <data name="CustomizationSelectedItemDescription" xml:space="preserve">
+    <value>Select an item in a menu or toolbar to see its details on this page. Use the Shortcut section to assign a keyboard shortcut to the item.</value>
+  </data>
+  <data name="CustomizationSelectedItemTitle" xml:space="preserve">
+    <value>Selecting items</value>
+  </data>
+  <data name="CustomizationSelectedItemTab" xml:space="preserve">
+    <value>Selected Item</value>
+  </data>
+  <data name="CustomizationGeneralTab" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="CustomizationImplementationTab" xml:space="preserve">
+    <value>Implementation</value>
+  </data>
+  <data name="CustomizationProdedureNumber" xml:space="preserve">
+    <value>Procedure Number</value>
+  </data>
+  <data name="CustomizationDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CustomizationType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CustomizationImplementationType" xml:space="preserve">
+    <value>Implementation Type</value>
+  </data>
+  <data name="CustomizationServerTask" xml:space="preserve">
+    <value>Server Task</value>
+  </data>
+  <data name="CustomizationTaskParameters" xml:space="preserve">
+    <value>Task Parameters</value>
+  </data>
+  <data name="CustomizationVGLLibrary" xml:space="preserve">
+    <value>VGL Library</value>
+  </data>
+  <data name="CustomizationRoutine" xml:space="preserve">
+    <value>Routine</value>
+  </data>
+  <data name="CustomizationOptionsDescription" xml:space="preserve">
+    <value>Select options for menus and toolbars.</value>
+  </data>
+  <data name="CustomizationOptionsTitle" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="CustomizationMenuLink" xml:space="preserve">
+    <value>Customize Menus</value>
+  </data>
+  <data name="CustomizationGroupShortcut" xml:space="preserve">
+    <value>Shortcut</value>
+  </data>
+  <data name="OperationNotSupported" xml:space="preserve">
+    <value>This operation is not supported in commit mode.</value>
+  </data>
+  <data name="CustomizationItemName" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="RMBErrorDefaults" xml:space="preserve">
+    <value>Error loading RMB options from Table Defaults {0} : {1}</value>
+  </data>
+  <data name="RMBErrorFolder" xml:space="preserve">
+    <value>Error loading RMB options from folder {0} : {1}</value>
+  </data>
+  <data name="ErrorGroupingName" xml:space="preserve">
+    <value>Unable to group the table '{0}' by the field '{1}', please check the folder definition.</value>
+  </data>
+  <data name="WindowTitleReadOnly" xml:space="preserve">
+    <value>[Read-only Mode]</value>
+  </data>
+  <data name="TreeRefreshToolTip" xml:space="preserve">
+    <value>Rebuild and refresh folder</value>
+  </data>
+  <data name="ExplorerStarting" xml:space="preserve">
+    <value>Starting Explorer</value>
+  </data>
+  <data name="DisplayListQuestion" xml:space="preserve">
+    <value>Timer queue entry created. Would you like to view the list of entries now?</value>
+  </data>
+  <data name="DisplayListTitle" xml:space="preserve">
+    <value>Display List?</value>
+  </data>
+  <data name="PersonalFolderName" xml:space="preserve">
+    <value>{0}'s Folders</value>
+  </data>
+  <data name="PersonalFolderDesc" xml:space="preserve">
+    <value>{0}'s Private User Cabinet</value>
+  </data>
+  <data name="GroupFolderName" xml:space="preserve">
+    <value>{0} Group Folders</value>
+  </data>
+  <data name="GroupFolderDesc" xml:space="preserve">
+    <value>{0} Group Cabinet</value>
+  </data>
+  <data name="MenuItemLaunch" xml:space="preserve">
+    <value>Quick Launcher</value>
+  </data>
+  <data name="MenuHintLaunch" xml:space="preserve">
+    <value>Quickly run menu items or perform searches</value>
+  </data>
+  <data name="LauncherDefaultMessage" xml:space="preserve">
+    <value>Quick Launcher (F4)</value>
+  </data>
+    <data name="ClearLaunchCommands" xml:space="preserve">
+    <value>Clear Quick Launch History</value>
+  </data>
+  <data name="ClearLaunchHistory" xml:space="preserve">
+    <value>Clear Quick Launch History?</value>
+  </data>
+  <data name="ClearLaunchHistoryCaption" xml:space="preserve">
+    <value>Clear?</value>
+  </data>
+  <data name="QuickLaunchTooltip" xml:space="preserve">
+    <value>Run items or search for entities using the Quick Launcher.\r\nOptional prefixes for searches:\r\n? To use a criteria\r\nt: Table Search\r\nf: Table Search with Filter\r\n@ To search Master Menu (Default if nothing else specified)</value>
+  </data>
+  <data name="QuickLaunchMultiCriteriaCaption" xml:space="preserve">
+     <value>Multiple Criteria returned</value>
+	 </data>
+  <data name="QuickLaunchMultiCriteriaText" xml:space="preserve">
+    <value>Select a specific Criteria to view.</value> 
+	</data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>You are now using {0}</value>
+  </data>
+  <data name="TranslateMenuItem" xml:space="preserve">
+    <value>Translate</value>
+  </data> 
+  <data name="LauncherTitle" xml:space="preserve">
+    <value>Quick Launch Results for '{0}'</value>
+  </data>
+  <data name="LauncherNoResultsTitle" xml:space="preserve">
+    <value>No results</value>
+  </data>
+  <data name="LauncherNoResults" xml:space="preserve">
+    <value>No results found for '{0}'</value>
+  </data>
+  <data name="LauncherAccessDenied" xml:space="preserve">
+    <value>You do not have permission to use the Quick Launcher search function</value>
+  </data>
+  <data name="LauncherAccessDeniedCaption" xml:space="preserve">
+    <value>Access Denied</value>
+  </data>
+</root>

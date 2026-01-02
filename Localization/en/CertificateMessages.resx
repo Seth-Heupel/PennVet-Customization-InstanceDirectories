@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CertificateCreateCaption" xml:space="preserve">
+    <value>Create Certificate</value>
+  </data>
+  <data name="CertificateCreate" xml:space="preserve">
+    <value>Choose a Certificate Template</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>{0} Copy</value>
+  </data>
+  <data name="CertificateInvalidTemplateCaption" xml:space="preserve">
+    <value>Invalid Template</value>
+  </data>
+  <data name="CertificateInvalidTemplate" xml:space="preserve">
+    <value>The template chosen does not exist</value>
+  </data>
+  <data name="CertificateInactiveTemplateCaption" xml:space="preserve">
+    <value>Inactive Template</value>
+  </data>
+  <data name="CertificateInactiveTemplate" xml:space="preserve">
+    <value>The template chosen is not active</value>
+  </data>
+  <data name="CertificateRemovedTemplateCaption" xml:space="preserve">
+    <value>Removed Template</value>
+  </data>
+  <data name="CertificateRemovedTemplate" xml:space="preserve">
+    <value>The template chosen has been removed</value>
+  </data>
+  <data name="CertificateCreateCaptionSample" xml:space="preserve">
+    <value>Create Sample Certificate</value>
+  </data>
+  <data name="CertificateCreateSample" xml:space="preserve">
+    <value>Choose the Sample for your new certificate</value>
+  </data>
+  <data name="CertificateCreateCaptionJob" xml:space="preserve">
+    <value>Create Job Certificate</value>
+  </data>
+  <data name="CertificateCreateJob" xml:space="preserve">
+    <value>Choose the Job for your new certificate</value>
+  </data>
+  <data name="CertificateCreateCaptionLot" xml:space="preserve">
+    <value>Create Lot Certificate</value>
+  </data>
+  <data name="CertificateCreateLot" xml:space="preserve">
+    <value>Choose the Lot for your new certificate</value>
+  </data>
+  <data name="ToBeGenerated" xml:space="preserve">
+    <value>To be Generated</value>
+  </data>
+  <data name="NodeCreateCertificateName" xml:space="preserve">
+    <value>Create Certificate</value>
+  </data>
+  <data name="NodeCreateCertificateCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeCreateCertificateNameFormat" xml:space="preserve">
+    <value>Create '{0}' Certificate</value>
+  </data>
+  <data name="NodeCreateCertificateDescription" xml:space="preserve">
+    <value>Create a new certificate using the specified parameters</value>
+  </data>
+  <data name="NodeCreateCertificateParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreateCertificateParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use</value>
+  </data>
+  <data name="NodeCreateCertificateParameterEntityName" xml:space="preserve">
+    <value>Primary Entity</value>
+  </data>
+  <data name="NodeCreateCertificateParameterEntityNameDescription" xml:space="preserve">
+    <value>Primary record for the certificate. Must be LOT_DETAILS, JOB_HEADER or SAMPLE.</value>
+  </data>
+  <data name="NodeCreateCertificateParameterExpression" xml:space="preserve">
+    <value>Template Expression</value>
+  </data>
+  <data name="NodeCreateCertificateParameterExpressionDescription" xml:space="preserve">
+    <value>Template to use as defined by expression</value>
+  </data>
+  <data name="NodeCreateCertificateParameterInteractive" xml:space="preserve">
+    <value>Interactive?</value>
+  </data>
+  <data name="NodeCreateCertificateParameterInteractiveDescription" xml:space="preserve">
+    <value>Open the certificate creation screen</value>
+  </data>
+  <data name="NodeAppendCertificateName" xml:space="preserve">
+    <value>Append Certificate</value>
+  </data>
+  <data name="NodeAppendCertificateCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeAppendCertificateNameFormat" xml:space="preserve">
+    <value>Append '{0}'</value>
+  </data>
+  <data name="NodeAppendCertificateDescription" xml:space="preserve">
+    <value>Add additional items to a certificate</value>
+  </data>
+  <data name="NodeAppendCertificateParameterEntityName" xml:space="preserve">
+    <value>Add Entity</value>
+  </data>
+  <data name="NodeAppendCertificateParameterEntityNameDescription" xml:space="preserve">
+    <value>Additional record for the certificate.</value>
+  </data>
+  <data name="NodeAppendCertificateParameterFill" xml:space="preserve">
+    <value>Fill Mode</value>
+  </data>
+  <data name="NodeAppendCertificateParameterFillDescription" xml:space="preserve">
+    <value>Determines how duplicate results are processed</value>
+  </data>
+  <data name="NodeAppendCertificateParameterFilter" xml:space="preserve">
+    <value>Use Filter</value>
+  </data>
+  <data name="NodeAppendCertificateParameterFilterDescription" xml:space="preserve">
+    <value>Flag indicating that the certificate criteria and record filters should be used</value>
+  </data>
+  <data name="NodeAppendCertificateParameterAddChildren" xml:space="preserve">
+    <value>Add Children</value>
+  </data>
+  <data name="NodeAppendCertificateParameterAddChildrenDescription" xml:space="preserve">
+    <value>Automatically add child records belonging to this record</value>
+  </data>
+  <data name="BusyCreating" xml:space="preserve">
+    <value>Please wait a few moments.</value>
+  </data>
+  <data name="BusyCreatingCaption" xml:space="preserve">
+    <value>Generating...</value>
+  </data>
+  <data name="BusyPreviewing" xml:space="preserve">
+    <value>Please wait a few moments.</value>
+  </data>
+  <data name="BusyPreviewingCaption" xml:space="preserve">
+    <value>Previewing...</value>
+  </data>
+  <data name="BusyRefreshing" xml:space="preserve">
+    <value>Please wait a few moments.</value>
+  </data>
+  <data name="BusyRefreshingCaption" xml:space="preserve">
+    <value>Refreshing...</value>
+  </data>
+  <data name="BusyPrinting" xml:space="preserve">
+    <value>Please wait a few moments.</value>
+  </data>
+  <data name="BusyPrintingCaption" xml:space="preserve">
+    <value>Printing...</value>
+  </data>
+  <data name="BusySaving" xml:space="preserve">
+    <value>Please wait a few moments.</value>
+  </data>
+  <data name="BusySavingCaption" xml:space="preserve">
+    <value>Applying Changes...</value>
+  </data>
+  <data name="AuthorizeApplyChanges" xml:space="preserve">
+    <value>Are you sure you want to apply changes and submit this certificate for authorization?</value>
+  </data>
+  <data name="AuthorizeApplyChangesTitle" xml:space="preserve">
+    <value>Apply Changes</value>
+  </data>
+  <data name="UnauthorizedWatermark" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="PreviewWatermark" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="NodeCreateCertificateInvalidEntity" xml:space="preserve">
+    <value>Specified {0} ({1}) does not match the certificate criteria.</value>
+  </data>
+  <data name="NodeCreateCertificateInvalidEntityType" xml:space="preserve">
+    <value>Invalid Entity Type {0} specified on node {1}</value>
+  </data>
+  <data name="NodeCreateCertificateInvalidTemplate" xml:space="preserve">
+    <value>Invalid Certificate Template specified on node {0}</value>
+  </data>
+  <data name="TraceCreateCertificateNoCertificate" xml:space="preserve">
+    <value>No Certificate - User canceled operation</value>
+  </data>
+  <data name="TraceCreateCertificateNodeCreated" xml:space="preserve">
+    <value>Certificate {0} created.</value>
+  </data>
+  <data name="NodeAppendCertificateInvalidEntity" xml:space="preserve">
+    <value>Invalid Entity Type {0} specified on node {1}</value>
+  </data>
+  <data name="NodeAppendCertificateInvalidCert" xml:space="preserve">
+    <value>Invalid Certificate specified on node {0}</value>
+  </data>
+  <data name="TraceAppendCertificateNodeCreated" xml:space="preserve">
+    <value>Certificate {0} created.</value>
+  </data>
+  <data name="TraceAppendCertificateNodeAppended" xml:space="preserve">
+    <value>Certificate {0} appended with {1}.</value>
+  </data>
+  <data name="MissingResultRow" xml:space="preserve">
+    <value>Missing Result for {0}/{1}.</value>
+  </data>
+  <data name="ErrorInspectionNotStarted" xml:space="preserve">
+    <value>Inspection not started - please submit the certificate for inspection.</value>
+  </data>
+  <data name="ActionCancelTitle" xml:space="preserve">
+    <value>Cancel Certificate</value>
+  </data>
+  <data name="ActionCancelConfirm" xml:space="preserve">
+    <value>Are you sure you want to cancel this Certificate?</value>
+  </data>
+  <data name="ActionCancelDone" xml:space="preserve">
+    <value>Certificate Canceled</value>
+  </data>
+  <data name="ActionSubmitTitle" xml:space="preserve">
+    <value>Submit Certificate</value>
+  </data>
+  <data name="ActionSubmitConfirm" xml:space="preserve">
+    <value>Are you sure you want to submit this Certificate?</value>
+  </data>
+  <data name="ActionSubmitDone" xml:space="preserve">
+    <value>Certificate Submitted</value>
+  </data>
+  <data name="ActionAuthorizeSubmitConfirm" xml:space="preserve">
+    <value>This certificate has an inspection plan. Are you sure you want to submit this Certificate for inspection?</value>
+  </data>
+  <data name="ActionAuthorizeTitle" xml:space="preserve">
+    <value>Authorize Certificate</value>
+  </data>
+  <data name="ActionAuthorizeConfirm" xml:space="preserve">
+    <value>Are you sure you want to authorize this Certificate?</value>
+  </data>
+  <data name="ActionAuthorizeDone" xml:space="preserve">
+    <value>Certificate Authorized</value>
+  </data>
+  <data name="LimitFormat" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="LimitConcat" xml:space="preserve">
+    <value>;</value>
+  </data>
+  <data name="CertificateButton" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="InvalidCertificateStatusTitle" xml:space="preserve">
+    <value>View Certificate</value>
+  </data>
+  <data name="InvalidCertificateStatus" xml:space="preserve">
+    <value>Invalid Certificate Status</value>
+  </data>
+  <data name="InactiveCertificateTitle" xml:space="preserve">
+    <value>View Certificate</value>
+  </data>
+  <data name="InactiveCertificate" xml:space="preserve">
+    <value>This certificate is not active. Check for a newer version.</value>
+  </data>
+  <data name="ChooseCertificateTitle" xml:space="preserve">
+    <value>Choose Certificate</value>
+  </data>
+  <data name="ChooseCertificate" xml:space="preserve">
+    <value>Please choose a certificate</value>
+  </data>
+  <data name="ActionGenerateConfirm" xml:space="preserve">
+    <value>Are you sure you want to generate a Certificate?</value>
+  </data>
+  <data name="ActionGenerateDone" xml:space="preserve">
+    <value>Certificate Created</value>
+  </data>
+  <data name="NodeGetCertificateName" xml:space="preserve">
+    <value>Get Certificate</value>
+  </data>
+  <data name="NodeGetCertificateCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeGetCertificateNameFormat" xml:space="preserve">
+    <value>Get Certificate</value>
+  </data>
+  <data name="NodeGetCertificateDescription" xml:space="preserve">
+    <value>Get the certificate report to send to a destination</value>
+  </data>
+  <data name="NodeGetCertificateParameterEntityName" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeGetCertificateParameterEntityNameDescription" xml:space="preserve">
+    <value>Certificate Entity</value>
+  </data>
+</root>

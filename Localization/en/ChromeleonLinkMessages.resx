@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CRSRT_ERROR_MappingNotFound" xml:space="preserve">
+    <value>Problem getting component mapping for sequence {0}.</value>
+  </data>
+  <data name="CRSRT_ERROR_ServerNotFoundForSequence" xml:space="preserve">
+    <value>Server information not found for sequence {0}.</value>
+  </data>
+  <data name="CRSRT_NoAvailableSequences" xml:space="preserve">
+    <value>None of the selected seqeuences are available for results retrieval.</value>
+  </data>
+  <data name="SelectSequenceMessage" xml:space="preserve">
+    <value>Please select a Sequence to process</value>
+  </data>
+  <data name="CRSRT_PartiallyAvailable" xml:space="preserve">
+    <value>Some but not all of the selected sequences are available for results retrieval. Continue to get available results?</value>
+  </data>
+  <data name="Header_Continue" xml:space="preserve">
+    <value>Continue?</value>
+  </data>
+  <data name="Header_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Header_NoneAvailable" xml:space="preserve">
+    <value>None Available</value>
+  </data>
+  <data name="SelectSequenceCaption" xml:space="preserve">
+    <value>Retrieve Results</value>
+  </data>
+  <data name="ResultUpdateSuccessCaption" xml:space="preserve">
+    <value>Results Updated</value>
+  </data>
+  <data name="ResultUpdateSuccessMessage" xml:space="preserve">
+    <value>The sequence results have been retrieved successfully</value>
+  </data>
+  <data name="ResultUpdateFailureCaption" xml:space="preserve">
+    <value>Results Not Updated</value>
+  </data>
+  <data name="ResultUpdateFailureMessage" xml:space="preserve">
+    <value>The sequence results have not been retrieved successfully</value>
+  </data>
+  <data name="WebApiErrorCaption" xml:space="preserve">
+    <value>Chromeleon Web API Error</value>
+  </data>
+  <data name="WebApiInvalidWebAddressCaption" xml:space="preserve">
+    <value>Invalid Web Address</value>
+  </data>
+  <data name="WebApiInvalidWebAddressMessage" xml:space="preserve">
+    <value>Address "{0}" could not be parsed : {1}</value>
+  </data>
+  <data name="WebApiInvalidAddressCaption" xml:space="preserve">
+    <value>Invalid Address</value>
+  </data>
+  <data name="WebApiInvalidAddressMessage" xml:space="preserve">
+    <value>"The specified address "{0}" is not a valid URL.</value>
+  </data>
+  <data name="ErrorResultReceivedForComponent" xml:space="preserve">
+    <value>Error result received for sequence '{0}', component '{1}' for formula '{2}'.  Value returned = '{3}'.</value>
+  </data>
+  <data name="LimsmlResultEntryRequestErrors" xml:space="preserve">
+    <value>Limsml Result Entry Request Errors for sequence '{0}': \n{1}</value>
+  </data>
+  <data name="LimsmlResultEntryRequestTimedOut" xml:space="preserve">
+    <value>Limsml Result Entry Request timed out after {0} seconds for sequence '{1}'.</value>
+  </data>
+  <data name="ResultEntryErrorsReturned" xml:space="preserve">
+    <value>Errors were returned from the Limsml processing of sequence '{0}'.  Check log for details.</value>
+  </data>
+  <data name="CustomVariableSendResults" xml:space="preserve">
+    <value>Should results for this injection be sent through to SampleManager?</value>
+  </data>
+  <data name="CustomVariableTestNumber" xml:space="preserve">
+    <value>The unique identifier for the Test in SampleManager</value>
+  </data>
+  <data name="CustomVariableBatchEntry" xml:space="preserve">
+    <value>The unique identifier for the Batch Entry in SampleManager</value>
+  </data>
+  <data name="CustomVariableSendApproved" xml:space="preserve">
+    <value>Sequence level flag to determine if injections marked as 'LIMS Send Results' should be transmitted.</value>
+  </data>
+  <data name="CustomVariableOperator" xml:space="preserve">
+    <value>The name of the LIMS Operator who created this sequence.</value>
+  </data>
+  <data name="CustomVariableBatch" xml:space="preserve">
+    <value>The identity of the LIMS Batch.</value>
+  </data>
+  <data name="CustomVariableGeneric" xml:space="preserve">
+    <value>SampleManager Property : {0}.{1}</value>
+  </data>
+  <data name="RefreshedSequenceTitle" xml:space="preserve">
+    <value>Refresh Sequence</value>
+  </data>
+  <data name="RefreshedSequenceMessage" xml:space="preserve">
+    <value>{0} Sequence(s) have been refreshed from Chromeleon.</value>
+  </data>
+  <data name="RefreshSequenceTitle" xml:space="preserve">
+    <value>Refresh Sequence</value>
+  </data>
+  <data name="RefreshSequenceMessage" xml:space="preserve">
+    <value>Please specify a sequence to update from Chromeleon.</value>
+  </data>
+  <data name="UpdatedSequenceTitle" xml:space="preserve">
+    <value>Updated Sequence</value>
+  </data>
+  <data name="UpdatedSequenceMessage" xml:space="preserve">
+    <value>Updated Chromeleon Sequence {0}</value>
+  </data>
+  <data name="InvalidStatusTitle" xml:space="preserve">
+    <value>Invalid Status</value>
+  </data>
+  <data name="InvalidStatusMessage" xml:space="preserve">
+    <value>The sequence has an invalid Status to perform the given operation</value>
+  </data>
+  <data name="PasswordCaption" xml:space="preserve">
+    <value>Password Required</value>
+  </data>
+  <data name="PasswordPrompt" xml:space="preserve">
+    <value>Please enter password</value>
+  </data>
+  <data name="UnauthorizedAccess" xml:space="preserve">
+    <value>Unauthorized Access</value>
+  </data>
+  <data name="InCalibration" xml:space="preserve">
+    <value>SampleManager Instrument Calibrated</value>
+  </data>
+  <data name="InService" xml:space="preserve">
+    <value>SampleManager Instrument In Service</value>
+  </data>
+  <data name="InstrumentMethodNotFound" xml:space="preserve">
+    <value>Instrument Method '{0}' not found</value>
+  </data>
+  <data name="InstrumentUserNotFound" xml:space="preserve">
+    <value>Instrument/User not found ({0}/{1})</value>
+  </data>
+  <data name="OutOfCalibration" xml:space="preserve">
+    <value>SampleManager Instrument Out of Calibration</value>
+  </data>
+  <data name="OutOfService" xml:space="preserve">
+    <value>SampleManager Instrument Out of Service</value>
+  </data>
+  <data name="ProcessingMethodNotFound" xml:space="preserve">
+    <value>Processing Method '{0}' not found</value>
+  </data>
+  <data name="SequenceNotFound" xml:space="preserve">
+    <value>Sequence not found</value>
+  </data>
+  <data name="UserIsTrainedForAnalysis" xml:space="preserve">
+    <value>User trained for SampleManager analysis '{0}'</value>
+  </data>
+  <data name="UserNotTrained" xml:space="preserve">
+    <value>SampleManager User not trained on Instrument</value>
+  </data>
+  <data name="UserNotTrainedForAnalysis" xml:space="preserve">
+    <value>User not trained for SampleManager analysis '{0}'</value>
+  </data>
+  <data name="UserTrained" xml:space="preserve">
+    <value>SampleManager User trained on Instrument</value>
+  </data>
+  <data name="MappingForStandard" xml:space="preserve">
+    <value>Define name mappings for concentrations in '{0}'.</value>
+  </data>
+  <data name="CustomVariableGenericExpression" xml:space="preserve">
+    <value>SampleManager Expression : {0} on {1}</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>'{0}' user not found in SampleManager</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="colBatchId" xml:space="preserve">
+    <value>Batch Id</value>
+  </data>
+  <data name="colCreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="colCreationDate" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="colDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="colSampleCount" xml:space="preserve">
+    <value>Samples</value>
+  </data>
+  <data name="colBatchType" xml:space="preserve">
+    <value>Batch Type</value>
+  </data>
+  <data name="InvalidBatchId" xml:space="preserve">
+    <value>Could not locate batch '{0}'</value>
+  </data>
+  <data name="OKButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="WorkflowStartPrompt" xml:space="preserve">
+    <value>Select SampleManager Batch</value>
+  </data>
+  <data name="BatchNotAvailable" xml:space="preserve">
+    <value>Batch '{0}' does not have the status 'Available'</value>
+  </data>
+  <data name="InjectionMethodNotFound" xml:space="preserve">
+    <value>No processing, instrument or eWorkflow method found for injection '{0}'</value>
+  </data>
+  <data name="colAnalysisId" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="MultipleMappings" xml:space="preserve">
+    <value>Multiple mappings found for '{0}'. Use custom variables or specify LIMS Chromeleon Server to refine mappings</value>
+  </data>
+  <data name="NoProcessingMethods" xml:space="preserve">
+    <value>No processing methods (batch standards) were found for this batch. Do you want to continue?</value>
+  </data>
+  <data name="ConnectionCancelled" xml:space="preserve">
+    <value>Connection Cancelled</value>
+  </data>
+  <data name="BatchDescription" xml:space="preserve">
+    <value>Select a SampleManager Batch</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select Item</value>
+  </data>
+  <data name="TestDescription" xml:space="preserve">
+    <value>Select SampleManager Tests</value>
+  </data>
+   <data name="SelectAnalysis" xml:space="preserve">
+    <value>Select SampleManager Analysis</value>
+  </data>
+ <data name="colAnalysisId" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+ <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+ <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+ <data name="SelectTest" xml:space="preserve">
+    <value>Select SampleManager Tests</value>
+  </data>
+ <data name="Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+ <data name="TestNumber" xml:space="preserve">
+    <value>Test Number</value>
+  </data>
+ <data name="Sample" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+ <data name="colAnalysisName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+ <data name="colDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+ <data name="Results" xml:space="preserve">
+    <value>Results Log</value>
+  </data>
+ <data name="SaveLog" xml:space="preserve">
+    <value>Save</value>
+  </data>
+ <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data> 
+ <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data> 
+  <data name="UpdateSucceeded" xml:space="preserve">
+    <value>Update succeeded. Check details for additional information</value>
+  </data> 
+    <data name="UpdateFailed" xml:space="preserve">
+    <value>Update failed. Check details for additional information</value>
+  </data> 
+  <data name="PleaseSelectSequence" xml:space="preserve">
+    <value>Please select a valid sequence</value>
+  </data> 
+  <data name="RetrySequence" xml:space="preserve">
+    <value>Do you want to retry?</value>
+  </data>   
+  <data name="StdPropsNoConditionPassed" xml:space="preserve">
+    <value>No conditions were satisfied when evaluating custom variables for the processing method components. Check the condition expressions are correct and will be satisfied in the Chromeleon mapping. Do you want to continue?</value>
+  </data>   
+  <data name="SelectInstrument" xml:space="preserve">
+    <value>No instruments selected</value>
+  </data>  
+  <data name="SlowConnectCaption" xml:space="preserve">
+    <value>Connection Time</value>
+  </data>
+  <data name="SlowConnectHint" xml:space="preserve">
+    <value>The connect in mapping may be improved by using an eWorkflow filter</value>
+  </data>
+  <data name="NotSampleBatch" xml:space="preserve">
+     <value>Batch '{0}' is not a Sample-only batch; using this batch may cause issues with result retrieval. Do you want to continue?</value>
+  </data>
+</root>

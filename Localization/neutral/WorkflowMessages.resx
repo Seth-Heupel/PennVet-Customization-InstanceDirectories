@@ -1,0 +1,4236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NodeChildAnyMatchConditionDescription" xml:space="preserve">
+    <value>Any child record must match the specified condition.</value>
+  </data>
+  <data name="NodeCreateSampleParameterStartStatusDescription" xml:space="preserve">
+    <value>The initial status of samples created by this node</value>
+  </data>
+  <data name="PerformActionEsigAfterFail" xml:space="preserve">
+    <value>Failed Electronic Signature validation after performing action</value>
+  </data>
+  <data name="NodeCopyEntityPropertyName" xml:space="preserve">
+    <value>Copy Property</value>
+  </data>
+  <data name="NodeCreateTestsParameterSchedule" xml:space="preserve">
+    <value>Test Schedule</value>
+  </data>
+  <data name="NodeIfThenElseName" xml:space="preserve">
+    <value>If.. Then.. Else..</value>
+  </data>
+  <data name="NodeNotePromptCaption" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="NodeSubWorkflowCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeSelectEntityParameterLockDescription" xml:space="preserve">
+    <value>Place an exclusive lock on the record after it is selected</value>
+  </data>
+  <data name="NodeNotePromptNoNoteText" xml:space="preserve">
+    <value>No note text entered for {0}.</value>
+  </data>
+  <data name="NodeNoteParameterNameDescription" xml:space="preserve">
+    <value>Name of Note</value>
+  </data>
+  <data name="NodeSampleLoginName" xml:space="preserve">
+    <value>Sample Login Workflow</value>
+  </data>
+  <data name="NodePrinterParameterPrinter" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="NodeChildNoneMatchConditionCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="WorkflowJournalTypeEventDescription" xml:space="preserve">
+    <value>Event {0} performed - Enter States ({1}), Exit States ({2})</value>
+  </data>
+  <data name="NodeLifecycleNameRootFormat" xml:space="preserve">
+    <value>{0} Extended Lifecycle</value>
+  </data>
+  <data name="DocWorkflowTypeTitle" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NodeIfThenElseDescription" xml:space="preserve">
+    <value>Condition Set node which comes with a If and Else node by default</value>
+  </data>
+  <data name="NodeEsigNameFormat" xml:space="preserve">
+    <value>Electronic Signature for {0}</value>
+  </data>
+  <data name="NodeActionWorkflowParameterAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalNameFormat" xml:space="preserve">
+    <value>Set {0} to {1}</value>
+  </data>
+  <data name="NodeCategorySix" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodeLifecycleParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeLifecycleParameterWorkflowDescription" xml:space="preserve">
+    <value>Lifecycle to extend.</value>
+  </data>
+  <data name="NodeTriggerEventParameterEventDescription" xml:space="preserve">
+    <value>Event type that is triggered for the current entity.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeNotePromptParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeSampleLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeCreateTestsDescription" xml:space="preserve">
+    <value>Create a set of tests using the specified Test Schedule.</value>
+  </data>
+  <data name="TraceCopyEntityPropertyNodeCopied" xml:space="preserve">
+    <value>Property {0} of {1} entity '{2}' copied to Property {3} of {4} entity '{5}'.</value>
+  </data>
+  <data name="NodeNotePromptParameterNoteText" xml:space="preserve">
+    <value>Note Text</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeCreateSampleDescription" xml:space="preserve">
+    <value>Create a sample using the specified entity template.</value>
+  </data>
+  <data name="NodeNoteParameterEntity" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyName" xml:space="preserve">
+    <value>Prompt for Value</value>
+  </data>
+  <data name="NodeBlockDefaultActionName" xml:space="preserve">
+    <value>Block Default Action</value>
+  </data>
+  <data name="NodeCreateEntityParameterTemplateDescription" xml:space="preserve">
+    <value>Entity Template to use when creating a new entity.</value>
+  </data>
+  <data name="DocSubWorkflowText" xml:space="preserve">
+    <value>SampleManager executes the following sub-workflow activities when called by a Call Sub-workflow node.</value>
+  </data>
+  <data name="NodePropertyConditionNameFormat" xml:space="preserve">
+    <value>If {0} {1} '{2}' then</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodePromptForRepeatNameFormat" xml:space="preserve">
+    <value>Prompt for {0}</value>
+  </data>
+  <data name="NodeActionWorkflowParameterEntityDescription" xml:space="preserve">
+    <value>Entity for which this action belongs to.</value>
+  </data>
+  <data name="NodeForEachChildParameterChildrenDescription" xml:space="preserve">
+    <value>Property containing the entity collection. The child workflow executes for each of the entities within this collection.</value>
+  </data>
+  <data name="DocActionTextSimple" xml:space="preserve">
+    <value>Users can trigger the '{0}' action. The action is described as '{1}'.</value>
+  </data>
+  <data name="DocSubWorkflowTitle" xml:space="preserve">
+    <value>Sub-workflow - {0}</value>
+  </data>
+  <data name="WorkflowCopyNameFormat" xml:space="preserve">
+    <value>{0} Copy</value>
+  </data>
+  <data name="WorkflowNewVersionNameFormat" xml:space="preserve">
+    <value>{0} v{1}</value>
+  </data>
+  <data name="NodeCreateSampleName" xml:space="preserve">
+    <value>Create Sample</value>
+  </data>
+  <data name="NodeTriggerEventParameterEvent" xml:space="preserve">
+    <value>Event Type</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyMessage" xml:space="preserve">
+    <value>Select {0}</value>
+  </data>
+  <data name="NodePromptForEntityCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="TraceButton" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="TraceConditionConfirmNodeSelected" xml:space="preserve">
+    <value>Called confirm condition '{0}' with a result of {1}.</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterToEntity" xml:space="preserve">
+    <value>To Entity</value>
+  </data>
+  <data name="DocTypeFollowsParent" xml:space="preserve">
+    <value>Follows Parent</value>
+  </data>
+  <data name="NodeNewEntityParameterMainFormDescription" xml:space="preserve">
+    <value>Main form used to create the data item</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterChildren" xml:space="preserve">
+    <value>Children</value>
+  </data>
+  <data name="NodeNotePrompt" xml:space="preserve">
+    <value>Prompt for Note</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterFormulaDescription" xml:space="preserve">
+    <value>The formula string.</value>
+  </data>
+  <data name="NodeCallSubWorkflowName" xml:space="preserve">
+    <value>Call Sub-workflow</value>
+  </data>
+  <data name="NodeChildAnyMatchConditionCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeGeneralName" xml:space="preserve">
+    <value>General Workflow</value>
+  </data>
+  <data name="NodeReportNameFormat" xml:space="preserve">
+    <value>Generate '{0}' Report</value>
+  </data>
+  <data name="NodeModularReportNameFormat" xml:space="preserve">
+    <value>Generate '{0}' Modular Report</value>
+  </data>
+  <data name="NodeReportLayoutNameFormat" xml:space="preserve">
+    <value>Generate '{0}' Report Layout</value>
+  </data>
+  <data name="NodeCommentCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeReportParameterTemplateDescription" xml:space="preserve">
+    <value>Report template to use when generating the report.</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="InvalidMoveMessage" xml:space="preserve">
+    <value>It is not appropriate to move the selected node into this location, as it's not a valid follower</value>
+  </data>
+  <data name="PromptForEntityMessage" xml:space="preserve">
+    <value>Select an entity of type {0}</value>
+  </data>
+  <data name="NodeGeneralDescription" xml:space="preserve">
+    <value>General workflow root node.</value>
+  </data>
+  <data name="NodeEventCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodePerformActionParameterAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="NodeForEachChildParameterChildren" xml:space="preserve">
+    <value>Children</value>
+  </data>
+  <data name="NodeLifecycleCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="DocWorkflowTypesText" xml:space="preserve">
+    <value>This workflow definition uses the following node types.</value>
+  </data>
+  <data name="NodeErrorNameFormat" xml:space="preserve">
+    <value>Error '{0}'</value>
+  </data>
+  <data name="TraceLabelNodeGenerated" xml:space="preserve">
+    <value>Label '{0}' generated for {1} entity '{2}'.</value>
+  </data>
+  <data name="DocTypeFollowsTags" xml:space="preserve">
+    <value>Follows Tags</value>
+  </data>
+  <data name="NodeLabelDescription" xml:space="preserve">
+    <value>Generate a label using the specified template.</value>
+  </data>
+  <data name="NodeLog4NetParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterFromEntityDescription" xml:space="preserve">
+    <value>From Entity</value>
+  </data>
+  <data name="NodeSampleSplitCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="RunWorkflowEsigBeforeFail" xml:space="preserve">
+    <value>Failed Electronic Signature validation before running workflow</value>
+  </data>
+  <data name="DocTypeDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NodeMessageBoxNameFormat" xml:space="preserve">
+    <value>Message Box '{1}'</value>
+  </data>
+  <data name="TraceSetEntityPropertyGlobalNodeSet" xml:space="preserve">
+    <value>Property {0} of {1} entity '{2}' set to Global {3}.</value>
+  </data>
+  <data name="NodePropertyConditionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="RunWorkflowEsigAfterFail" xml:space="preserve">
+    <value>Failed Electronic Signature validation after running workflow</value>
+  </data>
+  <data name="NodeReportName" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="NodeModularReportName" xml:space="preserve">
+    <value>Modular Report</value>
+  </data>
+  <data name="NodeNewEntityParameterMainForm" xml:space="preserve">
+    <value>Main Form</value>
+  </data>
+  <data name="NodeNewEntityName" xml:space="preserve">
+    <value>New Entity</value>
+  </data>
+  <data name="TracePerformLinkedActionNodeCallComplete" xml:space="preserve">
+    <value>Linked Action '{0}' completed.</value>
+  </data>
+  <data name="NodeCreateEntityNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' using '{2}' template</value>
+  </data>
+  <data name="NodeNewEntityParameterTaskDescription" xml:space="preserve">
+    <value>Task used to control the form</value>
+  </data>
+  <data name="NodePromptSetNameFormat" xml:space="preserve">
+    <value>Prompt Set</value>
+  </data>
+  <data name="NodeCallWorkflowNameFormat" xml:space="preserve">
+    <value>Call Workflow '{0}'</value>
+  </data>
+  <data name="NodeNoteAttachCategory" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="TraceNoteNode" xml:space="preserve">
+    <value>Note {0} for entity '{1}' created.</value>
+  </data>
+  <data name="CreateEntityCancelled" xml:space="preserve">
+    <value>Create entity canceled by user</value>
+  </data>
+  <data name="PromptForRepeatMessage" xml:space="preserve">
+    <value>Repeat value</value>
+  </data>
+  <data name="NodePrinterNameFormat" xml:space="preserve">
+    <value>Send to '{0}' Printer</value>
+  </data>
+  <data name="NodeReportParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TraceCallSubWorkflowNodeCallComplete" xml:space="preserve">
+    <value>Call to SubWorkflow Node '{0}' completed.</value>
+  </data>
+  <data name="NodeConditionConfirmParameterCaptionDescription" xml:space="preserve">
+    <value>The text which appears in the conditional message title bar.</value>
+  </data>
+  <data name="TraceSetEntityPropertyNodeSet" xml:space="preserve">
+    <value>Property {0} of {1} entity '{2}' set.</value>
+  </data>
+  <data name="NodePromptSetParameterCaptionDescription" xml:space="preserve">
+    <value>The text which appears in the prompt title bar.</value>
+  </data>
+  <data name="TracePerformDefaultWorkflow" xml:space="preserve">
+    <value>Performing Lifecycle '{0}'{1}'.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodePropertyConditionDescription" xml:space="preserve">
+    <value>Condition to be evaluated against a property.</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterFromProperty" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="NodeDefaultLifecycleCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeMailName" xml:space="preserve">
+    <value>Send Mail</value>
+  </data>
+  <data name="NodeReportCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="TraceTriggerEventNodeCall" xml:space="preserve">
+    <value>Triggering the {0} Event</value>
+  </data>
+  <data name="NodeTriggerEventCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodePromptForEntityParameterMessageDescription" xml:space="preserve">
+    <value>The prompt text.</value>
+  </data>
+  <data name="NodeNewEntityNameRootFormat" xml:space="preserve">
+    <value>{0} Entity</value>
+  </data>
+  <data name="NodeDefaultLifecycleParameterEntityDescription" xml:space="preserve">
+    <value>The name of the entity type you may associate this lifecycle with.</value>
+  </data>
+  <data name="NodePromptForEntityDescription" xml:space="preserve">
+    <value>Prompt for an entity of a specified type.</value>
+  </data>
+  <data name="NodeConditionSetNameFormat" xml:space="preserve">
+    <value>Condition Set</value>
+  </data>
+  <data name="NodeMailCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="TracePerformNode" xml:space="preserve">
+    <value>Performing node '{0}'.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterCaptionDescription" xml:space="preserve">
+    <value>The text which appears in the prompt form title bar.</value>
+  </data>
+  <data name="NodePropertyConditionName" xml:space="preserve">
+    <value>If Property</value>
+  </data>
+  <data name="NodeCreateSampleParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodePromptForEntityName" xml:space="preserve">
+    <value>Prompt for Entity</value>
+  </data>
+  <data name="NodeGeneralEntityTypeName" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="NodeLabelName" xml:space="preserve">
+    <value>Generate Label</value>
+  </data>
+  <data name="NodeNotePromptParameterNoteTextDescription" xml:space="preserve">
+    <value>Text to be used as the note.</value>
+  </data>
+  <data name="NodeSetEntityPropertyName" xml:space="preserve">
+    <value>Set Property</value>
+  </data>
+  <data name="NodeNoteParameterCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="NodeChildAllMatchConditionName" xml:space="preserve">
+    <value>If All</value>
+  </data>
+  <data name="NodeCreateJobDescription" xml:space="preserve">
+    <value>Create a job using the specified entity template.</value>
+  </data>
+  <data name="NodeConditionConfirmCaption" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterPropertyDescription" xml:space="preserve">
+    <value>Property to place specified value in.</value>
+  </data>
+  <data name="NodeEventDescription" xml:space="preserve">
+    <value>Respond to an event triggered on the specified entity.</value>
+  </data>
+  <data name="DocTypeTags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="NodeNoteParameterCategoryDescription" xml:space="preserve">
+    <value>Category used in note creation.</value>
+  </data>
+  <data name="TraceCreateJobNodeCreated" xml:space="preserve">
+    <value>Job '{0}' created.</value>
+  </data>
+  <data name="TracePropertyConditionNodeMatch" xml:space="preserve">
+    <value>Property {0} value '{1}' of {2} entity '{3}' matched the condition.</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterEntityDescription" xml:space="preserve">
+    <value>Entity which holds the set of child records to evaluate.</value>
+  </data>
+  <data name="NodeNoteAttachDescription" xml:space="preserve">
+    <value>Attach a document as a note.</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterFromPropertyDescription" xml:space="preserve">
+    <value>Property to copy the value from.</value>
+  </data>
+  <data name="NodeLabelMailBody" xml:space="preserve">
+    <value>Label generated by workflow.</value>
+  </data>
+  <data name="NodeConditionSetName" xml:space="preserve">
+    <value>Condition Set</value>
+  </data>
+  <data name="NodeActionWorkflowParameterLock" xml:space="preserve">
+    <value>Lock Record</value>
+  </data>
+  <data name="NodeConditionConfirmCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeCreateTestParameterAnalysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="NodeNoteParameterName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DocWorkflowTypeDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NodeCreateEntityDescription" xml:space="preserve">
+    <value>Create an entity of a specified type using the defined entity template.</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaNameFormat" xml:space="preserve">
+    <value>Set {0} using '{1}'</value>
+  </data>
+  <data name="NodeEventParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeEsigError" xml:space="preserve">
+    <value>Electronic Signature Failed {0}.</value>
+  </data>
+  <data name="NodeTriggerEventErrorNoEntity" xml:space="preserve">
+    <value>Missing Event Type for the Trigger Event Node</value>
+  </data>
+  <data name="NodeActionCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeNoteCreateDescription" xml:space="preserve">
+    <value>Create a note</value>
+  </data>
+  <data name="NodeCreateSampleCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="DocTypeOnlyFollowsParent" xml:space="preserve">
+    <value>Only Follows Parent</value>
+  </data>
+  <data name="NodeMessageBoxParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeCommentDescription" xml:space="preserve">
+    <value>General comment for documentation and readability purposes.</value>
+  </data>
+  <data name="NodeNotePromptCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodeGeneralCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="DocRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterPropertyDescription" xml:space="preserve">
+    <value>Property to place the value of the global variable in.</value>
+  </data>
+  <data name="NodeMessageBoxParameterCaptionDescription" xml:space="preserve">
+    <value>The text which appears in the message title bar.</value>
+  </data>
+  <data name="NodeNewEntityDescription" xml:space="preserve">
+    <value>Used to create a new data item using a form</value>
+  </data>
+  <data name="NodeSampleSplitNameFormat" xml:space="preserve">
+    <value>Split Sample</value>
+  </data>
+  <data name="NodeEventName" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="NodeCreateTestsNameFormat" xml:space="preserve">
+    <value>Create '{0}' Tests</value>
+  </data>
+  <data name="NodeChildNoneMatchConditionName" xml:space="preserve">
+    <value>If None</value>
+  </data>
+  <data name="NodeSelectEntityParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterOperatorDescription" xml:space="preserve">
+    <value>Comparison operator.</value>
+  </data>
+  <data name="InvalidWorkflowName" xml:space="preserve">
+    <value>Duplicate workflow name '{0}', please make the name unique</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterToPropertyDescription" xml:space="preserve">
+    <value>Property to copy the value to.</value>
+  </data>
+  <data name="NodeLog4NetLevelINFO" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="NodeLabelParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeCreateTestsCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodePromptForEntityParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeIfThenElseCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeConditionConfirmNameFormat" xml:space="preserve">
+    <value>If Confirm '{0}'</value>
+  </data>
+  <data name="NodeLabelParameterSpecificationDescription" xml:space="preserve">
+    <value>Label Specification to use when generating the label.</value>
+  </data>
+  <data name="NodeSubWorkflowNameFormat" xml:space="preserve">
+    <value>Sub-workflow {0}</value>
+  </data>
+  <data name="NodeCreateSampleNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Samples</value>
+  </data>
+  <data name="NodeCreateEntityParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodePropertyConditionParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeCreateSampleParameterStartStatus" xml:space="preserve">
+    <value>Starting Status</value>
+  </data>
+  <data name="NodeLifecycleParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreateJobCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodeDefaultCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="TraceGetLinkedEntityNodeNotSelected" xml:space="preserve">
+    <value>The linked property {0}.{1} is empty, so child workflow will not be executed</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="InvalidCopyCaption" xml:space="preserve">
+    <value>Copy Node</value>
+  </data>
+  <data name="NodeNotePromptParameterMessageDescription" xml:space="preserve">
+    <value>The actual text of the message.</value>
+  </data>
+  <data name="NodeCallWorkflowCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeNoteCreateParameterNoteText" xml:space="preserve">
+    <value>Note Text</value>
+  </data>
+  <data name="NodeLabelParameterNumberOfCopies" xml:space="preserve">
+    <value>Number of copies</value>
+  </data>
+  <data name="NodePerformActionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeChildAnyMatchConditionNameFormat" xml:space="preserve">
+    <value>If Any {0} match {1} {2} '{3}'</value>
+  </data>
+  <data name="NodeTriggerEventNameFormat" xml:space="preserve">
+    <value>Trigger '{0}'</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalDescription" xml:space="preserve">
+    <value>Set a property value from a global variable.</value>
+  </data>
+  <data name="TraceSelectEntityNodeSelected" xml:space="preserve">
+    <value>{0} entity '{1}' selected.</value>
+  </data>
+  <data name="PromptSetCaption" xml:space="preserve">
+    <value>Enter prompt values</value>
+  </data>
+  <data name="TraceTriggerEventNodeCallComplete" xml:space="preserve">
+    <value>{0} Event has been completed</value>
+  </data>
+  <data name="NodePerformActionDescription" xml:space="preserve">
+    <value>Perform an action on the specified entity.</value>
+  </data>
+  <data name="NodeGetLinkedEntityParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeCreateJobRoot" xml:space="preserve">
+    <value>Job Workflow</value>
+  </data>
+  <data name="NodeRepeatParameterCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaDescription" xml:space="preserve">
+    <value>Set a property value to a value calculated from a formula</value>
+  </data>
+  <data name="NodePrinterCategory" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="NodeCategoryThree" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="TraceChildAllMatchConditionNodeUnmatch" xml:space="preserve">
+    <value>All child entities did not match the condition.</value>
+  </data>
+  <data name="NodeNoteCreateAutoName" xml:space="preserve">
+    <value>Create Note</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterOperator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="NodeSelectEntityParameterId" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="NodeLabelMailSubject" xml:space="preserve">
+    <value>{0} Label</value>
+  </data>
+  <data name="InvalidTypeToTestCaption" xml:space="preserve">
+    <value>Invalid Workflow Type</value>
+  </data>
+  <data name="NodeMethodExecutionNameFormat" xml:space="preserve">
+    <value>Method Workflow</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaName" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="InvalidTypeToTestMessage" xml:space="preserve">
+    <value>The test workflow option is not available for this workflow type</value>
+  </data>
+  <data name="NodeSelectEntityName" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="NodeConditionConfirmDescription" xml:space="preserve">
+    <value>Conditional message, if Yes is selected any children are run.</value>
+  </data>
+  <data name="NodeLog4NetName" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TracePropertyConditionNodeUnmatch" xml:space="preserve">
+    <value>Property {0} value '{1}' of {2} entity '{3}' did not match the condition.</value>
+  </data>
+  <data name="NodeElseNameFormat" xml:space="preserve">
+    <value>Else</value>
+  </data>
+  <data name="NodeCallWorkflowParameterWorkflowDescription" xml:space="preserve">
+    <value>Workflow to initiate from this node.</value>
+  </data>
+  <data name="NodeCallSubWorkflowNameFormat" xml:space="preserve">
+    <value>Call '{0}'</value>
+  </data>
+  <data name="NodeRepeatCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyNameFormat" xml:space="preserve">
+    <value>Prompt for {0}</value>
+  </data>
+  <data name="NodeNoteCreateCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeEventParameterEventDescription" xml:space="preserve">
+    <value>Event Type for which this workflow execute.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyDescription" xml:space="preserve">
+    <value>Prompt for property to be the specified value.</value>
+  </data>
+  <data name="NodeBlockDefaultActionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeLabelCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeMailDestinationCategory" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="NodeGetLinkedEntityParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeSetEntityPropertyDescription" xml:space="preserve">
+    <value>Set a property to be the specified value.</value>
+  </data>
+  <data name="PerformActionEsigBeforeFail" xml:space="preserve">
+    <value>Failed Electronic Signature validation before performing action</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="DocWorkflowTypeMandatory" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
+  <data name="TraceMailNodeSend" xml:space="preserve">
+    <value>Mail sent to '{0}'.</value>
+  </data>
+  <data name="NodeChildNoneMatchConditionDescription" xml:space="preserve">
+    <value>No child records must match the specified condition.</value>
+  </data>
+  <data name="NodeMailDestinationDescription" xml:space="preserve">
+    <value>Send the output to the mail address.</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterValueDescription" xml:space="preserve">
+    <value>Value to use when evaluating the condition.</value>
+  </data>
+  <data name="NodeNotePromptParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeIfThenElseNameFormat" xml:space="preserve">
+    <value>Condition Set</value>
+  </data>
+  <data name="InvalidMoveCaption" xml:space="preserve">
+    <value>Move Node</value>
+  </data>
+  <data name="NodeActionWorkflowParameterActionDescription" xml:space="preserve">
+    <value>Action Type of this node.</value>
+  </data>
+  <data name="TracePerformActionNodeCallComplete" xml:space="preserve">
+    <value>Action '{0}' completed.</value>
+  </data>
+  <data name="WorkflowJournalTypeActionDescription" xml:space="preserve">
+    <value>Action {0} performed - Enter States ({1}), Exit States ({2})</value>
+  </data>
+  <data name="CreateEntityInvalidTemplate" xml:space="preserve">
+    <value>Failed to select entity template for {0} on Node {1}.</value>
+  </data>
+  <data name="NodeActionDescription" xml:space="preserve">
+    <value>Workflow responsible for a particular action on this entity.</value>
+  </data>
+  <data name="NodeCreateTestParameterAssign" xml:space="preserve">
+    <value>Assign</value>
+  </data>
+  <data name="NodePromptForRepeatName" xml:space="preserve">
+    <value>Prompt for Repeat Value</value>
+  </data>
+  <data name="NodePropertyConditionParameterOperator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="NodeActionWorkflowParameterRequiredStateDescription" xml:space="preserve">
+    <value>The required state of this entity before this action is available.</value>
+  </data>
+  <data name="NodeDefaultLifecycleNameFormat" xml:space="preserve">
+    <value>{0} Lifecycle</value>
+  </data>
+  <data name="NodeMailParameterToDescription" xml:space="preserve">
+    <value>Email address of the recipient of this message.</value>
+  </data>
+  <data name="NodeNotePromptMessage" xml:space="preserve">
+    <value>Enter text of note</value>
+  </data>
+  <data name="NodeCategoryFive" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeMessageBoxParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeDefaultLifecycleDescription" xml:space="preserve">
+    <value>Used to model the lifecycle for a particular entity type</value>
+  </data>
+  <data name="TracePerformDefaultWorkflowComplete" xml:space="preserve">
+    <value>Lifecycle '{0}{1}' completed.</value>
+  </data>
+  <data name="NodeEsigDescription" xml:space="preserve">
+    <value>Prompt for the user credentials to continue the workflow.</value>
+  </data>
+  <data name="NodePerformActionName" xml:space="preserve">
+    <value>Perform Action</value>
+  </data>
+  <data name="NodeMethodExecutionCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="WorkflowResetConfirmCaption" xml:space="preserve">
+    <value>Reset Workflow?</value>
+  </data>
+  <data name="NodeBlockDefaultActionDescription" xml:space="preserve">
+    <value>Used to disable default actions, e.g. to override default behavior.</value>
+  </data>
+  <data name="NodeCreateSampleParameterWorkflowDescription" xml:space="preserve">
+    <value>Sample lifecycle adopted by samples created by this workflow.</value>
+  </data>
+  <data name="NodeCreateTestsParameterScheduleDescription" xml:space="preserve">
+    <value>Test Schedule to use to create the tests from.</value>
+  </data>
+  <data name="NodeGetLinkedEntityDescription" xml:space="preserve">
+    <value>Select a linked entity for use by child workflow</value>
+  </data>
+  <data name="NodeCreateEntityName" xml:space="preserve">
+    <value>Create Entity</value>
+  </data>
+  <data name="NodeBlockDefaultActionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TraceCallWorkflowNodeCallComplete" xml:space="preserve">
+    <value>Completed task '{0}' return value '{1}'</value>
+  </data>
+  <data name="NodeTriggerEventParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="DocWorkflowTypeParameterText" xml:space="preserve">
+    <value>The following table details the parameters associated with this workflow node type.</value>
+  </data>
+  <data name="NodeNewEntityParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterFormula" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="TraceCreateTestNodeCreated" xml:space="preserve">
+    <value>Test '{0}' created.</value>
+  </data>
+  <data name="NodeActionWorkflowParameterRequiredState" xml:space="preserve">
+    <value>Required State</value>
+  </data>
+  <data name="NodeNewEntityParameterEntityDescription" xml:space="preserve">
+    <value>The name of the entity type you will create.</value>
+  </data>
+  <data name="TraceLog4NetNodeLog" xml:space="preserve">
+    <value>Log message '{0}' as {1}.</value>
+  </data>
+  <data name="NodeGetLinkedEntityParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeLabelParameterNumberOfCopiesDescription" xml:space="preserve">
+    <value>Number of copies of the label to include.</value>
+  </data>
+  <data name="DocPropertyComment" xml:space="preserve">
+    <value>Workflow Documentation - Generated by {0} on {1}.</value>
+  </data>
+  <data name="NodeLabelNameFormat" xml:space="preserve">
+    <value>Generate '{0}' Label</value>
+  </data>
+  <data name="DocActionSecurityText" xml:space="preserve">
+    <value>This following table details the security roles that are required to see the context menu for the '{0}' action workflow.</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterValueDescription" xml:space="preserve">
+    <value>Value to assign to the specified property.</value>
+  </data>
+  <data name="NodeErrorName" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="WorkflowJournalFormTitle" xml:space="preserve">
+    <value>Workflow Journal</value>
+  </data>
+  <data name="TraceChildAnyMatchConditionNodeUnmatch" xml:space="preserve">
+    <value>None of child entities match the condition.</value>
+  </data>
+  <data name="NodePromptSetCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterPropertyDescription" xml:space="preserve">
+    <value>Property to evaluate in the comparison.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyCaption" xml:space="preserve">
+    <value>Select values</value>
+  </data>
+  <data name="NodeEventNameFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NodeEsigParameterReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="NodeEsigParameterChecksum" xml:space="preserve">
+    <value>Checksum Tables</value>
+  </data>
+  <data name="NodeEsigParameterChecksumDescription" xml:space="preserve">
+    <value>A checksum will be created for all related records. If both parameters are left blank, the current entity is Job Header, Sample, Test or Result and the entity is Authorized then the Authorization Esig settings will be used.</value>
+  </data>
+  <data name="NodeCreateJobParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new job.</value>
+  </data>
+  <data name="NodeMailParameterTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="NodeCreateEntitySimpleNameFormat" xml:space="preserve">
+    <value>Create {0}</value>
+  </data>
+  <data name="NodeCopyEntityPropertyCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeCreateEntityCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeCallSubWorkflowParameterWorkflowDescription" xml:space="preserve">
+    <value>Name of the sub-workflow to initiate from this node</value>
+  </data>
+  <data name="TraceSetEntityPropertyFormulaNodeSet" xml:space="preserve">
+    <value>Property {0} of {1} entity '{2}' set to '{3}'.</value>
+  </data>
+  <data name="NodeLog4NetLevelERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="NodeActionWorkflowParameterLockDescription" xml:space="preserve">
+    <value>Require an exclusive lock on the record before executing the workflow</value>
+  </data>
+  <data name="TraceMailNodeAboutSend" xml:space="preserve">
+    <value>Trying to send mail to '{0}'.</value>
+  </data>
+  <data name="NodeCreateTestParameterComponentList" xml:space="preserve">
+    <value>Component List</value>
+  </data>
+  <data name="NodeBlockDefaultActionCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeBlockDefaultActionParameterAction" xml:space="preserve">
+    <value>Action Type</value>
+  </data>
+  <data name="NodeActionNameFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="NodeMailParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="DocEventTitle" xml:space="preserve">
+    <value>Event - {0}</value>
+  </data>
+  <data name="NodePrinterName" xml:space="preserve">
+    <value>Send to Printer</value>
+  </data>
+  <data name="NodeLog4NetParameterLevel" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="InvalidCopyMessage" xml:space="preserve">
+    <value>It is not appropriate to paste the selected node into this location, as it's an invalid follower</value>
+  </data>
+  <data name="TraceCallWorkflowNodeCall" xml:space="preserve">
+    <value>Calling Workflow '{0}{1}'.</value>
+  </data>
+  <data name="NodeCreateEntityParameterWorkflowDescription" xml:space="preserve">
+    <value>Lifecycle adopted by entities created by this workflow node.</value>
+  </data>
+  <data name="NodeMessageBoxName" xml:space="preserve">
+    <value>Message Box</value>
+  </data>
+  <data name="NodeSelectEntityParameterEntityDescription" xml:space="preserve">
+    <value>The type of the entity you wish to select and use within this workflow.</value>
+  </data>
+  <data name="NodeChildAllMatchConditionNameFormat" xml:space="preserve">
+    <value>If All {0} match {1} {2} '{3}'</value>
+  </data>
+  <data name="TraceChildAllMatchConditionNodeMatch" xml:space="preserve">
+    <value>All child entities matched the condition.</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterGlobal" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="NodeReportDescription" xml:space="preserve">
+    <value>Generate a report using the specified template.</value>
+  </data>
+  <data name="NodeModularReportDescription" xml:space="preserve">
+    <value>Generate a modular report using the specified definition.</value>
+  </data>
+  <data name="NodeElseDescription" xml:space="preserve">
+    <value>Condition executed if the previous conditions are not.</value>
+  </data>
+  <data name="TraceLabelNodeAboutGenerate" xml:space="preserve">
+    <value>Trying to generate label '{0}' for {1} entity '{2}'.</value>
+  </data>
+  <data name="InvalidWorkflow" xml:space="preserve">
+    <value>Invalid workflow configuration, please correct the definition.</value>
+  </data>
+  <data name="DocWorkflowTypeParameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="NodeNotePromptParameterCaptionDescription" xml:space="preserve">
+    <value>The text which appears in the conditional message title bar.</value>
+  </data>
+  <data name="NodeCreateTestNameFormat" xml:space="preserve">
+    <value>Create '{0}' Test</value>
+  </data>
+  <data name="NodeCreateJobParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeMailParameterSubjectDescription" xml:space="preserve">
+    <value>Subject of the mail message.</value>
+  </data>
+  <data name="NodeEventParameterEvent" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="DocEventText" xml:space="preserve">
+    <value>SampleManager can trigger the '{0}' event; the event is described as '{1}'. It executes the following workflow activities.</value>
+  </data>
+  <data name="NodePrinterDescription" xml:space="preserve">
+    <value>Send to the specified printer</value>
+  </data>
+  <data name="NodeChildAllMatchConditionDescription" xml:space="preserve">
+    <value>All child records must match the specified condition</value>
+  </data>
+  <data name="NodeNewEntityParameterWorkflowDescription" xml:space="preserve">
+    <value>Lifecycle inherited by entities created with this workflow.</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeLabelParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TracePromptForRepeatNodeSelected" xml:space="preserve">
+    <value>Called Prompt for repeat '{0}' time(s).</value>
+  </data>
+  <data name="NodeEventParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeActionWorkflowParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="NodePropertyConditionParameterOperatorDescription" xml:space="preserve">
+    <value>Comparison operator.</value>
+  </data>
+  <data name="NodeNoteAttach" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="NodeRepeatNameFormat" xml:space="preserve">
+    <value>Repeat {0} time(s)</value>
+  </data>
+  <data name="NodeMessageBoxParameterMessageDescription" xml:space="preserve">
+    <value>The actual text of the message.</value>
+  </data>
+  <data name="PromptForEntityCaption" xml:space="preserve">
+    <value>Select {0}</value>
+  </data>
+  <data name="TracePerformLinkedActionNodeCall" xml:space="preserve">
+    <value>Performing Linked Action '{0}'.</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeRepeatName" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="NodeCreateEntityNameFormat" xml:space="preserve">
+    <value>Create '{0}' using '{1}' template</value>
+  </data>
+  <data name="NodeTriggerEventParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TraceCallSubWorkflowNodeCall" xml:space="preserve">
+    <value>Calling SubWorkflow Node '{0}'.</value>
+  </data>
+  <data name="NodeLog4NetParameterMessageDescription" xml:space="preserve">
+    <value>Message you wish to add to the log.</value>
+  </data>
+  <data name="DocTypeFollowers" xml:space="preserve">
+    <value>Followers</value>
+  </data>
+  <data name="NodeNoteCreateParameterPropertyDescription" xml:space="preserve">
+    <value>Value from a property to specify in note.</value>
+  </data>
+  <data name="TraceCreateSampleNodeCreated" xml:space="preserve">
+    <value>Sample '{0}' created.</value>
+  </data>
+  <data name="NodePromptForRepeatParameterCaptionDescription" xml:space="preserve">
+    <value>The text in the repeat prompt title bar.</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterMessageDescription" xml:space="preserve">
+    <value>The prompt text.</value>
+  </data>
+  <data name="NodeCreateJobNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Jobs</value>
+  </data>
+  <data name="NodeForEachChildCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeForEachChildName" xml:space="preserve">
+    <value>For Each</value>
+  </data>
+  <data name="NodeCopyEntityPropertyNameFormat" xml:space="preserve">
+    <value>Copy {0} to {1}</value>
+  </data>
+  <data name="NodeLog4NetNameFormat" xml:space="preserve">
+    <value>Log '{0}' as {1}</value>
+  </data>
+  <data name="NodeGetLinkedEntityCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeNewEntityParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeLog4NetLevelDEBUG" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="NodeNotePromptAutoName" xml:space="preserve">
+    <value>Prompt for Note</value>
+  </data>
+  <data name="TracePromptForEntityNodeSelected" xml:space="preserve">
+    <value>Called Prompt for entity of type '{0}' for '{1}'.</value>
+  </data>
+  <data name="NodeChildNoneMatchConditionNameFormat" xml:space="preserve">
+    <value>If No {0} match {1} {2} '{3}'</value>
+  </data>
+  <data name="NodeLabelParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeLabelParameterTemplateDescription" xml:space="preserve">
+    <value>Label Template to be used in the generation of the label.</value>
+  </data>
+  <data name="NodeLabelParameterSpecification" xml:space="preserve">
+    <value>Specification</value>
+  </data>
+  <data name="NodeCreateJobParameterWorkflowDescription" xml:space="preserve">
+    <value>Job lifecycle adopted by jobs created by this workflow node.</value>
+  </data>
+  <data name="NodeErrorDescription" xml:space="preserve">
+    <value>Generate an error in the workflow with the provided error message.</value>
+  </data>
+  <data name="NodeReportMailBody" xml:space="preserve">
+    <value>Report generated by workflow.</value>
+  </data>
+  <data name="NodeForEachChildNameFormat" xml:space="preserve">
+    <value>For Each of the '{0}'</value>
+  </data>
+  <data name="NodeMessageBoxDescription" xml:space="preserve">
+    <value>Put a message box on the screen.</value>
+  </data>
+  <data name="TraceCommentNode" xml:space="preserve">
+    <value>Node '{0}' excluded from execution.</value>
+  </data>
+  <data name="NodeSetEntityPropertyParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="RunWorkflowEsigDescription" xml:space="preserve">
+    <value>Running the workflow '{0}', signature mode '{1}'</value>
+  </data>
+  <data name="NodeCreateTestName" xml:space="preserve">
+    <value>Create Test</value>
+  </data>
+  <data name="NodeNoteAttachAutoName" xml:space="preserve">
+    <value>Attach as {0}</value>
+  </data>
+  <data name="NodeTriggerEventName" xml:space="preserve">
+    <value>Trigger Event</value>
+  </data>
+  <data name="NodeMethodExecutionDescription" xml:space="preserve">
+    <value>Specific workflow available to an analytical method</value>
+  </data>
+  <data name="NodeMailDestinationName" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="DocWorkflowTypesTitle" xml:space="preserve">
+    <value>Appendix - Workflow Node Types</value>
+  </data>
+  <data name="NodePromptSetParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeConditionConfirmName" xml:space="preserve">
+    <value>If Confirm</value>
+  </data>
+  <data name="NodeEsigName" xml:space="preserve">
+    <value>Electronic Signature</value>
+  </data>
+  <data name="NodeCreateTestCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeLifecycleParameterEntityDescription" xml:space="preserve">
+    <value>The name of the entity type you may associate this lifecycle with.</value>
+  </data>
+  <data name="NodeSelectEntityParameterLock" xml:space="preserve">
+    <value>Lock Record</value>
+  </data>
+  <data name="NodeCreateEntityParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeCommentNameFormat" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="NodePropertyConditionParameterValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="NodeNoteCreateParameterProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="NodeLifecycleDescription" xml:space="preserve">
+    <value>Used to extend an existing lifecycle</value>
+  </data>
+  <data name="NodeNoteParameterGroupDescription" xml:space="preserve">
+    <value>Group used in note creation</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterToEntityDescription" xml:space="preserve">
+    <value>To Entity</value>
+  </data>
+  <data name="NodeCallWorkflowDescription" xml:space="preserve">
+    <value>Call another workflow.</value>
+  </data>
+  <data name="NodeActionName" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="NodeCreateEntityParameterEntityDescription" xml:space="preserve">
+    <value>The name of the entity type you wish to create.</value>
+  </data>
+  <data name="NodeCreateTestDescription" xml:space="preserve">
+    <value>Create a number of tests using the specified Analysis.</value>
+  </data>
+  <data name="NodeNotePromptDescription" xml:space="preserve">
+    <value>Create a note from a prompted value</value>
+  </data>
+  <data name="NodePromptForRepeatDescription" xml:space="preserve">
+    <value>Prompt for the repeat count then repeat the child nodes a specified number of times.</value>
+  </data>
+  <data name="NodePromptForEntityParameterCaptionDescription" xml:space="preserve">
+    <value>The text in the entity prompt title bar.</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeRepeatParameterCountDescription" xml:space="preserve">
+    <value>Number of times to repeat the child nodes.</value>
+  </data>
+  <data name="NodePromptForEntityNameFormat" xml:space="preserve">
+    <value>Prompt for {0}</value>
+  </data>
+  <data name="MethodExecutionExecutedError" xml:space="preserve">
+    <value>Method workflow has been executed directly, this is not permitted</value>
+  </data>
+  <data name="NodeMessageBoxCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="ChooseWorkflow" xml:space="preserve">
+    <value>Choose a Workflow</value>
+  </data>
+  <data name="NodeCreateTestsName" xml:space="preserve">
+    <value>Create Tests</value>
+  </data>
+  <data name="NodePromptSetDescription" xml:space="preserve">
+    <value>Group of prompts to display within the same window.</value>
+  </data>
+  <data name="NodeMailParameterMessageDescription" xml:space="preserve">
+    <value>Message to send to the recipient.</value>
+  </data>
+  <data name="NodeBlockDefaultActionParameterActionDescription" xml:space="preserve">
+    <value>The action type that will be blocked from executing if it is present within Default Lifecycle.</value>
+  </data>
+  <data name="NodeCreateJobParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeForEachChildDescription" xml:space="preserve">
+    <value>Repeat for each of the entities within the set.</value>
+  </data>
+  <data name="NodeSampleLoginNameFormat" xml:space="preserve">
+    <value>Sample Login Workflow</value>
+  </data>
+  <data name="NodeCallWorkflowName" xml:space="preserve">
+    <value>Call Workflow</value>
+  </data>
+  <data name="NodeGetLinkedEntityName" xml:space="preserve">
+    <value>Get Linked Entity</value>
+  </data>
+  <data name="NodeErrorParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeErrorParameterFatal" xml:space="preserve">
+    <value>Is Fatal</value>
+  </data>
+  <data name="NodePerformActionParameterActionDescription" xml:space="preserve">
+    <value>Action type to perform against the current entity</value>
+  </data>
+  <data name="TracePerformActionNodeCall" xml:space="preserve">
+    <value>Performing action '{0}'.</value>
+  </data>
+  <data name="NodeCategorySeven" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeMethodExecutionName" xml:space="preserve">
+    <value>Method Workflow</value>
+  </data>
+  <data name="NodeSampleSplitName" xml:space="preserve">
+    <value>Split Sample</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterPropertyDescription" xml:space="preserve">
+    <value>Property to assign the calculated value of formula.</value>
+  </data>
+  <data name="NodeChildAllMatchConditionCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodePerformActionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeNoteParameterEntityDescription" xml:space="preserve">
+    <value>Name of Note</value>
+  </data>
+  <data name="NodeCopyEntityPropertyDescription" xml:space="preserve">
+    <value>Copy an entity property to another property.</value>
+  </data>
+  <data name="NodeSetEntityPropertyCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeGeneralNameFormat" xml:space="preserve">
+    <value>General Workflow</value>
+  </data>
+  <data name="NodePromptForRepeatParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeMailDescription" xml:space="preserve">
+    <value>Mail a message to a specified user.</value>
+  </data>
+  <data name="NodeChildAnyMatchConditionName" xml:space="preserve">
+    <value>If Any</value>
+  </data>
+  <data name="TraceReportNodeAboutGenerate" xml:space="preserve">
+    <value>Trying to generate report '{0}' for {1} entity '{2}'.</value>
+  </data>
+  <data name="NodePromptSetName" xml:space="preserve">
+    <value>Prompt Set</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalParameterGlobalDescription" xml:space="preserve">
+    <value>Name of the global variable to assign to the property.</value>
+  </data>
+  <data name="CreateEntityInvalidType" xml:space="preserve">
+    <value>Invalid entity type for create entity {0}</value>
+  </data>
+  <data name="DocRoleDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NodeLog4NetDescription" xml:space="preserve">
+    <value>Logging message for debug purposes.</value>
+  </data>
+  <data name="NodeDefaultLifecycleParameterEntity" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeCreateTestsNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Tests</value>
+  </data>
+  <data name="NodeSetEntityPropertyFormulaParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeSampleSplitDescription" xml:space="preserve">
+    <value>Sample Split - add samples underneath this node</value>
+  </data>
+  <data name="NodeCategoryOne" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeLifecycleName" xml:space="preserve">
+    <value>Extended Lifecycle</value>
+  </data>
+  <data name="NodePropertyConditionParameterPropertyDescription" xml:space="preserve">
+    <value>Property to use when evaluating the condition.</value>
+  </data>
+  <data name="NodePromptForEntityParameterEntityDescription" xml:space="preserve">
+    <value>The name of the entity type to prompt for.</value>
+  </data>
+  <data name="NodeSelectEntityNameFormat" xml:space="preserve">
+    <value>Select '{0}' {1}</value>
+  </data>
+  <data name="TraceReportNodeGenerated" xml:space="preserve">
+    <value>Report '{0}' generated for {1} entity '{2}'.</value>
+  </data>
+  <data name="NodeNewEntityParameterTask" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="NodeForEachChildParameterEntityDescription" xml:space="preserve">
+    <value>Entiity</value>
+  </data>
+  <data name="NodeErrorCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeEsigParameterReasonDescription" xml:space="preserve">
+    <value>Reason for Electronic Signature Prompt. If both parameters are left blank, the current entity is Job Header, Sample, Test or Result and the entity is Authorized then the Authorization Esig settings will be used.</value>
+  </data>
+  <data name="NodeCallSubWorkflowParameterWorkflow" xml:space="preserve">
+    <value>Sub-workflow</value>
+  </data>
+  <data name="NodeNewEntityCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeNoteParameterGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="NodePromptForEntityParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeReportParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreateSampleParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreateSampleNameFormat" xml:space="preserve">
+    <value>Create '{0}' Sample</value>
+  </data>
+  <data name="MessageBoxCaption" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="InvalidWorkflowToDocument" xml:space="preserve">
+    <value>Invalid workflow configuration, please correct the definition before generating documentation.</value>
+  </data>
+  <data name="NodeConditionConfirmMessage" xml:space="preserve">
+    <value>Would you like to run this workflow?</value>
+  </data>
+  <data name="NodeCreateTestParameterAssignDescription" xml:space="preserve">
+    <value>Assign the test to the sample as a standard test</value>
+  </data>
+  <data name="NodeNoteNoAttachmentsError" xml:space="preserve">
+    <value>Tried to create a note on entity {0} without the HAS_ATTACHMENTS key word in structure.txt</value>
+  </data>
+  <data name="NodeRepeatDescription" xml:space="preserve">
+    <value>Execute the child workflow a specified number of times.</value>
+  </data>
+  <data name="NodeGetLinkedEntityNameFormat" xml:space="preserve">
+    <value>Get '{0}'</value>
+  </data>
+  <data name="DocTypeCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="PerformActionEsigDescription" xml:space="preserve">
+    <value>Performing the action '{0}', signature mode '{1}'</value>
+  </data>
+  <data name="NodeCallSubWorkflowDescription" xml:space="preserve">
+    <value>Call another section of this workflow.</value>
+  </data>
+  <data name="NodeMailDestinationNameFormat" xml:space="preserve">
+    <value>Send Mail to {0}</value>
+  </data>
+  <data name="NodePromptForEntityParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeReportParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterToProperty" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ExecuteWorkflowFailure" xml:space="preserve">
+    <value>Workflow '{0}' failed with the following error '{1}'</value>
+  </data>
+  <data name="NodeSelectEntityDescription" xml:space="preserve">
+    <value>Select a specific entity.</value>
+  </data>
+  <data name="NodeCreateTestParameterComponentListDescription" xml:space="preserve">
+    <value>Component List to assign to the Test</value>
+  </data>
+  <data name="NodeForEachChildParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeReportMailSubject" xml:space="preserve">
+    <value>{0} Report</value>
+  </data>
+  <data name="TraceChildAnyMatchConditionNodeMatch" xml:space="preserve">
+    <value>Any of child entities match the condition.</value>
+  </data>
+  <data name="NodeLog4NetLevelWARN" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="NodeConditionConfirmParameterMessageDescription" xml:space="preserve">
+    <value>The actual text of the message.</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMessageDescription" xml:space="preserve">
+    <value>The prompt text.</value>
+  </data>
+  <data name="NodeChildMatchConditionParameterChildrenDescription" xml:space="preserve">
+    <value>Property containing the child entities this comparison uses.</value>
+  </data>
+  <data name="NodeElseName" xml:space="preserve">
+    <value>Else</value>
+  </data>
+  <data name="TraceCreateEntityNodeCreated" xml:space="preserve">
+    <value>{0} entity '{1}' created.</value>
+  </data>
+  <data name="WorkflowResetConfirmMessage" xml:space="preserve">
+    <value>Changing the Workflow Type will clear all configured nodes - are you sure you want to do this?</value>
+  </data>
+  <data name="NodeNoteCreate" xml:space="preserve">
+    <value>Create Note</value>
+  </data>
+  <data name="NodeTriggerEventDescription" xml:space="preserve">
+    <value>Trigger/Fire an event of the specified type for the specified entity</value>
+  </data>
+  <data name="LifecycleExecutedError" xml:space="preserve">
+    <value>You have attempted to execute a lifecycle directly, this is not permitted.</value>
+  </data>
+  <data name="DocWorkflowTypeText" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="ExecuteWorkflowSuccess" xml:space="preserve">
+    <value>Workflow '{0}' completed successfully</value>
+  </data>
+  <data name="NodeCreateTestNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Tests</value>
+  </data>
+  <data name="NodeCreateEntityParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeBlockDefaultActionNameFormat" xml:space="preserve">
+    <value>Block default '{0}'</value>
+  </data>
+  <data name="NodeGetLinkedEntityErrorNoSelected" xml:space="preserve">
+    <value>The entity specified is not available within the available parameters</value>
+  </data>
+  <data name="DocActionTitle" xml:space="preserve">
+    <value>Action - {0}</value>
+  </data>
+  <data name="NodeCallWorkflowParameterWorkflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="NodeSetEntityPropertyNameFormat" xml:space="preserve">
+    <value>Set {0} to '{1}'</value>
+  </data>
+  <data name="NodeCreateJobName" xml:space="preserve">
+    <value>Create Job</value>
+  </data>
+  <data name="NodeConditionSetDescription" xml:space="preserve">
+    <value>Group of conditional statements.</value>
+  </data>
+  <data name="NodeSelectEntityCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="PromptForRepeatCaption" xml:space="preserve">
+    <value>Select repeat count</value>
+  </data>
+  <data name="NodeCopyEntityPropertyParameterFromEntity" xml:space="preserve">
+    <value>From Entity</value>
+  </data>
+  <data name="NodeConditionConfirmParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeDefaultLifecycleName" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeErrorParameterMessageDescription" xml:space="preserve">
+    <value>Error message shown to the user.</value>
+  </data>
+  <data name="NodeErrorParameterFatalDescription" xml:space="preserve">
+    <value>When true, this error will stop all processing within the workflow.</value>
+  </data>
+  <data name="NodePropertyConditionParameterValueDescription" xml:space="preserve">
+    <value>Value to use when evaluating the condition.</value>
+  </data>
+  <data name="NodeSetEntityPropertyGlobalName" xml:space="preserve">
+    <value>Set to Global</value>
+  </data>
+  <data name="NodeCreateSampleParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new sample.</value>
+  </data>
+  <data name="NodeCreateTestParameterAnalysisDescription" xml:space="preserve">
+    <value>Analysis to use to create the test.</value>
+  </data>
+  <data name="NodeMailParameterSubject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="NodeGetLinkedEntityErrorNoEntity" xml:space="preserve">
+    <value>The entity has not been specified</value>
+  </data>
+  <data name="DocActionText" xml:space="preserve">
+    <value>Users can trigger the '{0}' action. The action is described as '{1}'. Users can only trigger this action if the {3} is in '{4}' state.</value>
+  </data>
+  <data name="NodeEsigCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DocWorkflowTitle" xml:space="preserve">
+    <value>Workflow - {0}</value>
+  </data>
+  <data name="NodePerformActionNameFormat" xml:space="preserve">
+    <value>Perform '{0}' on {1}</value>
+  </data>
+  <data name="NodeNoteCreateParameterNoteTextDescription" xml:space="preserve">
+    <value>Text to be used as the note.</value>
+  </data>
+  <data name="NodeConditionConfirmParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodePerformActionCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodePrinterParameterPrinterDescription" xml:space="preserve">
+    <value>Printer to send.</value>
+  </data>
+  <data name="NodeSelectEntityParameterIdDescription" xml:space="preserve">
+    <value>Identity of the entity that will be selected for use within this workflow.</value>
+  </data>
+  <data name="NodeLog4NetCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCommentName" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="WorkflowJournalTypeCreatedDescription" xml:space="preserve">
+    <value>Created - Initial States ({0})</value>
+  </data>
+  <data name="WorkflowJournalTypeCreatedShortDescription" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="NodeConditionSetCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="TraceGetLinkedEntityNodeSelected" xml:space="preserve">
+    <value>The linked property {0}.{1} returned {2} and the child workflow will be executed</value>
+  </data>
+  <data name="NodePromptForRepeatCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodePropertyConditionCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeCreateJobNameFormat" xml:space="preserve">
+    <value>Create '{0}' Job</value>
+  </data>
+  <data name="NodeGetLinkedEntityParameterPropertyDescription" xml:space="preserve">
+    <value>Property to obtain the linked entity from.</value>
+  </data>
+  <data name="NodeCategoryFour" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeErrorCaption" xml:space="preserve">
+    <value>Node '{0}' Error</value>
+  </data>
+  <data name="NodeElseCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeCategoryTwo" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeLog4NetParameterLevelDescription" xml:space="preserve">
+    <value>Severity level to be used when logging this message.</value>
+  </data>
+  <data name="NodeSampleLoginDescription" xml:space="preserve">
+    <value>Sample Login Executed via the Login screen</value>
+  </data>
+  <data name="NodeMailNameFormat" xml:space="preserve">
+    <value>Send Mail to {0}</value>
+  </data>
+  <data name="NodeCallSubWorkflowCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodePropertyConditionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeActionNameFormat2" xml:space="preserve">
+    <value>{0} (only if {1})</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterPropertyDescription" xml:space="preserve">
+    <value>Property to prompt for and receive the specified value.</value>
+  </data>
+  <data name="NodeSubWorkflowDescription" xml:space="preserve">
+    <value>Sub workflow called from elsewhere in this Workflow.</value>
+  </data>
+  <data name="NodeSubWorkflowName" xml:space="preserve">
+    <value>Sub-workflow</value>
+  </data>
+  <data name="NodeBlockDefaultActionErrorExecuted" xml:space="preserve">
+    <value>A Block Default action was executed, this is not appropriate</value>
+  </data>
+  <data name="NodeGetLinkedEntityErrorNoProperty" xml:space="preserve">
+    <value>The linked property has not been specified</value>
+  </data>
+  <data name="NodeEsigSigningDescription" xml:space="preserve">
+    <value>Electronic Signature node in workflow '{0}'</value>
+  </data>
+  <data name="NodeNodeSetName" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="NodeNodeSetDescription" xml:space="preserve">
+    <value>Mechanism for grouping nodes together - for tidy people</value>
+  </data>
+  <data name="NodeNodeSetNameFormat" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="NodeNodeSetCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCompositeName" xml:space="preserve">
+    <value>Create Composite</value>
+  </data>
+  <data name="NodeCompositeNameFormat" xml:space="preserve">
+    <value>Create '{0}' Composite Sample</value>
+  </data>
+  <data name="NodeCompositeNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Composite Samples</value>
+  </data>
+  <data name="NodeCompositeDescription" xml:space="preserve">
+    <value>Create a composite sample</value>
+  </data>
+  <data name="NodeCompositeCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCompositeParameterWorkflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="NodeCompositeParameterWorkflowDescription" xml:space="preserve">
+    <value>Workflow for the generated composite sample.</value>
+  </data>
+  <data name="NodeCommandName" xml:space="preserve">
+    <value>Run Command</value>
+  </data>
+  <data name="NodeCommandNameFormat" xml:space="preserve">
+    <value>Run '{0}'</value>
+  </data>
+  <data name="NodeCommandDescription" xml:space="preserve">
+    <value>Execute a menu command</value>
+  </data>
+  <data name="NodeCommandCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCommandParameterCommand" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="NodeCommandParameterCommandDescription" xml:space="preserve">
+    <value>Menu command to execute, like file/run.</value>
+  </data>
+  <data name="NodeBaseActionName" xml:space="preserve">
+    <value>Base Action</value>
+  </data>
+  <data name="NodeBaseActionNameFormat" xml:space="preserve">
+    <value>Base {0}</value>
+  </data>
+  <data name="NodeBaseActionDescription" xml:space="preserve">
+    <value>Underlying workflow picked up by an Action Node</value>
+  </data>
+  <data name="NodeBaseActionCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="BaseNodeActionNameFormat2" xml:space="preserve">
+    <value>Base {0} (only if {1})</value>
+  </data>
+  <data name="SetPropertyInvalidCharError" xml:space="preserve">
+    <value>Unable to set '{0}' to '{1}' - allowed characters are '{2}'</value>
+  </data>
+  <data name="SetPropertyInvalidFormula" xml:space="preserve">
+    <value>Error calculating '{0}' : {1}</value>
+  </data>
+  <data name="NodeCreateSampleParameterIdText" xml:space="preserve">
+    <value>ID Text</value>
+  </data>
+  <data name="NodeCreateSampleParameterIdTextDescription" xml:space="preserve">
+    <value>Formula used to generate the Textual Id</value>
+  </data>
+  <data name="NodeCreateJobParameterJobName" xml:space="preserve">
+    <value>Job Name</value>
+  </data>
+  <data name="NodeCreateJobParameterJobNameDescription" xml:space="preserve">
+    <value>Formula used to generate the Job Name</value>
+  </data>
+  <data name="NodeFormulaConditionCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeFormulaConditionDescription" xml:space="preserve">
+    <value>If Formula is true, formula must return a boolean.</value>
+  </data>
+  <data name="NodeFormulaConditionName" xml:space="preserve">
+    <value>If</value>
+  </data>
+  <data name="NodeFormulaConditionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeFormulaConditionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeFormulaConditionParameter" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="NodeFormulaConditionParameterDescription" xml:space="preserve">
+    <value>Formula which returns boolean. Example for sample "[OldStatus.PhraseId] == ? And [Status.PhraseId] == 'V'"</value>
+  </data>
+  <data name="NodeFormulaConditionNameFormat" xml:space="preserve">
+    <value>If '{0}' then</value>
+  </data>
+  <data name="NodeSwapEntityPropertyCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeSwapEntityPropertyName" xml:space="preserve">
+    <value>Swap Properties</value>
+  </data>
+  <data name="NodeSwapEntityPropertyDescription" xml:space="preserve">
+    <value>Swap an entity property to another property.</value>
+  </data>
+  <data name="NodeSwapEntityPropertyNameFormat" xml:space="preserve">
+    <value>Swap '{0}' to '{1}'</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterToEntityDescription" xml:space="preserve">
+    <value>To Entity</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterToEntity" xml:space="preserve">
+    <value>To Entity</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterToProperty" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterToPropertyDescription" xml:space="preserve">
+    <value>Property to Swap the value to.</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterFromEntity" xml:space="preserve">
+    <value>From Entity</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterFromEntityDescription" xml:space="preserve">
+    <value>From Entity</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterFromProperty" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="NodeSwapEntityPropertyParameterFromPropertyDescription" xml:space="preserve">
+    <value>Property to Swap the value from.</value>
+  </data>
+  <data name="TraceSwapEntityPropertyNodeCopied" xml:space="preserve">
+    <value>Property {0} of {1} entity '{2}' swapped to Property {3} of {4} entity '{5}'.</value>
+  </data>
+  <data name="ExecuteActionChooseEntity" xml:space="preserve">
+    <value>Please choose an Entity.</value>
+  </data>
+  <data name="ExecuteActionSuccess" xml:space="preserve">
+    <value>Action '{0}' Executed successfully.</value>
+  </data>
+  <data name="ExecuteActionFailure" xml:space="preserve">
+    <value>Action '{0}' failed. {1}</value>
+  </data>
+  <data name="TraceFormulaConditionNodeMatch" xml:space="preserve">
+    <value>Formula condition did match '{0}'.</value>
+  </data>
+  <data name="TraceFormulaConditionNodeUnmatch" xml:space="preserve">
+    <value>Formula condition did not match '{0}'.</value>
+  </data>
+  <data name="TraceFormulaConditionProperty" xml:space="preserve">
+    <value>Parameter value from {0} is '{1}'.</value>
+  </data>
+  <data name="NodeCreateTestCompListNameFormat" xml:space="preserve">
+    <value>Create '{0}' Test with list '{1}'</value>
+  </data>
+  <data name="NodeCreateTestCompListNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Tests with list '{2}'</value>
+  </data>
+  <data name="NodeCreateSubSampleName" xml:space="preserve">
+    <value>Create Sub Sample</value>
+  </data>
+  <data name="NodeCreateSubSampleCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreateSubSampleDescription" xml:space="preserve">
+    <value>Create a sub sample from a sample</value>
+  </data>
+  <data name="NodeCreateSubSampleNameFormat" xml:space="preserve">
+    <value>Create '{0}' Sub Sample</value>
+  </data>
+  <data name="NodeCreateSubSampleNameManyFormat" xml:space="preserve">
+    <value>Create {0} '{1}' Sub Samples</value>
+  </data>
+  <data name="NodeSubSampleName" xml:space="preserve">
+    <value>Sub Sample Workflow</value>
+  </data>
+  <data name="NodeSubSampleCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeSubSampleDescription" xml:space="preserve">
+    <value>Sub Sample specific variant of a Sample Workflow</value>
+  </data>
+  <data name="NodeSubSampleNameFormat" xml:space="preserve">
+    <value>Sub Sample Workflow</value>
+  </data>
+  <data name="SubSampleExecutedError" xml:space="preserve">
+    <value>It is not appropriate to execute a sub sample workflow directly</value>
+  </data>
+  <data name="NodeAuditCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeAuditDescription" xml:space="preserve">
+    <value>Create a silent or prompted Audit Event</value>
+  </data>
+  <data name="NodeAuditError" xml:space="preserve">
+    <value>Audit failed {0}.</value>
+  </data>
+  <data name="NodeAuditName" xml:space="preserve">
+    <value>Audit Event</value>
+  </data>
+  <data name="NodeAuditNameFormat" xml:space="preserve">
+    <value>Audit Event with reason '{0}'</value>
+  </data>
+  <data name="NodeAuditParameterReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="NodeAuditParameterReasonDescription" xml:space="preserve">
+    <value>Reason for Audit Event, a blank reason will prompt the user for a reason</value>
+  </data>
+  <data name="NodeAuditSigningDescription" xml:space="preserve">
+    <value>Audit node in workflow '{0}'</value>
+  </data>
+  <data name="NodeAuditBackgroundReason" xml:space="preserve">
+    <value>Prompted Audit Event completed by background process</value>
+  </data>
+  <data name="NodeAuditPromptNameFormat" xml:space="preserve">
+    <value>Audit Event prompt for reason</value>
+  </data>
+  <data name="NodeEventOverrideCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeEventOverrideDescription" xml:space="preserve">
+    <value>Respond to an event triggered on the specified entity. Hide the Lifecycle event handler for this event.</value>
+  </data>
+  <data name="NodeEventOverrideName" xml:space="preserve">
+    <value>Event Override</value>
+  </data>
+  <data name="NodeEventOverrideNameFormat" xml:space="preserve">
+    <value>Override for {0}</value>
+  </data>
+  <data name="NodeEventOverrideParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeEventOverrideParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeEventOverrideParameterEvent" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="NodeEventOverrideParameterEventDescription" xml:space="preserve">
+    <value>Event to override.</value>
+  </data>
+  <data name="NodeTriggerDefaultEventCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeTriggerDefaultEventDescription" xml:space="preserve">
+    <value>Trigger/Fire an event of the specified type on the lifecycle for the specified entity</value>
+  </data>
+  <data name="NodeTriggerDefaultEventErrorNoEntity" xml:space="preserve">
+    <value>Missing Event Type for the Trigger Default Event Node</value>
+  </data>
+  <data name="NodeTriggerDefaultEventName" xml:space="preserve">
+    <value>Trigger Default Event</value>
+  </data>
+  <data name="NodeTriggerDefaultEventNameFormat" xml:space="preserve">
+    <value>Trigger Default '{0}'</value>
+  </data>
+  <data name="NodeTriggerDefaultEventParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeTriggerDefaultEventParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeTriggerDefaultEventParameterEvent" xml:space="preserve">
+    <value>Event Type</value>
+  </data>
+  <data name="NodeTriggerDefaultEventParameterEventDescription" xml:space="preserve">
+    <value>Event type that is triggered for the current entity.</value>
+  </data>
+  <data name="TraceTriggerDefaultEventNodeCall" xml:space="preserve">
+    <value>Triggering the {0} Event in the Default Lifecycle</value>
+  </data>
+  <data name="TraceTriggerDefaultEventNodeCallComplete" xml:space="preserve">
+    <value>{0} Default Lifecycle Event has been completed</value>
+  </data>
+  <data name="AuditCaption" xml:space="preserve">
+    <value>'Audit Transaction'</value>
+  </data>
+  <data name="NodeJobLoginName" xml:space="preserve">
+    <value>Job Login Workflow</value>
+  </data>
+  <data name="NodeJobLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeJobLoginNameFormat" xml:space="preserve">
+    <value>Job Login Workflow</value>
+  </data>
+  <data name="NodeJobLoginDescription" xml:space="preserve">
+    <value>Job Login Executed via the Login screen</value>
+  </data>
+  <data name="NodeCreateRetestName" xml:space="preserve">
+    <value>Create Retest</value>
+  </data>
+  <data name="NodeCreateRetestCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCreateRetestDescription" xml:space="preserve">
+    <value>Create a new test based on a previously executed test</value>
+  </data>
+  <data name="TraceCreateRetestNodeCreated" xml:space="preserve">
+    <value>Retest '{0}' created.</value>
+  </data>
+  <data name="NodeCreateResampleName" xml:space="preserve">
+    <value>Create Resample</value>
+  </data>
+  <data name="NodeCreateResampleCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCreateResampleDescription" xml:space="preserve">
+    <value>Resample based on a previously processed sample</value>
+  </data>
+  <data name="TraceCreateResampleNodeCreated" xml:space="preserve">
+    <value>Resample '{0}' created.</value>
+  </data>
+  <data name="NodeScheduleActionName" xml:space="preserve">
+    <value>Schedule Action</value>
+  </data>
+  <data name="NodeScheduleActionCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeScheduleActionNameFormat" xml:space="preserve">
+    <value>Schedule '{0}' Action</value>
+  </data>
+  <data name="NodeScheduleActionDescription" xml:space="preserve">
+    <value>Perform an action via the background</value>
+  </data>
+  <data name="NodeScheduleActionParameterAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="NodeScheduleActionParameterActionDescription" xml:space="preserve">
+    <value>Action type to perform</value>
+  </data>
+  <data name="NodeScheduleActionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeScheduleActionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeScheduleActionParameterWhen" xml:space="preserve">
+    <value>When</value>
+  </data>
+  <data name="NodeScheduleActionParameterWhenDescription" xml:space="preserve">
+    <value>Formula to determine the schedule time</value>
+  </data>
+  <data name="TraceScheduleActionNodeCall" xml:space="preserve">
+    <value>Scheduling Action {0}.</value>
+  </data>
+  <data name="TraceScheduleActionNodeCallDetails" xml:space="preserve">
+    <value>Scheduled : '{0}' with '{1}' at {2}.</value>
+  </data>
+  <data name="NodeScheduleWorkflowName" xml:space="preserve">
+    <value>Schedule Workflow</value>
+  </data>
+  <data name="NodeScheduleWorkflowCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeScheduleWorkflowNameFormat" xml:space="preserve">
+    <value>Schedule '{0}' Workflow</value>
+  </data>
+  <data name="NodeScheduleWorkflowDescription" xml:space="preserve">
+    <value>Perform an action via the background</value>
+  </data>
+  <data name="NodeScheduleWorkflowParameterWorkflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="NodeScheduleWorkflowParameterWorkflowDescription" xml:space="preserve">
+    <value>Workflow to perform</value>
+  </data>
+  <data name="NodeScheduleWorkflowParameterWhen" xml:space="preserve">
+    <value>When</value>
+  </data>
+  <data name="NodeScheduleWorkflowParameterWhenDescription" xml:space="preserve">
+    <value>Formula to determine the schedule time</value>
+  </data>
+  <data name="TraceScheduleWorkflowNodeCall" xml:space="preserve">
+    <value>Scheduling Workflow '{0}'.</value>
+  </data>
+  <data name="TraceScheduleWorkflowNodeCallDetails" xml:space="preserve">
+    <value>Scheduled : '{0}' with '{1}' at {2}.</value>
+  </data>
+  <data name="NodeAlertName" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="NodeAlertCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeAlertNameFormat" xml:space="preserve">
+    <value>Alert '{0}'</value>
+  </data>
+  <data name="NodeAlertDescription" xml:space="preserve">
+    <value>Display an alert window</value>
+  </data>
+  <data name="NodeAlertParameterCaption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="NodeAlertParameterCaptionDescription" xml:space="preserve">
+    <value>Alert Caption Text</value>
+  </data>
+  <data name="NodeAlertParameterMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NodeAlertParameterMessageDescription" xml:space="preserve">
+    <value>Message Text</value>
+  </data>
+  <data name="NodeAlertParameterIcon" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="NodeAlertParameterIconDescription" xml:space="preserve">
+    <value>Icon to show</value>
+  </data>
+  <data name="NodeAlertParameterCommand" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="NodeAlertParameterCommandDescription" xml:space="preserve">
+    <value>Menu command to perform if clicked</value>
+  </data>
+  <data name="TraceAlertNodeCall" xml:space="preserve">
+    <value>Alert Shown '{0}'.</value>
+  </data>
+  <data name="AlertCaption" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="NodeIfBackgroundName" xml:space="preserve">
+    <value>If Background</value>
+  </data>
+  <data name="NodeIfBackgroundCategory" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeIfBackgroundNameFormat" xml:space="preserve">
+    <value>If Background</value>
+  </data>
+  <data name="NodeIfBackgroundDescription" xml:space="preserve">
+    <value>If the workflow is running non-interactively</value>
+  </data>
+  <data name="LoginAllowRemove" xml:space="preserve">
+    <value>Allow Remove</value>
+  </data>
+  <data name="NodeCreateJobAllowRemoveDescription" xml:space="preserve">
+    <value>Controls whether or not this Job can be removed during Login</value>
+  </data>
+  <data name="NodeCreateSampleAllowRemoveDescription" xml:space="preserve">
+    <value>Controls whether or not this Sample can be removed during Login</value>
+  </data>
+  <data name="NodeCreateTestAllowRemoveDescription" xml:space="preserve">
+    <value>Controls whether or not this Test can be removed during Login</value>
+  </data>
+  <data name="NodeCreateTestsAllowRemoveDescription" xml:space="preserve">
+    <value>Controls whether or not these Tests can be removed during Login</value>
+  </data>
+  <data name="NodeCreateJobAllowNewSamples" xml:space="preserve">
+    <value>Allow New Samples</value>
+  </data>
+  <data name="NodeCreateJobAllowNewSamplesDescription" xml:space="preserve">
+    <value>Controls whether or not new Samples can be added to this job during Login</value>
+  </data>
+  <data name="NodeCreateSampleAllowSplit" xml:space="preserve">
+    <value>Allow Split</value>
+  </data>
+  <data name="NodeCreateSampleAllowSplitDescription" xml:space="preserve">
+    <value>Controls whether or not this Sample can be split during Login</value>
+  </data>
+  <data name="NodeCreateSampleAllowNewTests" xml:space="preserve">
+    <value>Allow New Tests</value>
+  </data>
+  <data name="NodeCreateSampleAllowNewTestsDescription" xml:space="preserve">
+    <value>Controls whether or not new tests can be added to this Sample during Login</value>
+  </data>
+  <data name="NodeCategoryEight" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="NodeCompareSpecName" xml:space="preserve">
+    <value>Compare with Specification</value>
+  </data>
+  <data name="NodeCompareSpecCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCompareSpecNameFormat" xml:space="preserve">
+    <value>Compare against '{0}'</value>
+  </data>
+  <data name="NodeCompareSpecNameFormat2" xml:space="preserve">
+    <value>Compare against '{0}' Level '{1}'</value>
+  </data>
+  <data name="NodeCompareSpecDescription" xml:space="preserve">
+    <value>Compare against a product specification</value>
+  </data>
+  <data name="NodeCompareSpecParameterProduct" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="NodeCompareSpecParameterProductDescription" xml:space="preserve">
+    <value>Product Specification to Compare</value>
+  </data>
+  <data name="NodeCompareSpecParameterLevel" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="NodeCompareSpecParameterLevelDescription" xml:space="preserve">
+    <value>Level to restrict the product comparison to</value>
+  </data>
+  <data name="NodeCompareSpecParameterUpdate" xml:space="preserve">
+    <value>Update Flags</value>
+  </data>
+  <data name="NodeCompareSpecParameterUpdateDescription" xml:space="preserve">
+    <value>Set the comparison flags</value>
+  </data>
+  <data name="NodeCompareSpecPassName" xml:space="preserve">
+    <value>Pass</value>
+  </data>
+  <data name="NodeCompareSpecPassCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCompareSpecPassNameFormat" xml:space="preserve">
+    <value>Pass</value>
+  </data>
+  <data name="NodeCompareSpecPassDescription" xml:space="preserve">
+    <value>Workflow to execute when Comparison passes</value>
+  </data>
+  <data name="NodeCompareSpecFailName" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="NodeCompareSpecFailCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCompareSpecFailNameFormat" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="NodeCompareSpecFailDescription" xml:space="preserve">
+    <value>Workflow to execute when Comparison fails</value>
+  </data>
+  <data name="NodeCompareSpecPartialName" xml:space="preserve">
+    <value>Indeterminate</value>
+  </data>
+  <data name="NodeCompareSpecPartialCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeCompareSpecPartialNameFormat" xml:space="preserve">
+    <value>Indeterminate</value>
+  </data>
+  <data name="NodeCompareSpecPartialDescription" xml:space="preserve">
+    <value>Workflow to execute when Comparison passes, but not all results are present</value>
+  </data>
+  <data name="NodeGetResultName" xml:space="preserve">
+    <value>Get Result</value>
+  </data>
+  <data name="NodeGetResultCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeGetResultNameFormat" xml:space="preserve">
+    <value>Result '{0}'</value>
+  </data>
+  <data name="NodeGetResultParameterResultName" xml:space="preserve">
+    <value>Result Name</value>
+  </data>
+  <data name="NodeGetResultParameterResultNameDescription" xml:space="preserve">
+    <value>Get hold of the specified result</value>
+  </data>
+  <data name="NodeGetResultDescription" xml:space="preserve">
+    <value>Select the specified result for this test</value>
+  </data>
+  <data name="NodeGetCurrentEntityName" xml:space="preserve">
+    <value>Get Current Entity</value>
+  </data>
+  <data name="NodeGetCurrentEntityCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeGetCurrentEntityNameFormat" xml:space="preserve">
+    <value>Get {0}</value>
+  </data>
+  <data name="NodeGetCurrentEntityDescription" xml:space="preserve">
+    <value>Get the currently entered result for this test</value>
+  </data>
+  <data name="NodeGetCurrentEntityParameterEntityName" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeGetCurrentEntityParameterEntityDescription" xml:space="preserve">
+    <value>Entity to obtain from the current context</value>
+  </data>
+  <data name="NodePlaySoundName" xml:space="preserve">
+    <value>Play Sound</value>
+  </data>
+  <data name="NodePlaySoundCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodePlaySoundNameFormat" xml:space="preserve">
+    <value>Beep</value>
+  </data>
+  <data name="NodePlaySoundNameFormat2" xml:space="preserve">
+    <value>Play '{0}'</value>
+  </data>
+  <data name="NodePlaySoundDescription" xml:space="preserve">
+    <value>Play a sound, or just beep if a file is not specified</value>
+  </data>
+  <data name="NodePlaySoundParameterFile" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="NodePlaySoundParameterFileDescription" xml:space="preserve">
+    <value>Client resource WAV file, or leave blank to just beep. An mp3 version of the same file needs to be added to the resource folder, for it to work within the web client.</value>
+  </data>
+  <data name="FormulaCloseCaption" xml:space="preserve">
+    <value>No Expression</value>
+  </data>
+  <data name="FormulaCloseMessage" xml:space="preserve">
+    <value>You have not specified an expression - continue anyway?</value>
+  </data>
+  <data name="NodeInspectionCategory" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="NodeInspectionStartDescription" xml:space="preserve">
+    <value>Starts the inspection process, returns true if successful.</value>
+  </data>
+  <data name="NodeInspectionStartName" xml:space="preserve">
+    <value>If Start Inspection</value>
+  </data>
+  <data name="NodeInspectionStartParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectionStartParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectionStartNameFormat" xml:space="preserve">
+    <value>If Start Inspection then</value>
+  </data>
+  <data name="TraceInspectionStartNodeMatch" xml:space="preserve">
+    <value>Inspection started.</value>
+  </data>
+  <data name="TraceInspectionStartNodeUnmatch" xml:space="preserve">
+    <value>Start inspection failed.</value>
+  </data>
+  <data name="NodeInspectionCompleteDescription" xml:space="preserve">
+    <value>Check the completion state of the inspection process, returns true if the inspection is complete.</value>
+  </data>
+  <data name="NodeInspectionCompleteName" xml:space="preserve">
+    <value>If Inspection is Complete</value>
+  </data>
+  <data name="NodeInspectionCompleteParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectionCompleteParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectionCompleteNameFormat" xml:space="preserve">
+    <value>If Inspection is Complete then</value>
+  </data>
+  <data name="TraceInspectionCompleteNodeMatch" xml:space="preserve">
+    <value>Inspection complete.</value>
+  </data>
+  <data name="TraceInspectionCompleteNodeUnmatch" xml:space="preserve">
+    <value>Inspection not complete.</value>
+  </data>
+  <data name="NodeInspectPassDescription" xml:space="preserve">
+    <value>Records an inspection pass on behalf of the current user, returns true if successful.</value>
+  </data>
+  <data name="NodeInspectPassName" xml:space="preserve">
+    <value>If Inspection Pass</value>
+  </data>
+  <data name="NodeInspectPassParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectPassParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectPassNameFormat" xml:space="preserve">
+    <value>If Inspection Pass</value>
+  </data>
+  <data name="TraceNodeInspectPassWorked" xml:space="preserve">
+    <value>Inspection Pass successfully recorded.</value>
+  </data>
+  <data name="TraceNodeInspectPassFailed" xml:space="preserve">
+    <value>Inspection Pass was not successfully recorded.</value>
+  </data>
+  <data name="NodeInspectFailDescription" xml:space="preserve">
+    <value>Records an inspection failure on behalf of the current user, returns true if successful.</value>
+  </data>
+  <data name="NodeInspectFailName" xml:space="preserve">
+    <value>If Inspection Fail</value>
+  </data>
+  <data name="NodeInspectFailParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectFailParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeInspectFailNameFormat" xml:space="preserve">
+    <value>If Inspection Fail</value>
+  </data>
+  <data name="TraceNodeInspectFailWorked" xml:space="preserve">
+    <value>Inspection Fail successfully recorded.</value>
+  </data>
+  <data name="TraceNodeInspectFailFailed" xml:space="preserve">
+    <value>Inspection Fail was not successfully recorded.</value>
+  </data>
+  <data name="DocWorkflowAllTypesTitle" xml:space="preserve">
+    <value>Appendix - All Workflow Node Types</value>
+  </data>
+  <data name="DocWorkflowAllTypesText" xml:space="preserve">
+    <value>This system supports the following node types.</value>
+  </data>
+  <data name="DocTypeRequiresData" xml:space="preserve">
+    <value>Requires Data</value>
+  </data>
+  <data name="DocTypeCreatesData" xml:space="preserve">
+    <value>Creates Data</value>
+  </data>
+  <data name="DocTypeFollowsParentText" xml:space="preserve">
+    <value>This node type will be followed by the followers of its parent node.</value>
+  </data>
+  <data name="DocTypeFollowsParentPlusText" xml:space="preserve">
+    <value>This node type may be followed by the following node types of its parent node as well as the nodes detailed in the table below.</value>
+  </data>
+  <data name="DocTypeFollowsText" xml:space="preserve">
+    <value>This node type may be followed by the nodes detailed in the table below.</value>
+  </data>
+  <data name="DocTypeParentsText" xml:space="preserve">
+    <value>This node type may follow the nodes detailed in the table below.</value>
+  </data>
+  <data name="DocNodeNodeType" xml:space="preserve">
+    <value>Node Type</value>
+  </data>
+  <data name="DocNodeComments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="DocWorkflowMainTitle" xml:space="preserve">
+    <value>Workflow Definition</value>
+  </data>
+  <data name="DocWorkflowMainText" xml:space="preserve">
+    <value>SampleManager executes the following activities when you run this workflow. Actions and Events nodes may also be triggered after the initial execution.</value>
+  </data>
+  <data name="DocWorkflowTypeGeneralTitle" xml:space="preserve">
+    <value>{0} General Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeGeneralText" xml:space="preserve">
+    <value>This section describes the '{0}' General workflow. This type of workflow is used for simple standalone functions.</value>
+  </data>
+  <data name="DocWorkflowTypeSampleLoginTitle" xml:space="preserve">
+    <value>{0} Sample Login Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeSampleLoginText" xml:space="preserve">
+    <value>This section describes the '{0}' Sample Login workflow. This kind of workflow is used to create samples via the Spreadsheet login screen.</value>
+  </data>
+  <data name="DocWorkflowTypeLifecycleTitle" xml:space="preserve">
+    <value>{0} Lifecycle Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeLifecycleText" xml:space="preserve">
+    <value>This section describes the '{0}' Lifecycle workflow. It details any action workflows that the user can trigger, any event workflows triggered by the system, and any sub-workflows used by those events/actions. This type of workflow is used to model the state of an entity within the system and how transitions between states occurs.</value>
+  </data>
+  <data name="DocUsedEntityTitle" xml:space="preserve">
+    <value>Referenced Data</value>
+  </data>
+  <data name="DocUsedEntityText" xml:space="preserve">
+    <value>The following table details the entities that are explicitly used by this workflow</value>
+  </data>
+  <data name="DocEntityType" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="DocEntityName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DocWorkflowTypeExtendedLifecycleTitle" xml:space="preserve">
+    <value>{0} Extended Lifecycle Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeExtendedLifecycleText" xml:space="preserve">
+    <value>This section describes the '{0}' Extended Lifecycle workflow. It details any action workflows that the user can trigger, any event workflows triggered by the system, and any sub-workflows used by those events/actions. This kind of workflow is used to extend a default entity lifecycle to add additional stages within the existing lifecycle, but avoiding actually changing the original.</value>
+  </data>
+  <data name="DocWorkflowTypeSubsampleLoginTitle" xml:space="preserve">
+    <value>{0} Subsample Login Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeSubsampleLoginText" xml:space="preserve">
+    <value>This section describes the '{0}' Subsample Login workflow. This kind of workflow is used to create subsamples via the Spreadsheet login screen and also via the Split sample option.</value>
+  </data>
+  <data name="DocWorkflowTypeJobLoginTitle" xml:space="preserve">
+    <value>{0} Job Login Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeJobLoginText" xml:space="preserve">
+    <value>This section describes the '{0}' Job Login workflow. This type of workflow is used to create jobs via the Spreadsheet login screen.</value>
+  </data>
+  <data name="DocWorkflowTypeMethodTitle" xml:space="preserve">
+    <value>{0} Method Workflow</value>
+  </data>
+  <data name="DocWorkflowTypeMethodText" xml:space="preserve">
+    <value>This section describes the '{0}' Method workflow. It details any action workflows that the user can trigger, any event workflows triggered by the system, and any sub-workflows used by those events/actions. This type of workflow is used to model Analysis specific workflow and will be associated with one or more Analyses within the system.</value>
+  </data>
+  <data name="DocRefMethodWorkflowTitle" xml:space="preserve">
+    <value>Referenced Method Workflow</value>
+  </data>
+  <data name="DocRefMethodWorkflowText" xml:space="preserve">
+    <value>This section details the Method Workflows referenced by this workflow</value>
+  </data>
+  <data name="DocRefWorkflowTitle" xml:space="preserve">
+    <value>Referenced Workflow</value>
+  </data>
+  <data name="DocRefWorkflowText" xml:space="preserve">
+    <value>This section details the Workflows referenced by this workflow</value>
+  </data>
+  <data name="DocSecurityText" xml:space="preserve">
+    <value>This following table details the security roles that are required to see the context menu for this workflow.</value>
+  </data>
+  <data name="DocSecurityTitle" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="DocWorkflowIntroductionTitle" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="DocWorkflowIntroductionText" xml:space="preserve">
+    <value>This document describes the {0} workflow, including a list of its referenced data, and if applicable any security roles required to see its context menu. Finally this document will detail the workflow node types that have been used by this workflow.</value>
+  </data>
+  <data name="DocWorkflowIntroductionExtremeText" xml:space="preserve">
+    <value>This document describes the {0} workflow, including a list of its referenced data, and if applicable any security roles required to see its context menu. It will fully describe any referenced Method workflows and other Workflows. Finally this document will extensively detail all the workflow node types available within the system.</value>
+  </data>
+  <data name="DocWorkflowStart" xml:space="preserve">
+    <value>Generating '{0}' Workflow Documentation...</value>
+  </data>
+  <data name="DocWorkflowStartExtreme" xml:space="preserve">
+    <value>Generating '{0}' Workflow Extensive Documentation... This will take a while.</value>
+  </data>
+  <data name="DocWorkflowEnd" xml:space="preserve">
+    <value>Workflow Document '{0}' Generated</value>
+  </data>
+  <data name="DocNodeActionDesc" xml:space="preserve">
+    <value>User Action</value>
+  </data>
+  <data name="DocNodeEventDesc" xml:space="preserve">
+    <value>System Event</value>
+  </data>
+  <data name="NodeReportParameterPreview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="NodeReportParameterPreviewDescription" xml:space="preserve">
+    <value>Preview the report</value>
+  </data>
+  <data name="NodeLabelParameterPreview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="NodeLabelParameterPreviewDescription" xml:space="preserve">
+    <value>Preview the label</value>
+  </data>
+  <data name="NodeNewEntityError" xml:space="preserve">
+    <value>Report or Label cannot be created when the entity is new and has not been saved. The workflow node Generate Report/Label should be placed in a Post Login Event if a report is required at login.</value>
+  </data>
+  <data name="WorkflowProxyAddError" xml:space="preserve">
+    <value>Cannot add new Workflow using Build.</value>
+  </data>
+  <data name="NodeCallVGLName" xml:space="preserve">
+    <value>Call VGL Routine</value>
+  </data>
+  <data name="NodeCallVGLCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCallVGLNameFormat" xml:space="preserve">
+    <value>Call {0}/{1} VGL Routine</value>
+  </data>
+  <data name="NodeCallVGLDescription" xml:space="preserve">
+    <value>Call a VGL Routine</value>
+  </data>
+  <data name="NodeCallVGLParameterReport" xml:space="preserve">
+    <value>VGL Report</value>
+  </data>
+  <data name="NodeCallVGLParameterReportDescription" xml:space="preserve">
+    <value>VGL Report in which the routine to call is defined</value>
+  </data>
+  <data name="NodeCallVGLParameterRoutine" xml:space="preserve">
+    <value>VGL Routine</value>
+  </data>
+  <data name="NodeCallVGLParameterRoutineDescription" xml:space="preserve">
+    <value>VGL Routine to call</value>
+  </data>
+  <data name="ErrorCreateResampleMissingSample" xml:space="preserve">
+    <value>Create Resample must be provided with an Existing Sample</value>
+  </data>
+  <data name="ErrorCreateResampleFailed" xml:space="preserve">
+    <value>Resample not created successfully</value>
+  </data>
+  <data name="WorkflowJournalOpenDescription" xml:space="preserve">
+    <value>From {0:g}</value>
+  </data>
+  <data name="WorkflowJournalPeriodDescription" xml:space="preserve">
+    <value>From {0:g} to {1:g}</value>
+  </data>
+  <data name="WorkflowJournalDescriptionColumn" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="WorkflowJournalPerformedOnColumn" xml:space="preserve">
+    <value>Performed On</value>
+  </data>
+  <data name="WorkflowJournalPerformedByColumn" xml:space="preserve">
+    <value>Performed By</value>
+  </data>
+  <data name="NodeCriteriaParameter" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="NodeCriteriaParameterDescription" xml:space="preserve">
+    <value>The criteria used to filter the entity prompt.</value>
+  </data>
+  <data name="NodePromptForEntityCriteriaNotFound" xml:space="preserve">
+    <value>Criteria '{0}' not found or not supported within workflow.</value>
+  </data>
+  <data name="NodePromptForEntityInvalidEntityName" xml:space="preserve">
+    <value>Invalid Entity Name</value>
+  </data>
+  <data name="NodeNoteNameBlank" xml:space="preserve">
+    <value>Error creating node '{0}', generated name was blank.</value>
+  </data>
+  <data name="NodeGetFormulaTextError" xml:space="preserve">
+    <value>Error creating text from formula '{0}' : {1}</value>
+  </data>
+  <data name="InvalidCopyDataCaption" xml:space="preserve">
+    <value>Copy Node</value>
+  </data>
+  <data name="InvalidCopyDataMessage" xml:space="preserve">
+    <value>It is not appropriate to paste the selected node into this location, as it deals with a different entity - '{0}'</value>
+  </data>
+  <data name="InvalidMoveDataCaption" xml:space="preserve">
+    <value>Move Node</value>
+  </data>
+  <data name="InvalidMoveDataMessage" xml:space="preserve">
+    <value>It is not appropriate to move the selected node into this location, as it deals with a different entity - '{0}'</value>
+  </data>
+  <data name="ErrorCallSubWorkflowNoTarget" xml:space="preserve">
+    <value>Unable to find target workflow node {0}/{1}/{2}</value>
+  </data>
+  <data name="ErrorCallVGLInvalid" xml:space="preserve">
+    <value>VGL Report is invalid</value>
+  </data>
+  <data name="ErrorCallVGLNoRoutine" xml:space="preserve">
+    <value>VGL Routine has not been specified</value>
+  </data>
+  <data name="ErrorCallWorkflow" xml:space="preserve">
+    <value>Unable to find target workflow</value>
+  </data>
+  <data name="ErrorPropertyIsNull" xml:space="preserve">
+    <value>Property Name is Null</value>
+  </data>
+  <data name="ErrorNodeFailedExecuteComparison" xml:space="preserve">
+    <value>Failed to execute comparison, check server crash dump.</value>
+  </data>
+  <data name="ErrorNodeComparingFormula" xml:space="preserve">
+    <value>Error comparing formula '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeInspectionFail" xml:space="preserve">
+    <value>Error recording user inspection fail of '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeCheckingCompletion" xml:space="preserve">
+    <value>Error checking for completion of the inspection for '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeUnableDeterminInspection" xml:space="preserve">
+    <value>Unable to determine inspection field for entity type '{0}'</value>
+  </data>
+  <data name="ErrorNodeInspectionPlan" xml:space="preserve">
+    <value>Inspection plan for entity '{0}' in property '{1}' is blank - unable to proceed</value>
+  </data>
+  <data name="ErrorNodeStartingInspection" xml:space="preserve">
+    <value>Error starting inspection for '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeRecordingInspection" xml:space="preserve">
+    <value>Error recording user inspection pass of '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeInvalidPrinterLabel" xml:space="preserve">
+    <value>Invalid Printer for sending the label</value>
+  </data>
+  <data name="ErrorNodeNoEmail" xml:space="preserve">
+    <value>No Email Address Specified {0}</value>
+  </data>
+  <data name="ErrorNodeMissingDataSource" xml:space="preserve">
+    <value>Missing data source name</value>
+  </data>
+  <data name="ErrorNodeAccessDataSource" xml:space="preserve">
+    <value>Unable to access data source {0}</value>
+  </data>
+  <data name="ErrorNodeMissingChildProperty" xml:space="preserve">
+    <value>Missing Child Property Entity Name</value>
+  </data>
+  <data name="ErrorNodeCreatingDate" xml:space="preserve">
+    <value>Error creating date from formula '{0}' : {1}</value>
+  </data>
+  <data name="ErrorNodeMissingAction" xml:space="preserve">
+    <value>Missing Action Type</value>
+  </data>
+  <data name="ErrorNodePropertyMissing" xml:space="preserve">
+    <value>Property not entered {0}.</value>
+  </data>
+  <data name="ErrorNodeInvalidRepeatCount" xml:space="preserve">
+    <value>Invalid Repeat Count {0} generated from {1}</value>
+  </data>
+  <data name="ErrorNodeInvalidPrinter" xml:space="preserve">
+    <value>Invalid Printer for sending the report</value>
+  </data>
+  <data name="ErrorNodeMissingWorkflow" xml:space="preserve">
+    <value>Missing Workflow</value>
+  </data>
+  <data name="ErrorNodeInvalidEntityName" xml:space="preserve">
+    <value>Invalid Entity Name</value>
+  </data>
+  <data name="ErrorNodeGlobalDoesNotExist" xml:space="preserve">
+    <value>Global {0} does not exist</value>
+  </data>
+  <data name="ErrorNodeMissingEvent" xml:space="preserve">
+    <value>Missing Event Type</value>
+  </data>
+  <data name="VglWorkflowError" xml:space="preserve">
+    <value>Error running workflow '{0}' - </value>
+  </data>
+  <data name="VglWorkflowNoReturn" xml:space="preserve">
+    <value>Workflow did not return correctly.</value>
+  </data>
+  <data name="VglWorkflowInvalid" xml:space="preserve">
+    <value>Unable to select valid workflow</value>
+  </data>
+  <data name="VglWorkflowBlankId" xml:space="preserve">
+    <value>Blank Workflow Id Provided</value>
+  </data>
+  <data name="VglEventError" xml:space="preserve">
+    <value>Unable to trigger event '{0}' on entity '{1}' - </value>
+  </data>
+  <data name="VglActionError" xml:space="preserve">
+    <value>Unable to perform action '{0}' for entity '{1}' - </value>
+  </data>
+  <data name="VglActionNoReturn" xml:space="preserve">
+    <value>Action did not return correctly.</value>
+  </data>
+  <data name="VglActionNoName" xml:space="preserve">
+    <value>Action name is blank.</value>
+  </data>
+  <data name="VglActionInvalid" xml:space="preserve">
+    <value>Unable to select the entity</value>
+  </data>
+  <data name="VglEventNoReturn" xml:space="preserve">
+    <value>Event did not return correctly.</value>
+  </data>
+  <data name="VglEventNoName" xml:space="preserve">
+    <value>Event name is blank</value>
+  </data>
+  <data name="VglEventInvalid" xml:space="preserve">
+    <value>Unable to select the entity</value>
+  </data>
+  <data name="ErrorJobContainsSuspendedSamples" xml:space="preserve">
+    <value>Unable to complete Job with suspended samples - Please unsuspend samples first</value>
+  </data>
+  <data name="ErrorNotApprovedCompletePreparation" xml:space="preserve">
+    <value>You are not approved to complete the preparation for this sample</value>
+  </data>
+  <data name="ErrorNoInpsectionRequired" xml:space="preserve">
+    <value>Sample does not require inspection</value>
+  </data>
+  <data name="ErrorUnableToStartInpection" xml:space="preserve">
+    <value>Unable to start inspection</value>
+  </data>
+  <data name="ErrorRequiresInspection" xml:space="preserve">
+    <value>Sample requires Inspection - please submit the sample for inspection</value>
+  </data>
+  <data name="ErrorUnableToAuthorize" xml:space="preserve">
+    <value>Unable to Authorize - Inspection process is not complete</value>
+  </data>
+  <data name="ErrorUnableToPerformInspection" xml:space="preserve">
+    <value>Unable to perform inspection</value>
+  </data>
+  <data name="ErrorInspectionNotStarted" xml:space="preserve">
+    <value>Inspection not started - please submit the sample for inspection</value>
+  </data>
+  <data name="ErrorNotApprovedCompletePreparationTest" xml:space="preserve">
+    <value>You are not approved to complete the preparation for this test</value>
+  </data>
+  <data name="NodeCallWorkflowParameterRunAsTask" xml:space="preserve">
+    <value>Run Interactively</value>
+  </data>
+  <data name="NodeCallWorkflowParameterRunAsTaskDescription" xml:space="preserve">
+    <value>Run the workflow as a separate task - e.g. bring up Sample Login</value>
+  </data>
+  <data name="ErrorParameterPrompt" xml:space="preserve">
+    <value>Error in Parameter {0}</value>
+  </data>
+  <data name="ErrorLoginCancelled" xml:space="preserve">
+    <value>Login Canceled</value>
+  </data>
+  <data name="NodeLinkPropertyName" xml:space="preserve">
+    <value>Link to Current Entity</value>
+  </data>
+  <data name="NodeLinkPropertyCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeLinkPropertyNameFormat" xml:space="preserve">
+    <value>Link {0} using Current</value>
+  </data>
+  <data name="NodeLinkPropertyDescription" xml:space="preserve">
+    <value>Set the property to be the current entity of suitable type</value>
+  </data>
+  <data name="NodeLinkPropertyParameterEntityName" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="NodeLinkPropertyParameterEntityNameDescription" xml:space="preserve">
+    <value>Entity to obtain from the current context</value>
+  </data>
+  <data name="NodeLinkPropertyParameterProperty" xml:space="preserve">
+    <value>Link Property</value>
+  </data>
+  <data name="NodeLinkPropertyParameterPropertyDescription" xml:space="preserve">
+    <value>Name of the Property to be set using the current entity of appropriate type</value>
+  </data>
+  <data name="NodeCreateTestErrorNoAnalysis" xml:space="preserve">
+    <value>Unable to find suitable analysis to use {0}</value>
+  </data>
+  <data name="NodeCallTaskName" xml:space="preserve">
+    <value>Call Task</value>
+  </data>
+  <data name="NodeCallTaskCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeCallTaskDescription" xml:space="preserve">
+    <value>Calls a .Net task in line with the current workflow.</value>
+  </data>
+  <data name="NodeCallTaskParameterTaskName" xml:space="preserve">
+    <value>Task Name</value>
+  </data>
+  <data name="NodeCallTaskParameterTaskNameDescription" xml:space="preserve">
+    <value>Enter the name of the task to call</value>
+  </data>
+  <data name="NodeCallTaskParameters" xml:space="preserve">
+    <value>Task Parameters</value>
+  </data>
+  <data name="NodeCallTaskParametersDescription" xml:space="preserve">
+    <value>The parameters to pass into the task</value>
+  </data>
+  <data name="ErrorCallTaskNameInvalid" xml:space="preserve">
+    <value>Invalid task name</value>
+  </data>
+  <data name="TraceCallTaskNodeCall" xml:space="preserve">
+    <value>Calling task '{0}' with parameters '{1}'</value>
+  </data>
+  <data name="NodeCallTaskNameFormat" xml:space="preserve">
+    <value>Call task '{0}'</value>
+  </data>
+  <data name="NodeErrorInvalidStatus" xml:space="preserve">
+    <value>Invalid status change</value>
+  </data>
+  <data name="NodeErrorResampleMessage" xml:space="preserve">
+    <value>It is not possible to resample a sub sample. Instead, please split the main sample again.</value>
+  </data>
+  <data name="BadDefaultLifecycle" xml:space="preserve">
+    <value>Unable to locate default lifecycle for entity {0}, please check configuration item. Error returned {1}</value>
+  </data>
+  <data name="ErrorSampleStatus" xml:space="preserve">
+    <value>Incorrect sample status</value>
+  </data>
+  <data name="ErrorAuthorizeOwnResult" xml:space="preserve">
+    <value>You are not allowed to Authorize or Reject results that you entered</value>
+  </data>
+  <data name="WorkflowStatusChangeNo" xml:space="preserve">
+    <value>Dynamic data created through workflow login is not supported when configuration item WORKFLOW_STATUS_CHANGE = NO.</value>
+  </data>
+  <data name="WorkflowUpdateError" xml:space="preserve">
+    <value>Current property bag is empty, make sure 'workflow_run_noupdate' has been called before 'workflow_update_rtn'.</value>
+  </data>
+  <data name="NodeSetWorkflowValueName" xml:space="preserve">
+    <value>Set Workflow Value</value>
+  </data>
+  <data name="NodeSetWorkflowValueCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeSetWorkflowValueDescription" xml:space="preserve">
+    <value>Set a temporary workflow variable for future use in a formula</value>
+  </data>
+  <data name="NodeSetWorkflowValueParameterName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NodeSetWorkflowValueParameterNameDescription" xml:space="preserve">
+    <value>Enter the name of the value</value>
+  </data>
+  <data name="NodeSetWorkflowValueParameterValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="NodeSetWorkflowValueParameterValueDescription" xml:space="preserve">
+    <value>Value to assign</value>
+  </data>
+  <data name="NodeSetWorkflowValueNameFormat" xml:space="preserve">
+    <value>Value '{0}'='{1}'</value>
+  </data>
+  <data name="ErrorSetWorkflowValueNameInvalid" xml:space="preserve">
+    <value>Invalid workflow value name</value>
+  </data>
+  <data name="TraceSetWorkflowValueNodeCall" xml:space="preserve">
+    <value>Set '{0}' = '{1}'</value>
+  </data>
+  <data name="TraceSetWorkflowValueNodeCall2" xml:space="preserve">
+    <value>Setting '{0}' = '{1}'</value>
+  </data>
+  <data name="TraceCallVGLNodeCall" xml:space="preserve">
+    <value>Calling VGL routine {0}/{1}</value>
+  </data>
+  <data name="TraceCallVGLNodeCallComplete" xml:space="preserve">
+    <value>VGL routine {0}/{1} complete</value>
+  </data>
+  <data name="TraceCallTaskNodeCallComplete" xml:space="preserve">
+    <value>Calling task '{0}' with parameters '{1}' complete</value>
+  </data>
+  <data name="ErrorNodeInspectionIdentity" xml:space="preserve">
+    <value>Identity of the current '{0}' entity is blank - submit for inspection is not available until the entity has been persisted</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterAlwaysPrompt" xml:space="preserve">
+    <value>Always Prompt</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterCaptionAlwaysPrompt" xml:space="preserve">
+    <value>NodePromptForSetEntityPropertyParameterCaptionAlwaysPrompt	True: prompt always appears. False: prompt once then stored (a variable name must be supplied)</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterCaptionPromptVariableName" xml:space="preserve">
+    <value>Store the resultant prompt value in a named variable</value>
+  </data>
+  <data name="NodePromptForSetEntityPropertyParameterPromptVariableName" xml:space="preserve">
+    <value>Store as variable name</value>
+  </data>
+  <data name="NodePromptValidVariableName" xml:space="preserve">
+    <value>Variable name must be supplied if prompt configured to only show once</value>
+  </data>
+  <data name="NodePromptForSetDateTimeDescription" xml:space="preserve">
+    <value>Prompts for datetime variable</value>
+  </data>
+  <data name="NodePromptForSetDateTimeVariableName" xml:space="preserve">
+    <value>Prompt for datetime variable</value>
+  </data>
+  <data name="NodePromptForSetIntegerDescription" xml:space="preserve">
+    <value>Sets an integer variable from prompt</value>
+  </data>
+  <data name="NodePromptForSetIntegerVariableName" xml:space="preserve">
+    <value>Prompt for an integer variable</value>
+  </data>
+  <data name="NodePromptForSetStringDescription" xml:space="preserve">
+    <value>Sets a string variable from prompt</value>
+  </data>
+  <data name="NodePromptForSetStringVariableName" xml:space="preserve">
+    <value>Prompt for string variable</value>
+  </data>
+  <data name="NodePromptForSetTimeSpanDescription" xml:space="preserve">
+    <value>Prompts for timespan variable</value>
+  </data>
+  <data name="NodePromptForSetTimeSpanVariableName" xml:space="preserve">
+    <value>Prompt for timespan variable</value>
+  </data>
+  <data name="NodePromptForSetIntervalDescription" xml:space="preserve">
+    <value>Prompts for interval variable</value>
+  </data>
+  <data name="NodePromptForSetIntervalVariableName" xml:space="preserve">
+    <value>Prompt for interval variable</value>
+  </data>
+  <data name="NodePromptForSetVariableDateTimeFormatName" xml:space="preserve">
+    <value>Prompt for datetime variable</value>
+  </data>
+  <data name="NodePromptForSetVariableDescription" xml:space="preserve">
+    <value>Sets a variable from prompt</value>
+  </data>
+  <data name="NodePromptForSetVariableFormat" xml:space="preserve">
+    <value>Set Variable</value>
+  </data>
+  <data name="NodePromptForSetVariableMandatoryCaption" xml:space="preserve">
+    <value>Mandatory field</value>
+  </data>
+  <data name="NodePromptForSetVariableMandatoryName" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
+  <data name="NodePromptForSetVariableName" xml:space="preserve">
+    <value>Set Variable From Prompt</value>
+  </data>
+  <data name="NodePromptForSetVariableTimeSpanAutoName" xml:space="preserve">
+    <value>Set Timespan variable</value>
+  </data>
+  <data name="NodePromptForSetVariableIntervalAutoName" xml:space="preserve">
+    <value>Set Interval variable</value>
+  </data>
+  <data name="NodeSetEntityVariableFormula" xml:space="preserve">
+    <value>Formula to set variable</value>
+  </data>
+  <data name="NodeSetEntityVariableFormulaName" xml:space="preserve">
+    <value>Formula to set variable</value>
+  </data>
+  <data name="NodeSetVariableDescription" xml:space="preserve">
+    <value>Sets a variable</value>
+  </data>
+  <data name="NodeSetVariableFormat" xml:space="preserve">
+    <value>Set Variable</value>
+  </data>
+  <data name="NodeSetVariableFormula" xml:space="preserve">
+    <value>Formula to set variable</value>
+  </data>
+  <data name="NodeSetVariableFormulaName" xml:space="preserve">
+    <value>Formula to set variable</value>
+  </data>
+  <data name="NodeSetVariableName" xml:space="preserve">
+    <value>Set variable</value>
+  </data>
+  <data name="NodeVariableCategory" xml:space="preserve">
+    <value>Variables</value>
+  </data>
+  <data name="NodePromptForSetGenericVariableDescription" xml:space="preserve">
+    <value>Prompts for generic variable</value>
+  </data>
+  <data name="NodePromptForSetGenericVariableName" xml:space="preserve">
+    <value>Prompt for generic variable</value>
+  </data>
+  <data name="NodePromptForSetGenericVariableTypeCaption" xml:space="preserve">
+    <value>.NET data type</value>
+  </data>
+  <data name="NodePromptForSetGenericVariableTypeName" xml:space="preserve">
+    <value>DataType</value>
+  </data>
+  <data name="NodeRecalcNodeCategory" xml:space="preserve">
+    <value>Result Processing</value>
+  </data>
+  <data name="NodeRecalcNodeDescription" xml:space="preserve">
+    <value>Calculation is out of date</value>
+  </data>
+  <data name="NodeRecalcNodeName" xml:space="preserve">
+    <value>Needs Recalculating</value>
+  </data>
+  <data name="NodePromptForSetIntegerVariableNodeMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="NodePromptForSetIntegerVariableNodeMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMax" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMaxPrompt" xml:space="preserve">
+    <value>Maximum allowed on repeat input</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMin" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="NodePromptForRepeatParameterMinPrompt" xml:space="preserve">
+    <value>Minimum allowed on repeat input</value>
+  </data>
+  <data name="NodeLotLoginName" xml:space="preserve">
+    <value>Lot Login Workflow</value>
+  </data>
+  <data name="NodeLotLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeLotLoginDescription" xml:space="preserve">
+    <value>Lot Login Executed via the Login screen.</value>
+  </data>
+  <data name="NodeLinkedParentLotName" xml:space="preserve">
+    <value>Linked Parent Lot</value>
+  </data>
+  <data name="NodeLinkedParentLotCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeLinkedParentLotDescription" xml:space="preserve">
+    <value>To be used together with 'Create Lot' to pre create parent lots at lot login.</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterType" xml:space="preserve">
+    <value>Lot Type</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterTypeDescription" xml:space="preserve">
+    <value>Filter lots by type.</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterProduct" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterProductDescription" xml:space="preserve">
+    <value>Filter lots by product.</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterCriteria" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterCriteriaDescription" xml:space="preserve">
+    <value>Filter lots by criteria.</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterQuantityDescription" xml:space="preserve">
+    <value>Default quantity consumed.</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterUnits" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="NodeLinkedParentLotParameterUnitsDescription" xml:space="preserve">
+    <value>Default units.</value>
+  </data>
+  <data name="NodeCreateLotParameterMandatoryLinkLot" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
+  <data name="NodeCreateLotParameterMandatoryLinkLotDescription" xml:space="preserve">
+    <value>Parent lot cannot be removed at lot login.</value>
+  </data>
+  <data name="NodeLinkedParentLotNameFormat" xml:space="preserve">
+    <value>Create linked parent lot</value>
+  </data>
+  <data name="TraceLotRelationCreated" xml:space="preserve">
+    <value>Lot Relation '{0}' created.</value>
+  </data>
+  <data name="TraceLinkLotCompleted" xml:space="preserve">
+    <value>Link lot node completed</value>
+  </data>
+  <data name="NodeCreateLotName" xml:space="preserve">
+    <value>Create Lot</value>
+  </data>
+  <data name="NodeCreateLotCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreateLotDescription" xml:space="preserve">
+    <value>Create a lot using the specified entity template.</value>
+  </data>
+  <data name="NodeCreateLotParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreateLotParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new lot.</value>
+  </data>
+  <data name="NodeCreateLotParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreateLotParameterWorkflowDescription" xml:space="preserve">
+    <value>Lot lifecycle adopted by lots created by this workflow.</value>
+  </data>
+  <data name="NodeCreateLotParameterLotId" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="NodeCreateLotParameterLotIdDescription" xml:space="preserve">
+    <value>Formula used to generate the Lot Id.</value>
+  </data>
+  <data name="NodeCreateLotParameterLotName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NodeCreateLotParameterLotNameDescription" xml:space="preserve">
+    <value>Formula used to generate the Lot Name.</value>
+  </data>
+  <data name="NodeCreateLotParameterTrackInventory" xml:space="preserve">
+    <value>Track Inventory</value>
+  </data>
+  <data name="NodeCreateLotParameterTrackInventoryDescription" xml:space="preserve">
+    <value>Track inventory, when true inventory information will be mandatory at lot login.</value>
+  </data>
+  <data name="NodeCreateLotParameterModifyParentLots" xml:space="preserve">
+    <value>Modify Parent Lots</value>
+  </data>
+  <data name="NodeCreateLotParameterModifyParentLotsDescription" xml:space="preserve">
+    <value>Allow the add/removal of parent lots within lot login.</value>
+  </data>
+  <data name="TraceCreateLotNodeCreated" xml:space="preserve">
+    <value>Lot '{0}' created.</value>
+  </data>
+  <data name="NodeCreateLotNameFormat" xml:space="preserve">
+    <value>Create '{0}' Lot</value>
+  </data>
+  <data name="NodeLotLoginNameFormat" xml:space="preserve">
+    <value>Lot Login Workflow</value>
+  </data>
+  <data name="LotWorkflowRun" xml:space="preserve">
+    <value>Select Lot login workflow you would like to run.</value>
+  </data>
+  <data name="ParentLotQuantityExceeded" xml:space="preserve">
+    <value>New quantity can't exceed available quantity!</value>
+  </data>
+  <data name="LotQuantityConsumptionLower" xml:space="preserve">
+    <value>Unable to adjust the quantity lower than quantity already consumed!</value>
+  </data>
+  <data name="LotRelationQuantityConsumptionLower" xml:space="preserve">
+    <value>Unable to adjust the quantity greater than quantity remaining!</value>
+  </data>
+  <data name="UnitsMandatory" xml:space="preserve">
+    <value>Units are mandatory!</value>
+  </data>
+  <data name="DisplayQuantities" xml:space="preserve">
+    <value>{0:F3} {1}</value>
+  </data>
+  <data name="VaildateReserve" xml:space="preserve">
+    <value>The reservation quantity can not exceed the quantity available!</value>
+  </data>
+  <data name="VaildateRelease" xml:space="preserve">
+    <value>The quantity being released can not exceed the quantity reserved!</value>
+  </data>
+  <data name="VaildateTaken" xml:space="preserve">
+    <value>The quantity being released can not exceed the quantity reserved!</value>
+  </data>
+  <data name="LotIntro" xml:space="preserve">
+    <value>This is an automated message from the SampleManager background processor.\n</value>
+  </data>
+  <data name="LotSubject" xml:space="preserve">
+    <value>Lot Inventory Report</value>
+  </data>
+  <data name="LotExpired" xml:space="preserve">
+    <value>
+The following lots have expired
+
+    </value>
+  </data>
+  <data name="ZeroAllocation" xml:space="preserve">
+    <value>No initial quantity allocated to lot.</value>
+  </data>
+  <data name="ReservationStatusChangeMsg" xml:space="preserve">
+    <value>Unable to change state when not saved or not in the correct state!</value>
+  </data>
+  <data name="ReservationStatusChangeCaption" xml:space="preserve">
+    <value>Unsaved Reservation</value>
+  </data>
+  <data name="ReservationTakeMsg" xml:space="preserve">
+    <value>Unable adjust reservation in this state!</value>
+  </data>
+  <data name="ReservationTakeCaption" xml:space="preserve">
+    <value>Take Reservation</value>
+  </data>
+  <data name="ReservationTooltipReserve" xml:space="preserve">
+    <value>Reserve Inventory</value>
+  </data>
+  <data name="ReservationTooltipTake" xml:space="preserve">
+    <value>Take Inventory</value>
+  </data>
+  <data name="ReservationTooltipComplete" xml:space="preserve">
+    <value>Complete Reservation</value>
+  </data>
+  <data name="ReservationTooltipCancel" xml:space="preserve">
+    <value>Cancel Reservation</value>
+  </data>
+  <data name="VaildateReconcile" xml:space="preserve">
+    <value>The quantity being reconciled can not be adjusted more than the quantity currently used.</value>
+  </data>
+  <data name="ReconcileQuantityLess" xml:space="preserve">
+    <value>Unable to reconcile an amount less than currently used.</value>
+  </data>
+  <data name="ReconcileQuantityIncreased" xml:space="preserve">
+    <value>Unable increase the initial lot quantity.</value>
+  </data>
+  <data name="ReconcileReservationImpact" xml:space="preserve">
+    <value>New reconciled quantity will impact the current reservations.</value>
+  </data>
+  <data name="PointTotalQuantityAvailable" xml:space="preserve">
+    <value>Total Quantity Available</value>
+  </data>
+  <data name="PointTotalReservedRemaining" xml:space="preserve">
+    <value>Reservations remaining</value>
+  </data>
+  <data name="PointTotalConsumptionOfReserved" xml:space="preserve">
+    <value>Consumed reservations</value>
+  </data>
+  <data name="PointTotalReconciledAndUsed" xml:space="preserve">
+    <value>Reconciled and Used</value>
+  </data>
+  <data name="XYUsageYTitle" xml:space="preserve">
+    <value>Usage ({0})</value>
+  </data>
+  <data name="NodeAddToTransactionName" xml:space="preserve">
+    <value>Add to Transaction</value>
+  </data>
+  <data name="NodeAddToTransactionCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeAddToTransactionDescription" xml:space="preserve">
+    <value>Add the specified type to the transaction so it is saved. Used to save related data, not needed for most workflows as the main entity and child entities are already saved.</value>
+  </data>
+  <data name="NodeAddToTransactionParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeAddToTransactionParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="TraceAddToTransactionNode" xml:space="preserve">
+    <value>Entity Type {0} of {1} added to the transaction.</value>
+  </data>
+  <data name="TraceAddToTransactionErrorNode" xml:space="preserve">
+    <value>Entity Type {0} not found and not added to the transaction.</value>
+  </data>
+  <data name="NodeAddToTransactionNameFormat" xml:space="preserve">
+    <value>Add {0} to transaction</value>
+  </data>
+  <data name="ErrorNodeComparsionCompletingEvent" xml:space="preserve">
+    <value>Compare with specification node indeterminate on completing event</value>
+  </data>
+  <data name="NodeValidationError" xml:space="preserve">
+    <value>Reference to '{0}' is invalid on node '{1}'</value>
+  </data>
+   <data name="NodeReportLayoutName" xml:space="preserve">
+    <value>Report Layout</value>
+  </data>
+  <data name="NodeReportLayoutDescription" xml:space="preserve">
+    <value>Generate a report from a report layout definition</value>
+  </data>
+  <data name="NodeReportLayoutParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeReportLayoutParameterEntityDescription" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NodeReportLayoutParameterLayout" xml:space="preserve">
+    <value>Report Layout</value>
+  </data>
+  <data name="NodeReportLayoutParameterLayoutDescription" xml:space="preserve">
+    <value>Report Layout used for this report</value>
+  </data>
+  <data name="NodeReportLayoutParameterPreview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="NodeReportLayoutParameterPreviewDescription" xml:space="preserve">
+    <value>Preview generated report</value>
+  </data>
+  <data name="MustBeActive" xml:space="preserve">
+    <value>No active workflow was specified, a workflow must be active to be runable</value>
+  </data>
+  <data name="ErrorNodeLabelCopies" xml:space="preserve">
+    <value>Invalid number of Copies {0} generated from {1} for label {2}</value>
+  </data>
+  <data name="ErrorChangePrepTests" xml:space="preserve">
+    <value>Sample has tests that have already been processed - unable to change sample status for preparation update</value>
+  </data>
+  <data name="ErrorChangePrep" xml:space="preserve">
+    <value>Unable to modify the preparation details for a sample that's already being processed</value>
+  </data>
+  <data name="NoDeleteCaption" xml:space="preserve">
+    <value>Delete Node Disabled</value>
+  </data>
+  <data name="NoDeleteMessage" xml:space="preserve">
+    <value>You cannot delete this node.</value>
+  </data>
+  <data name="NoPasteCaption" xml:space="preserve">
+    <value>Paste Node Disabled</value>
+  </data>
+  <data name="NoPasteMessage" xml:space="preserve">
+    <value>You cannot paste this node.</value>
+  </data>
+  <data name="NoPasteUniqueCaption" xml:space="preserve">
+    <value>Paste Node Disabled</value>
+  </data>
+  <data name="NoPasteUniqueMessage" xml:space="preserve">
+    <value>You cannot paste a unique node.</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportName" xml:space="preserve">
+    <value>Chromeleon Sequence Report</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportDescription" xml:space="preserve">
+    <value>Obtain a Chromeleon Sequence Report</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportNameFormat" xml:space="preserve">
+    <value>Get {0} Sequence Report</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterEntityNameDescription" xml:space="preserve">
+    <value>Entity to evaluate any expressions against</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterChromeleon" xml:space="preserve">
+    <value>Chromeleon Server</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterChromeleonDescription" xml:space="preserve">
+    <value>Server to request the report from</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterReportType" xml:space="preserve">
+    <value>Report Type</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterReportTypeDescription" xml:space="preserve">
+    <value>The report type to request</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterSequenceUri" xml:space="preserve">
+    <value>Sequence Uri</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterSequenceUriDescription" xml:space="preserve">
+    <value>The fully qualified sequence address to download</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterReportUri" xml:space="preserve">
+    <value>Report Uri</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterReportUriDescription" xml:space="preserve">
+    <value>The fully qualified report address to use</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterChannel" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterChannelDescription" xml:space="preserve">
+    <value>The channel name</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterSheet" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="NodeChromeleonSequenceReportParameterSheetDescription" xml:space="preserve">
+    <value>The report sheet to restrict the report to</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportName" xml:space="preserve">
+    <value>Chromeleon Injection Report</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportCategory" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportDescription" xml:space="preserve">
+    <value>Obtain a Chromeleon Injection Report</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportNameFormat" xml:space="preserve">
+    <value>Get {0} Injection Report</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterEntityNameDescription" xml:space="preserve">
+    <value>Entity to evaluate any expressions against</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterChromeleon" xml:space="preserve">
+    <value>Chromeleon Server</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterChromeleonDescription" xml:space="preserve">
+    <value>Server to request the report from</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterReportType" xml:space="preserve">
+    <value>Report Type</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterReportTypeDescription" xml:space="preserve">
+    <value>The report type to request</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterInjectionUri" xml:space="preserve">
+    <value>Injection Uri</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterInjectionUriDescription" xml:space="preserve">
+    <value>The fully qualified injection address to download</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterReportUri" xml:space="preserve">
+    <value>Report Uri</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterReportUriDescription" xml:space="preserve">
+    <value>The fully qualified report address to use</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterChannel" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterChannelDescription" xml:space="preserve">
+    <value>The channel name</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterSheet" xml:space="preserve">
+    <value>Sheet</value>
+  </data>
+  <data name="NodeChromeleonInjectionReportParameterSheetDescription" xml:space="preserve">
+    <value>The report sheet to restrict the report to</value>
+  </data>
+  <data name="NodeAttachData" xml:space="preserve">
+    <value>Attach Data</value>
+  </data>
+  <data name="NodeAttachDataCategory" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="NodeAttachDataDescription" xml:space="preserve">
+    <value>Attach data to a parent entity</value>
+  </data>
+  <data name="NodeAttachDataNameFormat" xml:space="preserve">
+    <value>Attach Data to {0}</value>
+  </data>
+  <data name="NodeAttachDataParameterEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeAttachDataParameterEntityNameDescription" xml:space="preserve">
+    <value>Entity used for evaluation</value>
+  </data>
+  <data name="NodeAttachDataParameterName" xml:space="preserve">
+    <value>Attachment Name</value>
+  </data>
+  <data name="NodeAttachDataParameterNameDescription" xml:space="preserve">
+    <value>Attachment Name</value>
+  </data>
+  <data name="NodeAttachDataParameterAttachTo" xml:space="preserve">
+    <value>Attach To</value>
+  </data>
+  <data name="NodeAttachDataParameterAttachToDescription" xml:space="preserve">
+    <value>Entity to attach the data to</value>
+  </data>
+  <data name="NodeAttachDataDuplicateAttachment" xml:space="preserve">
+    <value>Tried to add the same attachment name to an entity in the same transaction twice. This is not permitted, check your name expression.</value>
+  </data>
+  <data name="LabFileSourceNodeCaption" xml:space="preserve">
+    <value>Prompt for File</value>
+  </data>
+  <data name="NodeLabFileSourceCategory" xml:space="preserve">
+    <value>Prompts</value>
+  </data>
+  <data name="NodeLabFileSourceDescription" xml:space="preserve">
+    <value>Prompt for file</value>
+  </data>
+  <data name="NodeLabFileSourceName" xml:space="preserve">
+    <value>Prompt for Client File</value>
+  </data>
+  <data name="LabAllFileFilter" xml:space="preserve">
+    <value>All Files|*.*</value>
+  </data>
+  <data name="NodeLabDataFileFilter" xml:space="preserve">
+    <value>File Filter</value>
+  </data>
+  <data name="NodeLabDataFileMessage" xml:space="preserve">
+    <value>Prompt Message</value>
+  </data>
+  <data name="NodeLabDataSourceFileFilterDescription" xml:space="preserve">
+    <value>The filter of the file - must follow the .NET file filter format. Example: CSV Files(*.csv)|*.csv or multiple files: Result Files|*.csv;*.dat</value>
+  </data>
+  <data name="NodeLabDataSourceFileMessageDescription" xml:space="preserve">
+    <value>The message to display with the file prompt</value>
+  </data>
+  <data name="BadFileFilter" xml:space="preserve">
+    <value>The file filter on the prompt for file node is invalid.</value>
+  </data>
+  <data name="ChromeleonSequenceReportError" xml:space="preserve">
+    <value>Error '{0}' when reading Chromeleon Sequence Report</value>
+  </data>
+  <data name="ChromeleonInjectionReportError" xml:space="preserve">
+    <value>Error '{0}' when reading Chromeleon Injection Report</value>
+  </data>
+  <data name="TraceSelectEntityNodeKey" xml:space="preserve">
+    <value>Key value determined as '{1}' for {0}</value>
+  </data>
+  <data name="TraceSelectEntityNodeSelectSpecific" xml:space="preserve">
+    <value>Selecting '{1}' from {0}</value>
+  </data>
+  <data name="TraceSelectEntityNodeSelectLatestVersion" xml:space="preserve">
+    <value>Selecting Latest Version '{1}' from {0}</value>
+  </data>
+  <data name="TraceSelectEntityNodeSelectFailed" xml:space="preserve">
+    <value>Failed to select valid entity from {0} - got back {1}</value>
+  </data>
+  <data name="TraceSelectEntityNodeSelectInvalid" xml:space="preserve">
+    <value>Invalid number of key values for {0} - expected {1} found {2}</value>
+  </data>
+  <data name="NodeCreateTestFormulaName">
+    <value>Create Test by Formula</value>
+  </data>
+  <data name="NodeCreateTestFormulaCategory" xml:space="preserve">
+      <value>Data</value>
+  </data>
+  <data name="NodeCreateTestFormulaDescription" xml:space="preserve">
+      <value>Create a number of tests using the derived Analysis.</value>
+  </data>  
+  <data name="NodeCreateTestsFormulaName">
+    <value>Create Tests by Formula</value>
+  </data>
+  <data name="NodeCreateTestsFormulaCategory" xml:space="preserve">
+      <value>Data</value>
+  </data>
+  <data name="NodeCreateTestsFormulaDescription" xml:space="preserve">
+      <value>Create a number of tests using the derived Test Schedule.</value>
+  </data>
+  <data name="NodeCreateTestFormulaNameFormat" xml:space="preserve">
+      <value>Create Test by Formula</value>
+  </data>
+  <data name="NodeCreateTestsFormulaNameFormat" xml:space="preserve">
+      <value>Create Tests by Formula</value>
+  </data>
+  <data name="NodeFileDestinationName">
+    <value>Save to Folder</value>
+  </data>
+  <data name="NodeFileDestinationCategory" xml:space="preserve">
+      <value>Destination</value>
+  </data>
+  <data name="NodeFileDestinationDescription" xml:space="preserve">
+      <value>Save the output to a folder</value>
+  </data>
+  <data name="NodeFileDestinationNameFormat" xml:space="preserve">
+      <value>Save as {0}</value>
+  </data>
+  <data name="NodeFileDestinationParameterName" xml:space="preserve">
+      <value>File Name</value>
+  </data>
+  <data name="NodeFileDestinationParameterNameDescription" xml:space="preserve">
+      <value>Formula determining the name of the file</value>
+  </data>
+  <data name="NodeFileDestinationParameterFolder" xml:space="preserve">
+      <value>Folder Name</value>
+  </data>
+  <data name="NodeFileDestinationParameterFolderDescription" xml:space="preserve">
+      <value>Formula determining the folder to store the file in</value>
+  </data>
+  <data name="NodeFileDestinationParameterDuplicates" xml:space="preserve">
+      <value>Duplicate Handling</value>
+  </data>
+  <data name="NodeFileDestinationParameterDuplicatesDescription" xml:space="preserve">
+      <value>Mode of handling collision with existing files</value>
+  </data>
+  <data name="NodeFileDestinationErrorExtension" xml:space="preserve">
+      <value>Unable to write files with extension {0}</value>
+  </data>
+  <data name="NodeFileDestinationErrorDuplicate" xml:space="preserve">
+      <value>File '{0}' already exists</value>
+  </data>
+  <data name="TraceReportNodeCreateFile" xml:space="preserve">
+      <value>Created report file '{0}'</value>
+  </data>
+  <data name="TraceReportNodeDeleteAfter" xml:space="preserve">
+      <value>Deleting report file '{0}' after destination processing</value>
+  </data>
+  <data name="TraceFileDestinationNodeNoOutput" xml:space="preserve">
+      <value>Parent node did not populate the output parameter</value>
+  </data>
+  <data name="TraceFileDestinationNodeNoFilename" xml:space="preserve">
+      <value>Unable to derive a file name - please check the File Name node parameter</value>
+  </data>
+  <data name="TraceFileDestinationNodeNoFoldername" xml:space="preserve">
+      <value>Unable to derive the folder name - please check the Folder Name node parameter</value>
+  </data>
+  <data name="TraceFileDestinationNodeSkip" xml:space="preserve">
+      <value>Skipping file '{0}' as it already exists</value>
+  </data>
+  <data name="TraceFileDestinationNodeOverwrite" xml:space="preserve">
+      <value>Overwriting file '{0}'</value>
+  </data>
+  <data name="TraceFileDestinationNodeTarget" xml:space="preserve">
+      <value>Saving output to file '{0}'</value>
+  </data>
+  <data name="TraceFileDestinationNodeDone" xml:space="preserve">
+      <value>Finished saving file</value>
+  </data>
+  <data name="TraceMailNodeAttachment" xml:space="preserve">
+      <value>Attaching File {0}</value>
+  </data>
+  <data name="TraceMailNodeNoOutput" xml:space="preserve">
+      <value>Parent node did not populate the output parameter</value>
+  </data>
+  <data name="TraceNoteAttachNodeNoOutput" xml:space="preserve">
+      <value>Parent node did not populate the output parameter</value>
+  </data>
+  <data name="TraceNoteAttachNodeAddFailed" xml:space="preserve">
+      <value>Failed to attach the file</value>
+  </data>
+  <data name="TraceNoteAttachNodeCopy" xml:space="preserve">
+      <value>Copying output '{0}' to attachment temp '{1}'</value>
+  </data>
+  <data name="TraceNoteAttachNodeDone" xml:space="preserve">
+      <value>Finished attaching note</value>
+  </data>
+  <data name="NodeReportParameterFileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="NodeReportParameterFileTypeDescription" xml:space="preserve">
+    <value>Output file type to use for file based destinations</value>
+  </data>
+  <data name="NodeClientDestinationName">
+    <value>Open Output</value>
+  </data>
+  <data name="NodeClientDestinationCategory" xml:space="preserve">
+      <value>Destination</value>
+  </data>
+  <data name="NodeClientDestinationDescription" xml:space="preserve">
+      <value>Open the output on the client</value>
+  </data>
+  <data name="NodeClientDestinationNameFormat" xml:space="preserve">
+      <value>Open Output</value>
+  </data>
+  <data name="TraceClientDestinationNodeNoOutput" xml:space="preserve">
+      <value>Parent node did not populate the output parameter</value>
+  </data>
+  <data name="TraceClientDestinationNodeDone" xml:space="preserve">
+      <value>Finished client output</value>
+  </data>
+  <data name="NodeCreateIncidentName" xml:space="preserve">
+    <value>Create Incident</value>
+  </data>
+  <data name="NodeCreateIncidentDescription" xml:space="preserve">
+    <value>Create a new Incident</value>
+  </data>
+  <data name="NodeCreateIncidentCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreateIncidentParameterEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreateIncidentParameterEntityNameDescription" xml:space="preserve">
+    <value>Specify the type of the entity to attach the incident to</value>
+  </data>
+  <data name="NodeCreateIncidentParameterTemplate" xml:space="preserve">
+    <value>Incident Template</value>
+  </data>  
+  <data name="NodeCreateIncidentParameterTemplateDescription" xml:space="preserve">
+    <value>Please choose an incident template</value>
+  </data>
+  <data name="NodeCreateIncidentParameterWorkflow" xml:space="preserve">
+    <value>Incident Lifecycle</value>
+  </data>
+  <data name="NodeCreateIncidentParameterWorkflowDescription" xml:space="preserve">
+    <value>Please choose an incident lifecycle</value>
+  </data>
+  <data name="CreateIncidentNodeNameFormat" xml:space="preserve">
+    <value>Create '{0}' incident</value>
+  </data>
+  <data name="CreateIncidentNodeParentNullError" xml:space="preserve">
+    <value>Entity Type not specified.</value>
+  </data>
+  <data name="NodeParentNewError" xml:space="preserve">
+    <value>Cannot add an incident to a new entity. Add the Create Incident workflow node after the entity has been committed.</value>
+  </data>
+  <data name="NodeIncidentLoginName" xml:space="preserve">
+    <value>Incident Login Workflow</value>
+  </data>
+  <data name="NodeIncidentLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeIncidentLoginDescription" xml:space="preserve">
+    <value>Incident Login Executed via the Login screen.</value>
+  </data>
+  <data name="NodeCreateIncidentParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreateIncidentParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new incident.</value>
+  </data>
+  <data name="NodeCreateIncidentParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreateIncidentParameterWorkflowDescription" xml:space="preserve">
+    <value>Incident lifecycle adopted by incident created by this workflow.</value>
+  </data>  
+  <data name="NodeCreateIncidentParameterIncidentId" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="NodeCreateIncidentParameterIncidentIdDescription" xml:space="preserve">
+    <value>Formula used to generate the Incident Id.</value>
+  </data>
+  <data name="NodeCreateIncidentParameterSubjectTable" xml:space="preserve">
+    <value>Subject Table</value>
+  </data>
+  <data name="NodeCreateIncidentParameterSubjectTableDescription" xml:space="preserve">
+    <value>Table associated with incident.</value>
+  </data>
+  <data name="NodeCreateIncidentParameterCheckList" xml:space="preserve">
+    <value>Check List</value>
+  </data>
+  <data name="NodeCreateIncidentParameterCheckListDescription" xml:space="preserve">
+    <value>Check List associated with incident.</value>
+  </data>
+  <data name="NodeCreateIncidentNameFormat" xml:space="preserve">
+    <value>Create '{0}' Incident</value>
+  </data>
+  <data name="TraceCreateIncidentNodeCreated" xml:space="preserve">
+    <value>Incident '{0}' created.</value>
+  </data>
+  <data name="IncidentWorkflowRun" xml:space="preserve">
+    <value>Select Incident login workflow you would like to run.</value>
+  </data>
+  <data name="NodeIncidentLoginNameFormat" xml:space="preserve">
+    <value>Incident Login Workflow</value>
+  </data>
+  <data name="NodeCreateIncidentParameterStartStatus" xml:space="preserve">
+    <value>Starting Status</value>
+  </data>
+    <data name="NodeCreateIncidentParameterStartStatusDescription" xml:space="preserve">
+    <value>The initial status of incident created by this node</value>
+  </data>
+  <data name="IncidentDefaultParameterWarning" xml:space="preserve">
+    <value>Default values have been found would you like to accept these as Entered?</value>
+  </data>
+  <data name="IncidentParameterPageTitle" xml:space="preserve">
+    <value>Checklist</value>
+  </data>
+  <data name="IncidentParameterTitle" xml:space="preserve">
+    <value>Incident {0} Checklist</value>
+  </data>
+  <data name="IncidentParameterWarning" xml:space="preserve">
+    <value>Unable to delete a parameter which exists on associated entity template.</value>
+  </data>
+  <data name="IncidentParameterGridCaption" xml:space="preserve">
+    <value>Configure default checklist parameters.</value>
+  </data>
+  <data name="EventMandatoryMenu" xml:space="preserve">
+    <value>Please specify a menu number</value>
+  </data>
+  <data name="EventDuplicateMenu" xml:space="preserve">
+    <value>Menu already exists</value>
+  </data>
+  <data name="BarcodeEventDescription" xml:space="preserve">
+    <value>Barcode Function - {0}</value>
+  </data>
+  <data name="BarcodeEventShortText" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="BarcodeEventCategory" xml:space="preserve">
+    <value>Barcode - {0}</value>
+  </data>
+  <data name="ActionMandatoryMenu" xml:space="preserve">
+    <value>Please specify a menu number</value>
+  </data>
+  <data name="ActionDuplicateMenu" xml:space="preserve">
+    <value>Menu already exists</value>
+  </data>
+  <data name="ActionMenuDescription" xml:space="preserve">
+    <value>Workflow Action - {0}</value>
+  </data>
+  <data name="ActionMenuShortText" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="ActionMenuCategory" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="NodeCreateBatchName" xml:space="preserve">
+    <value>Create Batch</value>
+  </data>
+  <data name="NodeCreateBatchEmptyName" xml:space="preserve">
+    <value>Create Batch Adhoc</value>
+  </data>
+  <data name="NodeCreateBatchCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreateBatchDescription" xml:space="preserve">
+    <value>Batch Creation Node</value>
+  </data>
+  <data name="NodeCreateBatchEmptyDescription" xml:space="preserve">
+    <value>Creates a empty batch, with no entries. The batch uses an analysis instead of a template.</value>
+  </data>
+  <data name="NodeCreateBatchParameterEntity" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreateBatchEntityDescription" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreateBatch" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="NodeBatchLoginName" xml:space="preserve">
+    <value>Batch Login Workflow</value>
+  </data>
+  <data name="NodeBatchLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodeBatchLoginDescription" xml:space="preserve">
+    <value>Batch Login Executed via the Login Screen</value>
+  </data>
+  <data name="NodeBatchLoginNameFormat" xml:space="preserve">
+    <value>Batch Login Workflow</value>
+  </data>
+  <data name="NodeCreateBatchParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreateBatchParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new batch.</value>
+  </data>
+  <data name="NodeCreateBatchParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreateBatchParameterWorkflowDescription" xml:space="preserve">
+    <value>Batch lifecycle adopted by lots created by this workflow.</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchId" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchIdDescription" xml:space="preserve">
+    <value>Formula used to generate the Batch Id.</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchTemplate" xml:space="preserve">
+    <value>Batch Template</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchTemplateDescription" xml:space="preserve">
+    <value>Batch Template to use for the sequence.</value>
+  </data>
+  <data name="NodeCreateBatchParameterAnalysisDescription" xml:space="preserve">
+    <value>Analysis used a a base of an adhoc batch.</value>
+  </data>
+  <data name="NodeCreateBatchParameterAnalysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NodeCreateBatchParameterBatchNameDescription" xml:space="preserve">
+    <value>Formula used to generate the Batch Name.</value>
+  </data>
+  <data name="NodeBatchLoginParameterInteractive" xml:space="preserve">
+    <value>Interactive</value>
+  </data>
+  <data name="NodeBatchLoginParameterInteractiveDescription" xml:space="preserve">
+    <value>Show the login screen</value>
+  </data>  
+  <data name="NodeCreateBatchEntryName" xml:space="preserve">
+    <value>Create Batch Entry</value>
+  </data>
+  <data name="NodeCreateBatchEntrySlotName" xml:space="preserve">
+    <value>Create Batch Entry {0} for slot {1}</value>
+  </data>
+  <data name="NodeCreateBatchEntryAvailableName" xml:space="preserve">
+    <value>Create Batch Entry {0} for slot the next available slot</value>
+  </data>  
+  <data name="NodeCreateBatchCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreateBatchEntryDescription" xml:space="preserve">
+    <value>Assign an entity to a batch entry slot or insert a new batch entry slot. The creation of a batch entry item does not follow batch repeat rules and create control samples.</value>
+  </data>
+  <data name="NodeCreateBatchParameterEntity" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreateBatchEntityDescription" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreateBatch" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="NodeCreateBatchEntryParameterEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data> 
+  <data name="NodeCreateBatchEntryEntityDescription" xml:space="preserve">
+    <value>Entity to assign to entry, this can be a standard for a control or unknown.</value>
+  </data>  
+  <data name="NodeCreateBatchEntryParameterEntryType" xml:space="preserve">
+    <value>Entry Type</value>
+  </data> 
+  <data name="NodeCreateBatchEntrySlotDescription" xml:space="preserve">
+    <value>Batch Entry Type</value>
+  </data>
+  <data name="NodeCreateBatchEntryParameterSlot" xml:space="preserve">
+    <value>Slot Position</value>
+  </data>
+  <data name="NodeCreateBatchEntrySlotDescription" xml:space="preserve">
+    <value>The slot position to assign or insert. 0 will assign to the next available slot of the appropriate type.</value>
+  </data>
+  <data name="NodeCreateBatchEntryParameterNewEntry" xml:space="preserve">
+    <value>New Entry</value>
+  </data>
+  <data name="NodeCreateBatchEntryNewDescription" xml:space="preserve">
+    <value>When true a new entry slot will be insert at slot number, when false the specified slot will be populated with the unknown or control.</value>
+  </data>
+  <data name="NodeCreateBatchEntryParameterParentSlot" xml:space="preserve">
+    <value>Parent Slot Position</value>
+  </data>
+  <data name="NodeCreateBatchEntryParentSlotDescription" xml:space="preserve">
+    <value>The parent slot position for duplicates or MSD's.</value>
+  </data>
+  <data name="NodeCreateBatchEntryParentSlotDescription" xml:space="preserve">
+    <value>The parent slot position for duplicates or MSD's.</value>
+  </data>  
+  <data name="StandardCaption" xml:space="preserve">
+    <value>Add Standard</value>
+  </data>  
+  <data name="StandardText" xml:space="preserve">
+    <value>Select Standard</value>
+  </data>  
+  <data name="SelectionNoneWarning" xml:space="preserve">
+    <value>No unknown items have been selected to move onto the batch.</value>
+  </data> 
+  <data name="SelectionTargetTypeWarning" xml:space="preserve">
+    <value>The selected entry slot is not the correct type of Sample, would you like to copy selected item(s) to following empty slots?</value>
+  </data>
+  <data name="SelectTargetOverwrite" xml:space="preserve">
+    <value>The selected entry slot is not empty, would you you like to overwrite slots?</value>
+  </data>
+  <data name="SelectionCountWarning" xml:space="preserve">
+    <value>{0} items were not assinged to batch entry slots.</value>
+  </data>
+  <data name="AppearanceCaption" xml:space="preserve">
+    <value>Change Plate Appearance</value>
+  </data>
+  <data name="AppearanceText" xml:space="preserve">
+    <value>Choose Appearance</value>
+  </data>
+  <data name="ControlSampleWarningText" xml:space="preserve">
+    <value>Empty control samples have been found, would you like to create them?</value>
+  </data>
+  <data name="BatchCaption" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="BatchTemplateError" xml:space="preserve">
+    <value>Batch Template not found!</value>
+  </data>
+  <data name="BatchTemplateClassError" xml:space="preserve">
+    <value>Batch class {0} not supported for batch sequence creation.</value>
+  </data>
+  <data name="PlateAssignCaption" xml:space="preserve">
+    <value>Plate Assign</value>
+  </data>
+  <data name="PlateAssignPlate" xml:space="preserve">
+    <value>Choose Plate</value>
+  </data>  
+  <data name="PlateAssignBatch" xml:space="preserve">
+    <value>Choose Batch</value>
+  </data>
+  <data name="PlateAssignComplete" xml:space="preserve">
+    <value>Batch {0} has been assigned to plate {1}, using fill method {2}. Would you like to display the plate?</value>
+  </data>
+  <data name="BatchEntryToBeCreated" xml:space="preserve">
+    <value>To Be Created</value>
+  </data>
+  <data name="BatchEntryToBeGenerated" xml:space="preserve">
+    <value>To Be Generated</value>
+  </data>
+  <data name="BatchEntryDuplicateOf" xml:space="preserve">
+    <value>Duplicate of {0}</value>
+  </data>
+  <data name="BatchEntryMissingWorkflowSampleError" xml:space="preserve">
+    <value>Missing Default Workflow. Unable to create sample.</value>
+  </data>
+  <data name="BatchEntryMissingWorkflow" xml:space="preserve">
+    <value>Unable to find default batch entry workflow {0}</value>
+  </data>
+  <data name="NodeExportWriteToFileNodeFileNameCaption" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="NodeExportWriteToFileNodeFileNameDescription" xml:space="preserve">
+    <value>The name of the file to write. If the user is prompted for the file then this will be the default, otherwise the file will be written to the full path generated by this parameter</value>
+  </data>
+  <data name="NodeExportWriteToFileNodePromptForFileCaption" xml:space="preserve">
+    <value>Prompt for File</value>
+  </data>
+  <data name="NodeExportWriteToFileNodePromptForFileDescription" xml:space="preserve">
+    <value>User is prompted for the file. The 'File Name' parameter can generate a default file name for the user</value>
+  </data>
+  <data name="NodeLabExportExportCreateExportCategory" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="NodeLabExportExportCreateExportDescription" xml:space="preserve">
+    <value>Create an export. Place export command nodes under this node</value>
+  </data>
+  <data name="NodeLabExportExportCreateExportName" xml:space="preserve">
+    <value>Create Export</value>
+  </data>
+  <data name="NodeLabExportExportLineAutoName" xml:space="preserve">
+    <value>Export line '{0}'</value>
+  </data>
+  <data name="NodeLabExportExportLineCategory" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="NodeLabExportExportLineDescription" xml:space="preserve">
+    <value>Append a line to the export</value>
+  </data>
+  <data name="NodeLabExportExportLineName" xml:space="preserve">
+    <value>Export Line</value>
+  </data>
+  <data name="NodeLabExportExportWriteAutoName" xml:space="preserve">
+    <value>Write the file '{0}' on the server</value>
+  </data>
+  <data name="NodeLabExportExportWriteCategory" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="NodeLabExportExportWriteDescription" xml:space="preserve">
+    <value>Write the export to file</value>
+  </data>
+  <data name="NodeLabExportExportWriteName" xml:space="preserve">
+    <value>Write Export File</value>
+  </data>
+  <data name="NodeParameterFormula" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="NodeParameterFormulaDescription" xml:space="preserve">
+    <value>The expression to generate and append to the file</value>
+  </data>
+  <data name="NodeExportWriteToFileNodeClientFileCaption" xml:space="preserve">
+    <value>Client File</value>
+  </data>
+  <data name="NodeExportWriteToFileNodeClientFileDescription" xml:space="preserve">
+    <value>If checked the user will be prompted to save the file on the client machine. If not checked then this node will save the file to a location on the server using the file name expression.</value>
+  </data>
+  <data name="NodeLabExportExportWriteAutoName_Client" xml:space="preserve">
+    <value>Prompt the user with default filename '{0}' to save on client</value>
+  </data>
+  <data name="NodeCreateBatchParameterAdhoc" xml:space="preserve">
+    <value>Ad Hoc</value>
+  </data>
+  <data name="NodeCreateBatchParameterAdhocDescription" xml:space="preserve">
+    <value>Allow the creation of a batch without a template. This creates a batch without entris and associated with an analysis.</value>
+  </data>
+  <data name="PreparationBatchTitle" xml:space="preserve">
+    <value>Preparation Batch Import</value>
+  </data>
+  <data name="PreparationBatchCaption" xml:space="preserve">
+    <value>Select Preparation Batch and import the Samples at the selected Sequence Entry.</value>
+  </data>
+   <data name="PreparationPlateTitle" xml:space="preserve">
+    <value>Preparation Plate Import</value>
+  </data>
+  <data name="PreparationPlateCaption" xml:space="preserve">
+    <value>Select Preparation Plate and import the Samples at the selected Sequence Entry.</value>
+  </data>
+  <data name="BatchEntryErrorTestFound" xml:space="preserve">
+    <value>Error found. Batch entry already contains a valid test.</value>
+  </data>
+    <data name="BatchEntryErrorAnalysis" xml:space="preserve">
+    <value>Error found assigning a test to a batch entry expecting analysis {0}, assigning {1}.</value>
+  </data>
+    <data name="BatchEntryErrorExistingBatch" xml:space="preserve">
+    <value>Error assigning a test to a batch entry, test {0}, has been assigned to batch {1}. If the batch is a of type preparation or instrument, Cancel or Authorize the batch to allow the assignment.</value>
+  </data>
+  <data name="ErrorMultipleAnalysisFound" xml:space="preserve">
+    <value>Selected tests must have the same analysis.</value>
+  </data>
+  <data name="WorkflowBlankIdentity" xml:space="preserve">
+    <value>Invalid (blank) identity for entity. Cannot create entity without a valid identity</value>
+  </data> 
+  <data name="NodeBagViewName" xml:space="preserve">
+    <value>Debug Property Bag</value>
+  </data>
+  <data name="NodeBagViewCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NodeBagViewDescription" xml:space="preserve">
+    <value>Will display a message box showing what is in the workflow property bag</value>
+  </data>
+    <data name="NodeMailParameterDistributionList" xml:space="preserve">
+    <value>Distribution List</value>
+  </data>
+  <data name="NodeMailParameterActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="NodeMailParameterDistributionListDescription" xml:space="preserve">
+    <value>The distribution list (printer entity) containing an email, list of personnel or other distribution lists.</value>
+  </data>
+  <data name="NodeMailParameterActiveDescription" xml:spae="preserve">
+    <value>Whether or not emailer node is active. If not active a debug window will be diplayed, used for testing emails without sending items.</value>
+  </data>
+  <data name="EmailNotActiveWarning" xml:space="preserve">
+    <value>Workflow Email Node is not active. Email would be sent to: {0}</value>
+  </data>
+  <data name="EmailNotActiveWarningCaption" xml:space="preserve">
+    <value>Workflow Email Node not Active</value>
+  </data>
+</root>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateFormCaption" xml:space="preserve">
+    <value>Activate Form</value>
+  </data>
+  <data name="CheckMultipleExport" xml:space="preserve">
+    <value>Export forms?</value>
+  </data>
+  <data name="CheckSingleExport" xml:space="preserve">
+    <value>Export form?</value>
+  </data>
+  <data name="ChooseFormMessage" xml:space="preserve">
+    <value>Please choose the form you wish to use</value>
+  </data>
+  <data name="ConfirmNonCaption" xml:space="preserve">
+    <value>Save Changes?</value>
+  </data>
+  <data name="ConfirmNonMessage" xml:space="preserve">
+    <value>This form has been marked as non-modifiable. You have the privilege (9002) to modify this, but are you sure you want to make this change?</value>
+  </data>
+  <data name="DeleteForm" xml:space="preserve">
+    <value>Are you sure you want to permanently delete this form?</value>
+  </data>
+  <data name="DeleteFormMenus" xml:space="preserve">
+    <value>The {0} form is referenced by some menu items. Delete all associated menu items?
+</value>
+  </data>
+  <data name="DeleteFormMenusTitle" xml:space="preserve">
+    <value>Delete Associated Menus</value>
+  </data>
+  <data name="DeleteForms" xml:space="preserve">
+    <value>Are you sure you want to permanently delete these {0} forms?</value>
+  </data>
+  <data name="DeleteFormsTitle" xml:space="preserve">
+    <value>Delete Forms</value>
+  </data>
+  <data name="DeleteFormTitle" xml:space="preserve">
+    <value>Delete Form</value>
+  </data>
+  <data name="DetailsTabText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DuplicateKeyMessage" xml:space="preserve">
+    <value>An entity with the specified key already exists!</value>
+  </data>
+  <data name="DuplicateKeyNameMessage" xml:space="preserve">
+    <value>Another entity is already using this key as a name.</value>
+  </data>
+  <data name="DuplicateNameMessage" xml:space="preserve">
+    <value>An entity with the same name already exists. The name must not match an existing name or identity.</value>
+  </data>
+  <data name="EmptyKeyValueMessage" xml:space="preserve">
+    <value>Please provide values for all Key Fields!</value>
+  </data>
+  <data name="ExportConfirmationCaption" xml:space="preserve">
+    <value>Confirm Export</value>
+  </data>
+  <data name="FormExportDialogDescription" xml:space="preserve">
+    <value>Please select a folder into which the selected Form(s) will be exported:</value>
+  </data>
+  <data name="FormExportFilter" xml:space="preserve">
+    <value>Form Export Files (*.frm) |*.frm</value>
+  </data>
+  <data name="FormExportOverwrite" xml:space="preserve">
+    <value>'{0}' already exists.
+
+Would you like to overwrite the existing file?</value>
+  </data>
+  <data name="FormExportPath" xml:space="preserve">
+    <value>Export Path</value>
+  </data>
+  <data name="FormExportSettings" xml:space="preserve">
+    <value>Export Settings</value>
+  </data>
+  <data name="FormExportTitle" xml:space="preserve">
+    <value>Form Export</value>
+  </data>
+  <data name="FormImportFilter" xml:space="preserve">
+    <value>Form Import Files (*.frm) |*.frm</value>
+  </data>
+  <data name="FormImportSummaryMessage" xml:space="preserve">
+    <value>Form Import completed.
+{0} error(s)
+{1} warning(s)
+
+View Summary?</value>
+  </data>
+  <data name="FormImportSummaryTitle" xml:space="preserve">
+    <value>Import Summary</value>
+  </data>
+  <data name="FormImportTitle" xml:space="preserve">
+    <value>Form Import</value>
+  </data>
+  <data name="ImportConfirmationTitle" xml:space="preserve">
+    <value>Confirm Import</value>
+  </data>
+  <data name="ImportConfirmOverwrite" xml:space="preserve">
+    <value>Form '{0}' already exists.
+
+Would you like to overwrite the existing Form?</value>
+  </data>
+  <data name="ImportExportFolderBrowse" xml:space="preserve">
+    <value>Choose a destination folder</value>
+  </data>
+  <data name="ImportingForms" xml:space="preserve">
+    <value>Importing Forms...</value>
+  </data>
+  <data name="ImportStatusMessage" xml:space="preserve">
+    <value>Importing form '{0}'...</value>
+  </data>
+  <data name="ImportSuccessDecription" xml:space="preserve">
+    <value>Form import successful.</value>
+  </data>
+  <data name="ImportSummaryColumnDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ImportSummaryColumnName" xml:space="preserve">
+    <value>Form Name</value>
+  </data>
+  <data name="OperationComplete" xml:space="preserve">
+    <value>Operation complete</value>
+  </data>
+  <data name="SaveFormExportDialogTitle" xml:space="preserve">
+    <value>Save Form As</value>
+  </data>
+  <data name="TestFormSaveMessage" xml:space="preserve">
+    <value>Cannot perform Save operations when testing a Form!</value>
+  </data>
+  <data name="WarnOverrideCaption" xml:space="preserve">
+    <value>Security Override (9002)</value>
+  </data>
+  <data name="WarnOverrideFailCaption" xml:space="preserve">
+    <value>Non-modifiable Form</value>
+  </data>
+  <data name="WarnOverrideFailMessage" xml:space="preserve">
+    <value>You may not modify this form, the editor has been set to read only.</value>
+  </data>
+  <data name="WarnOverrideMessage" xml:space="preserve">
+    <value>This is a non-modifable form, please use the 'Extend' option instead where possible.</value>
+  </data>
+  <data name="WindowTitleCustomisation" xml:space="preserve">
+    <value>Form Designer - Extend Mode</value>
+  </data>
+  <data name="WindowTitleFormDesigner" xml:space="preserve">
+    <value>Form Designer</value>
+  </data>
+  <data name="WindowTitleInternationalisation" xml:space="preserve">
+    <value>Form Designer - Internationalization - {0}</value>
+  </data>
+  <data name="WindowTitleReadOnly" xml:space="preserve">
+    <value>Form Designer - Read Only</value>
+  </data>
+  <data name="WindowTitleNonModify" xml:space="preserve">
+    <value>Form Designer - Non-modifiable</value>
+  </data>
+  <data name="FormWrongEntityType" xml:space="preserve">
+    <value>Form '{0}' was designed for an entity of type '{1}' but an attempt was made to open it with an entity of type '{2}'. Check the menu configuration.</value>
+  </data>
+  <data name="InvalidPage" xml:space="preserve">
+    <value>Unable to load Page '{0}' for form '{1}'. Please check that it has been imported/configured correctly</value>
+  </data>  
+  <data name="FormExportMissingFormErrorCaption" xml:space="preserve">
+    <value>Missing Form Name</value>
+  </data> 
+  <data name="FormExportMissingFormErrorMessage" xml:space="preserve">
+    <value>Please specify a valid form name to export</value>
+  </data> 
+</root>

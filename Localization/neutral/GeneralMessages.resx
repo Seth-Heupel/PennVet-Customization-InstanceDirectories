@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityLogTitle" xml:space="preserve">
+    <value>Clear Activity Log</value>
+  </data>
+  <data name="ActivityLogCancelled" xml:space="preserve">
+    <value>Backup has been cancelled.</value>
+  </data>
+  <data name="ActivityLogCompleted" xml:space="preserve">
+    <value>{0} Logs has now been exported.</value>
+  </data>
+  <data name="ActivityLogEmpty" xml:space="preserve">
+    <value>There is no activity logs to export at this time.</value>
+  </data>
+  <data name="ConfirmModifiable" xml:space="preserve">
+    <value>This record has been marked as non-modifiable. You have the privilege (9002) to modify this, but are you sure you want to make this change?</value>
+  </data>
+  <data name="DataSaveConfirmation" xml:space="preserve">
+    <value>Do you want to abandon your changes?</value>
+  </data>
+  <data name="DataSaveConfirmationWithWarnings" xml:space="preserve">
+    <value>Form has warnings. Proceed with save?</value>
+  </data>
+   <data name="DifferencesExplanation" xml:space="preserve">
+    <value>This differences tool will display the additional tables, views and fields that are in selected schema compared to the prompted schema</value>
+  </data>    
+  <data name="DifferencesExplanationCaption" xml:space="preserve">
+    <value>Schema Differences Tool</value>
+  </data>
+  <data name="EditorModeADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="EditorModeCOPY" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="EditorModeDISPLAY" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="EditorModeException" xml:space="preserve">
+    <value>Unknown task launch parameter {0}. Check MASTER_MENU data.</value>
+  </data>
+  <data name="EditorModeLIST" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="EditorModeMODIFY" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="EditorModeNEWVERSION" xml:space="preserve">
+    <value>New Version</value>
+  </data>
+  <data name="EditorModePRINT" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="EditorModeREMOVE" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="EditorModeRESTORE" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="EditorModeSUBMIT" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="EditorModeAUTHORISE" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="EditorModeTEST" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="EditorModeWORKFLOW" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="EditorModeINSERT" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="EmptyWorkflowOutput" xml:space="preserve">
+    <value>Workflow generated no output</value>
+  </data>
+  <data name="EntityTemplateEmptyEntityType" xml:space="preserve">
+    <value>The properties grid allows you to specify properties of an entity that can be defined within a Workflow. This grid is not available until an Entlty Type is specified, please specify an Entity Type before selecting the properties for this Template.</value>
+  </data>
+  <data name="EntityTemplatePropertiesGridCaption" xml:space="preserve">
+    <value>List of {0} properties</value>
+  </data>
+  <data name="FindEntity" xml:space="preserve">
+    <value>Please select a value to use in the form.</value>
+  </data>
+  <data name="FindEntityException" xml:space="preserve">
+    <value>This function required a single record to be selected. Check the menu option disallows multiple selections.</value>
+  </data>
+  <data name="IntervalEditorCaption" xml:space="preserve">
+    <value>Interval Editor</value>
+  </data>
+  <data name="InvalidApprovalStatus" xml:space="preserve">
+    <value>This record has an invalid status for modification. It has been opened in read only mode.</value>
+  </data>
+  <data name="InvalidApprovalStatusCaption" xml:space="preserve">
+    <value>Invalid Approval Status</value>
+  </data>
+  <data name="LabTableTitleMultiple" xml:space="preserve">
+    <value>{0} - {1} ({2} items)</value>
+  </data>
+  <data name="LabTableTitleNone" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="LabTableTitleSingle" xml:space="preserve">
+    <value>{0} - {1} - {2}</value>
+  </data>
+  <data name="LockedForModify" xml:space="preserve">
+    <value>This record is currently locked!\r\nWould you like to display the record instead?\r\n\r\nLock Details\r\n\r\n{0}</value>
+  </data>
+  <data name="LockedForModifyNoDetail" xml:space="preserve">
+    <value>This record is currently locked by another user or task.\r\nWould you like to display the record instead?</value>
+  </data>
+  <data name="LockedForModifyCaption" xml:space="preserve">
+    <value>Attempt to Modify a Locked Record</value>
+  </data>
+  <data name="LockEntityError" xml:space="preserve">
+    <value>The '{0}' {1} record is currently exclusively locked by another task. The user is logged into SampleManager as '{2}', the Operating System as '{3}' and is running on Machine '{4}'.</value>
+  </data>
+  <data name="LockEntityInfo" xml:space="preserve">
+    <value>Table : {0}\r\nKey0 : {1}\r\n{2}</value>
+  </data>
+  <data name="LockError" xml:space="preserve">
+    <value>This activity is currently exclusively locked by another task. The user is logged into SampleManager as '{0}', the Operating System as '{1}' and is running on Machine '{2}'.</value>
+  </data>
+  <data name="LockInfo" xml:space="preserve">
+    <value>Lock Name : {0}\r\n{1}</value>
+  </data>
+  <data name="LockOwner" xml:space="preserve">
+    <value>User : {0}\r\nProcess : {1}\r\nNode : {2}\r\nOS User : {3}</value>
+  </data>
+  <data name="LockUnable" xml:space="preserve">
+    <value>Unable to Lock Record</value>
+  </data>
+  <data name="LockNoDetail" xml:space="preserve">
+    <value>This record is currently locked by another user or task.</value>
+  </data>
+  <data name="RemoveConfirmText" xml:space="preserve">
+    <value>Do you want to remove the record '{0}'?</value>
+  </data>
+  <data name="RemoveConfirmTitle" xml:space="preserve">
+    <value>Remove {0}</value>
+  </data>
+  <data name="RemoveException" xml:space="preserve">
+    <value>Table {0} does not contain a remove field. Items cannot be removed.</value>
+  </data>
+  <data name="RestoreConfirmText" xml:space="preserve">
+    <value>Do you want to restore the record '{0}'?</value>
+  </data>
+  <data name="RestoreConfirmTitle" xml:space="preserve">
+    <value>Restore {0}</value>
+  </data>
+  <data name="RestoreException" xml:space="preserve">
+    <value>Table {0} does not contain a remove field. Items cannot be removed.</value>
+  </data>
+  <data name="SampleAdminDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete '{0}'?</value>
+  </data>
+  <data name="SampleAdminEmptyMandatory" xml:space="preserve">
+    <value>Session contains empty mandatory properties! Mandatory grid cells appear yellow.</value>
+  </data>
+  <data name="SampleAdminPromptForData" xml:space="preserve">
+    <value>Please select a {0}</value>
+  </data>
+  <data name="SampleLoginAddAnalysisCaption" xml:space="preserve">
+    <value>Add Analysis</value>
+  </data>
+  <data name="SampleLoginAddAnalysisMessage" xml:space="preserve">
+    <value>Please select an Analysis definition to add to this sample</value>
+  </data>
+  <data name="SampleLoginAddTestScheduleCaption" xml:space="preserve">
+    <value>Add Test Schedule</value>
+  </data>
+  <data name="SampleLoginAddTestScheduleMessage" xml:space="preserve">
+    <value>Please select a Test Schedule to add to this sample</value>
+  </data>
+  <data name="SampleLoginPromptForWorkflow" xml:space="preserve">
+    <value>Please select a workflow for {0} Login</value>
+  </data>
+  <data name="WarnOverrideCaption" xml:space="preserve">
+    <value>Security Override (9002)</value>
+  </data>
+  <data name="WarnOverrideFailCaption" xml:space="preserve">
+    <value>Non-modifiable Record</value>
+  </data>
+  <data name="WarnOverrideFailMessage" xml:space="preserve">
+    <value>This record has been flagged as non-modifiable and the editor has been opened in read only mode.</value>
+  </data>
+  <data name="WarnOverrideMessage" xml:space="preserve">
+    <value>You are modifying a non-modifiable record.</value>
+  </data>
+  <data name="XYChartAxisInvalidRangeMessage" xml:space="preserve">
+    <value>LowerLimit and UpperLimit must be set when AutoRange is false!</value>
+  </data>
+  <data name="AssignableLocationMessage" xml:space="preserve">
+    <value>Invalid Location! The selected location cannot be assigned. The location may not be assignable or not meet the assignment requirements.</value>
+  </data>
+  <data name="RemovedLocationMessage" xml:space="preserve">
+    <value>Invalid Location! Only Locations which are not marked as removed can be assigned.</value>
+  </data>
+  <data name="JobNameToBeAssigned" xml:space="preserve">
+    <value>&lt;New Job {0}&gt;</value>
+  </data>
+  <data name="IdTextToBeAssigned" xml:space="preserve">
+    <value>&lt;New Sample {0}&gt;</value>
+  </data>
+  <data name="DeactivateVersionText" xml:space="preserve">
+    <value>Do you want to deactivate version {0}?</value>
+  </data>
+  <data name="DeactivateVersionApproval" xml:space="preserve">
+    <value>{0} '{1}' has been deactivated it is either not Authorised or the active dates are out of range.</value>
+  </data>
+  <data name="DeactivateVersionTitle" xml:space="preserve">
+    <value>Deactivate old version</value>
+  </data>
+  <data name="SampleLoginLockMessage" xml:space="preserve">
+    <value>Cannot open Sample Login.\r\n\r\n{0}</value>
+  </data>
+  <data name="InvalidCharError" xml:space="preserve">
+    <value>Invalid value '{1}' for '{0}'. Acceptable characters are '{2}'.</value>
+  </data>
+  <data name="SampleLoginFatalWorkflowErrorMessage" xml:space="preserve">
+    <value>Fatal error occurred during workflow execution.\r\n\r\n{0}</value>
+  </data>
+  <data name="SampleLoginNullTemplateAlertMessage" xml:space="preserve">
+    <value>The following item(s) do not have an Entity Template: \r\n\r\n{0}</value>
+  </data>
+  <data name="SampleLoginNullTemplateAlertTitle" xml:space="preserve">
+    <value>Entity Templates</value>
+  </data>
+  <data name="RemoveLocationConfirmText" xml:space="preserve">
+    <value>Removing Location '{0}'. Do you want to remove all child locations?</value>
+  </data>
+  <data name="SampleLoginRunWorkflowCaption" xml:space="preserve">
+    <value>Running Workflow...</value>
+  </data>
+  <data name="SampleLoginRunWorkflowDesc" xml:space="preserve">
+    <value>Please wait a few moments</value>
+  </data>
+  <data name="SampleLoginSaveCaption" xml:space="preserve">
+    <value>Saving Changes...</value>
+  </data>
+  <data name="SampleLoginSaveDesc1" xml:space="preserve">
+    <value>Validating Data</value>
+  </data>
+  <data name="SampleLoginSaveDesc2" xml:space="preserve">
+    <value>Running Post Edit Workflow</value>
+  </data>
+  <data name="SampleLoginSaveDesc3" xml:space="preserve">
+    <value>Committing to Database</value>
+  </data>
+  <data name="SampleLoginSaveDesc4" xml:space="preserve">
+    <value>Running Post Login Workflow</value>
+  </data>
+  <data name="SampleLoginSaveDesc5" xml:space="preserve">
+    <value>Completing</value>
+  </data>
+  <data name="AnalysisPropertyError" xml:space="preserve">
+    <value>Error reading property {0} from VersionedAnalysis {1}({2}) : {3}</value>
+  </data>
+  <data name="EntityTemplateTableBlank" xml:space="preserve">
+    <value>Unable to locate tablename {0}</value>
+  </data>
+  <data name="EntityTemplateTableInvalid" xml:space="preserve">
+    <value>Table name '{0}' needs to exactly match '{1}' - please check phrase definition</value>
+  </data>
+  <data name="ReportWaitCaption" xml:space="preserve">
+    <value>Generating Report...</value>
+  </data>
+  <data name="ReportWaitDesc" xml:space="preserve">
+    <value>Please wait a few moments</value>
+  </data>
+  <data name="SampleLoginOpenErrorTitle" xml:space="preserve">
+    <value>Modify Error</value>
+  </data>
+  <data name="SampleLoginOpenError" xml:space="preserve">
+    <value>Could not modify '{0}' because it is the wrong status {1}.</value>
+  </data>
+  <data name="LabTableErrorTitle" xml:space="preserve">
+    <value>Data Selection Error</value>
+  </data>
+  <data name="LabTableErrorRemoved" xml:space="preserve">
+    <value>The record '{0}' is marked as removed.</value>
+  </data>
+  <data name="LabTableErrorNotRemoved" xml:space="preserve">
+    <value>The record '{0}' is not marked as removed.</value>
+  </data>
+  <data name="LabTableErrorStatus" xml:space="preserve">
+    <value>Unable to {0} the record '{1}', current status {2} is incompatible with this operation.</value>
+  </data>
+  <data name="LabTableErrorModifyApproved" xml:space="preserve">
+    <value>Unable to modify the record '{0}', current approval settings prevent modification of approved records.</value>
+  </data>
+  <data name="LabTableErrorDisplayApproved" xml:space="preserve">
+    <value>Unable to display the record '{0}', current settings only allow the display of approved records.</value>
+  </data>
+  <data name="DisplayNotModify" xml:space="preserve">
+    <value>{0}\r\n\r\nWould you like to display the record instead?</value>
+  </data>
+  <data name="DisplayNotModifyCaption" xml:space="preserve">
+    <value>Unable to Modify Record</value>
+  </data>
+  <data name="ApprovalNotRequired" xml:space="preserve">
+    <value>The user '{0}' is not required to inspect '{1}'</value>
+  </data>
+  <data name="ApprovalNotRequiredCaption" xml:space="preserve">
+    <value>Approval not required</value>
+  </data>
+  <data name="NewVersionNotAllowed" xml:space="preserve">
+    <value>Please complete the authorization process of existing versions before creating a new version.</value>
+  </data>
+  <data name="NewVersionNotAllowedCaption" xml:space="preserve">
+    <value>New version not allowed</value>
+  </data>
+  <data name="ApprovalErrorCaption" xml:space="preserve">
+    <value>Error performing approval</value>
+  </data>
+  <data name="SingleVersionErrorNoSubmit" xml:space="preserve">
+    <value>Auto submission is not set, modification will result in no active versions, please create a new version.</value>
+  </data>
+  <data name="SingleVersionErrorInspection" xml:space="preserve">
+    <value>An inspection is required for this record, modification will result in no active versions, please create a new version.</value>
+  </data>
+  <data name="SubmitForApproval" xml:space="preserve">
+    <value>Submit for Approval</value>
+  </data>
+  <data name="CheckForInspection" xml:space="preserve">
+    <value>Checking if inspection is required</value>
+  </data>
+  <data name="ConfirmingInspection" xml:space="preserve">
+    <value>Recording inspection result</value>
+  </data>
+  <data name="UserCanInspection" xml:space="preserve">
+    <value>Checking if inspection is required</value>
+  </data>
+  <data name="IdToBeGenerated" xml:space="preserve">
+    <value>&lt;To Be Generated&gt;</value>
+  </data>
+  <data name="PromptWorkflowDesc" xml:space="preserve">
+    <value>Choose Workflow</value>
+  </data>
+  <data name="PromptWorkflowTitle" xml:space="preserve">
+    <value>Run Workflow</value>
+  </data>
+  <data name="PromptBatchTemplateDesc" xml:space="preserve">
+    <value>Choose Batch Template</value>
+  </data>
+  <data name="PromptBatchTemplateTitle" xml:space="preserve">
+    <value>Assign Template</value>
+  </data>
+  <data name="PromptAnalysisDesc" xml:space="preserve">
+    <value>Choose Analysis</value>
+  </data>
+  <data name="PromptAnalysisTitle" xml:space="preserve">
+    <value>Login Ad Hoc Batch</value>
+  </data>
+  <data name="BatchLoginTitle" xml:space="preserve">
+    <value>Batch Workflow Login - '{0}'</value>
+  </data>
+  <data name="CommentTooBig" xml:space="preserve">
+    <value>The comment text entered is too big to be stored. Reduce the size/replace with linked document.</value>
+  </data>
+  <data name="DefaultRichText" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Verdana;}}\viewkind4\uc1\pard\f0\fs20\par}</value>
+  </data>
+  <data name="VersionName" xml:space="preserve">
+    <value>{0} (v{1})</value>
+  </data>
+  <data name="PromptBatchTemplateDesc" xml:space="preserve">
+    <value>Choose Batch Template</value>
+  </data>
+  <data name="PromptBatchTemplateTitle" xml:space="preserve">
+    <value>Batch Template</value>
+  </data>
+  <data name="OpenConversionFile" xml:space="preserve">
+    <value>Open Conversion File</value>
+  </data>
+  <data name="OpenConversionFileLoadedCaption" xml:space="preserve">
+    <value>File Loaded</value>
+  </data>
+  <data name="OpenConversionFileLoaded" xml:space="preserve">
+    <value>File loaded, please now set encoding to match the file, \nto ensure the correct charset/codepage as this can't be determined automatically.</value>
+  </data>
+  <data name="OpenConversionFileSavedCaption" xml:space="preserve">
+    <value>File Saved</value>
+  </data>
+  <data name="OpenConversionFileSaved" xml:space="preserve">
+    <value>File Saved to the following location '{0}'</value>
+  </data>
+  <data name="OpenConversionFileSavedWebClient" xml:space="preserve">
+    <value>File sent to client</value>
+  </data>
+  <data name="ImportAction_Merge" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="AttachmentNotFoundText" xml:space="preserve">
+    <value>Attachment not found. This entity has an attachment. Do you want to select an attachment zip file containing the attachments?</value>
+  </data>
+  <data name="AttachmentNotFoundCaption" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="SelectAttachmentTextZipfile" xml:space="preserve">
+    <value>Select Attachment Zip File</value>
+  </data>
+  <data name="AttachmentDoesNotExistText" xml:space="preserve">
+    <value>Attachment file cannot be located - do you want to continue?</value>
+  </data>
+  <data name="AttachmentDoesNotExistCaption" xml:space="preserve">
+    <value>Attachment not found</value>
+  </data>
+  <data name="LimitOverflowCaption" xml:space="preserve">
+    <value>Entered value evaluates to a value too large for the field.</value>
+  </data>
+  <data name="LimitOverflowText" xml:space="preserve">
+    <value>Value too large</value>
+  </data>
+  <data name="ExportBusyMessage" xml:space="preserve">
+    <value>Performing export of {0}; depending on entity size this could take several minutes....</value>
+  </data>
+  <data name="CannotCombineTextLimitAndPhrase" xml:space="preserve">
+    <value>Cannot combine a text limit and a phrase</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Save file as</value>
+  </data>
+  <data name="StockBatchConsumeCaption" xml:space="preserve">
+    <value>Consume Stock</value>
+  </data>
+  <data name="StockBatchConsume" xml:space="preserve">
+    <value>Please confirm the amount consumed is greater than the amount remaining.</value>
+  </data>
+  <data name="LocationMapSearchResults" xml:space="preserve">
+    <value>Display Name: {0}\r\n\r\nAddress: {1}\r\n\r\nLongitude: {2}\r\nLatitude: {3}</value>
+  </data>
+  <data name="MissingMinValue" xml:space="preserve">
+    <value>Please specify a minimum value</value>
+  </data>
+  <data name="MissingMaxValue" xml:space="preserve">
+    <value>Please specify a maximum value</value>
+  </data>
+  <data name="LimitBadValueTitle" xml:space="preserve">
+    <value>Incorrect limit values</value>
+  </data>
+  <data name="LimitBadValueMess" xml:space="preserve">
+    <value>There are missing limit values, please complete before saving</value>
+  </data>
+  <data name="NoAttachmentsDroppped" xml:space="preserve">
+    <value>No files were attached. If dropping folder(s) check they contain files.</value>
+  </data>
+    <data name="InvalidInstrumentFiltered" xml:space="preserve">
+    <value>Instrument filter in use; invalid instrument selected</value>
+  </data>
+</root>

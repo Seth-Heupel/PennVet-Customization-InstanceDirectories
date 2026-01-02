@@ -1,0 +1,1963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TreeListMoveDownLevel" xml:space="preserve">
+    <value>Move Down Level</value>
+  </data>
+  <data name="ActivationPageMenu" xml:space="preserve">
+    <value>Menu Category:</value>
+  </data>
+  <data name="ActivationPageMenuText" xml:space="preserve">
+    <value>Please specify a category into which the new menu options will be assigned:</value>
+  </data>
+  <data name="ActivationPageServerTask" xml:space="preserve">
+    <value>Server Task:</value>
+  </data>
+  <data name="ActivationPageServerTaskText" xml:space="preserve">
+    <value>Please select a Server Task that will be associated with the Form:</value>
+  </data>
+  <data name="ActivationPageTitle" xml:space="preserve">
+    <value>Activate Property Sheet</value>
+  </data>
+  <data name="AdvancedPageDetailsTab" xml:space="preserve">
+    <value>Should a 'Details' tab be added to the new {0}:</value>
+  </data>
+  <data name="AdvancedPageDirectory" xml:space="preserve">
+    <value>File Directory:</value>
+  </data>
+  <data name="AdvancedPageExtension" xml:space="preserve">
+    <value>File Extension:</value>
+  </data>
+  <data name="AdvancedPageExtensionError" xml:space="preserve">
+    <value>File extension in use on another Entity Type!</value>
+  </data>
+  <data name="AdvancedPageFormCategory" xml:space="preserve">
+    <value>Form Category:</value>
+  </data>
+  <data name="AdvancedPageNotes" xml:space="preserve">
+    <value>Add Details Tab</value>
+  </data>
+  <data name="AdvancedPageSpecifyTitle" xml:space="preserve">
+    <value>Please specify a Title for the new {0}:</value>
+  </data>
+  <data name="AdvancedPageTitle" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="AlertWindowService" xml:space="preserve">
+    <value>Alert!</value>
+  </data>
+  <data name="AssemblyEditorFilter" xml:space="preserve">
+    <value>Assemblies(*.dll)|*.dll</value>
+  </data>
+  <data name="AssemblyEditorTitle" xml:space="preserve">
+    <value>Assembly File Browse</value>
+  </data>
+  <data name="AssemblyTypeSpecifyAssembly" xml:space="preserve">
+    <value>Specify the Assembly Property</value>
+  </data>
+  <data name="AssemblyTypeSpecifyProperty" xml:space="preserve">
+    <value>Specify the Type Property</value>
+  </data>
+  <data name="AuditPromptClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="AuditPromptIdentity" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="AuditPromptNewValue" xml:space="preserve">
+    <value>New Value</value>
+  </data>
+  <data name="AuditPromptOldValue" xml:space="preserve">
+    <value>Old Value</value>
+  </data>
+  <data name="AuditPromptReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="BrowseFieldMessage" xml:space="preserve">
+    <value>'EntityName' must be set</value>
+  </data>
+  <data name="BrowseFieldTitle" xml:space="preserve">
+    <value>Invalid EntityName</value>
+  </data>
+  <data name="BrowseNotSetMessage" xml:space="preserve">
+    <value>Add Browse with server task.</value>
+  </data>
+  <data name="BrowseNotSetTitle" xml:space="preserve">
+    <value>'Browse' has not been set</value>
+  </data>
+  <data name="BrowsePhraseMessage" xml:space="preserve">
+    <value>'PhraseType' must be set</value>
+  </data>
+  <data name="BrowsePhraseTitle" xml:space="preserve">
+    <value>Invalid PhraseType</value>
+  </data>
+  <data name="BrowsePropertyFalseMessage" xml:space="preserve">
+    <value>'Library' must be set when 'UseProperty' is false</value>
+  </data>
+  <data name="BrowsePropertyFalseTitle" xml:space="preserve">
+    <value>Invalid Property</value>
+  </data>
+  <data name="BrowsePropertyNameMessage" xml:space="preserve">
+    <value>'EntityName' must be set</value>
+  </data>
+  <data name="BrowsePropertyNameTitle" xml:space="preserve">
+    <value>Invalid EntityName</value>
+  </data>
+  <data name="BrowseRoutineDirectoryMessage" xml:space="preserve">
+    <value>'Directory' must be specified</value>
+  </data>
+  <data name="BrowseRoutineDirectoryTitle" xml:space="preserve">
+    <value>Invalid Directory</value>
+  </data>
+  <data name="BrowseRoutineExtensionMessage" xml:space="preserve">
+    <value>'Extension' must be specified</value>
+  </data>
+  <data name="BrowseRoutineExtensionTitle" xml:space="preserve">
+    <value>Invalid Extension</value>
+  </data>
+  <data name="BrowseStringMessage" xml:space="preserve">
+    <value>'Strings' No String items have been added.</value>
+  </data>
+  <data name="BrowseStringTitle" xml:space="preserve">
+    <value>Warning 'Strings'</value>
+  </data>
+  <data name="BubbleMaxMessage" xml:space="preserve">
+    <value>Value must fall between Minimum and Maximum</value>
+  </data>
+  <data name="BubbleMaxTitle" xml:space="preserve">
+    <value>Bubble Error</value>
+  </data>
+  <data name="BubbleMinMessage" xml:space="preserve">
+    <value>Minimum value cannot be more than Maximum value</value>
+  </data>
+  <data name="BubbleMinTitle" xml:space="preserve">
+    <value>Bubble Error</value>
+  </data>
+  <data name="BubblePropertyMessage" xml:space="preserve">
+    <value>'Property' has not been set</value>
+  </data>
+  <data name="BubblePropertyTitle" xml:space="preserve">
+    <value>'Property' Error</value>
+  </data>
+  <data name="BubbleThresholdMessage" xml:space="preserve">
+    <value>Duplicate thresholds detected for limit {0}</value>
+  </data>
+  <data name="BubbleUnboundTitle" xml:space="preserve">
+    <value>Unbound prompt detected</value>
+  </data>
+  <data name="BuildFormBuildForm" xml:space="preserve">
+    <value>Build the form definition files.</value>
+  </data>
+  <data name="BuildFormCreateXML" xml:space="preserve">
+    <value>Create XML Documentation</value>
+  </data>
+  <data name="BuildFormOkButton" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="BuildFormOptimised" xml:space="preserve">
+    <value>Optimised</value>
+  </data>
+  <data name="BuildFormOutput" xml:space="preserve">
+    <value>Output Directory</value>
+  </data>
+  <data name="BuildFormTitle" xml:space="preserve">
+    <value>Build Designer Definitions</value>
+  </data>
+  <data name="ButtonEditImageFormat" xml:space="preserve">
+    <value>The specified image format is invalid!</value>
+  </data>
+  <data name="CalendarFormMessage" xml:space="preserve">
+    <value>Calendar Appointment form not defined</value>
+  </data>
+  <data name="CalendarFormTitle" xml:space="preserve">
+    <value>Appointment Form</value>
+  </data>
+  <data name="CalendarInvalidMessage" xml:space="preserve">
+    <value>Calendar field mappings error</value>
+  </data>
+  <data name="CalendarInvalidTitle" xml:space="preserve">
+    <value>Calendar Mappings</value>
+  </data>
+  <data name="CalendarNewEvent" xml:space="preserve">
+    <value>&amp;New Event</value>
+  </data>
+  <data name="CalendarNextEvent" xml:space="preserve">
+    <value>Next Event</value>
+  </data>
+  <data name="CalendarPreviousEvent" xml:space="preserve">
+    <value>Previous Event</value>
+  </data>
+  <data name="CalendarPrint" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="CalendarUnboundMessage" xml:space="preserve">
+    <value>The control is unbound and will not be automatically saved.</value>
+  </data>
+  <data name="CalendarUnboundTitle" xml:space="preserve">
+    <value>Unbound prompt detected</value>
+  </data>
+  <data name="ChangeMenu" xml:space="preserve">
+    <value>Select the new menu and toolbar configuration you want to use.</value>
+  </data>
+  <data name="ChangeMenuCancelButton" xml:space="preserve">
+    <value>To close this wizard, click Finish.</value>
+  </data>
+  <data name="ChangeMenuSave" xml:space="preserve">
+    <value>Save Current Menu '{0}'</value>
+  </data>
+  <data name="ChangeMenuSaveAs" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="ChangeMenuSaveCurrent" xml:space="preserve">
+    <value>Save Current Menu</value>
+  </data>
+  <data name="ChangeMenuSaveNewMenu" xml:space="preserve">
+    <value>Save the new menu and toolbar configuration. or press Cancel to abandon changes.</value>
+  </data>
+  <data name="ChangeMenuTitle" xml:space="preserve">
+    <value>Change Menu</value>
+  </data>
+  <data name="ChartDataSeries" xml:space="preserve">
+    <value>Valid DataTypes are DateTime, Numeric and Text</value>
+  </data>
+  <data name="CollectionTypeAddAllOption" xml:space="preserve">
+    <value>Add all</value>
+  </data>
+  <data name="CollectionTypeAddButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="CollectionTypeCloseButton" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="CollectionTypeRemoveButton" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CollectionTypeTite" xml:space="preserve">
+    <value>Data Series Editor</value>
+  </data>
+  <data name="ColumnsWizardPageAllowCustom" xml:space="preserve">
+    <value>Allow user customized columns</value>
+  </data>
+  <data name="ColumnsWizardPageAutoSize" xml:space="preserve">
+    <value>Autosize Columns</value>
+  </data>
+  <data name="ColumnsWizardPageDefaultBrowse" xml:space="preserve">
+    <value>Use default browse columns</value>
+  </data>
+  <data name="ColumnsWizardPageDisplayAll" xml:space="preserve">
+    <value>Display all columns</value>
+  </data>
+  <data name="ColumnsWizardPageSelect" xml:space="preserve">
+    <value>Please select which columns are to be displayed in the new Folder:</value>
+  </data>
+  <data name="ControlFactoryCannotFindControl" xml:space="preserve">
+    <value>Cannot find appropriate run-time Windows control for ControlDefinition of type '{0}'</value>
+  </data>
+  <data name="ControlFactoryUnableAddChild" xml:space="preserve">
+    <value>Unable to add child component '{0}'</value>
+  </data>
+  <data name="CriteriaClear" xml:space="preserve">
+    <value>Clear Criteria?</value>
+  </data>
+  <data name="CriteriaEditorAddVariable" xml:space="preserve">
+    <value>Double clicking on a variable copies it to the selected condition and none have been defined. To edit the variable right click and select from the context menu.</value>
+  </data>
+  <data name="CriteriaEditorAllowPrompt" xml:space="preserve">
+    <value>Allow User Prompts</value>
+  </data>
+  <data name="CriteriaEditorClearButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CriteriaEditorColumnDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CriteriaEditorColumnField" xml:space="preserve">
+    <value>Criteria Field</value>
+  </data>
+  <data name="CriteriaEditorColumnFieldName" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="CriteriaEditorColumnOperator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="CriteriaEditorColumnOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="CriteriaEditorColumnValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="CriteriaEditorColumnVariable" xml:space="preserve">
+    <value>Variable Name</value>
+  </data>
+  <data name="CriteriaEditorCriteriaButton" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="CriteriaEditorCriteriaGrid" xml:space="preserve">
+    <value>  Criteria Grid</value>
+  </data>
+  <data name="CriteriaEditOrderButton" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="CriteriaEditorDescribeButton" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="CriteriaEditorFieldTab" xml:space="preserve">
+    <value>{0} Fields</value>
+  </data>
+  <data name="CriteriaEditorFormLabel" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="CriteriaEditorImportButton" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="CriteriaEditorMenuAddRow" xml:space="preserve">
+    <value>Add to Criteria row</value>
+  </data>
+  <data name="CriteriaEditorMenuAddVariable" xml:space="preserve">
+    <value>Add Variable</value>
+  </data>
+  <data name="CriteriaEditorMenuEditVariable" xml:space="preserve">
+    <value>Edit Variable</value>
+  </data>
+  <data name="CriteriaEditorOrderGrid" xml:space="preserve">
+    <value> Order Grid</value>
+  </data>
+  <data name="CriteriaEditorPromptGroup" xml:space="preserve">
+    <value>User Prompts</value>
+  </data>
+  <data name="CriteriaEditorRunButton" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="CriteriaEditorTaskLabel" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="CriteriaEditorTooltipAddRemoveButton" xml:space="preserve">
+    <value>Allow order conditions to be created and removed.</value>
+  </data>
+  <data name="CriteriaEditorTooltipClearButton" xml:space="preserve">
+    <value>Clear Criteria removing all conditions and order criteria.</value>
+  </data>
+  <data name="CriteriaEditorTooltipCriteriaButton" xml:space="preserve">
+    <value>Add Variable to Criteria Grid</value>
+  </data>
+  <data name="CriteriaEditorTooltipDescribe" xml:space="preserve">
+    <value>Describe Criteria</value>
+  </data>
+  <data name="CriteriaEditorTooltipFieldTab" xml:space="preserve">
+    <value>Allow fields from the criteria table name to be included within conditions.</value>
+  </data>
+  <data name="CriteriaEditorTooltipImportButton" xml:space="preserve">
+    <value>Import Criteria from another saved criteria.</value>
+  </data>
+  <data name="CriteriaEditorTooltipOrderButton" xml:space="preserve">
+    <value>Add Field to Criteria Grid</value>
+  </data>
+  <data name="CriteriaEditorTooltipOrderGrid" xml:space="preserve">
+    <value>Add Field to Order Grid</value>
+  </data>
+  <data name="CriteriaEditorTooltipQueryButton" xml:space="preserve">
+    <value>Run the current criteria displaying the results with the Results grid.</value>
+  </data>
+  <data name="CriteriaEditorTooltipTabPage" xml:space="preserve">
+    <value>Allow conditions to be created and removed.</value>
+  </data>
+  <data name="CriteriaEditorTooltipVariablesTab" xml:space="preserve">
+    <value>Allow conditions to have user define variables, for run time values.</value>
+  </data>
+  <data name="CriteriaEditorVariablesTab" xml:space="preserve">
+    <value>Variables</value>
+  </data>
+  <data name="CriteriaGridDescription" xml:space="preserve">
+    <value>The Criteria Grid is where the fields and values are combined to filter records. Fields can be added from the field tree.</value>
+  </data>
+  <data name="CriteriaInformation" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="CriteriaNotSelected" xml:space="preserve">
+    <value>No saved criteria selected</value>
+  </data>
+  <data name="CriteriaNotSet" xml:space="preserve">
+    <value>No Criteria or Order has been set</value>
+  </data>
+  <data name="CriteriaOrder" xml:space="preserve">
+    <value>Order By </value>
+  </data>
+  <data name="CriteriaVariableDescription" xml:space="preserve">
+    <value>The Variable list shows dynamic values you can add to your criteria (for example \" Current Date \" ). To add new variables use the right mouse.</value>
+  </data>
+  <data name="CrossTabLinkDataProperty" xml:space="preserve">
+    <value>Name of a property on a data entity that links to a {0} ({1})</value>
+  </data>
+  <data name="CrossTabLinkFromGrid" xml:space="preserve">
+    <value>Name of a property on a {0} that links to a data entity (DataProperty)</value>
+  </data>
+  <data name="DataQueryConditionsMessage" xml:space="preserve">
+    <value>No conditions have been created</value>
+  </data>
+  <data name="DataQueryConditionsTitle" xml:space="preserve">
+    <value>Warning Conditions</value>
+  </data>
+  <data name="DeleteTaskDeleteFolderMessage" xml:space="preserve">
+    <value>Are you sure you want to permanently delete this folder?</value>
+  </data>
+  <data name="DeleteTaskDeleteFolderTitle" xml:space="preserve">
+    <value>Delete Folder</value>
+  </data>
+  <data name="DesignerInvalidEntityMessage" xml:space="preserve">
+    <value>'Entity' must be set</value>
+  </data>
+  <data name="DesignerInvalidEntityTitle" xml:space="preserve">
+    <value>Invalid Entity</value>
+  </data>
+  <data name="DesignerTaskValidationMessage" xml:space="preserve">
+    <value>Form definition contains validation errors and cannot be opened.</value>
+  </data>
+  <data name="DesignerTaskValidationTitle" xml:space="preserve">
+    <value>Form Error</value>
+  </data>
+  <data name="DesignerWizardTaskMessage" xml:space="preserve">
+    <value>Cannot perform Save operations when testing a Wizard!</value>
+  </data>
+  <data name="DesignerWizardTaskTitle" xml:space="preserve">
+    <value>Test Wizard</value>
+  </data>
+  <data name="DockingPanelErrorMessage" xml:space="preserve">
+    <value>A problem occurred when restoring the dock panel positions. The default positioning will be used.</value>
+  </data>
+  <data name="DockingPanelErrorTitle" xml:space="preserve">
+    <value>Docking Problem</value>
+  </data>
+  <data name="DropDownListTypeInvalid" xml:space="preserve">
+    <value>The specified value '{0}' is invalid!</value>
+  </data>
+  <data name="DropDownMultiInvalid" xml:space="preserve">
+    <value>At least one property does not exist!</value>
+  </data>
+  <data name="DropDownPropertyNotExist" xml:space="preserve">
+    <value>The specified property does not exist!</value>
+  </data>
+  <data name="DropDownPropertyNullEntityType" xml:space="preserve">
+    <value>At least one property does not exist!</value>
+  </data>
+  <data name="DropDownUserInterfaceInvalid" xml:space="preserve">
+    <value>The specified user interface is invalid!</value>
+  </data>
+  <data name="EditEntityTaskNewRecordTitle" xml:space="preserve">
+    <value>New Record</value>
+  </data>
+  <data name="EditEntityTaskProperties" xml:space="preserve">
+    <value>'{0}' Properties</value>
+  </data>
+  <data name="ElectronicSignatureCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ElectronicSignatureComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ElectronicSignatureCompletion" xml:space="preserve">
+    <value>Completion of this form carries the same meaning and weight as a written signature.</value>
+  </data>
+  <data name="ElectronicSignatureOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="ElectronicSignaturePassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ElectronicSignaturePasswordAttemptMessage" xml:space="preserve">
+    <value>Invalid password you have {0} attempt(s) left.</value>
+  </data>
+  <data name="ElectronicSignaturePasswordAttemptTitle" xml:space="preserve">
+    <value>Invalid Login Attempt.</value>
+  </data>
+  <data name="ElectronicSignatureReason" xml:space="preserve">
+    <value>Electronic Signature Reason.</value>
+  </data>
+  <data name="ElectronicSignatureUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="EnterAValue" xml:space="preserve">
+    <value>Please enter a value!</value>
+  </data>
+  <data name="EntityBrowseNoQueryMessage" xml:space="preserve">
+    <value>The entity browse object requires a Query or an Entity to be specified.</value>
+  </data>
+  <data name="EntityBrowseNoQueryTitle" xml:space="preserve">
+    <value>Must enter a Query or an Entity</value>
+  </data>
+  <data name="EntityPromptCopy" xml:space="preserve">
+    <value>C&amp;opy</value>
+  </data>
+  <data name="EntityPromptCreate" xml:space="preserve">
+    <value>C&amp;reate</value>
+  </data>
+  <data name="EntityPromptUnexpectedMode" xml:space="preserve">
+    <value>Unexpected Mode for Entity Prompt : {0}</value>
+  </data>
+  <data name="EntityPromptValidIdentity" xml:space="preserve">
+    <value>Please Choose a Valid Entity</value>
+  </data>
+  <data name="IntervalPromptUnexpectedMode" xml:space="preserve">
+    <value>Unexpected Mode for Interval Prompt : {0}</value>
+  </data>
+  <data name="IntervalPromptValidIdentity" xml:space="preserve">
+    <value>Please Choose a Valid Interval</value>
+  </data>
+  <data name="IntervalPromptCopy" xml:space="preserve">
+    <value>C&amp;opy</value>
+  </data>
+  <data name="IntervalPromptCreate" xml:space="preserve">
+    <value>C&amp;reate</value>
+  </data>
+  <data name="EntityTreeListTitle" xml:space="preserve">
+    <value>TreeList</value>
+  </data>
+  <data name="EntityTreeListUnableToMoveMessage" xml:space="preserve">
+    <value>Tree DataSource does not allow nodes to be moved between levels!</value>
+  </data>
+  <data name="EntityTreeListUnableToPasteMessage" xml:space="preserve">
+    <value>Cannot paste a node back to its parent!</value>
+  </data>
+  <data name="EntityTreeListUnableToPasteTitle" xml:space="preserve">
+    <value>TreeList</value>
+  </data>
+  <data name="EntityTypeGeneralDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="EntityTypeGeneralEntityType" xml:space="preserve">
+    <value>Entity Type:</value>
+  </data>
+  <data name="EntityTypeGeneralName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="EntityTypeGeneralSpecifyName" xml:space="preserve">
+    <value>Please specify a Name, Description and Entity Type for the new {0}:</value>
+  </data>
+  <data name="EntryExists" xml:space="preserve">
+    <value>Entry Already Exists with this Name</value>
+  </data>
+  <data name="EnvironmentVariableCurrentValueTootip" xml:space="preserve">
+    <value>Example of the current Value.</value>
+  </data>
+  <data name="EnvironmentVariableHelpButton" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="EnvironmentVariableIncrementTooltip" xml:space="preserve">
+    <value>Refresh the current value.</value>
+  </data>
+  <data name="EnvironmentVariableLabel1" xml:space="preserve">
+    <value>Environment variables obtain their value from attributes of the current session. E.g. Current user or the Current date.</value>
+  </data>
+  <data name="EnvironmentVariableLabel2" xml:space="preserve">
+    <value>Environment Variable name, this form will only display if the ALLOW_VGL_FUNCTIONALITY configuration item is set to true.</value>
+  </data>
+  <data name="EnvironmentVariableLibraryTooltip" xml:space="preserve">
+    <value>List of VGL libraries.</value>
+  </data>
+  <data name="EnvironmentVariableName" xml:space="preserve">
+    <value>Variable Name</value>
+  </data>
+  <data name="EnvironmentVariableRadioCaption" xml:space="preserve">
+    <value>Environment Variable</value>
+  </data>
+  <data name="EnvironmentVariableRoutine" xml:space="preserve">
+    <value>List of routines for a specific Library.</value>
+  </data>
+  <data name="EnvironmentVariableRoutineValue" xml:space="preserve">
+    <value>User Routine Value</value>
+  </data>
+  <data name="EnvironmentVariableTitle" xml:space="preserve">
+    <value>Environment Variable Form</value>
+  </data>
+  <data name="EnvironmentVariableTooltip" xml:space="preserve">
+    <value>Selection of run time VGL environment variables such at Today and Process ID.</value>
+  </data>
+  <data name="EnvironmentVariableError" xml:space="preserve">
+    <value>Environment Variable Error</value>
+  </data>
+  <data name="EnvironmentVariableNoVariable" xml:space="preserve">
+    <value>Environment Variable has not been entered.</value>
+  </data>
+  <data name="EnvironmentVariableNoRoutine" xml:space="preserve">
+    <value>Libray and Routine have not been entered.</value>
+  </data>
+  <data name="EnvironmentVariableValue" xml:space="preserve">
+    <value>Current Value</value>
+  </data>
+  <data name="EnvironmentVariableValueSource" xml:space="preserve">
+    <value>Value Source</value>
+  </data>
+  <data name="ErrorClipboardButton" xml:space="preserve">
+    <value>&amp;Copy To Clipboard</value>
+  </data>
+  <data name="ErrorExitButton" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="ErrorRestartButton" xml:space="preserve">
+    <value>&amp;Restart</value>
+  </data>
+  <data name="ExternalPageFooter" xml:space="preserve">
+    <value>To Continue, click Next.</value>
+  </data>
+  <data name="ExternalPageRuntime" xml:space="preserve">
+    <value>Set at Runtime</value>
+  </data>
+  <data name="FinishPageFooter" xml:space="preserve">
+    <value>To close this wizard, click Finish.</value>
+  </data>
+  <data name="FinishPageLaunchDesigner" xml:space="preserve">
+    <value>Launch Designer</value>
+  </data>
+  <data name="FontSelectChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="FontSelectDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="FontSelectExplorer" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="FontSelectMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="FontSelectPitch" xml:space="preserve">
+    <value>Font and pitch selection</value>
+  </data>
+  <data name="FontSelectTextEditor" xml:space="preserve">
+    <value>Text editor</value>
+  </data>
+  <data name="FontSelectTitle" xml:space="preserve">
+    <value>Font Select</value>
+  </data>
+  <data name="FontSelectVGL" xml:space="preserve">
+    <value>VGL</value>
+  </data>
+  <data name="FormActivationActivateForm" xml:space="preserve">
+    <value>This wizard helps you to activate a Form within SampleManager.</value>
+  </data>
+  <data name="FormActivationActivateProperty" xml:space="preserve">
+    <value>This wizard helps you to activate a Property Sheet within SampleManager.</value>
+  </data>
+  <data name="FormActivationCompleteFormMessage" xml:space="preserve">
+    <value>You have successfully completed the steps needed to activate a Form within SampleManager.</value>
+  </data>
+  <data name="FormActivationCompleteFormTitle" xml:space="preserve">
+    <value>Completing the Form Activation Wizard</value>
+  </data>
+  <data name="FormActivationCompletePropertyMessage" xml:space="preserve">
+    <value>You have successfully completed the steps needed to activate a Property Sheet within SampleManager.</value>
+  </data>
+  <data name="FormActivationCompletePropertyTitle" xml:space="preserve">
+    <value>Completing the Property Sheet Activation Wizard</value>
+  </data>
+  <data name="FormActivationDescription" xml:space="preserve">
+    <value>Activation Settings</value>
+  </data>
+  <data name="FormActivationFormSettings" xml:space="preserve">
+    <value>This page is used to enter the Form activation settings.</value>
+  </data>
+  <data name="FormActivationPropertySettings" xml:space="preserve">
+    <value>This page is used to enter the Property Sheet activation settings.</value>
+  </data>
+  <data name="FormActivationTitleForm" xml:space="preserve">
+    <value>Form Activation Wizard</value>
+  </data>
+  <data name="FormActivationTitleProperty" xml:space="preserve">
+    <value>Property Sheet Activation Wizard</value>
+  </data>
+  <data name="FormActivationWelcomeFormDescription" xml:space="preserve">
+    <value>Welcome to the Form Activation Wizard</value>
+  </data>
+  <data name="FormActivationWelcomePropertyDescription" xml:space="preserve">
+    <value>Welcome to the Property Sheet Activation Wizard</value>
+  </data>
+  <data name="FormActivatorInvalidTypeMessage" xml:space="preserve">
+    <value>You may not activate a Property Sheet for active data of type '{0}'. Add the menu items manually</value>
+  </data>
+  <data name="FormActivatorInvalidTypeTitle" xml:space="preserve">
+    <value>Invalid Table</value>
+  </data>
+  <data name="FormActivatorMenuItemsFoundMessage" xml:space="preserve">
+    <value>This property sheet already has Menu Items. You may not activate it</value>
+  </data>
+  <data name="FormActivatorMenuItemsFoundTitle" xml:space="preserve">
+    <value>Existing Menu Items</value>
+  </data>
+  <data name="FormResetFail" xml:space="preserve">
+    <value>Form reset failed.</value>
+  </data>
+  <data name="FormResetSuccess" xml:space="preserve">
+    <value>Default form layout restored.</value>
+  </data>
+  <data name="FormResetTitle" xml:space="preserve">
+    <value>Form Reset</value>
+  </data>
+  <data name="FormsDesignerTestEntity" xml:space="preserve">
+    <value>Test Entity</value>
+  </data>
+  <data name="FormsDesignerTestTask" xml:space="preserve">
+    <value>Server Task</value>
+  </data>
+  <data name="FormsDesignerTestForm" xml:space="preserve">
+    <value>Test Form</value>
+  </data>
+  <data name="FormsDesignerTitle" xml:space="preserve">
+    <value>Test the user interface</value>
+  </data>
+  <data name="FrequencyDaily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="FrequencyDailyRecurrence" xml:space="preserve">
+    <value>Daily Recurrence</value>
+  </data>
+  <data name="FrequencyDatePattern" xml:space="preserve">
+    <value>Date Pattern</value>
+  </data>
+  <data name="FrequencyDayFriday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="FrequencyDayMonday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="FrequencyDayOfMonth" xml:space="preserve">
+    <value>Day of Month</value>
+  </data>
+  <data name="FrequencyDayOfMonth1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FrequencyDayOfMonth10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="FrequencyDayOfMonth11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="FrequencyDayOfMonth12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="FrequencyDayOfMonth13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="FrequencyDayOfMonth14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="FrequencyDayOfMonth15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="FrequencyDayOfMonth16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="FrequencyDayOfMonth17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="FrequencyDayOfMonth18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="FrequencyDayOfMonth19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="FrequencyDayOfMonth2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="FrequencyDayOfMonth20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="FrequencyDayOfMonth21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="FrequencyDayOfMonth22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="FrequencyDayOfMonth23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="FrequencyDayOfMonth24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="FrequencyDayOfMonth25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="FrequencyDayOfMonth26" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="FrequencyDayOfMonth27" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="FrequencyDayOfMonth28" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="FrequencyDayOfMonth29" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="FrequencyDayOfMonth3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FrequencyDayOfMonth30" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="FrequencyDayOfMonth31" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="FrequencyDayOfMonth4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FrequencyDayOfMonth5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FrequencyDayOfMonth6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FrequencyDayOfMonth7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="FrequencyDayOfMonth8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="FrequencyDayOfMonth9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="FrequencyDayOfWeek" xml:space="preserve">
+    <value>Day of Week</value>
+  </data>
+  <data name="FrequencyDayRange" xml:space="preserve">
+    <value>Day Range</value>
+  </data>
+  <data name="FrequencyDays" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="FrequencyDaySaturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="FrequencyDaySunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="FrequencyDayThursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="FrequencyDayTuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="FrequencyDayWednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="FrequencyDeSelectAllButton" xml:space="preserve">
+    <value>De-Select All</value>
+  </data>
+  <data name="FrequencyEditorCaption" xml:space="preserve">
+    <value>Frequency Editor</value>
+  </data>
+  <data name="FrequencyEndAt" xml:space="preserve">
+    <value>&amp;End at:</value>
+  </data>
+  <data name="FrequencyEndOn" xml:space="preserve">
+    <value>&amp;End on:</value>
+  </data>
+  <data name="FrequencyFrequency" xml:space="preserve">
+    <value>&amp;Frequency:</value>
+  </data>
+  <data name="FrequencyInvalid" xml:space="preserve">
+    <value>Invalid Value! Cannot display Frequency Editor.</value>
+  </data>
+  <data name="FrequencyLastDayOfMonth" xml:space="preserve">
+    <value>Last day of month</value>
+  </data>
+  <data name="FrequencyMonthApril" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="FrequencyMonthAugust" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="FrequencyMonthDecember" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="FrequencyMonthFebruary" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="FrequencyMonthJanuary" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="FrequencyMonthJuly" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="FrequencyMonthJune" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="FrequencyMonthlyRecurrence" xml:space="preserve">
+    <value>Monthly Recurrence</value>
+  </data>
+  <data name="FrequencyMonthMarch" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="FrequencyMonthMay" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="FrequencyMonthNovember" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="FrequencyMonthOctober" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="FrequencyMonthSeptember" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="FrequencyNoEndDate" xml:space="preserve">
+    <value>&amp;No end date</value>
+  </data>
+  <data name="FrequencyNoEndTime" xml:space="preserve">
+    <value>&amp;No end time</value>
+  </data>
+  <data name="FrequencyNoMonthDays" xml:space="preserve">
+    <value>No days of the month have been specified.</value>
+  </data>
+  <data name="FrequencyNoMonths" xml:space="preserve">
+    <value>No months have been specified.</value>
+  </data>
+  <data name="FrequencyNoStartDate" xml:space="preserve">
+    <value>No start date has been specified.</value>
+  </data>
+  <data name="FrequencyNoValidStart" xml:space="preserve">
+    <value>Start date cannot fall after the end date.</value>
+  </data>
+  <data name="FrequencyNoWeekDays" xml:space="preserve">
+    <value>No days of the week have been specified.</value>
+  </data>
+  <data name="FrequencyNoWeeks" xml:space="preserve">
+    <value>No weeks have been specified.</value>
+  </data>
+  <data name="FrequencyRangeOfRecurrence" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="FrequencySelectAllButton" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FrequencySpecificTimes" xml:space="preserve">
+    <value>Specific Time(s)</value>
+  </data>
+  <data name="FrequencySpecificTimesLine" xml:space="preserve">
+    <value>Specific Times</value>
+  </data>
+  <data name="FrequencyStart" xml:space="preserve">
+    <value>&amp;Start:</value>
+  </data>
+  <data name="FrequencyTimeFrequency" xml:space="preserve">
+    <value>&amp;Frequency:</value>
+  </data>
+  <data name="FrequencyTimeHours" xml:space="preserve">
+    <value>hour(s)</value>
+  </data>
+  <data name="FrequencyTimePattern" xml:space="preserve">
+    <value>Time Pattern</value>
+  </data>
+  <data name="FrequencyTimeRange" xml:space="preserve">
+    <value>Time Range</value>
+  </data>
+  <data name="FrequencyTimeStart" xml:space="preserve">
+    <value>&amp;Start:</value>
+  </data>
+  <data name="FrequencyTooManyTimes" xml:space="preserve">
+    <value>The maximum of 6 specific times have already been defined!</value>
+  </data>
+  <data name="FrequencyWeek1" xml:space="preserve">
+    <value>Week 1</value>
+  </data>
+  <data name="FrequencyWeek2" xml:space="preserve">
+    <value>Week 2</value>
+  </data>
+  <data name="FrequencyWeek3" xml:space="preserve">
+    <value>Week 3</value>
+  </data>
+  <data name="FrequencyWeek4" xml:space="preserve">
+    <value>Week 4</value>
+  </data>
+  <data name="FrequencyWeek5" xml:space="preserve">
+    <value>Week 5</value>
+  </data>
+  <data name="FrequencyWeeklyRecurrence" xml:space="preserve">
+    <value>Weekly Recurrence</value>
+  </data>
+  <data name="GeneralPageDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="GeneralPageLabel" xml:space="preserve">
+    <value>Please specify a Name and Description for the new {0}:</value>
+  </data>
+  <data name="GeneralPageName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="GeneralWizardCabinet" xml:space="preserve">
+    <value>Cabinet:</value>
+  </data>
+  <data name="GeneralWizardDataSource" xml:space="preserve">
+    <value>Data Source:</value>
+  </data>
+  <data name="GeneralWizardDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="GeneralWizardName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="GenericCreateEntityWizard" xml:space="preserve">
+    <value>New {0} Wizard</value>
+  </data>
+  <data name="GridButtonImageMessage" xml:space="preserve">
+    <value>Not all custom buttons must have an image.</value>
+  </data>
+  <data name="GridButtonNameMessage" xml:space="preserve">
+    <value>Custom buttons must have a name.</value>
+  </data>
+  <data name="GridButtonTitle" xml:space="preserve">
+    <value>Grid Buttons</value>
+  </data>
+  <data name="GridButtonUnquieMessage" xml:space="preserve">
+    <value>Custom button names must be unique</value>
+  </data>
+  <data name="GridColumnBracketMessage" xml:space="preserve">
+    <value>Columns names cannot be bracketed.</value>
+  </data>
+  <data name="GridColumnMessage" xml:space="preserve">
+    <value>No Columns have been specified</value>
+  </data>
+  <data name="GridColumnNameMessage" xml:space="preserve">
+    <value>All columns must have a name</value>
+  </data>
+  <data name="GridColumnUnboundMessage" xml:space="preserve">
+    <value>All columns are unbound</value>
+  </data>
+  <data name="GridColumnUniqueMessage" xml:space="preserve">
+    <value>Columns names must be unique</value>
+  </data>
+  <data name="GridContextAddRemove" xml:space="preserve">
+    <value>Add/Remove columns</value>
+  </data>
+  <data name="GridContextBestFit" xml:space="preserve">
+    <value>Best Fit</value>
+  </data>
+  <data name="GridContextBestFitAll" xml:space="preserve">
+    <value>Best Fit (all columns)</value>
+  </data>
+  <data name="GridContextClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="GridContextClearGrouping" xml:space="preserve">
+    <value>Clear Grouping</value>
+  </data>
+  <data name="GridContextColumnCustomize" xml:space="preserve">
+    <value>Runtime Column Customization</value>
+  </data>
+  <data name="GridContextDefaultColumns" xml:space="preserve">
+    <value>Show default columns</value>
+  </data>
+  <data name="GridContextGroupBy" xml:space="preserve">
+    <value>Group By This Field</value>
+  </data>
+  <data name="GridContextHideGroupBox" xml:space="preserve">
+    <value>Hide Group By Box</value>
+  </data>
+  <data name="GridContextShowGroupBox" xml:space="preserve">
+    <value>Show Group By Box</value>
+  </data>
+  <data name="GridContextHideFindPanel" xml:space="preserve">
+    <value>Hide Find Panel</value>
+  </data>
+  <data name="GridContextShowFindPanel" xml:space="preserve">
+    <value>Show Find Panel</value>
+  </data>
+  <data name="GridContextSortAscending" xml:space="preserve">
+    <value>Sort Ascending</value>
+  </data>
+  <data name="GridContextSortDescending" xml:space="preserve">
+    <value>Sort Descending</value>
+  </data>
+  <data name="GridContextTables" xml:space="preserve">
+    <value>Change Table</value>
+  </data>
+  <data name="GridInvalidValueError" xml:space="preserve">
+    <value>Invalid value!</value>
+  </data>
+  <data name="GridMandatoryValueError" xml:space="preserve">
+    <value>Mandatory value not specified!</value>
+  </data>
+  <data name="GridNameEmptyMessage" xml:space="preserve">
+    <value>Grid name cannot be empty</value>
+  </data>
+  <data name="GridNoDataMessage" xml:space="preserve">
+    <value>Grid data has not been defined</value>
+  </data>
+  <data name="GridNoProperty" xml:space="preserve">
+    <value>'Property' has not been set</value>
+  </data>
+  <data name="GridPropertyUpdateCancelled" xml:space="preserve">
+    <value>Update cancelled</value>
+  </data>
+  <data name="GridTitle" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="GridUniqueValueError" xml:space="preserve">
+    <value>Value must be unique!</value>
+  </data>
+  <data name="IntervalAboveLimit" xml:space="preserve">
+    <value>Upper limit of '{0}' exceeded</value>
+  </data>
+  <data name="IntervalBelowLimit" xml:space="preserve">
+    <value>Lower limit of '{0}' exceeded</value>
+  </data>
+  <data name="InvalidOperation" xml:space="preserve">
+    <value>Invalid Operation</value>
+  </data>
+  <data name="LibraryLabel" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="MainTaskMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MainTaskNotConnected" xml:space="preserve">
+    <value>Not Connected</value>
+  </data>
+  <data name="MainTaskResetMessage" xml:space="preserve">
+    <value>The Control and Shift keys were held down during startup; Local Settings were reset.</value>
+  </data>
+  <data name="MainTaskResetTitle" xml:space="preserve">
+    <value>Main Window Settings Reset</value>
+  </data>
+  <data name="MainTaskStatusBar" xml:space="preserve">
+    <value>Status Bar</value>
+  </data>
+  <data name="MasterDetailGridAddColumnCaption" xml:space="preserve">
+    <value>Master Detail Grid</value>
+  </data>
+  <data name="MasterDetailGridAddColumnText" xml:space="preserve">
+    <value>Cannot add a column to visible detail grids!</value>
+  </data>
+  <data name="MasterGridDuplicateMessage" xml:space="preserve">
+    <value>Detail grid names must be unique across all grids.</value>
+  </data>
+  <data name="MasterGridDuplicateTitle" xml:space="preserve">
+    <value>Detail Grids</value>
+  </data>
+  <data name="MasterGridHierarchy" xml:space="preserve">
+    <value>Grid Hierarchy</value>
+  </data>
+  <data name="MasterGridNoDetailMessage" xml:space="preserve">
+    <value>Detail Grid data has not been defined</value>
+  </data>
+  <data name="MasterGridSameNameMessage" xml:space="preserve">
+    <value>All detail grids must have a name</value>
+  </data>
+  <data name="MasterGridTitle" xml:space="preserve">
+    <value>Detail Grid Name</value>
+  </data>
+  <data name="MenuInfoAboutSampleManager" xml:space="preserve">
+    <value>&amp;About SampleManager...</value>
+  </data>
+  <data name="MenuInfoBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="MenuInfoChangeMenu" xml:space="preserve">
+    <value>&amp;Change Menu...</value>
+  </data>
+  <data name="MenuInfoCloseAllDocuments" xml:space="preserve">
+    <value>C&amp;lose all Documents</value>
+  </data>
+  <data name="MenuInfoContents" xml:space="preserve">
+    <value>&amp;Contents...</value>
+  </data>
+  <data name="MenuInfoDockAllDocuments" xml:space="preserve">
+    <value>&amp;Dock all Documents</value>
+  </data>
+  <data name="MenuInfoExit" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="MenuInfoExplorerGrid" xml:space="preserve">
+    <value>&amp;Explorer Grid</value>
+  </data>
+  <data name="MenuInfoFile" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="MenuInfoForwards" xml:space="preserve">
+    <value>Forwards</value>
+  </data>
+  <data name="MenuInfoHelp" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="MenuInfoIndex" xml:space="preserve">
+    <value>&amp;Index...</value>
+  </data>
+  <data name="MenuInfoLockSession" xml:space="preserve">
+    <value>&amp;Lock Session</value>
+  </data>
+  <data name="MenuInfoMain" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="MenuInfoNavigator" xml:space="preserve">
+    <value>&amp;Navigator</value>
+  </data>
+  <data name="MenuInfoRebuildExplorer" xml:space="preserve">
+    <value>&amp;Rebuild Explorer</value>
+  </data>
+  <data name="MenuInfoRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="MenuInfoRun" xml:space="preserve">
+    <value>&amp;Run</value>
+  </data>
+  <data name="MenuInfoSearch" xml:space="preserve">
+    <value>&amp;Search...</value>
+  </data>
+  <data name="MenuInfoShowRemoved" xml:space="preserve">
+    <value>Show &amp;Removed</value>
+  </data>
+  <data name="MenuInfoStatus" xml:space="preserve">
+    <value>&amp;Status</value>
+  </data>
+  <data name="MenuInfoTasks" xml:space="preserve">
+    <value>&amp;Tasks</value>
+  </data>
+  <data name="MenuInfoTileAllDocumentsHorizontally" xml:space="preserve">
+    <value>Tile all Documents Horizontally</value>
+  </data>
+  <data name="MenuInfoTileAllDocumentsVertically" xml:space="preserve">
+    <value>Tile all Documents Vertically</value>
+  </data>
+  <data name="MenuInfoUndockAllDocument" xml:space="preserve">
+    <value>&amp;Undock all Document</value>
+  </data>
+  <data name="MenuInfoUp" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="MenuInfoView" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="MenuInfoWindow" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
+  <data name="PackedDecimalInvalid" xml:space="preserve">
+    <value>{0} is not a valid PackedDecimal value</value>
+  </data>
+  <data name="PromptBrowseBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="PromptBrowseBuild" xml:space="preserve">
+    <value>Build...</value>
+  </data>
+  <data name="PromptBrowseBuildCopy" xml:space="preserve">
+    <value>Build from Copy...</value>
+  </data>
+  <data name="PromptBrowseCriteria" xml:space="preserve">
+    <value>Criteria</value>
+  </data>
+  <data name="PromptBrowseCriteriaClear" xml:space="preserve">
+    <value>Clear Current</value>
+  </data>
+  <data name="PromptBrowseCriteriaClearDefault" xml:space="preserve">
+    <value>Clear Default</value>
+  </data>
+  <data name="PromptBrowseCriteriaDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="PromptBrowseCriteriaEdit" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="PromptBrowseRecentItems" xml:space="preserve">
+    <value>Recent Items</value>
+  </data>
+  <data name="PromptDataSourceMessage" xml:space="preserve">
+    <value>'DataSource' must be set if form does not have an 'EntityType'</value>
+  </data>
+  <data name="PromptDataSourceTitle" xml:space="preserve">
+    <value>Invalid DataSource</value>
+  </data>
+  <data name="PromptPropertyMessage" xml:space="preserve">
+    <value>'DataSource' must be set if form does not have an 'EntityType'</value>
+  </data>
+  <data name="PromptPropertyTitle" xml:space="preserve">
+    <value>Invalid Property</value>
+  </data>
+  <data name="PromptUnboundMessage" xml:space="preserve">
+    <value>The control is unbound and will not be automatically saved.</value>
+  </data>
+  <data name="PromptUnboundTitle" xml:space="preserve">
+    <value>Bubble Thresholds Error</value>
+  </data>
+  <data name="PromptVariableBrowseTooltip" xml:space="preserve">
+    <value>List of libraries. This prompt will only display if the ALLOW_VGL_FUNCTIONALITY configuration item is set to true.</value>
+  </data>
+  <data name="PromptVariableControlNameLabel" xml:space="preserve">
+    <value>Control Name</value>
+  </data>
+  <data name="PromptVariableLabel" xml:space="preserve">
+    <value>A Prompt variable will obtain its value from the user when the criteria is executed. You can use the default prompt method or specify your own.</value>
+  </data>
+  <data name="PromptVariableNameLabel" xml:space="preserve">
+    <value>Variable Name</value>
+  </data>
+  <data name="PromptVariableNameTooltip" xml:space="preserve">
+    <value>List of prompt controls from the form specified in the m_FormPrompt prompt.</value>
+  </data>
+  <data name="PromptVariableTitle" xml:space="preserve">
+    <value>Prompt Variable Form</value>
+  </data>
+  <data name="PropertySheetControlValidIdentity" xml:space="preserve">
+    <value>Error calling ValidateIdentity</value>
+  </data>
+  <data name="RoutineLabel" xml:space="preserve">
+    <value>Routine</value>
+  </data>
+  <data name="RunVGLRun" xml:space="preserve">
+    <value>Open:</value>
+  </data>
+  <data name="RunVGLRunLabel" xml:space="preserve">
+    <value>Type in the name of the menu option you want SampleManager to run.</value>
+  </data>
+  <data name="RunVGLTitle" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="SecurityPageRoleDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="SecurityPageRoleName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SingleFormCategory" xml:space="preserve">
+    <value>Menu Category:</value>
+  </data>
+  <data name="SingleFormServerTask" xml:space="preserve">
+    <value>Server Task:</value>
+  </data>
+  <data name="SingleFormSpecifyName" xml:space="preserve">
+    <value>Please specify a name and description for the menu item:</value>
+  </data>
+  <data name="SingleFormSpecifyTask" xml:space="preserve">
+    <value>Please specify a Server Task and Category for the form:</value>
+  </data>
+  <data name="SpinAboveLimit" xml:space="preserve">
+    <value>Maximum value is {0}</value>
+  </data>
+  <data name="SpinBelowLimit" xml:space="preserve">
+    <value>Minimum value is {0}</value>
+  </data>
+  <data name="StringTableBlankName" xml:space="preserve">
+    <value>Blank Name</value>
+  </data>
+  <data name="StringTableCancelButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="StringTableDuplicateMessage" xml:space="preserve">
+    <value>Duplicate messages associated with the String Table</value>
+  </data>
+  <data name="StringTableDuplicateName" xml:space="preserve">
+    <value>Duplicate Name</value>
+  </data>
+  <data name="StringTableDuplicateTitle" xml:space="preserve">
+    <value>Duplicate Messages against String Table</value>
+  </data>
+  <data name="StringTableEmptyMessage" xml:space="preserve">
+    <value>One or more message associated with the String Table is null or empty</value>
+  </data>
+  <data name="StringTableEmptyTitle" xml:space="preserve">
+    <value>Missing Messages against String Table</value>
+  </data>
+  <data name="StringTableNameColumn" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="StringTableNoMessagesMessage" xml:space="preserve">
+    <value>There are no messages defined against the String Table</value>
+  </data>
+  <data name="StringTableNoMessagesTitle" xml:space="preserve">
+    <value>No Messages for String Table</value>
+  </data>
+  <data name="StringTableTitle" xml:space="preserve">
+    <value>String Table Editor</value>
+  </data>
+  <data name="StringTableValueColumn" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="TextEditEmptyExpressionMessage" xml:space="preserve">
+    <value>UseRegularExpression is set to true and RegularExpression is empty.</value>
+  </data>
+  <data name="TextEditEmptyExpressionTitle" xml:space="preserve">
+    <value>Empty RegularExpression</value>
+  </data>
+  <data name="ToolBoxAddGroupButtonCaption" xml:space="preserve">
+    <value>Add &amp;Group</value>
+  </data>
+  <data name="ToolBoxAddItemButtonCaption" xml:space="preserve">
+    <value>Add &amp;Item</value>
+  </data>
+  <data name="ToolBoxGroupsEditorCaption" xml:space="preserve">
+    <value>ToolBox Groups Editor</value>
+  </data>
+  <data name="ToolBoxGroupsTreeCaption" xml:space="preserve">
+    <value>Select a Group or Item to edit:</value>
+  </data>
+  <data name="TreeContextBestFit" xml:space="preserve">
+    <value>Best Fit</value>
+  </data>
+  <data name="TreeContextBestFitAll" xml:space="preserve">
+    <value>Best Fit (all columns)</value>
+  </data>
+  <data name="TreeContextColumnCustomize" xml:space="preserve">
+    <value>Runtime Column Customization</value>
+  </data>
+  <data name="TreeContextSortAscending" xml:space="preserve">
+    <value>Sort Ascending</value>
+  </data>
+  <data name="TreeContextSortDescending" xml:space="preserve">
+    <value>Sort Descending</value>
+  </data>
+  <data name="TreeListAddChildButtonCaption" xml:space="preserve">
+    <value>Add &amp;Child</value>
+  </data>
+  <data name="TreeListAddNew" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="TreeListAddRootButtonCaption" xml:space="preserve">
+    <value>Add &amp;Root</value>
+  </data>
+  <data name="TreeListChildMessage" xml:space="preserve">
+    <value>Custom link datatypes don't match. FromParent = {0}, FromChild = {1}</value>
+  </data>
+  <data name="TreeListChildTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeListCustomLinkMessage" xml:space="preserve">
+    <value>UseEntityHierarchy is false and no custom links have been defined. TreeList will consist of only one level.</value>
+  </data>
+  <data name="TreeListCustomLinkTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeListCustomRefMessage" xml:space="preserve">
+    <value>Custom link contains a value field linking to a reference. FromParent = {0}, FromChild = {1}</value>
+  </data>
+  <data name="TreeListCustomRefTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeListDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TreeListEntityTypeMessage" xml:space="preserve">
+    <value>EntityTypes used for custom linking are not the same.  FromParent = {0}, FromChild = {1}</value>
+  </data>
+  <data name="TreeListEntityTypeTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeListHierarchyEmptyDisplayMessage" xml:space="preserve">
+    <value>Each level within the hierarchy must have a DisplayField assigned</value>
+  </data>
+  <data name="TreeListHierarchyEmptyNodeMessage" xml:space="preserve">
+    <value>No node dialog has been defined. New nodes will not be editable.</value>
+  </data>
+  <data name="TreeListHierarchyEmptyPropertyMessage" xml:space="preserve">
+    <value>Each level within the hierarchy must have a Property assigned</value>
+  </data>
+  <data name="TreeListHierarchyNoLevelsMessage" xml:space="preserve">
+    <value>No levels have been defined within the hierarchy</value>
+  </data>
+  <data name="TreeListHierarchyTitle" xml:space="preserve">
+    <value>Invalid TreeList Hierarchy</value>
+  </data>
+  <data name="TreeListInvalidPaste" xml:space="preserve">
+    <value>Cannot paste {0}: The destination node is a sub-node of the source node.</value>
+  </data>
+  <data name="TreeListInvalidPasteCaption" xml:space="preserve">
+    <value>Error Pasting Node</value>
+  </data>
+  <data name="TreeListInvalMessage" xml:space="preserve">
+    <value>UseEntityHierarchy is false and at least one custom link is invalid</value>
+  </data>
+  <data name="TreeListInvalTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeListLevel" xml:space="preserve">
+    <value>TreeListLevel</value>
+  </data>
+  <data name="TreeListLevelAddButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="TreeListLevelCloseButton" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="TreeListLevelColumn" xml:space="preserve">
+    <value>Levels</value>
+  </data>
+  <data name="TreeListLevelLinkTitle" xml:space="preserve">
+    <value>TreeList Links Editor</value>
+  </data>
+  <data name="TreeListLevelRemoveButton" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="TreeListLevelTitle" xml:space="preserve">
+    <value>TreeList Level Editor</value>
+  </data>
+  <data name="TreeListMoveDown" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="TreeListMoveUp" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="TreeListMoveUpLevel" xml:space="preserve">
+    <value>Move Up Level</value>
+  </data>
+  <data name="TreeListPasteDuplicateOperation" xml:space="preserve">
+    <value>Paste operation would result in a duplicate entity!</value>
+  </data>
+  <data name="TreeListSMDataTypeMessage" xml:space="preserve">
+    <value>SampleManager DataType '{0}' cannot be used for custom linking.</value>
+  </data>
+  <data name="TreeListSMDataTypeTitle" xml:space="preserve">
+    <value>TreeList Custom Links</value>
+  </data>
+  <data name="TreeNodesEditorCaption" xml:space="preserve">
+    <value>TreeNode Editor</value>
+  </data>
+  <data name="TreeNodesPropertiesCaption" xml:space="preserve">
+    <value>{0} properties:</value>
+  </data>
+  <data name="TreeNodesTreeCaption" xml:space="preserve">
+    <value>Select a node to edit:</value>
+  </data>
+  <data name="UserDefinedSpecifyAssembly" xml:space="preserve">
+    <value>User Defined Control - Specify Assembly/Type</value>
+  </data>
+  <data name="XYChartCombineMessage" xml:space="preserve">
+    <value>Cannot combine 2D and 3D ChartTypes.</value>
+  </data>
+  <data name="XYChartCombineTitle" xml:space="preserve">
+    <value>XYChart Data Series</value>
+  </data>
+  <data name="XYChartDataSeriesMessage" xml:space="preserve">
+    <value>No Data Series have been defined.</value>
+  </data>
+  <data name="XYChartDataSeriesTitle" xml:space="preserve">
+    <value>XYChart Data Series</value>
+  </data>
+  <data name="XYChartDataTypeEmptyMessage" xml:space="preserve">
+    <value>Data Series 'XAxisProperty' and 'YAxisProperty' must be defined.</value>
+  </data>
+  <data name="XYChartDataTypeEmptyTitle" xml:space="preserve">
+    <value>XYChart Data Series</value>
+  </data>
+  <data name="XYChartDataTypeMessage" xml:space="preserve">
+    <value>DataType of bound properties must be the same across all DataSeries when no Secondary Axes are present.</value>
+  </data>
+  <data name="XYChartDataTypeTitle" xml:space="preserve">
+    <value>XYChart Data Series</value>
+  </data>
+  <data name="XYChartDuplicateSecondaryAxisMessage" xml:space="preserve">
+    <value>All secondary axis names must be unique</value>
+  </data>
+  <data name="XYChartDuplicateSecondaryAxisTitle" xml:space="preserve">
+    <value>Duplicate secondary axis name</value>
+  </data>
+  <data name="XYChartEmptySecondaryAxisNameMessage" xml:space="preserve">
+    <value>All secondary axes must have a name</value>
+  </data>
+  <data name="XYChartEmptySecondaryAxisNameTitle" xml:space="preserve">
+    <value>Empty secondary axis name</value>
+  </data>
+  <data name="XYChartInvalidSecondaryAxesMessage" xml:space="preserve">
+    <value>Cannot display secondary axes when 3D charts are present. Secondary axes will be ignored.</value>
+  </data>
+  <data name="XYChartInvalidSecondaryAxesTitle" xml:space="preserve">
+    <value>Invalid secondary axes.</value>
+  </data>
+  <data name="XYChartLimitMessage" xml:space="preserve">
+    <value>UpperLimit and LowerLimit must be defined when Autorange is set to false.</value>
+  </data>
+  <data name="XYChartLimitTitle" xml:space="preserve">
+    <value>XYChart Axis Settings</value>
+  </data>
+  <data name="XYChartNoQueryMessage" xml:space="preserve">
+    <value>Data Series 'Query' must be defined.</value>
+  </data>
+  <data name="XYChartNoQueryTitle" xml:space="preserve">
+    <value>XYChart Data Series</value>
+  </data>
+  <data name="DataGridTitle" xml:space="preserve">
+    <value>DataGrid</value>
+  </data>
+  <data name="DataGridNameEmptyMessage" xml:space="preserve">
+    <value>Data Grid name cannot be empty</value>
+  </data>
+  <data name="DataGridNoDataMessage" xml:space="preserve">
+    <value>Data Grid data has not been defined</value>
+  </data>
+  <data name="DataGridRowMessage" xml:space="preserve">
+    <value>No Data Properties have been specified</value>
+  </data>
+  <data name="DataGridPropertyUnboundMessage" xml:space="preserve">
+    <value>All data properties are unbound</value>
+  </data>
+  <data name="DataGridPropertyUniqueMessage" xml:space="preserve">
+    <value>Property names must be unique</value>
+  </data>
+  <data name="DataGridPropertyMessage" xml:space="preserve">
+    <value>No properties have been defined</value>
+  </data>
+  <data name="TreeListCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="TreeListCut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="TreeListPaste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="TreeListShowDetailTabs" xml:space="preserve">
+    <value>Show Detail Tabs</value>
+  </data>
+  <data name="TreeListExpandAll" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="TreeListCollapseAll" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="TreeListDeleteMessage" xml:space="preserve">
+    <value>Are you sure you want to delete '{0}'?</value>
+  </data>
+  <data name="TreeListDeleteCaption" xml:space="preserve">
+    <value>Confirm Delete</value>
+  </data>
+  <data name="FormulaFunctions" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="EntityHierarchyBrowseNoEntityMessage" xml:space="preserve">
+    <value>The entity hierarchy browse object requires an entity to be specified.</value>
+  </data>
+  <data name="EntityHierarchyBrowseNoEntityTitle" xml:space="preserve">
+    <value>Must enter an Entity</value>
+  </data>
+  <data name="EntityHierarchyBrowseNoHierarchyMessage" xml:space="preserve">
+    <value>The entity hierarchy browse object requires a HierarchyProperty to be specified.</value>
+  </data>
+  <data name="EntityHierarchyBrowseNoHierarchyTitle" xml:space="preserve">
+    <value>Must enter a HierarchyProperty</value>
+  </data>
+  <data name="InspectionPageError" xml:space="preserve">
+    <value>Inspection not loaded as entity does not contain inspection information.</value>
+  </data>
+  <data name="VersionPageError" xml:space="preserve">
+    <value>Version not loaded as entity does not contain version information.</value>
+  </data>
+  <data name="AttachmentPageError" xml:space="preserve">
+    <value>Attachments not loaded as entity does not contain the HAS_ATTACHMENTS key word in structure.txt</value>
+  </data>
+  <data name="GridContextAddAllColumns" xml:space="preserve">
+    <value>Show all columns</value>
+  </data>
+  <data name="FormulaPropertyDescriptor" xml:space="preserve">
+    <value>{0} Property. This is a {1} value.</value>
+  </data>
+  <data name="FormulaLinkPropertyDescriptor" xml:space="preserve">
+    <value>{0} Property. This links to a {1}. It will return the Name of the linked record. If you want a different property, e.g. the Identity, expand this node and select the required child property.</value>
+  </data>
+  <data name="FormulaDateFormatDescriptor" xml:space="preserve">
+    <value>Date format string that produces\r\n'{0}'</value>
+  </data>
+  <data name="FontSelectFormula" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="FormulaTitle" xml:space="preserve">
+    <value>Expression Editor</value>
+  </data>
+  <data name="FormulaForEntityTitle" xml:space="preserve">
+    <value>Expression Editor based on {0}</value>
+  </data>
+  <data name="FormulaDateFormatConstants" xml:space="preserve">
+    <value>d-MMM-yyyy|dd-MMM-yyyy|d-MMM-yyyy HH:mm|dd-MMM-yyyy HH:mm|dd/MMM/yyyy|dd/MMM/yy|dd/MM/yyyy|dd/MM/yy|d/M/yy|d.M.yy|dd MMMM yyyy|d MMMM yyyy|dd/MM/yyyy HH:mm:ss|dd/MM/yyyy hh:mm tt|dd/MMM/yyyy HH:mm:ss|dd/MMM/yyyy hh:mm tt|dddd dd MMMM yyyy|MMM/dd/yyyy|MMM/dd/yy|MM/dd/yyyy|MM/dd/yy|M/d/yy|M.d.yy|MM/dd/yyyy H:mm:ss|MM/dd/yyyy hh:mm tt|MMM/dd/yyyy HH:mm:ss|MMM/dd/yyyy hh:mm tt</value>
+  </data>
+  <data name="FormulaProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="FormulaSyntax" xml:space="preserve">
+    <value>Syntaxes</value>
+  </data>
+  <data name="ActiveStatusActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ActiveStatusInactiveFlag" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="ActiveStatusInactive" xml:space="preserve">
+    <value>Inactive as version is outside the active date range.</value>
+  </data>
+  <data name="ActiveStatusActiveUnapproved" xml:space="preserve">
+    <value>Inactive as version is not approved.</value>
+  </data>
+  <data name="ActiveStatusInactiveUnapproved" xml:space="preserve">
+    <value>Inactive as version is not approved and outside the active date range.</value>
+  </data>
+  <data name="ActiveStatusPending" xml:space="preserve">
+    <value>Pending activation.</value>
+  </data>
+  <data name="NoNewInternalMessages" xml:space="preserve">
+    <value>No new messages. Double-click to open Message Viewer.</value>
+  </data>
+  <data name="NewInternalMessages" xml:space="preserve">
+    <value>You have {0} new messages waiting. Double-click to open Message Viewer.</value>
+  </data>
+  <data name="LastUserLoginCaption" xml:space="preserve">
+    <value>Welcome to SampleManager</value>
+  </data>
+  <data name="LastUserLoginMessage" xml:space="preserve">
+    <value>Logged in as '{0}'. The last login for this user was '{1}'.</value>
+  </data>
+  <data name="IconGridNoSpaceCaption" xml:space="preserve">
+    <value>Insufficient space</value>
+  </data>
+  <data name="IconGridNoSpaceText" xml:space="preserve">
+    <value>There are only {0} spaces available from this position and {1} items have been dropped. Continue Anyway?</value>
+  </data>
+  <data name="IconGridSizeMismatch" xml:space="preserve">
+    <value>Grid Data does not match matrix definition - check the number of rows/columns</value>
+  </data>
+  <data name="IconGridPrematureLoad" xml:space="preserve">
+    <value>Unable to Load Icon Grid until the Control/Form has Loaded - check the event you are using. i.e. don't do Load on FormCreated, do it on FormLoaded.</value>
+  </data>
+  <data name="PathExt" xml:space="preserve">
+    <value>See function Path('',''). This function returns just the file extension. Example from 'c:\temp1\myfile.txt' would return '.txt'.</value>
+  </data>
+  <data name="PathFileName" xml:space="preserve">
+    <value>See function Path('',''). This function returns just the file. Example from 'c:\temp1\myfile.txt' would return 'myfile.txt'.</value>
+  </data>
+  <data name="PathFileNameNoExt" xml:space="preserve">
+    <value>See function Path('',''). This function returns the file name and no extension. Example from 'c:\temp1\myfile.txt' would return 'myfile'.</value>
+  </data>
+  <data name="PathDir" xml:space="preserve">
+    <value>See function Path('',''). This function returns the last directory in the path. Example from 'c:\temp1\temp2\temp3\myfile.txt' 'directory' would return 'temp3' 'directory-1' would return 'temp2'.</value>
+  </data>
+  <data name="PathRoot" xml:space="preserve">
+    <value>See function Path('',''). This function returns the first directory in the path. Example from 'c:\temp1\temp2\temp3\myfile.txt' 'root' would return 'temp1' 'root+1' would return 'temp2'.</value>
+  </data>
+  <data name="PathRealRoot" xml:space="preserve">
+    <value>See function Path('',''). This function returns the root. Example from 'c:\temp1\myfile.txt' would return 'c:\'.</value>
+  </data>
+  <data name="PathRealDir" xml:space="preserve">
+    <value>See function Path('',''). This function returns the full directory. Example from 'c:\temp1\myfile.txt' would return 'c:\temp1'.</value>
+  </data>
+  <data name="PathError" xml:space="preserve">
+    <value>Function '{0}' passed to Path not found. See constants such as extension, directory, root from within the expression editor.</value>
+  </data>
+  <data name="PathAugumentError" xml:space="preserve">
+    <value>Path '{0}' or function '{1}' invalid. See constants such as extension, directory, root from within the expression editor.</value>
+  </data>
+  <data name="PromptTableNameCaption" xml:space="preserve">
+    <value>Select Table Name</value>
+  </data>
+  <data name="PromptTableNamePrompt" xml:space="preserve">
+    <value>Table Name</value>
+  </data>
+  <data name="TooManyInternalMessages" xml:space="preserve">
+    <value>Message limit reached, please delete removed Messages. Double-click to open Message Viewer.</value>
+  </data>
+  <data name="Formula_Designer_Add" xml:space="preserve">
+    <value>Adds the value of one numeric expression to another, or concatenates two strings.</value>
+  </data>
+  <data name="Formula_Designer_And" xml:space="preserve">
+    <value>Performs a logical conjunction on two expressions.</value>
+  </data>
+  <data name="Formula_Designer_Between" xml:space="preserve">
+    <value>Between (,)
+Specifies a range to test. Returns true if a value is greater than or equal to the first operand and less than or equal to the second operand.</value>
+  </data>
+  <data name="Formula_Designer_BitAnd" xml:space="preserve">
+    <value>Performs a bitwise logical AND operation between two integer values.</value>
+  </data>
+  <data name="Formula_Designer_BitOr" xml:space="preserve">
+    <value>Compares each bit of its first operand to the corresponding bit of its second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.</value>
+  </data>
+  <data name="Formula_Designer_BitXor" xml:space="preserve">
+    <value>Performs a logical exclusion on two Boolean expressions, or a bitwise exclusion on two numeric expressions.</value>
+  </data>
+  <data name="Formula_Designer_Divide" xml:space="preserve">
+    <value>Divides the first operand by the second.</value>
+  </data>
+  <data name="Formula_Designer_Equals" xml:space="preserve">
+    <value>Returns true if both operands have the same value; otherwise, it returns false.</value>
+  </data>
+  <data name="Formula_Designer_GreaterThan" xml:space="preserve">
+    <value>Greater than operator. Used to compare expressions.</value>
+  </data>
+  <data name="Formula_Designer_GreaterThanOrEqualTo" xml:space="preserve">
+    <value>Greater than or equal to operator. Used to compare expressions.</value>
+  </data>
+  <data name="Formula_Designer_In" xml:space="preserve">
+    <value>In (,,,) - Tests for the existence of a property in an object.</value>
+  </data>
+  <data name="Formula_Designer_LessThan" xml:space="preserve">
+    <value>Less than operator. Used to compare expressions.</value>
+  </data>
+  <data name="Formula_Designer_LessThanOrEqualTo" xml:space="preserve">
+    <value>Less than or equal to operator. Used to compare expressions.</value>
+  </data>
+  <data name="Formula_Designer_Like" xml:space="preserve">
+    <value>Compares a string against a pattern. If the value of the string matches the pattern, result is true. If the string does not match the pattern, result is false. If both string and pattern are empty strings, the result is true.</value>
+  </data>
+  <data name="Formula_Designer_Modulus" xml:space="preserve">
+    <value>Returns the remainder (modulus) obtained by dividing one numeric expression into another.</value>
+  </data>
+  <data name="Formula_Designer_Multiply" xml:space="preserve">
+    <value>Multiplies the value of two expressions.</value>
+  </data>
+  <data name="Formula_Designer_Not" xml:space="preserve">
+    <value>Performs logical negation on an expression.</value>
+  </data>
+  <data name="Formula_Designer_NotEquals" xml:space="preserve">
+    <value>Returns true if the operands do not have the same value; otherwise, it returns false.</value>
+  </data>
+  <data name="Formula_Designer_Or" xml:space="preserve">
+    <value>Performs a logical disjunction on two Boolean expressions.</value>
+  </data>
+  <data name="Formula_Designer_Subtract" xml:space="preserve">
+    <value>Finds the difference between two numbers.</value>
+  </data>
+  <data name="DateTimeAboveLimit" xml:space="preserve">
+    <value>Upper limit of '{0}' exceeded</value>
+  </data>
+  <data name="DateTimeBelowLimit" xml:space="preserve">
+    <value>Lower limit of '{0}' exceeded</value>
+  </data>
+  <data name="DateIntervalEditorTitle" xml:space="preserve">
+    <value>Select Date or Interval</value>
+  </data>
+  <data name="SpellCheckerDictionaryWarningCaption" xml:space="preserve">
+    <value>Spell Checker</value>
+  </data>
+  <data name="SpellCheckerDictionaryWarning" xml:space="preserve">
+    <value>Unable to find dictionary. Dictionaries are available from the OpenOffice foundation.</value>
+  </data>
+  <data name="ActionButtonFormErrors" xml:space="preserve">
+    <value>Invalid values detected, please correct before proceeding.</value>
+  </data>
+  <data name="TextEditRegExError" xml:space="preserve">
+    <value>'{0}' Set Value Error '{1}'- check regular expression.</value>
+  </data>
+  <data name="FrequencyAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FrequencyNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="FrequencyToggle" xml:space="preserve">
+    <value>Toggle</value>
+  </data>
+  <data name="LocationLatitudeOOB" xml:space="preserve">
+    <value>Latitude is out of bounds values should be between -90 to 90</value>
+  </data>
+  <data name="LocationLongitudeOOB" xml:space="preserve">
+    <value>Longitude is out of bounds values should be between -180 to 180</value>
+  </data>
+</root>

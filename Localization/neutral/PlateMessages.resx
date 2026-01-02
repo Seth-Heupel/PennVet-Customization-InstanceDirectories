@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NodeCreatePlateName" xml:space="preserve">
+    <value>Create Plate</value>
+  </data>
+  <data name="NodeCreatePlateCategory" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="NodeCreatePlateDescription" xml:space="preserve">
+    <value>Plate to update</value>
+  </data>
+  <data name="NodeCreatePlateParameterEntity" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreatePlateEntityDescription" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="NodeCreatePlate" xml:space="preserve">
+    <value>Plate</value>
+  </data>
+  <data name="NodePlateLoginName" xml:space="preserve">
+    <value>Plate Login Workflow</value>
+  </data>
+  <data name="NodePlateLoginCategory" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="NodePlateLoginDescription" xml:space="preserve">
+    <value>Plate Login Executed via the Login Screen</value>
+  </data>
+  <data name="NodePlateLoginNameFormat" xml:space="preserve">
+    <value>Plate Login Workflow</value>
+  </data>
+  <data name="NodePlateLoginParameterInteractive" xml:space="preserve">
+    <value>Interactive</value>
+  </data>
+  <data name="NodePlateLoginParameterInteractiveDescription" xml:space="preserve">
+    <value>Show the Interactive Login screen</value>
+  </data>
+  <data name="NodeCreatePlateParameterTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="NodeCreatePlateParameterTemplateDescription" xml:space="preserve">
+    <value>Template to use when creating a new Plate.</value>
+  </data>
+  <data name="NodeCreatePlateParameterWorkflow" xml:space="preserve">
+    <value>Lifecycle</value>
+  </data>
+  <data name="NodeCreatePlateParameterWorkflowDescription" xml:space="preserve">
+    <value>Plate lifecycle adopted by plates created by this workflow.</value>
+  </data>
+  <data name="NodeCreatePlateParameterPlateName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NodeCreatePlateParameterPlateNameDescription" xml:space="preserve">
+    <value>Formula used to generate the Plate Name.</value>
+  </data>
+  <data name="NodeCreatePlateParameterType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="NodeCreatePlateParameterTypeDescription" xml:space="preserve">
+    <value>Type of Plate to use, which specifies dimensions</value>
+  </data>
+  <data name="NodeCreatePlateParameterAppearance" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="NodeCreatePlateParameterAppearanceDescription" xml:space="preserve">
+    <value>Configure the appearance of the plate in the plate view</value>
+  </data>
+  <data name="NodeCreatePlateParameterFillOrder" xml:space="preserve">
+    <value>Fill Order</value>
+  </data>
+  <data name="NodeCreatePlateParameterFillOrderDescription" xml:space="preserve">
+    <value>Order in which to populate the plate wells.</value>
+  </data>
+  <data name="NodeCreatePlateParameterStartingStatus" xml:space="preserve">
+    <value>Starting Status</value>
+  </data>
+  <data name="NodeCreatePlateParameterStartingStatusDescription" xml:space="preserve">
+    <value>The initial status of the plate.</value>
+  </data>
+  <data name="PlateFullCaption" xml:space="preserve">
+    <value>Plate Full</value>
+  </data>
+  <data name="PlateFullMessage" xml:space="preserve">
+    <value>The plate is full and you may not add any more samples.</value>
+  </data>
+  <data name="ErrorInspectionNotStarted" xml:space="preserve">
+    <value>Inspection not started - please submit the plate for inspection.</value>
+  </data>
+  <data name="ActionCancelTitle" xml:space="preserve">
+    <value>Cancel Plate</value>
+  </data>
+  <data name="ActionCancelConfirm" xml:space="preserve">
+    <value>Are you sure you want to cancel this Plate?</value>
+  </data>
+  <data name="ActionCancelDone" xml:space="preserve">
+    <value>Plate Canceled</value>
+  </data>
+  <data name="ActionSubmitTitle" xml:space="preserve">
+    <value>Submit Plate</value>
+  </data>
+  <data name="ActionSubmitConfirm" xml:space="preserve">
+    <value>Are you sure you want to submit this Plate?</value>
+  </data>
+  <data name="ActionSubmitDone" xml:space="preserve">
+    <value>Plate Submitted</value>
+  </data>
+  <data name="ActionAuthorizeSubmitConfirm" xml:space="preserve">
+    <value>This Plate has an inspection plan. Are you sure you want to submit this Plate for inspection?</value>
+  </data>
+  <data name="ActionAuthorizeTitle" xml:space="preserve">
+    <value>Authorize Plate</value>
+  </data>
+  <data name="ActionAuthorizeConfirm" xml:space="preserve">
+    <value>Are you sure you want to authorize this Plate?</value>
+  </data>
+  <data name="ActionAuthorizeDone" xml:space="preserve">
+    <value>Plate Authorized</value>
+  </data>
+  <data name="ActionSuspendTitle" xml:space="preserve">
+    <value>Suspend Plate</value>
+  </data>
+  <data name="ActionSuspendConfirm" xml:space="preserve">
+    <value>Are you sure you want to suspend this Plate?</value>
+  </data>
+  <data name="ActionSuspendDone" xml:space="preserve">
+    <value>Plate Suspended</value>
+  </data>
+  <data name="ActionUnsuspendTitle" xml:space="preserve">
+    <value>Release Plate</value>
+  </data>
+  <data name="ActionUnsuspendConfirm" xml:space="preserve">
+    <value>Are you sure you want to release this Plate?</value>
+  </data>
+  <data name="ActionUnsuspendDone" xml:space="preserve">
+    <value>Plate Released</value>
+  </data>
+  <data name="ActionCompleteTitle" xml:space="preserve">
+    <value>Complete Plate</value>
+  </data>
+  <data name="ActionCompleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to complete this Plate?</value>
+  </data>
+  <data name="ActionCompleteDone" xml:space="preserve">
+    <value>Plate Completed</value>
+  </data>
+  <data name="ActionUnavailableTitle" xml:space="preserve">
+    <value>Make Plate Unavailable</value>
+  </data>
+  <data name="ActionUnavailableConfirm" xml:space="preserve">
+    <value>Are you sure you want to make this plate unavailable?</value>
+  </data>
+  <data name="ActionUnavailableDone" xml:space="preserve">
+    <value>Plate made Unavailable</value>
+  </data>
+  <data name="ActionDisposeTitle" xml:space="preserve">
+    <value>Dispose Plate</value>
+  </data>
+  <data name="ActionDisposeConfirm" xml:space="preserve">
+    <value>Are you sure you want to dispose this Plate?</value>
+  </data>
+  <data name="ActionDisposeDone" xml:space="preserve">
+    <value>Plate Disposed</value>
+  </data>
+  <data name="ActionReceiveTitle" xml:space="preserve">
+    <value>Receive Plate</value>
+  </data>
+  <data name="ActionReceiveConfirm" xml:space="preserve">
+    <value>Are you sure you want to Receive this Plate?</value>
+  </data>
+  <data name="ActionReceiveDone" xml:space="preserve">
+    <value>Plate Received</value>
+  </data>
+  <data name="ActionMoveTitle" xml:space="preserve">
+    <value>Move Plate</value>
+  </data>
+  <data name="ActionMove" xml:space="preserve">
+    <value>Choose New Plate Location</value>
+  </data>
+  <data name="ActionMoveConfirm" xml:space="preserve">
+    <value>Choose Plate Location</value>
+  </data>
+  <data name="ActionMoveDone" xml:space="preserve">
+    <value>Plate Moved</value>
+  </data>
+  <data name="PlateLoginTitle" xml:space="preserve">
+    <value>Login Plate Workflow '{0}'</value>
+  </data>
+  <data name="ActionReactivateTitle" xml:space="preserve">
+    <value>Reactivate Plate</value>
+  </data>
+  <data name="ActionReactivateConfirm" xml:space="preserve">
+    <value>Are you sure you want to Reactivate this Plate?</value>
+  </data>
+  <data name="ActionReactivateDone" xml:space="preserve">
+    <value>Plate Reactivated</value>
+  </data>
+  <data name="EmptyWell" xml:space="preserve">
+    <value>Empty Well</value>
+  </data>
+  <data name="FullWell" xml:space="preserve">
+    <value>{0} Entry</value>
+  </data>
+    <data name="ActionVerifyTitle" xml:space="preserve">
+    <value>Verify Plate</value>
+  </data>
+  <data name="ActionVerifyConfirm" xml:space="preserve">
+    <value>Are you sure you want to verify this Plate?</value>
+  </data>
+  <data name="ActionVerifyDone" xml:space="preserve">
+    <value>Plate Verification Complete</value>
+  </data>
+  <data name="PlateCopy" xml:space="preserve">
+    <value>{0} (Copy)</value>
+  </data>
+  <data name="PlateEditorTitle" xml:space="preserve">
+    <value>Plate '{0}'</value>
+  </data>
+  <data name="PromptBatchCaption" xml:space="preserve">
+    <value>Add Batch</value>
+  </data>
+  <data name="PromptBatchText" xml:space="preserve">
+    <value>Choose Batch</value>
+  </data>
+  <data name="DisplayPlate" xml:space="preserve">
+    <value>Display Plate</value>
+  </data>
+  <data name="NoPlateFound" xml:space="preserve">
+    <value>There are no plates associated with the selected {0}.</value>
+  </data>
+</root>
