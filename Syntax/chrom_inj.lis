@@ -1,0 +1,145 @@
+﻿SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.38
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_inj.lis           Page     1
+
+     1: {*******************************************************************************
+     2: *
+     3: * Syntax Name   : CHROM_INJ
+     4: *
+     5: * Purpose       : Chromeleon Injection Name Syntax
+     6: *
+     7: * Document Ref  : N/a
+     8: *
+     9: *******************************************************************************}
+    10: 
+    11: ROUTINE syntax
+    12: 
+    13: { 
+    14: * Syntax Code. Determine which format is best based on selected tables.
+    15: *
+    16: *******************************************************************************}
+    17: 
+    18: 	DECLARE return_line, batch
+    19: 
+    20: 	batch = SELECT batch_header . identity
+    21: 
+    22: 	IF ( batch = EMPTY ) THEN
+    23: 
+    24: 		return_line = get_general_name ( )
+    25: 
+    26: 	ELSE
+    27: 
+    28: 		return_line = get_batch_name ( )
+    29: 
+    30: 	ENDIF
+    31: 
+    32: 	RETURN ( return_line )
+    33: 
+    34: ENDROUTINE
+    35: 
+    36: {******************************************************************************}
+    37: 
+    38: ROUTINE get_general_name
+    39: 
+    40: { 
+    41: * General Syntax name - based on Test information
+    42: *
+    43: *******************************************************************************}
+    44: 
+    45: 	DECLARE test, sample, rep, id_text, return_line
+    46: 
+    47: 	return_line = ""
+    48: 	test        = SELECT test . test_number
+    49: 
+    50: 	IF ( test <> EMPTY ) THEN
+    51: 
+    52: 		sample = SELECT test . sample
+    53: 		rep    = SELECT test . test_count
+    54: 
+    55: 		IF ( sample <> EMPTY ) THEN
+    56: 
+    57: 			id_text = SELECT sample . id_text 
+SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.38
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_inj.lis           Page     2
+
+    58: 			          WHERE id_numeric = sample
+    59: 
+    60: 			IF ( id_text <> EMPTY ) THEN
+    61: 
+    62: 				return_line = STRIP ( id_text ) : "/" : STRIP ( rep )
+    63: 
+    64: 			ENDIF
+    65: 
+    66: 		ENDIF
+    67: 
+    68: 	ENDIF 
+    69: 
+    70: 	RETURN ( return_line )
+    71: 
+    72: ENDROUTINE
+    73: 
+    74: {******************************************************************************}
+    75: 
+    76: ROUTINE get_batch_name
+    77: 
+    78: { 
+    79: * General Syntax name - based on Batch Entry information
+    80: *
+    81: *******************************************************************************}
+    82: 
+    83: 	DECLARE test, sample, rep, id_text, return_line, pos, type
+    84: 
+    85: 	return_line = ""
+    86: 	test        = SELECT test . test_number
+    87: 
+    88: 	IF ( test <> EMPTY ) THEN
+    89: 
+    90: 		sample = SELECT test . sample
+    91: 		rep    = SELECT test . test_count
+    92: 
+    93: 		IF ( sample <> EMPTY ) THEN
+    94: 
+    95: 			id_text = SELECT sample . id_text 
+    96: 			          WHERE id_numeric = sample
+    97: 
+    98: 			IF ( id_text <> EMPTY ) THEN
+    99: 
+   100: 				return_line = STRIP ( id_text ) : "/" : STRIP ( rep )
+   101: 
+   102: 			ENDIF
+   103: 
+   104: 		ENDIF
+   105: 
+   106: 	ELSE
+   107: 
+   108: 		pos  = STRIP ( SELECT batch_entry . order_number )
+   109: 		type = STRIP ( SELECT batch_entry . type )
+   110: 
+   111: 		message = "BATCH_TEMP_ENT_" : type
+   112: 		type = GET_USER_MESSAGE ( message, 1 )
+   113: 
+   114: 		return_line = "Entry " : pos : " (" : type : ")"
+SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.38
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_inj.lis           Page     3
+
+   115: 
+   116: 	ENDIF 
+   117: 
+   118: 	RETURN ( return_line )
+   119: 
+   120: ENDROUTINE
+   121: 
+   122: {******************************************************************************}
+   123: {******************************************************************************}
+   124: {******************************************************************************}
+
+Format uses 9 variable(s), named as follows:
+
+        BATCH
+        IDTEXT
+        MESSAGE
+        POS
+        REP
+        RETURNLINE
+        SAMPLE
+        TEST
+        TYPE

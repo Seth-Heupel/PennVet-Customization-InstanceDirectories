@@ -1,0 +1,16 @@
+﻿
+ROUTINE syntax
+  
+        SET FORMAT "9999999999"
+ 
+	batch_template = SELECT batch_header . template_id
+
+	inc_batch_synt = RIGHTSTRING ( "000000" : STRIP ( INCREMENT ( "BATCH", batch_template ) ), 6 )
+  
+        return_line = STRIP ( batch_template ) : inc_batch_synt
+ 
+        RESTORE DATE FORMAT
+ 
+        RETURN ( return_line )
+ 
+ENDROUTINE

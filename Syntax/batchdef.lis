@@ -1,0 +1,25 @@
+﻿SampleManager version 12.2                               15-AUG-2019 15:03:12.00
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\batchdef.lis            Page     1
+
+     1: 
+     2: ROUTINE syntax
+     3:   
+     4:         SET FORMAT "9999999999"
+     5:  
+     6: 	batch_template = SELECT batch_header . template_id
+     7: 
+     8: 	inc_batch_synt = RIGHTSTRING ( "000000" : STRIP ( INCREMENT ( "BATCH", batch_template ) ), 6 )
+     9:   
+    10:         return_line = STRIP ( batch_template ) : inc_batch_synt
+    11:  
+    12:         RESTORE DATE FORMAT
+    13:  
+    14:         RETURN ( return_line )
+    15:  
+    16: ENDROUTINE
+
+Format uses 3 variable(s), named as follows:
+
+        BATCHTEMPLATE
+        INCBATCHSYNT
+        RETURNLINE

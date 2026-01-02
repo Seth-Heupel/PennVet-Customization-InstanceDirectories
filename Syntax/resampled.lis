@@ -1,0 +1,32 @@
+﻿SampleManager version 12.2                               15-AUG-2019 11:59:13.71
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\resampled.lis           Page     1
+
+     1: { Resampled sample syntax is : "<original_sample_text_id>-Rn"
+     2:   where n is the number of times the parent or a copy sample has been resampled " }
+     3: 
+     4: JOIN LIBRARY $LIB_SYNTAX
+     5: 
+     6: ROUTINE syntax
+     7: 
+     8: 	SET FORMAT "9999999999"
+     9: 
+    10: 	original_sid_text = STRIP ( SELECT sample . id_text )
+    11: 
+    12: 	copy_prefix       = "-R"
+    13: 	no_of_copy_digits = 1
+    14: 
+    15: 	sid_text = get_copy_syntax( "SAMPLE"	      ,
+    16: 				    "ID_TEXT"	      ,
+    17: 				    original_sid_text ,
+    18: 				    copy_prefix	      ,
+    19: 				    no_of_copy_digits )
+    20: 	RETURN ( sid_text )
+    21: 
+    22: ENDROUTINE
+
+Format uses 4 variable(s), named as follows:
+
+        COPYPREFIX
+        NOOFCOPYDIGITS
+        ORIGINALSIDTEXT
+        SIDTEXT

@@ -1,0 +1,124 @@
+﻿SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.34
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_seq.lis           Page     1
+
+     1: {*******************************************************************************
+     2: *
+     3: * Syntax Name   : CHROM_SEQ
+     4: *
+     5: * Purpose       : Chromeleon Sequence Name Syntax
+     6: *
+     7: * Document Ref  : N/a
+     8: *
+     9: *******************************************************************************}
+    10: 
+    11: ROUTINE syntax
+    12: 
+    13: { 
+    14: * Syntax Code. Determine which format is best based on selected tables.
+    15: *
+    16: *******************************************************************************}
+    17: 
+    18: 	DECLARE return_line, batch
+    19: 
+    20: 	batch = SELECT batch_header . identity
+    21: 
+    22: 	IF ( batch = EMPTY ) THEN
+    23: 
+    24: 		return_line = get_general_name ( )
+    25: 
+    26: 	ELSE
+    27: 
+    28: 		return_line = get_batch_name ( )
+    29: 
+    30: 	ENDIF
+    31: 
+    32: 	RETURN ( return_line )
+    33: 
+    34: ENDROUTINE
+    35: 
+    36: {******************************************************************************}
+    37: 
+    38: ROUTINE get_general_name 
+    39: 
+    40: { 
+    41: * Get hold of the syntax name
+    42: *
+    43: *******************************************************************************}
+    44: 
+    45: 	DECLARE mapping, chromeleon_id, instrument_id, chrom_instrument,
+    46: 	        full_date, date_now
+    47: 
+    48: 	chrom_instrument = "Sequence"
+    49: 
+    50: 	mapping = SELECT chromeleon_mapping . identity
+    51: 
+    52: 	IF ( mapping <> EMPTY ) THEN
+    53: 
+    54: 		chromeleon_id = SELECT chromeleon_mapping . chromeleon_id 
+    55: 		instrument_id = SELECT chromeleon_mapping . instrument_id
+    56: 
+    57: 		chrom_instrument = SELECT chromeleon_instrument . chromeleon_instrument
+SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.34
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_seq.lis           Page     2
+
+    58: 		                   WHERE chromeleon_id = chromeleon_id
+    59: 		                   AND instrument_id = instrument_id 
+    60: 	ENDIF 
+    61: 
+    62: 	SET DATE FORMAT "DD-MON-YYYY H24MI"
+    63: 
+    64: 	chrom_instrument = STRIP ( chrom_instrument )
+    65: 	return_line = STRIP ( chrom_instrument : " (" : NOW : ") " )
+    66: 
+    67: 	RESTORE DATE FORMAT
+    68: 
+    69: 	RETURN ( return_line )
+    70: 
+    71: ENDROUTINE
+    72: 
+    73: {******************************************************************************}
+    74: 
+    75: ROUTINE get_batch_name
+    76: 
+    77: { 
+    78: * Get hold of the syntax name based on a Batch
+    79: *
+    80: *******************************************************************************}
+    81: 
+    82: 	DECLARE batch, cds_project, return_line
+    83: 
+    84: 	batch       = STRIP ( SELECT batch_header . identity )
+    85: 	cds_project = SELECT batch_header . cds_project
+    86: 
+    87: 	IF ( ( cds_project = EMPTY ) OR ( BLANK ( cds_project ) ) ) THEN
+    88: 
+    89: 		return_line = "SampleManager Batch " : batch
+    90: 
+    91: 	ELSE
+    92: 
+    93: 		return_line = STRIP ( cds_project )
+    94: 
+    95: 	ENDIF
+    96: 
+    97: 	RETURN ( return_line )
+    98: 
+    99: ENDROUTINE
+   100: 
+   101: {******************************************************************************}
+   102: {******************************************************************************}
+   103: {******************************************************************************}
+
+Format uses 9 variable(s), named as follows:
+
+        BATCH
+        CDSPROJECT
+        CHROMELEONID
+        CHROMINSTRUMENT
+        DATENOW
+        FULLDATE
+        INSTRUMENTID
+        MAPPING
+SampleManager version 12.2 SP1                           21-APR-2021 13:56:43.34
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\chrom_seq.lis           Page     3
+
+        RETURNLINE

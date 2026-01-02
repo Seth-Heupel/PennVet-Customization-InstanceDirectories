@@ -1,0 +1,48 @@
+﻿SampleManager version 12.2                               12-AUG-2019 11:03:14.41
+D:\Thermo\SampleManager\Server\PETRLSM\syntax\def_samp_c.lis          Page     1
+
+     1: {
+     2: Used to generate the Textual Sample Id from standards.
+     3: }
+     4: 
+     5: ROUTINE syntax
+     6: 
+     7: DECLARE std_id , std_vers , std_type , usage , text_name, sample_synt,
+     8: 	inc_sample_synt
+     9: 
+    10: 	sample_synt = GLOBAL ( "CURRENT_LIBRARY" )
+    11: 
+    12: 	std_id    = STRIP ( SELECT sample . standard_id )
+    13: 	std_vers  = SELECT sample . standard_version 
+    14: 	std_type  = SUBSTITUTE ( TOUPPER ( SELECT sample . standard_type ), " ", "" )
+    15: 
+    16: 	usage           = STRIP ( INCREMENT ( "SYNTAX", sample_synt ) )
+    17: 	inc_sample_synt = RIGHTSTRING ( "000000" : usage , 6 )
+    18: 
+    19: 	IF NOT BLANK ( std_id ) THEN
+    20: 
+    21: 		text_name = std_type :  "-" :
+    22: 				  std_id : "_" :
+    23: 				  STRIP ( std_vers ) : "-" :
+    24: 				  STRIP ( inc_sample_synt )
+    25: 
+    26: 	ELSE
+    27: 
+    28: 		text_name = std_type :  "-" :
+    29: 				  STRIP ( inc_sample_synt )
+    30: 
+    31: 	ENDIF
+    32: 
+    33: 	RETURN ( text_name )
+    34: 
+    35: ENDROUTINE
+
+Format uses 7 variable(s), named as follows:
+
+        INCSAMPLESYNT
+        SAMPLESYNT
+        STDID
+        STDTYPE
+        STDVERS
+        TEXTNAME
+        USAGE
