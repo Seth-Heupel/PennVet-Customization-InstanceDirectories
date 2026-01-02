@@ -1,0 +1,93 @@
+﻿{******************************************************************************}
+{*                                                                            *}
+{* This definition remains the same at the top of every file.                 *}
+{*                                                                            *}
+{* SELF is an object database                                                 *}
+{*                                                                            *}
+{*    self . current           returns the current list result value          *}
+{*                                                                            *}
+{*    self . size ( )          gives the number of list result entries        *}
+{*    self . set_first ( )     sets current to be the first element           *}
+{*    self . set_last ( )      sets current to be the last element            *}
+{*    self . set_next ( )      moves current to the next element              *}
+{*    self . set_previous ( )  moves current to the previous element          *}
+{*                                                                            *}
+{* To return the current value use                                            *}
+{*                                                                            *}
+{*    current_value = SELECT list_result . result_value                       *}
+{*                      IN OBJECT self . current                              *}
+{*                                                                            *}
+{*Or                                                                          *}
+{*    current_value = SELECT list_result . result_string                      *}
+{*                      IN OBJECT self . current                              *}
+{*                                                                            *}
+{******************************************************************************}
+{ KF Moisture List Result Routine  }
+{ Created - SHeupel ThermoFisher Scientific- 8/28/2023 }
+JOIN LIBRARY $AQL
+JOIN STANDARD_LIBRARY STD_CLIENT
+
+ROUTINE LIST_RESULT_ROUTINE ( self )
+ DECLARE  previous_value , current_value, average, i
+	repeated_value = EMPTY
+	fail = "NA - Minimum 3 measurements needed"
+	
+	
+	IF (Self.size() >= 3) THEN
+		self.set_last()
+		 
+		i=0
+		
+		WHILE i < self.size()
+		
+			IF (i = 0)
+			
+				current_value = SELECT list_result.result_value  IN OBJECT self.current			
+			
+			ELSE
+
+				self.set_previous() 
+				previous_value = SELECT list_result.result_value  IN OBJECT self.current
+				current_value = (current_value + previous_value)
+			
+			ENDIF
+			
+			i=i+1
+		ENDWHILE
+
+		
+		average = ((current_value)/(self.size()))
+			
+		RETURN(average)	
+		
+	ELSEIF (self.size()>1) AND (self.size() <3) THEN
+
+
+		self.set_last()
+
+		current_value = SELECT list_result.result_value  IN OBJECT self.current
+
+		self . set_previous()
+
+		previous_value = SELECT list_result.result_value  IN OBJECT self.current
+
+
+		
+		RETURN (fail)
+
+    ELSE
+	     
+	
+		self.set_first()
+		first_value = self.set_first()
+		RETURN (fail)
+
+
+
+	ENDIF
+
+
+
+	
+
+ENDROUTINE

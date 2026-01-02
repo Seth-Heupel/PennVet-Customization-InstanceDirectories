@@ -1,0 +1,110 @@
+﻿SampleManager version 12.2 SP1                           31-AUG-2023 13:58:50.91
+C:\Thermo\SampleManager\Server\VGSM\list_result\kf_moist.lis          Page     1
+
+     1: {******************************************************************************}
+     2: {*                                                                            *}
+     3: {* This definition remains the same at the top of every file.                 *}
+     4: {*                                                                            *}
+     5: {* SELF is an object database                                                 *}
+     6: {*                                                                            *}
+     7: {*    self . current           returns the current list result value          *}
+     8: {*                                                                            *}
+     9: {*    self . size ( )          gives the number of list result entries        *}
+    10: {*    self . set_first ( )     sets current to be the first element           *}
+    11: {*    self . set_last ( )      sets current to be the last element            *}
+    12: {*    self . set_next ( )      moves current to the next element              *}
+    13: {*    self . set_previous ( )  moves current to the previous element          *}
+    14: {*                                                                            *}
+    15: {* To return the current value use                                            *}
+    16: {*                                                                            *}
+    17: {*    current_value = SELECT list_result . result_value                       *}
+    18: {*                      IN OBJECT self . current                              *}
+    19: {*                                                                            *}
+    20: {*Or                                                                          *}
+    21: {*    current_value = SELECT list_result . result_string                      *}
+    22: {*                      IN OBJECT self . current                              *}
+    23: {*                                                                            *}
+    24: {******************************************************************************}
+    25: { KF Moisture List Result Routine  }
+    26: { Created - SHeupel ThermoFisher Scientific- 8/28/2023 }
+    27: JOIN LIBRARY $AQL
+    28: JOIN STANDARD_LIBRARY STD_CLIENT
+    29: 
+    30: ROUTINE LIST_RESULT_ROUTINE ( self )
+    31:  DECLARE  previous_value , current_value, average, i
+    32: 	repeated_value = EMPTY
+    33: 	fail = "NA - Minimum 3 measurements needed"
+    34: 	
+    35: 	
+    36: 	IF (Self.size() >= 3) THEN
+    37: 		self.set_last()
+    38: 		 
+    39: 		i=0
+    40: 		
+    41: 		WHILE i < self.size()
+    42: 		
+    43: 			IF (i = 0)
+    44: 			
+    45: 				current_value = SELECT list_result.result_value  IN OBJECT self.current			
+    46: 			
+    47: 			ELSE
+    48: 
+    49: 				self.set_previous() 
+    50: 				previous_value = SELECT list_result.result_value  IN OBJECT self.current
+    51: 				current_value = (current_value + previous_value)
+    52: 			
+    53: 			ENDIF
+    54: 			
+    55: 			i=i+1
+    56: 		ENDWHILE
+    57: 
+SampleManager version 12.2 SP1                           31-AUG-2023 13:58:50.91
+C:\Thermo\SampleManager\Server\VGSM\list_result\kf_moist.lis          Page     2
+
+    58: 		
+    59: 		average = ((current_value)/(self.size()))
+    60: 			
+    61: 		RETURN(average)	
+    62: 		
+    63: 	ELSEIF (self.size()>1) AND (self.size() <3) THEN
+    64: 
+    65: 
+    66: 		self.set_last()
+    67: 
+    68: 		current_value = SELECT list_result.result_value  IN OBJECT self.current
+    69: 
+    70: 		self . set_previous()
+    71: 
+    72: 		previous_value = SELECT list_result.result_value  IN OBJECT self.current
+    73: 
+    74: 
+    75: 		
+    76: 		RETURN (fail)
+    77: 
+    78:     ELSE
+    79: 	     
+    80: 	
+    81: 		self.set_first()
+    82: 		first_value = self.set_first()
+    83: 		RETURN (fail)
+    84: 
+    85: 
+    86: 
+    87: 	ENDIF
+    88: 
+    89: 
+    90: 
+    91: 	
+    92: 
+    93: ENDROUTINE
+
+Format uses 8 variable(s), named as follows:
+
+        AVERAGE
+        CURRENTVALUE
+        FAIL
+        FIRSTVALUE
+        I
+        PREVIOUSVALUE
+        REPEATEDVALUE
+        SELF

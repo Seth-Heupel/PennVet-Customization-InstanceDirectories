@@ -1,0 +1,57 @@
+﻿SampleManager version 12.2                               12-AUG-2019 14:52:40.42
+D:\Thermo\SampleManager\Server\PETRLSM\list_result\ave_list.lis       Page     1
+
+     1: {******************************************************************************}
+     2: {*                                                                            *}
+     3: {* This definition remains the same at the top of every file.                 *}
+     4: {*                                                                            *}
+     5: {* SELF is an object database                                                 *}
+     6: {*                                                                            *}
+     7: {*      self . current           returns the current list result value        *}
+     8: {*                                                                            *}
+     9: {*      self . size ( )          gives the number of list result entries      *}
+    10: {*      self . set_first ( )     sets current to be the first element         *}
+    11: {*      self . set_last ( )      sets current to be the last element          *}
+    12: {*      self . set_next ( )      moves current to the next element            *}
+    13: {*      self . set_previous ( )  moves current to the previous element        *}
+    14: {*                                                                            *}
+    15: {* To return the current value use                                            *}
+    16: {*                                                                            *}
+    17: {*      current_value = SELECT list_result . result_value                     *}
+    18: {*                              IN OBJECT self . current                      *}
+    19: {*                                                                            *}
+    20: {*Or                                                                          *}
+    21: {*      current_value = SELECT list_result . result_string                    *}
+    22: {*                              IN OBJECT self . current                      *}
+    23: {*                                                                            *}
+    24: {******************************************************************************}
+    25: 
+    26: ROUTINE LIST_RESULT_ROUTINE ( self )
+    27: 
+    28:     total = 0
+    29:     size = 1
+    30: 
+    31:     self . set_first ( )
+    32: 
+    33:     total = SELECT list_result . result_value  IN OBJECT self . current
+    34: 
+    35:     WHILE self . size ( ) > size
+    36:         self . set_next ( )
+    37:         size = size  + 1
+    38:         current_value = SELECT list_result . result_value IN OBJECT self . current
+    39:         total = total + current_value
+    40:     ENDWHILE
+    41: 
+    42:     avg = total / ( self . size ( ) )
+    43: 
+    44:     RETURN (avg)
+    45:  
+    46: ENDROUTINE
+
+Format uses 5 variable(s), named as follows:
+
+        AVG
+        CURRENTVALUE
+        SELF
+        SIZE
+        TOTAL

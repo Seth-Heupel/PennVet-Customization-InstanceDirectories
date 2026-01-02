@@ -1,0 +1,65 @@
+﻿SET NOTPROTECTED
+
+JOIN LIBRARY $LIB_UTILS
+JOIN LIBRARY $MLPS_CONST
+
+ROUTINE limit_calculation (       limit_object  ,
+			          mlp_operation ,
+			          mlp_component ,
+			    VALUE mode	        )
+
+    DECLARE sd, mean
+
+    IF ( mode = "FORMAT" ) OR ( mode = "COMPARE" ) THEN
+        sd = calculate_sd ( mlp_operation , mean )
+    
+        limit_object . min_limit = mean - sd
+    
+        limit_object . max_limit = mean + sd
+
+    ENDIF
+
+    RETURN ( MLP_CONST_COMPARE )
+
+ENDROUTINE
+
+ROUTINE calculate_sd ( mlp_operation, mean )
+    DECLARE samp_id, result, mean_sum, loop, variance_sum, temp, variance, std_dev
+
+    samp_id = SELECT sample . id_numeric IN OBJECT mlp_operation . sample_row
+    result = SELECT samp_test_result . result_value
+             WHERE ( analysis = (SELECT test . analysis
+                   IN OBJECT mlp_operation . test_row ) ) AND
+                   ( component_name = mlp_operation . component ) AND
+                   ( id_numeric < samp_id )
+             ORDER ON sampled_date DESCENDING
+
+    ARRAY values
+    mean_sum = 0
+    loop = 0
+
+    WHILE loop < 10 DO
+        loop = loop + 1
+        values [ 1, loop ] = result
+        mean_sum = mean_sum + result
+        NEXT samp_test_result
+        result = SELECT samp_test_result . result_value
+    ENDWHILE
+
+    mean = mean_sum / loop
+
+    variance_sum = 0
+    loop = 0
+
+    WHILE loop < 10 DO
+        loop = loop + 1
+        temp = ( values [ 1, loop ] - mean ) ^ 2
+        variance_sum = variance_sum + temp
+    ENDWHILE
+
+    variance = variance_sum / loop
+
+    std_dev = SQRT ( variance )
+
+    RETURN ( std_dev )
+ENDROUTINE

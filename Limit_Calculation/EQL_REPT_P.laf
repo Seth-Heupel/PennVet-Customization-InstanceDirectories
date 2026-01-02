@@ -1,0 +1,115 @@
+﻿SET NOTPROTECTED
+
+JOIN LIBRARY $LIB_UTILS
+JOIN LIBRARY $LIB_UNIT
+JOIN LIBRARY $LIB_COMP
+JOIN LIBRARY $MLPS_CONST
+               
+{CHG001 GW 14.Jul.2018 - Abort if empty result object , ICP error - empty result_object}
+
+ROUTINE limit_calculation (       result_object  ,
+                      result_context ,
+                      unused         ,
+                VALUE mode          )
+
+DECLARE comp, minPql, testNum, dilution , res_value
+	 , comp_list , answer , result , less_than
+	
+	result_text =""
+	resVolObj = result_object    
+
+    IF mode = "LESS_THAN" THEN
+    
+    	{CHG001}
+    	IF (result_object = EMPTY) THEN
+    		RETURN
+    	ENDIF
+    
+        minPql = SELECT result.minimum_pql IN OBJECT result_object
+
+        res_value = SELECT result.value 
+
+        IF ( minPql = 0 ) THEN { No PQL so exit }
+        
+            RETURN
+            
+        ENDIF
+
+	comp_list = SELECT test.component_list IN OBJECT result_object.test_object
+
+
+        testNum = result_object.get_field("TEST_NUMBER")
+        
+        comp = SELECT result.name IN OBJECT result_object
+
+      lib_comp_initialise ()
+
+	reading_name = SELECT result . name 
+		       IN OBJECT result_object
+                     
+	reading_name = lib_comp_get_base ( reading_name )
+		
+	reading_name = lib_comp_add_category ( reading_name     ,
+					       CATEGORY_READING ,
+					       1                )
+
+     
+
+  
+	IF ( result_context <> EMPTY ) THEN
+    
+
+
+	      reading_object = result_context . 
+						 get_result ( test_num  ,   
+                                                              reading_name )
+		{CHG001}
+	    	IF (reading_object = EMPTY) THEN
+    			RETURN
+    		ENDIF
+
+		dilution = SELECT result . dilution_factor
+			      IN OBJECT reading_object 
+		result = SELECT result . text
+				IN OBJECT reading_object
+
+       ENDIF
+        
+        IF (dilution = EMPTY) THEN
+        
+            dilution = SELECT result.dilution_factor IN OBJECT result_object
+           
+        ENDIF
+
+	  IF (result = EMPTY) THEN
+		result = SELECT result.text in OBJECT result_object
+	  ENDIF
+        
+        IF ( dilution = 0 ) THEN
+        
+            dilution = 1
+         
+
+        ENDIF
+
+        {B block}
+
+        minPql = SELECT versioned_component.minimum_pql
+                  WHERE analysis = (SELECT test.analysis IN OBJECT result_object.test_object)
+                  AND analysis_version = (SELECT test.analysis_version IN OBJECT result_object.test_object)
+                  AND name = (SELECT result.name IN OBJECT result_object)
+
+
+	  minPql = dilution*minPql
+	  
+
+        
+        
+        ASSIGN result.minimum_pql IN OBJECT result_object = minPql
+
+	
+	
+        
+    ENDIF
+
+ENDROUTINE
