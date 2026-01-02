@@ -1,0 +1,435 @@
+﻿
+
+{*******************************************************************************
+*
+* Module Name  : lit_calc_functions
+*
+* Purpose      : Maths routines n
+*
+* Document Ref : 
+*
+* Portability  : Not Checked
+*
+* Re-entrant   : No
+*
+*******************************************************************************}
+
+JOIN STANDARD_LIBRARY STD_ARRAY     { size_of_array        }
+JOIN STANDARD_LIBRARY STD_GENERAL   { variable_is_assigned }
+JOIN STANDARD_LIBRARY STD_WINDOW    { window_set_status    }
+JOIN STANDARD_LIBRARY STD_UTILS
+
+JOIN LIBRARY $LIB_RE_FORMULA
+JOIN LIBRARY $LIB_UTILS             { flash_message        }
+JOIN LIBRARY $LIB_TEXT
+
+JOIN LIBRARY $lib_unit
+
+
+{******************************************************************************}
+
+ROUTINE get_delta_result ( self )
+
+{find component in first 2 tests, and report difference}
+
+
+DECLARE comps, sampObj,  sampId,   n,  tNum, resVal, resVal2, resString, resString2
+	,units
+
+    comps = self.get_parameter_text() { the component }
+  
+    
+    IF ( variable_is_assigned(self.context.resultobject) ) THEN
+
+        sampObj = self.context.resultobject.testobject.sampleobject
+        sampId = SELECT sample.id_numeric IN OBJECT sampObj
+        units = SELECT result.units IN OBJECT self.context.resultobject
+ 
+        n  = 0
+	resString = "NA"
+	resString2 = "NA"
+
+        IF ( comps != EMPTY ) THEN 
+
+
+                IF ( NOT BLANK (comps ) ) THEN 
+
+                    WriteToPrint(self,"Checking ":comps)
+                   
+                    tNum = SELECT samp_test_result.test_number
+                               WHERE id_numeric = sampId
+                               AND component_name = comps
+                               ORDER ON test_number
+                               
+                    WriteToPrint(self,"test1  ":tNum)
+                               
+                    IF ( tNum != EMPTY ) THEN
+                        
+                    	resVal = RESULT_VALUE(EMPTY,tNum,comps)
+                    	resString = RESULT_VALUE(EMPTY,tNum,comps)
+                    	
+			
+                                                        
+                        WriteToPrint(self,"resVal  ":resVal)
+                    ELSE 
+                    	resVal = "NA"
+                    	WriteToPrint(self,comps:" test ":tNum:" result not found")
+                            
+                    ENDIF
+                  
+                    NEXT samp_test_result
+			tNum = SELECT samp_test_result . test_number
+			resVal2 = RESULT_VALUE(EMPTY,tNum,comps)
+			resString2 = RESULT_VALUE(EMPTY,tNum,comps)
+			WriteToPrint(self,"test2  ":tNum)
+			WriteToPrint(self,"resVal2  ":resVal2)
+			
+
+   
+                ENDIF
+
+    		IF ( resVal != EMPTY ) THEN
+			   IF NUMTEXT(resString)
+
+                               WriteToPrint(self,"Using ":comps)
+
+                               WriteToPrint(self,"resValue1 ":resval)
+			       WriteToPrint(self,"resString ":resString	)
+			       
+			       IF ( units != SELECT samp_test_result.units ) THEN
+			       			
+			      		resVal = unit_convert(resVal,units,SELECT samp_test_result.units,error_status)
+			       		WriteToPrint(self,"Converting units from ":units:" to ":SELECT samp_test_result.units)
+				ENDIF
+                                                                
+                                    
+                              n = n + 1
+ 			   ELSE
+				WriteToPrint(self,comps:" result not found")
+			   ENDIF
+                                    
+                 ELSE
+                            
+                            WriteToPrint(self,comps:" test ":tNum:" result not found")
+                                
+                ENDIF
+                
+      		IF ( resVal2 != EMPTY ) THEN
+			   IF NUMTEXT(resString2)
+
+                               WriteToPrint(self,"Using ":comps)
+
+                               WriteToPrint(self,"resValue2 ":resval2)
+			       WriteToPrint(self,"resString2 ":resString2	)
+                               
+			       IF ( units != SELECT samp_test_result.units ) THEN
+			       			
+			      		resVal2 = unit_convert(resVal2,units,SELECT samp_test_result.units,error_status)
+			       		WriteToPrint(self,"Converting units from ":units:" to ":SELECT samp_test_result.units)
+				ENDIF
+                                                                
+                                    
+                              n = n + 1
+ 			   ELSE
+ 			   	resVal2="NA"
+				WriteToPrint(self,comps:" result2 not found")
+			   ENDIF
+                                    
+                 ELSE
+                            
+                            WriteToPrint(self,comps:" test ":tNum:" result not found")
+                                
+                ENDIF              
+            
+
+            IF ( n > 1 ) THEN
+		WriteToPrint(self,comps:" units ":units)
+                self.value = resVal - resVal2
+             {  self.value = unit_convert(resVal,units,SELECT samp_test_result.units,error_status) - unit_convert(resVal2,units,SELECT samp_test_result.units,error_status) }
+                self.units = units
+             
+
+
+                
+	    ELSE
+		self.value = resString
+		self.units = units
+		
+
+            ENDIF
+
+        ENDIF
+
+    ENDIF
+
+
+ENDROUTINE{ get_delta_result }
+
+{******************************************************************************}
+
+
+
+{******************************************************************************}
+ROUTINE WriteToPrint(self,VALUE txt)
+
+   { IF ( self.context.mode = FORMULA_MODE_PRINT ) THEN }
+
+        lib_re_formula_write_to_print_file(txt)
+        
+   { ENDIF }
+    
+ENDROUTINE
+{******************************************************************************}
+
+{******************************************************************************}
+ROUTINE BatchStdValue(self)
+{pass in the standard ID and the component - find the QC sample in the batch  that used that standard ID and returns a value.}
+
+DECLARE stdId, comp, testObj, batch, testNum, bval
+
+    stdId = self.get_parameter_text()
+    comp = self.get_parameter_text()
+        
+    IF ( variable_is_assigned(self.context.resultobject)AND ((self.context.mode = FORMULA_MODE_CALCULATE) OR (self.context.mode = FORMULA_MODE_PRINT))  ) THEN
+
+        testObj = self.context.resultobject.testobject
+                
+        batch = SELECT test.instrument_batch IN OBJECT testObj
+        
+        IF ( NOT BLANK ( batch ) ) THEN
+        
+            testNum = SELECT samp_test_view.test_number
+                      WHERE instrument_batch = batch
+                      AND standard_id = stdId
+
+
+
+
+                	lib_re_formula_write_to_print_file("  testnumber component batch:  ":testnum  : " " : comp: batch)
+                      
+            IF ( testNum != EMPTY ) THEN
+
+                bval = RESULT_VALUE(EMPTY,testNum,comp)
+
+                IF ( bval != EMPTY ) THEN
+                
+                    self.value = bval
+
+                    self.units = SELECT result.units IN OBJECT self.context.resultobject
+                    
+                    lib_re_formula_write_to_print_file("BatchStdValue component :  ":bval : " " :comp)
+                  lib_re_formula_write_to_print_file("BatchStdValue units:  ":self.units)
+                ELSE 
+                	lib_re_formula_write_to_print_file(" Empty value for testnumber component:  ":testnum  : " " : comp)
+                ENDIF
+                
+            ELSE
+            	lib_re_formula_write_to_print_file("no  standard found for batch :  ":batch : " stdID: " :stdID)
+            ENDIF
+	ELSE
+		lib_re_formula_write_to_print_file("no batch found :  ":batch)
+        ENDIF
+        
+    ENDIF
+    
+ENDROUTINE
+{******************************************************************************}
+
+
+{******************************************************************************}
+ROUTINE BatchLimitValue(self)
+{pass in the  the component - find the QC sample in the batch  that used that component and returns a value.}
+
+DECLARE  comp, testObj, batch, testNum, bval
+
+    
+    comp = self.get_parameter_text()
+        
+    IF ( variable_is_assigned(self.context.resultobject)AND ((self.context.mode = FORMULA_MODE_CALCULATE) OR (self.context.mode = FORMULA_MODE_PRINT))  ) THEN
+
+        testObj = self.context.resultobject.testobject
+                
+        batch = SELECT test.instrument_batch IN OBJECT testObj
+        
+        IF ( NOT BLANK ( batch ) ) THEN
+        
+            testNum = SELECT samp_test_result.test_number
+                      WHERE batch_id = batch
+                      AND component_name = comp
+                      
+            IF ( testNum != EMPTY ) THEN
+
+                bval = RESULT_VALUE(EMPTY,testNum,comp)
+
+                IF ( bval != EMPTY ) THEN
+                
+                    self.value = bval
+
+                    self.units = SELECT result.units IN OBJECT self.context.resultobject
+                    
+                    lib_re_formula_write_to_print_file("BatchLimitValue:  ":bval)
+                    
+                ENDIF
+                
+            ENDIF
+
+        ENDIF
+        
+    ENDIF
+    
+ENDROUTINE
+{******************************************************************************}
+
+{******************************************************************************}
+ROUTINE SampleLimitCheck(self)
+{ Routine to check sample against a variable limit in the batch that is based on the response of a standard or blank.
+pass in the  the numeric value of the component that holds the limit - 
+ , < or > means < = NEGATIVE or > = NEGATIVE, 
+ numeric value of limit ; 
+ return Negative or SUSPECT 
+ (Use BatchStdValue to get the limit or set up component that gets that value)}
+
+DECLARE  comp_value, inequality, limit_value
+{, testObj, batch, testNum, bval}
+
+    
+    comp_value = self.get_parameter_numeric()
+    inequality = self.get_parameter_text()
+    limit_value = self.get_parameter_numeric()
+    
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for input parameter 1 ")
+       RETURN( EMPTY)
+    ENDIF
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for inequality  ")
+        RETURN( EMPTY)
+    ENDIF
+       
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for input parameter 3 ")
+        RETURN( EMPTY)
+    ENDIF
+       
+    IF ( variable_is_assigned(self.context.resultobject)AND ((self.context.mode = FORMULA_MODE_CALCULATE) OR (self.context.mode = FORMULA_MODE_PRINT))  ) THEN
+{
+        testObj = self.context.resultobject.testobject
+                
+        batch = SELECT test.instrument_batch IN OBJECT testObj
+        
+        IF ( NOT BLANK ( batch ) ) THEN
+        
+            testNum = SELECT samp_test_result.test_number
+                      WHERE batch_id = batch
+                      AND component_name  = comp
+                      
+           
+        ENDIF
+        }
+        IF (inequality = "<") THEN 
+ 
+	    if (comp_value <= limit_value ) THEN
+	            	self.value = 	"***Suspect***"
+	            	lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	            	 lib_re_formula_write_to_print_file(" comp_value < limit_value ": comp_value :"<":limit_Value)
+	       ELSE
+	            	self.value  = "Negative"
+	                 lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	            	 lib_re_formula_write_to_print_file(" comp_value > limit_value ": comp_value :">":limit_Value)
+	       ENDIF
+	           
+	           { self.units = SELECT result.units IN OBJECT self.context.resultobject}
+	ELSE
+	    if (comp_value >= limit_value ) THEN
+		   self.value = "***Suspect***"
+		    lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	           lib_re_formula_write_to_print_file(" comp_value > limit_value ": comp_value :">":limit_Value)
+	    ELSE
+		   self.value  = "Negative"
+		    lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	           lib_re_formula_write_to_print_file(" comp_value < limit_value ": comp_value :">":limit_Value)
+	    ENDIF
+	
+	ENDIF
+    ENDIF
+    
+ENDROUTINE
+{******************************************************************************}
+{******************************************************************************}
+ROUTINE PCLimitCheck(self)
+{ Routine to check sample against a variable limit in the batch that is based on the response of a standard or blank.
+pass in the  the numeric value of the component that holds the limit - 
+ , < or > means < = Pass or > = Pass, 
+ numeric value of limit ; 
+ return Passed or Failed 
+ (Use BatchStdValue to get the limit or set up component that gets that value)}
+
+DECLARE  comp_value, inequality, limit_value
+{, testObj, batch, testNum, bval}
+
+    
+    comp_value = self.get_parameter_numeric()
+    inequality = self.get_parameter_text()
+    limit_value = self.get_parameter_numeric()
+    
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for input parameter 1 ")
+       RETURN( EMPTY)
+    ENDIF
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for inequality  ")
+        RETURN( EMPTY)
+    ENDIF
+       
+    if (comp_value = EMPTY)
+        lib_re_formula_write_to_print_file(" Empty value for input parameter 3 ")
+        RETURN( EMPTY)
+    ENDIF
+       
+    IF ( variable_is_assigned(self.context.resultobject)AND ((self.context.mode = FORMULA_MODE_CALCULATE) OR (self.context.mode = FORMULA_MODE_PRINT))  ) THEN
+{
+        testObj = self.context.resultobject.testobject
+                
+        batch = SELECT test.instrument_batch IN OBJECT testObj
+        
+        IF ( NOT BLANK ( batch ) ) THEN
+        
+            testNum = SELECT samp_test_result.test_number
+                      WHERE batch_id = batch
+                      AND component_name  = comp
+                      
+           
+        ENDIF
+        }
+        IF (inequality = "<") THEN 
+ 
+	    if (comp_value <= limit_value ) THEN
+	            	self.value = 	"Passed"
+	            	lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	            	 lib_re_formula_write_to_print_file(" comp_value < limit_value ": comp_value :"<":limit_Value)
+	       ELSE
+	            	self.value  = "Failed"
+	                 lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	            	 lib_re_formula_write_to_print_file(" comp_value > limit_value ": comp_value :">":limit_Value)
+	       ENDIF
+	           
+	           { self.units = SELECT result.units IN OBJECT self.context.resultobject}
+	ELSE
+	    if (comp_value >= limit_value ) THEN
+		   self.value = "Failed"
+		    lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	           lib_re_formula_write_to_print_file(" comp_value > limit_value ": comp_value :">":limit_Value)
+	    ELSE
+		   self.value  = "Passed"
+		    lib_re_formula_write_to_print_file(" inequality = " :inequality)
+	           lib_re_formula_write_to_print_file(" comp_value < limit_value ": comp_value :">":limit_Value)
+	    ENDIF
+	
+	ENDIF
+    ENDIF
+    
+ENDROUTINE
+{******************************************************************************}
+
+
+

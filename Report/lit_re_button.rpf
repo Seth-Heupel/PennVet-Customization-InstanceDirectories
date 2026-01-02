@@ -1,0 +1,533 @@
+﻿{
+*
+* Module Name   : LIT_RE_BUTTONS.RPF
+*
+* Purpose       : Additional buttons on result entry screen.
+*
+* Document Ref. :
+*
+* Specification :
+*
+* Portability   : Not Checked
+*
+* Re-entrant    :
+*
+* Specification :
+*
+******************************************************************************
+* Modification History
+*
+* Version   Date         Author           Modify Details
+******************************************************************************
+* 1.0       Jan 17, 2017   G. J. Mayotte    Modified for PETRL - G. Walters
+* CHG001    Feb 02, 2018   G. Walters	  add grid.loc)upgrade_object  - for SM 12
+* CHG002    Mar 02, 2018   GWalters	    add update test object
+* CHG003    Mar 26, 2018   GWalters	    add all test option for TWR only
+						    change analyst.text to analyst.value (identity) 
+
+* CHG005    Oct 09, 2019   GWalters	  add change for result entry by test
+* CHG006    Nov 08, 2019   GWalters       change for SM 12.2
+
+******************************************************************************}
+
+SET NAME "DEFER/"
+SET NOTPROTECTED
+SET COMPILE_OPTION DECLARE
+
+ENABLE WINDOWS
+
+
+JOIN STANDARD_LIBRARY STD_CLIENT
+JOIN STANDARD_LIBRARY STD_DATABASE
+JOIN STANDARD_LIBRARY STD_CLASS
+JOIN STANDARD_LIBRARY STD_GENERAL
+JOIN STANDARD_LIBRARY STD_PROMPT
+
+JOIN LIBRARY $LIB_RE_GLOBALS
+JOIN LIBRARY $LIB_POPUP_MENU
+JOIN LIBRARY $TOOLBOX
+JOIN LIBRARY $LIB_UTILS
+
+CONSTANT MODE_TSR              = "TSR"   { Result entry by sample mode }
+CONSTANT MODE_TWR              = "TWR"   { Result entry by test/sprdsht/crit/batch mode }
+CONSTANT MODE_TMR              = "TMR"   {Matrix results}
+
+CONSTANT crlf        = ASCII(10) : ASCII(13)
+
+
+
+ROUTINE AddTestInfoButton ( grid, form )
+
+DECLARE toolbox_mode, toolbox, button, oclass
+
+    oclass = OBJECT_GET_CLASS_NAME ( grid )
+
+    IF GLOBAL ( "RES_TOOLBOX" ) THEN
+
+        toolbox_mode  = grid.toolbox_or_buttons
+        toolbox       = grid.toolbox                         
+
+        IF toolbox_mode THEN
+
+           IF (oclass != "RETMRGRID") THEN
+
+              button = toolbox . add_a_button ( toolbox_mode,
+                                                form                    ,
+                                                grid            ,
+                                                208                           ,          { Paperclip Icon }
+                                                "" ,
+                                                "RETestInfo"        ,
+                                                FALSE                   ,
+                                                FALSE,
+                                                GLOBAL ( "CURRENT_LIBRARY" )                    )
+
+             button . vgl_library  = GLOBAL ( "CURRENT_LIBRARY" )                    
+             button . balloon_text = "Set Test Information"
+             button . tooltip      = "Test Info"  
+             
+             toolbox . add_separator () 
+
+           ENDIF
+
+        ENDIF
+        
+    ENDIF
+
+ENDROUTINE
+
+
+ROUTINE RETestInfo ( self )
+
+DECLARE grid, mode, res, Form, prompt_analyst, prompt_date,  prompt_all_rows,
+        Analyst, DateTested,  OldTestNo, CurrentTestNo, i, reselect , m_analysis
+	{prompt_time,TimeTested, }
+    grid = self.userinfo
+        
+    mode = get_re_mode ( grid )
+    
+    res = get_current_resobj ( grid, mode, grid.current_row , grid . current_column )
+    
+    if (res = EMPTY) 
+    THEN 
+	CLIENT_MESSAGE_BOX("Please select a Reading result","Invalid selection",MB_OK+MB_ICON_ERROR)
+      RETURN
+    ENDIF
+    
+
+    Analyst    = SELECT test.p_analyst   IN OBJECT res.test_object
+    DateTested = SELECT test.p_analysis_date IN OBJECT res.test_object
+    m_analysis = SELECT test.analysis IN OBJECT res.test_object  {CHG003}
+     
+   IF  (DateTested = EMPTY ) OR (DateTested = "" ) THEN
+	DateTested = NOW
+   ENDIF
+
+   IF  (ANALYST = EMPTY )  OR (Analyst = "" ) THEN
+	ANALYST = OPERATOR
+   ENDIF
+
+
+    {TimeTested = SELECT test.actual_time_tested IN OBJeCT res.test_object}
+            
+    CREATE OBJECT "STD_FORM", form
+ 
+        form . header           = "Test Information"
+        form . row              = 16
+        form . column           = 35
+        form . height           = 8
+        form . width            = 50
+        form.return_behaviour = FORM_RETURN_LEAVE
+   
+    PROMPT OBJECT prompt_analyst
+            AT 8, 2
+            FORMAT test.p_analyst
+            WITH ( value              = Analyst ,
+                   display_only       = FALSE,
+                   inverse            = TRUE,
+                   vgl_library        = GLOBAL ("CURRENT_LIBRARY"))
+   
+    form . add_prompt  ( prompt_analyst )
+    form . add_display ("Analyst : ", 1, 1, PROMPT_RENDITION_BOLD )
+    
+
+
+    PROMPT OBJECT prompt_date
+            AT 8, 4
+           { BROWSE ON DATE}
+	    FORMAT test.p_analysis_date
+            WITH (value              = DateTested,
+                  display_only       = FALSE,
+                  inverse            = TRUE,                  
+                  vgl_library        = GLOBAL ("CURRENT_LIBRARY"),
+                  validation_routine = "validate_chosen_date")   
+                  
+    form . add_prompt  ( prompt_date )
+    form . add_display ("Actual Test Date - Time :", 1, 3, PROMPT_RENDITION_BOLD )        
+    
+
+    
+    PROMPT OBJECT prompt_all_rows
+            AT 8, 8
+            BROWSE ON boolean
+            WITH (value              = FALSE,
+                  display_only       = FALSE )   
+                  
+    form . add_prompt  ( prompt_all_rows )
+    form . add_display ("Apply to all Tests for :":m_analysis , 1, 7, PROMPT_RENDITION_BOLD )     {CHG003}
+   
+    form . start_prompt ( )
+    form . wait_prompt  ( )
+    form . end_prompt   ( )
+
+    Analyst    = prompt_analyst.value {CHG003}
+    DateTested = prompt_date . text 
+  
+    
+    IF ( form . get_lastkey ( ) = "DO" ) THEN
+    
+       IF (prompt_all_rows.value) and (mode = "TWR") THEN
+      { IF (prompt_all_rows.value)  THEN }  {CHG003}
+          i = 1
+          OldTestNo = 0
+          WHILE i <= grid.CellRows DO
+          
+             res = get_current_resobj ( grid, mode, i , grid . current_column )
+             
+	     IF ( res != EMPTY)
+               CurrentTestNo = SELECT result.test_number IN OBJECT res
+             
+                 IF ( OldTestNo != CurrentTestNo ) AND (SELECT result.status IN object res != "U" ) THEN
+                       ASSIGN test.p_analyst   IN OBJECT res.test_object = Analyst
+                       ASSIGN test.p_analysis_date IN OBJECT res.test_object = DateTested 
+                   
+                
+                       OldTestNo = CurrentTestNo
+
+		       {grid.lock_upgrade_object("RESULT",res,reselect)
+                       res.SetStorePending(grid)}
+                       {CHG002}
+        grid.lock_upgrade_object("TEST",res.test_object,reselect)
+        grid.lock_upgrade_object("RESULT",res,reselect)
+        res.test_object.SetStorePending(grid)
+        res.SetStorePending(grid)
+        grid.redisplayrow(grid.current_row)
+                       {CHG002}
+                       
+                  ENDIF
+             ENDIF    
+             i = i + 1
+             
+          ENDWHILE
+       
+       ELSE
+
+          ASSIGN test.p_analyst   IN OBJECT res.test_object = Analyst
+          ASSIGN test.p_analysis_date IN OBJECT res.test_object = DateTested 
+          {CHG001}
+        {  grid.lock_upgrade_object("RESULT",res,reselect)
+          res.SetStorePending(grid)}
+ 	  {CHG001}
+ 	  {CHG002}
+	          grid.lock_upgrade_object("TEST",res.test_object,reselect)
+	          grid.lock_upgrade_object("RESULT",res,reselect)
+	          res.test_object.SetStorePending(grid)
+	          res.SetStorePending(grid)
+	          grid.redisplayrow(grid.current_row)
+	                         {CHG002}
+                       
+          
+       ENDIF   
+        
+       
+         IF (prompt_all_rows.value) and (mode = "TWR") THEN
+      { IF (prompt_all_rows.value)  THEN }  {CHG003}       
+          i = 1
+          WHILE i <= grid.CellRows DO 
+             grid.redisplayrow(i)
+             i = i + 1
+          ENDWHILE
+          
+       ELSE
+       
+          grid.redisplayrow(grid.current_row)
+          
+       ENDIF   
+       
+    ENDIF   
+ 
+ENDROUTINE
+
+
+ROUTINE validate_chosen_date ( self )
+
+DECLARE AnalysisDate, ReturnValue
+
+   SET DATE FORMAT "DZ-MZ-YYYY"
+
+   AnalysisDate = self.value
+
+   IF DATE(AnalysisDate) > NOW THEN
+
+       ReturnValue = CLIENT_MESSAGE_BOX ( "The date you entered '" : AnalysisDate : "' is in the future. " : crlf :
+                                          "Do you want to proceed ?",
+                                          "Actual Test Date is in the Future!" ,
+                                          MB_YESNO + MB_ICONQUESTION )
+
+       IF ReturnValue = IDNO THEN
+
+          RESTORE DATE FORMAT
+
+          RETURN ( FALSE )
+
+      ENDIF
+
+   ENDIF
+
+   RESTORE DATE FORMAT
+
+   RETURN (TRUE)
+
+ENDROUTINE  { validate_chosen_date }
+
+
+ROUTINE get_current_resobj (       grid     ,
+                             VALUE arg_mode ,
+                             VALUE arg_row  ,
+                             VALUE arg_col   )
+{
+*
+* Description   : Returns a result object for the passed parameters. A simplified 
+*                 version of the result object's "get_result_next" action.
+* Arguments     : grid     - RE grid object
+*                 arg_mode - TSR or TWR
+*                 arg_row  - Integer - Row number
+*                 arg_col  - Integer - Column number
+* Returns       : A result object or EMPTY
+*
+*************************************************************************************** }
+                             
+    DECLARE ret_val , comp_name, anal_name
+    
+    IF arg_mode = MODE_TWR THEN
+{CHG006}
+        { Use the row / analysis / component index, this worked before 12.2 }
+{        ret_val = grid . result_collection . get_by_index ( "ROW_KEY", NUMBER_TO_TEXT ( arg_row, ROW_FORMAT ) : grid . title_text_top [ arg_col , 1 ] : grid . title_text_top [ arg_col , 3 ] )  }
+        
+           comp_name = grid . title_text_top [ grid . current_column, 4 ]
+	   anal_name = grid . title_text_top [ grid . current_column, 5 ]
+	
+	   ret_val = grid . result_collection .
+	                   get_by_index ( "ROW_KEY",
+	                   number_to_text ( grid . current_row, ROW_FORMAT) :
+                           comp_name : anal_name )
+        
+        IF VARIABLE_GET_TYPE ( ret_val ) = "Object" THEN
+        
+            ret_val = ret_val . result_object
+        
+        ELSE
+        
+            ret_val = EMPTY
+        
+        ENDIF
+    
+    ELSE { TSR mode is simple ... }
+    
+        ret_val = grid . result_array [ arg_row ]
+    
+    ENDIF
+    
+    RETURN ( ret_val )
+                             
+ENDROUTINE
+
+ROUTINE get_re_mode ( arg_grid_obj ) 
+{
+*
+* Description   : Finds the result entry mode - either TSR or TWR based on the grid's
+*                 class name
+* Arguments     : arg_grid_obj - Object - RE grid / context
+* Returns       : Either MODE_TWR or MODE_TSR
+*
+*************************************************************************************** }
+
+    DECLARE retVal, oclass
+    
+    oclass = OBJECT_GET_CLASS_NAME ( arg_grid_obj )
+    
+    retVal = MODE_TWR
+ 
+  IF ( (INDEX(oclass,MODE_TSR) > 0) OR (INDEX(oclass,"JOB") > 0) OR (INDEX(oclass,"TTR") > 0) OR (oclass = "RETESTLISTGRID")) THEN{CHG005}
+    
+        retVal = MODE_TSR
+    
+    ENDIF
+    
+     IF ( INDEX(oclass,"TMR") != 0 ) THEN
+        
+            retVal = MODE_TMR   {CHG005}
+            
+    ENDIF
+    
+    RETURN ( retVal )
+
+ENDROUTINE
+
+
+ROUTINE MultiPhrasePrompt ( self )
+
+DECLARE form, num_entries, desc, cnt, def_val, ret_val, ph_id, choice, row, prmp,
+        f_width, col, offset
+
+    num_entries = SELECT COUNT phrase
+                  WHERE phrase_type = self.userinfo
+                  
+    { The title of the form is the phrase description }
+
+    desc = SELECT phrase_header.description
+           WHERE identity = self.userinfo
+    
+    IF ( num_entries > 20 ) THEN
+    
+        f_width = 80
+        num_entries = 20
+        
+    ELSE
+    
+        f_width = 40
+        
+    ENDIF
+    
+    IF ( desc <> EMPTY ) THEN
+
+        CREATE OBJECT PROMPT_CLASS_FORM, form
+
+        form . height       = num_entries 
+        form . width        = f_width
+        form . row          = 1
+        form . column       = 10
+        form . header       = STRIP(desc)
+        form. button_style = FORM_BUTTON_OK_CANCEL
+        
+        row = 0
+        col = 1
+        offset = 0
+        
+        form.add_display("Check All that Apply",1,0,PROMPT_RENDITION_RAISED)
+        
+        choice = SELECT phrase.phrase_text
+                 WHERE phrase_type = self.userinfo
+                 
+        { Add a Boolean check box for each phrase entry }
+
+        WHILE (choice <> EMPTY) DO
+        
+            row = row + 1
+            
+            IF ( row > 20 ) THEN
+            
+                offset = 20
+                col = 40
+                
+            ENDIF
+            
+            ph_id = STRIP(SELECT phrase.phrase_id)
+            
+            { Check to see if the value was previously selected }
+
+            IF (INDEX(self.text,ph_id) != 0) THEN
+            
+                { Make user the phrase id isn't just "LIKE" another ID }
+                
+                IF (self.text = ph_id) THEN { Only One }
+                
+                    def_val = TRUE
+                ELSEIF (INDEX(self.text,ph_id)<>0) THEN { In the Middle or end }
+		                
+                    def_val = TRUE
+               
+                ELSE
+                
+                    def_val = FALSE
+                    
+                ENDIF
+                
+            ELSE
+            
+                def_val = FALSE
+                
+            ENDIF
+            
+            { The userinfo of the prompt object is the phrase identity }
+            
+            PROMPT OBJECT prmp 
+            ON LINE row-offset FROM col
+            FORMAT BOOLEAN
+            WITH (is_check = TRUE, caption = STRIP(choice), value = def_val, userinfo = ph_id)
+            
+            NEXT phrase
+            
+            form.add_prompt(prmp)
+            
+            choice = SELECT phrase.phrase_text
+            
+        ENDWHILE
+        
+        form.start_prompt()
+        form.wait_prompt()
+        
+        { If the user pressed OK, then return the list of IDs }
+       
+
+        IF ( form.GetLastKey() = "DO" ) THEN
+        
+            cnt = 1
+            ret_val = "" { Default return value of blank }
+            
+            WHILE ( cnt <= row ) DO
+            
+                IF (form.prompt_objects[cnt].value) THEN { Item was checked }
+                
+                    IF (BLANK(ret_val)) THEN { Check for first value of the return }
+                    
+                        ret_val = STRIP(form.prompt_objects[cnt].userinfo)
+                        
+                        
+                    ELSE
+                    
+                        ret_val = ret_val:STRIP(form.prompt_objects[cnt].userinfo) 
+            
+                        
+                    ENDIF
+                    
+                ENDIF
+                
+                cnt = cnt + 1
+                
+            ENDWHILE
+            
+            { Set the return text of the prompt }
+            
+            self.set_text(ret_val)
+            
+        ENDIF
+        
+        form.end_prompt()
+        
+    ELSE
+    
+        { The phrase setup in the configured routine does not exist }
+        
+        client_message_box("Invalid Phrase Configuration","Invalid Phrase Configuration",
+            MB_ICON_ERROR+MB_OK)
+    
+    ENDIF
+    
+ENDROUTINE
+
+
+
+{***************************************************************************************}
+{***********************          END OF LIT_RE_BUTTONS           **********************}
+{***************************************************************************************}
+

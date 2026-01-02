@@ -1,0 +1,152 @@
+﻿{*****************************************************************************
+*
+* Module Name   : LIT_PROMPT_ROUTINE
+*
+* Purpose       : This is a collection of custom prompt routines.
+*
+* Portability   : Not Tested
+*
+* Document Ref. :
+*
+* Re-entrant    : No
+*
+* Specification : 
+*
+******************************************************************************
+* Modification History
+*
+*   Date        Author           Modify Details
+******************************************************************************
+* 25-Sep-2019   G. Walters  for PETRL
+*                     Use on a Batch Template Analyst field - set Analyst (ANALYST) to current user
+* 25-Sep-2019   G. Walters   Batch Template /Header Prepped By (M_PREPPED_BY) set to current user
+*      
+* 02-Jan-2020   G. Walters  DefaultLocationPrompt - return the operators location, use in env variable in folders to set location for user
+{*******************************************************************************}
+SET NOTPROTECTED
+SET COMPILE_OPTION DECLARE
+ENABLE WINDOWS
+SET NAME "DEFER/"
+
+JOIN STANDARD_LIBRARY STD_ARRAY
+JOIN STANDARD_LIBRARY STD_ARRAY_SELECT
+JOIN STANDARD_LIBRARY STD_CLIENT
+JOIN STANDARD_LIBRARY STD_GENERAL
+
+JOIN STANDARD_LIBRARY STD_CLASS
+JOIN STANDARD_LIBRARY STD_BROWSE
+JOIN STANDARD_LIBRARY STD_WINDOW
+JOIN STANDARD_LIBRARY STD_DATABASE
+JOIN STANDARD_LIBRARY STD_STRUCTURE
+
+JOIN LIBRARY $LIB_UTILS
+JOIN LIBRARY $PROMPT_WINDOW
+JOIN LIBRARY $LIB_DB
+JOIN LIBRARY $SAMP_JOB
+JOIN LIBRARY $VARIABLE_COLLECTION
+JOIN LIBRARY $LIB_MLPS
+
+{*****************************************************************************}
+
+ROUTINE PromptAnalystUser ( VALUE column     ,
+                           VALUE row        ,
+                           display_id ,
+                           VALUE is_display )
+DECLARE currUser, mand_arr
+, val, oldVal
+ARRAY mand_arr
+
+val = SELECT batch_header.analyst
+oldVal = val
+currUser = OPERATOR
+currUser = currUser
+
+    array_select_add(mand_arr,ARRAY_SELECT_NE,"IDENTITY","")
+
+IF ( BLANK (val) ) THEN
+    ASSIGN batch_header . Analyst =  OPERATOR 
+ENDIF 
+
+   IF is_display and ( BLANK (val) )  THEN
+
+        DISPLAY val 
+        AT column , row
+        IN WINDOW display_id
+
+   ELSE
+
+        PROMPT FOR val 
+        AT column , row
+        IN WINDOW display_id
+        BROWSE ON personnel.identity   
+        WITH ( mandatory_array = mand_arr )
+
+  IF val <> oldVal THEN
+
+            ASSIGN batch_header.analyst = val 
+
+        ENDIF
+
+   ENDIF
+
+ENDROUTINE
+{***************************}
+
+GLOBAL ROUTINE DefaultLocationPrompt
+DECLARE defLocation
+
+    defLocation = SELECT personnel.location
+               WHERE identity = OPERATOR
+               
+    RETURN (defLocation)
+    
+ENDROUTINE
+
+{*****************************************************************************}
+ROUTINE PromptPrepBy ( VALUE column     ,
+                           VALUE row        ,
+                           display_id ,
+                           VALUE is_display )
+DECLARE currUser, {currPreppedBy, origPreppedBy,} mand_arr
+, val, oldVal
+ARRAY mand_arr
+
+currUser = OPERATOR
+currUser = currUser
+{currPreppedBy} val = SELECT batch_header.p_prep_by
+oldVal = val {origPreppedBy = currPreppedBy}
+
+    array_select_add(mand_arr,ARRAY_SELECT_NE,"IDENTITY","")
+
+{IF ( BLANK ( currPreppedBy ) )
+    ASSIGN batch_header . m_prepped_by= currUser
+ENDIF }
+IF ( BLANK (val) ) THEN
+    ASSIGN batch_header . p_prep_by = OPERATOR 
+ENDIF 
+  IF is_display  THEN
+
+        DISPLAY val {currPreppedBy}
+        AT column , row
+        IN WINDOW display_id
+
+    ELSE
+
+        PROMPT FOR val {currPreppedBy }
+        AT column , row
+        IN WINDOW display_id
+        BROWSE ON personnel.identity
+        WITH ( mandatory_array = mand_arr )
+
+{        IF (  origPreppedBy != currPreppedBy ) THEN }
+ IF val <> oldVal THEN
+
+            ASSIGN batch_header.p_prep_by = val {currPreppedBy }
+
+        ENDIF
+
+    ENDIF
+
+ENDROUTINE
+
+{*****************************************************************************}

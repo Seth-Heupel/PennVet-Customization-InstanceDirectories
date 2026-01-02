@@ -1,0 +1,68 @@
+SET COMPILE_OPTION DECLARE
+SET NOT_PROTECTED
+SET NAME "DISPLAY/"
+
+JOIN STANDARD_LIBRARY STD_DATABASE
+JOIN STANDARD_LIBRARY STD_USER_LOGIN
+JOIN LIBRARY $LIB_UTILS
+
+DECLARE status, OpID, cnt, pass, person_array, exists, mode
+ARRAY person_array
+
+OpID = SELECT personnel . identity
+		WHERE identity = "SYSTEM"
+		
+cnt = 0		
+pass = 0
+
+WHILE OpID <> EMPTY DO
+
+	cnt = cnt + 1
+	person_array[cnt] = OpID
+	
+	NEXT personnel
+	OpID = SELECT personnel . identity
+	
+ENDWHILE
+
+WHILE cnt <> 0 DO
+
+	OpID = person_array[cnt]
+	exists = SELECT password . identity
+			WHERE identity = OpID
+			
+	IF exists = EMPTY THEN
+	
+	status = user_login_add_user ( OpID , "" )
+
+        IF status = EMPTY THEN
+			pass = pass + 1
+
+			OpID = SELECT password . identity FOR UPDATE
+				WHERE identity = OpID
+			
+			START WRITE TRANSACTION "expire"
+			ASSIGN password . expires = NOW()
+			UPDATE password
+			COMMIT	
+			
+{ *** Messaging *** : Literal for interactive; Flash message for cmd line *** }				
+			mode = GLOBAL ( "MODE" )			
+			IF mode = "INTERACTIVE" THEN			
+LITERAL
+Password added for: $OpID______			
+$ENDLITERAL
+			ELSE
+				flash_message ( "Password added for: " :OpID, FALSE )
+			ENDIF
+{ *** End Messaging ***	}
+
+
+        ENDIF
+	ENDIF	
+	cnt = cnt - 1
+ENDWHILE
+
+IF pass = 0 THEN
+	flash_message ( "No Passwords created", FALSE )
+ENDIF
