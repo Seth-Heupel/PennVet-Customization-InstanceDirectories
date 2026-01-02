@@ -1,0 +1,3096 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Thermo.SampleManager.Core.Workflow</name>
+    </assembly>
+    <members>
+        <member name="T:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute">
+            <summary>
+            Step Parameter Condition Property Value Parameter
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute.Condition">
+            <summary>
+            Gets or sets the condition.
+            </summary>
+            <value>
+            The condition.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute"/> class.
+            </summary>
+            <param name="identity">The identity.</param>
+            <param name="nameMessage">The name message.</param>
+            <param name="descriptionMessage">The description message.</param>
+            <param name="stepParameter">The step parameter.</param>
+            <param name="condition">The condition.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute.BuildCellBrowse(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Builds the browse.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterConditionValueParameterAttribute.ReadParameter(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeParameterInternal,System.Object)">
+            <summary>
+            Reads the parameter.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="parameterValue">The parameter value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute">
+            <summary>
+            Parameter Value Parameter
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.PropertyParameter">
+            <summary>
+            Gets or sets the step parameter.
+            </summary>
+            <value>
+            The step parameter.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute" /> class.
+            </summary>
+            <param name="identity">The identity.</param>
+            <param name="nameMessage">The name message.</param>
+            <param name="descriptionMessage">The description message.</param>
+            <param name="propertyParameter">The property parameter.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.BuildCellBrowse(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Builds the browse.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.BuildCellBrowse(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn,System.Nullable{System.Boolean})">
+            <summary>
+            Builds the cell browse.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <param name="browseAllowMultiple">if set to <c>true</c> [browse allow multiple].</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.ReadParameter(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeParameterInternal,System.Object)">
+            <summary>
+            Reads the parameter.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="parameterValue">The parameter value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Attributes.StepParameterValueParameterAttribute.GetFormattedParameter(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeParameterInternal,System.Object)">
+            <summary>
+            Formats the parameter.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="parameterValue">The parameter value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode">
+            <summary>
+            Bag View Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.MessageBoxNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.DisplayEntities(System.Object,System.Text.StringBuilder)">
+            <summary>
+            Displays the entities.
+            </summary>
+            <param name="bagValue">The bag value.</param>
+            <param name="textBuilder">The text builder.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.DisplayVariables(System.Object,System.Text.StringBuilder)">
+            <summary>
+            Displays the variables.
+            </summary>
+            <param name="bagValue">The bag value.</param>
+            <param name="textBuilder">The text builder.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Server.Workflow.Nodes.BagViewNode.AutoName">
+            <summary>
+            Auto Node naming
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.BatchLoginNode">
+            <summary>
+            Batch Login Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.BatchLoginNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.BatchLoginNode.ParameterInteractive">
+            <summary>
+            Parameter Interactive
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.BatchLoginNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.LotLoginNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.BatchLoginNode.Interactive">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Thermo.SampleManager.Workflow.BatchLoginNode"/> is interactive.
+            </summary>
+            <value>
+              <c>true</c> if interactive; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.BatchLoginNode.Perform">
+            <summary>
+            Performs the workflow node and its child nodes
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.BatchLoginNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.BatchLoginNode.WorkflowTask">
+            <summary>
+            Gets the workflow task.
+            </summary>
+            <value>
+            The workflow task.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.BatchLoginNode.WorkflowTaskActionType">
+            <summary>
+            Gets the type of the workflow task action.
+            </summary>
+            <value>
+            The type of the workflow task action.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.BatchLoginNode.WorkflowTaskEntityType">
+            <summary>
+            Gets the type of the workflow task entity.
+            </summary>
+            <value>
+            The type of the workflow task entity.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.BatchLoginNode.WorkflowTaskParameter">
+            <summary>
+            Gets the workflow task parameter.
+            </summary>
+            <value>
+            The workflow task parameter.
+            </value>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.CreateBatchEmpty">
+            <summary>
+            Create an empty batch with no batch entries
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterBatch">
+            <summary>
+            Parameter Name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterEntityTemplate">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterDefaultWorkflow">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterBatchId">
+            <summary>
+            Parameter Batch Id
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterAnalysis">
+            <summary>
+            Parameter Batch Template
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.ParameterBatchAdHoc">
+            <summary>
+            Parameter Batch Adhoc
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEmpty.CriteriaMessage">
+            <summary>
+            Criteria
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.ReportNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.EntityTemplate">
+            <summary>
+            Gets or sets the entity template.
+            </summary>
+            <value>
+            The entity template.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.DefaultWorkflow">
+            <summary>
+            Gets or sets the default workflow.
+            </summary>
+            <value>
+            The default workflow.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.BatchId">
+            <summary>
+            Gets or sets the Batch id.
+            </summary>
+            <value>
+            The id text.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.Analysis">
+            <summary>
+            Gets or sets the batch template.
+            </summary>
+            <value>
+            The batch template.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.Criteria">
+            <summary>
+            Criteria
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.GetPromptEntityTemplate(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Entity Template
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.GetPromptDefaultWorkflow(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Default Workflow
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.GetPromptCriteria(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Criteria Prompt
+            </summary>
+            <param name="task"></param>
+            <param name="node"></param>
+            <param name="rowEntity"></param>
+            <param name="gridProperty"></param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.GetDefaultLifeCycle">
+            <summary>
+            GetDefaultLifeCycleByTable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEmpty.SetDefaultParameters">
+            <summary>
+            Sets the default parameter values.
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEmpty.DefaultBatchIdFormula">
+            <summary>
+            Gets the default lot id formula.
+            </summary>
+            <value>The default lot id  formula.</value>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.CreateBatchEntryNode">
+            <summary>
+            Create Batch Entry Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterBatch">
+            <summary>
+            Parameter Name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterEntryType">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterEntity">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterLimit">
+            <summary>
+            Parameter Batch Id
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterCompList">
+            <summary>
+            Parameter Batch Template
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterSlotPosition">
+            <summary>
+            Slot Position
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterParentSlotPosition">
+            <summary>
+            Parent Slot Position
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatchEntryNode.ParameterNew">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEntryNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.ReportNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEntryNode.EntryType">
+            <summary>
+            Batch Entry Type
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEntryNode.Entity">
+            <summary>
+            Batch Entry entity value
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEntryNode.SlotPosition">
+            <summary>
+            Slot position of batch entry
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatchEntryNode.NewEntry">
+            <summary>
+            Gets or sets the allow remove value.
+            </summary>
+            <value>The allow remove.</value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEntryNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatchEntryNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabExecutionBrowse">
+            <summary>
+            Extension Class for the Browse Factory
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExecutionBrowse.CreateVariableBrowse``1(Thermo.SampleManager.Library.DesignerRuntime.BrowseFactory,System.String,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn,Thermo.SampleManager.ObjectModel.LabParsingScript)">
+            <summary>
+            Creates the variable browse.
+            </summary>
+            <typeparam name="T">Variable Type</typeparam>
+            <param name="browseFactory">The browse factory.</param>
+            <param name="browseName">Name of the browse.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <param name="parsingScript">The parsing script.</param>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.CreateBatch">
+            <summary>
+            Create a batch
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterBatch">
+            <summary>
+            Parameter Name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterEntityTemplate">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterDefaultWorkflow">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterBatchId">
+            <summary>
+            Parameter Batch Id
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterBatchTemplate">
+            <summary>
+            Parameter Batch Template
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateBatch.ParameterBatchAdHoc">
+            <summary>
+            Parameter Batch Adhoc
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.ReportNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatch.EntityTemplate">
+            <summary>
+            Gets or sets the entity template.
+            </summary>
+            <value>
+            The entity template.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatch.DefaultWorkflow">
+            <summary>
+            Gets or sets the default workflow.
+            </summary>
+            <value>
+            The default workflow.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatch.BatchId">
+            <summary>
+            Gets or sets the Batch id.
+            </summary>
+            <value>
+            The id text.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatch.BatchTemplate">
+            <summary>
+            Gets or sets the batch template.
+            </summary>
+            <value>
+            The batch template.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.GetPromptEntityTemplate(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Entity Template
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.GetPromptDefaultWorkflow(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Default Workflow
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.PromptForBatchTemplate">
+            <summary>
+            Prompt For Batch Template
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.GetDefaultLifeCycle">
+            <summary>
+            GetDefaultLifeCycleByTable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateBatch.SetDefaultParameters">
+            <summary>
+            Sets the default parameter values.
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateBatch.DefaultBatchIdFormula">
+            <summary>
+            Gets the default lot id formula.
+            </summary>
+            <value>The default lot id  formula.</value>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.CreateParameterNode">
+            <summary>
+            Create Parameter Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateParameterNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateParameterNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateParameterNode.ParameterParentEntityName">
+            <summary>
+            The parameter parent entity name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateParameterNode.ParameterName">
+            <summary>
+            Parameter Name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.CreateParameterNode.ParameterType">
+            <summary>
+            The parameter type
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateParameterNode.ParameterEntity">
+            <summary>
+            Gets or sets the parent entity.
+            </summary>
+            <value>
+            The parent entity.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.CreateParameterNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateParameterNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateParameterNode.ParentEntityName">
+            <summary>
+            Gets or sets the name of the parent entity.
+            Allow the user to define which appropriate parent to create a parameter for.
+            </summary>
+            <value>
+            The name of the parent entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateParameterNode.ParamType">
+            <summary>
+            Gets or sets the type of the parameter.
+            </summary>
+            <value>
+            The type of the parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.CreateParameterNode.ParamName">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.GetPromptParentEntityName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Browse on Appropriate Data Sources
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.SetDefaultParameters">
+            <summary>
+            Sets the default parameter values.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.CreateParameterNode.SetParentEntity(System.String)">
+            <summary>
+            Sets the parent entity.
+            </summary>
+            <param name="entityName">Name of the entity.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabCreateExecutionNode">
+            <summary>
+            Lab Execution Root Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateExecutionNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateExecutionNode.ParameterLabMethod">
+            <summary>
+            Lab Method Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateExecutionNode.ParameterFirstLabMethodStep">
+            <summary>
+            First Lab Method Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateExecutionNode.ParameterName">
+            <summary>
+            Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateExecutionNode.ParameterDefaultWorkflow">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabCreateExecutionNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.LabMethod">
+            <summary>
+            Gets or sets the Lab Method
+            </summary>
+            <value>
+            Lab Method
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.DefaultWorkflow">
+            <summary>
+            Gets or sets the default workflow.
+            </summary>
+            <value>
+            The default workflow.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.FirstLabMethodStep">
+            <summary>
+            Gets or sets the First Lab Method Step
+            </summary>
+            <value>
+            First Lab Method Step
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.GetPromptDefaultWorkflow(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Default Workflow
+            </summary>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.Task">
+            <summary>
+            Gets or sets the Task
+            </summary>
+            <value>
+            The Task
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.WorkflowTask">
+            <summary>
+            Gets the workflow task.
+            </summary>
+            <value>
+            The workflow task.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.WorkflowTaskActionType">
+            <summary>
+            Gets the type of the workflow task action.
+            </summary>
+            <value>
+            The type of the workflow task action.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.WorkflowTaskEntityType">
+            <summary>
+            Gets the type of the workflow task entity.
+            </summary>
+            <value>
+            The type of the workflow task entity.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateExecutionNode.WorkflowTaskParameter">
+            <summary>
+            Gets the workflow task parameter.
+            </summary>
+            <value>
+            The workflow task parameter.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.GetUsedEntities">
+            <summary>
+            Adds the used entities.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.SetDefaultParameters">
+            <summary>
+            Sets the default parameter values.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateExecutionNode.GetDefaultLifeCycle">
+            <summary>
+            Gets the default life cycle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabCreateStepNode">
+            <summary>
+            Step Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateStepNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateStepNode.ParameterLabMethodStep">
+            <summary>
+            Lab Method Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateStepNode.ParameterNextLabMethodStep">
+            <summary>
+            Next Lab Method Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateStepNode.ParameterName">
+            <summary>
+            Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateStepNode.ParameterDefaultWorkflow">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabCreateStepNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateStepNode.LabMethodStep">
+            <summary>
+            Gets or sets the Lab Method Step
+            </summary>
+            <value>
+            Lab Method Step
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateStepNode.NextLabMethodStep">
+            <summary>
+            Gets or sets the Next Lab Method Step
+            </summary>
+            <value>
+            Next Lab Method Step
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateStepNode.DefaultWorkflow">
+            <summary>
+            Gets or sets the default workflow.
+            </summary>
+            <value>
+            The default workflow.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.GetPromptDefaultWorkflow(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Default Workflow
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.SetDefaultParameters">
+            <summary>
+            Sets the default parameter values.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateStepNode.GetDefaultLifeCycle">
+            <summary>
+            Gets the default life cycle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode">
+            <summary>
+            Step Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.ParameterLabMethodStep">
+            <summary>
+            Lab Method Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.ParameterNextLabMethodStep">
+            <summary>
+            Next Lab Method Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.ParameterName">
+            <summary>
+            Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.ParameterDefaultWorkflow">
+            <summary>
+            Default Workflow Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabCreateStepNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.LabMethodStep">
+            <summary>
+            Gets or sets the Lab Method Step
+            </summary>
+            <value>
+            Lab Method Step
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.NextLabMethodStep">
+            <summary>
+            Gets or sets the Next Lab Method Step
+            </summary>
+            <value>
+            Next Lab Method Step
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.GetPromptDefaultWorkflow(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Default Workflow
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabCreateSubMethodLinkNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabDataSourceNode">
+            <summary>
+            Lab Data Source Workflow Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabDataSourceNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabDataSourceNode.ParameterLabDataSource">
+            <summary>
+            The parameter lab data source
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabDataSourceNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabDataSourceNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabDataSourceNode.LabDataSource">
+            <summary>
+            Gets or sets the lab data source.
+            </summary>
+            <value>
+            The lab data source.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabDataSourceNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabDataSourceNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabDataSourceNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabDataSourceNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager">
+            <summary>
+            Node LabExportEntityToIntegrationManager Name 
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.ParameterEntityName">
+            <summary>
+            The parameter entity name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.ParameterImportIdentifier">
+            <summary>
+            The parameter import identifier
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.ParameterObjectName">
+            <summary>
+            The parameter object name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.ImportIdentifier">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.ObjectName">
+            <summary>
+            Gets or sets the batch script executable.
+            </summary>
+            <value>
+            The batch script executable.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.GetPromptEntityName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt result.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid Property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToIntegrationManager.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode">
+            <summary>
+            Node LabExportEntityToXML Name 
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.ParameterEntityName">
+            <summary>
+            The parameter entity name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.ParameterFilenameExpression">
+            <summary>
+            The parameter filename expression
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.ParameterRunExpression">
+            <summary>
+            The parameter batch script executable
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.ParameterDeleteAfter">
+            <summary>
+            The parameter delete after
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.FileNameExpression">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.RunExpression">
+            <summary>
+            Gets or sets the batch script executable.
+            </summary>
+            <value>
+            The batch script executable.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.GetPromptEntityName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt result.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid Property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabExportEntityToXmlFileNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabForeachSectionNode">
+            <summary>
+            Lab Foreach Section Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.ParameterWorkflowVariableName">
+            <summary>
+            The parameter workflow variable name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.ParameterSectionNameVariable">
+            <summary>
+            The parameter section name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.AutoCaptionBlank">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachSectionNode.InSectionProperty">
+            <summary>
+            The in section bag value
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachSectionNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabForeachSectionNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachSectionNode.SectionNameVariable">
+            <summary>
+            Gets or sets the name of the section.
+            </summary>
+            <value>
+            The name of the section.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachSectionNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachSectionNode.GetSections">
+            <summary>
+            Gets the sections.
+            </summary>
+            <returns></returns>
+            <exception cref="T:Thermo.SampleManager.Core.Exceptions.SampleManagerException">Parsing script not in workflow properties</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachSectionNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode">
+            <summary>
+             Lab Foreach Variable In Grid Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.ParameterWorkflowVariableName">
+            <summary>
+            The parameter workflow variable name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.ParameterGridName">
+            <summary>
+            The parameter grid name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.ParameterColumn">
+            <summary>
+            The parameter column
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.GridName">
+            <summary>
+            Gets or sets the name of the grid.
+            </summary>
+            <value>
+            The name of the grid.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.Column">
+            <summary>
+            Gets or sets the column.
+            </summary>
+            <value>
+            The column.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.WorkflowVariableName">
+            <summary>
+            Gets or sets the name of the workflow variable.
+            </summary>
+            <value>
+            The name of the workflow variable.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.GetPromptGridName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt grid variable
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.GetGridValue(System.String,System.Int32)">
+            <summary>
+            Gets the grid value.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <param name="columnIndex">Index of the column.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInGridNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabForeachVariableInListNode">
+            <summary>
+            Lab Foreach Variable In List Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.ParameterWorkflowVariableName">
+            <summary>
+            The parameter workflow variable name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.ParameterWorkflowCounterName">
+            <summary>
+            The parameter workflow counter name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.ParameterListName">
+            <summary>
+            The parameter list name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.ListName">
+            <summary>
+            Gets or sets the name of the list.
+            </summary>
+            <value>
+            The name of the list.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.WorkflowVariableName">
+            <summary>
+            Gets or sets the name of the workflow variable.
+            </summary>
+            <value>
+            The name of the workflow variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.WorkflowCounterName">
+            <summary>
+            Gets or sets the name of the workflow counter.
+            </summary>
+            <value>
+            The name of the workflow counter.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.GetPromptListName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt list.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.GetList(System.String)">
+            <summary>
+            Gets the list.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabForeachVariableInListNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabGetParameterNode">
+            <summary>
+            Get Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabGetParameterNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabGetParameterNode.ParameterParameter">
+            <summary>
+            Parameter Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabGetParameterNode.ParameterStep">
+            <summary>
+            Step Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabGetParameterNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabGetParameterNode.Step">
+            <summary>
+            Gets or sets the the Step
+            </summary>
+            <value>
+            The the Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabGetParameterNode.Parameter">
+            <summary>
+            Gets or sets the the Parameter.
+            </summary>
+            <value>
+            The the Step Parameter.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.GetPromptStep(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Step
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.GetPromptParameter(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Parameter
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabGetParameterNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode">
+            <summary>
+            If Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ParameterParameter">
+            <summary>
+            Parameter Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ParameterStep">
+            <summary>
+            Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ParameterValue">
+            <summary>
+            Value Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ParameterOperator">
+            <summary>
+            Operator Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabIfParameterNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.StepExpression">
+            <summary>
+            Gets or sets the the Step
+            </summary>
+            <value>
+            The the Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ParameterExpression">
+            <summary>
+            Gets or sets the the Parameter.
+            </summary>
+            <value>
+            The the Step Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.Operator">
+            <summary>
+            Gets or sets the operator.
+            </summary>
+            <value>
+            The operator.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.ValueExpression">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.GetPromptOperator(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Step
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterByFormulaNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabIfParameterNode">
+            <summary>
+            If Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterNode.ParameterParameter">
+            <summary>
+            Parameter Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterNode.ParameterStep">
+            <summary>
+            Step Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterNode.ParameterValue">
+            <summary>
+            Value Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabIfParameterNode.ParameterOperator">
+            <summary>
+            Operator Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabIfParameterNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterNode.Step">
+            <summary>
+            Gets or sets the the Step
+            </summary>
+            <value>
+            The the Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterNode.Parameter">
+            <summary>
+            Gets or sets the the Parameter.
+            </summary>
+            <value>
+            The the Step Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterNode.Operator">
+            <summary>
+            Gets or sets the operator.
+            </summary>
+            <value>
+            The operator.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabIfParameterNode.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.GetPromptStep(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Step
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.GetPromptParameter(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Parameter
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.GetPromptOperator(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Step
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabIfParameterNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabInstrumentSourceNode">
+            <summary>
+            Lab Instrument Source Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.ParameterLabInstrumentSource">
+            <summary>
+            The parameter lab data source
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabInstrumentSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.LabDataSource">
+            <summary>
+            Gets the lab data source.
+            </summary>
+            <value>
+            The lab data source.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.InstrumentExpression">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabInstrumentSourceNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabMappingNode">
+            <summary>
+            Lab Mapping Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabMappingNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabMappingNode.ParameterLabMappingNode">
+            <summary>
+            The parameter lab mapping node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabMappingNode.ParameterReadingRequiredNode">
+            <summary>
+            The parameter reading required node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabMappingNode.ParameterCustomInput">
+            <summary>
+            The parameter custom input
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabMappingNode.LabMapping">
+            <summary>
+            Gets or sets the lab mapping.
+            </summary>
+            <value>
+            The lab mapping.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabMappingNode.GetFollowers(System.Boolean)">
+            <summary>
+            Gets the valid following node types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabParsingScriptNode">
+            <summary>
+            Lab Parsing Script Node Workflow node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabParsingScriptNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabParsingScriptNode.ParameterLabParsingScriptNode">
+            <summary>
+            The parameter lab parsing script node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabParsingScriptNode.ParameterReadingRequiredNode">
+            <summary>
+            The parameter reading required node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabParsingScriptNode.ParameterCustomInput">
+            <summary>
+            The parameter custom input
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabParsingScriptNode.LabParsingScript">
+            <summary>
+            Gets or sets the lab parsing script.
+            </summary>
+            <value>
+            The lab parsing script.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabParsingScriptNode.ReadingRequired">
+            <summary>
+            Gets or sets a value indicating whether reading required.
+            </summary>
+            <value>
+              <c>true</c> if reading required; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabParsingScriptNode.CustomInput">
+            <summary>
+            Gets or sets the custom input.
+            </summary>
+            <value>
+            The custom input.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabParsingScriptNode.GetFollowers(System.Boolean)">
+            <summary>
+            Gets the valid following node types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabSetNextStepNode">
+            <summary>
+            Set Next Step Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetNextStepNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetNextStepNode.ParameterLabMethod">
+            <summary>
+            Task Template Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetNextStepNode.ParameterNextLabMethodStep">
+            <summary>
+            Next Task Step Template Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabSetNextStepNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetNextStepNode.NextLabMethodStep">
+            <summary>
+            Gets or sets the Next Lab Method Step
+            </summary>
+            <value>
+            Next Lab Method Step
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.GetPromptNextLabMethodStep(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Next Lab Method Step
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetNextStepNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode">
+            <summary>
+            LabSetPropertyFromParserNode workflow node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.ParameterEntityName">
+            <summary>
+            The parameter entity
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.ParameterProperty">
+            <summary>
+            The parameter Property
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.ParameterVariableName">
+            <summary>
+            The parameter variable
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.Property">
+            <summary>
+            Gets or sets the property.
+            </summary>
+            <value>
+            The property.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.VariableName">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.GetPromptVariableName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt variable.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetPropertyFromParserNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode">
+            <summary>
+            LabSetWorkflowVariableWithParserVariableNode workflow node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.ParameterWorkflowVariableName">
+            <summary>
+            The parameter workflow variable name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.ParameterVariableName">
+            <summary>
+            The parameter variable name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.AutoCaption">
+            <summary>
+            The automatic caption
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.VariableName">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.WorkflowVariableName">
+            <summary>
+            Gets or sets the name of the workflow variable.
+            </summary>
+            <value>
+            The name of the workflow variable.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.GetPromptVariableName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt variable.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabSetWorkflowVariableWithParserVariableNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.LabWorkflowUtilities">
+            <summary>
+            Lab Workflow Utilities
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.GetParsingScriptParent(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Gets the parsing script parent.
+            </summary>
+            <param name="node">The node.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.GetVariableValue(Thermo.SampleManager.Common.Workflow.IWorkflowPropertyBag,System.String)">
+            <summary>
+            Gets the variable value.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="variableName">Name of the variable.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Failed to load parsing script</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.GetPromptLabMethodStep(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Lab Method Step
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.GetPromptParameter(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn,System.String)">
+            <summary>
+            Parameter
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <param name="stepParameter">The step parameter.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.GetPromptStepCondition(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn,System.String)">
+            <summary>
+            Gets the step condition prompt
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid property.</param>
+            <param name="stepParameter">The step parameter.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.EntityToXml(Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.DesignerRuntime.StandardLibrary,Thermo.SampleManager.Common.Data.IEntityManager)">
+            <summary>
+            Entities to XML.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="library">The library.</param>
+            <param name="entityManager">The entity manager.</param>
+            <returns></returns>
+            <exception cref="T:Thermo.SampleManager.Core.Exceptions.SampleManagerException">Entity is null
+            or
+            Entity does not implement IImportableEntity
+            or
+            No XML entity data generated</exception>
+            <exception cref="T:System.Exception">No xml entity data generated</exception>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.LabWorkflowUtilities.AddAdditionalEntityTypes(Thermo.SampleManager.Common.Data.IEntity,System.Collections.Generic.List{System.String},Thermo.SampleManager.Common.Data.IEntityManager)">
+            <summary>
+            Adds the additional entity types.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="referencedEntityTypes">The referenced entity types.</param>
+            <param name="entityManager"></param>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.PutParserListValueNode">
+            <summary>
+            Used with Put Test Results Node to enter result values with workflow.
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterComponentName">
+            <summary>
+            The parameter component name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterPosition">
+            <summary>
+            The parameter position
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterParserList">
+            <summary>
+            The parameter parser variable
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterResultType">
+            <summary>
+            The parameter result type
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserListValueNode.ParameterAlias">
+            <summary>
+            The parameter alias
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserListValueNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.PutParserListValueNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.ComponentName">
+            <summary>
+            Gets or sets the name of the component.
+            </summary>
+            <value>
+            The name of the component.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.ListName">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.Position">
+            <summary>
+            Gets or sets the position.
+            </summary>
+            <value>
+            The position.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.ResultType">
+            <summary>
+            Gets or sets the type of the result.
+            </summary>
+            <value>
+            The type of the result.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserListValueNode.LabAlias">
+            <summary>
+            Gets or sets the lab alias.
+            </summary>
+            <value>
+            The lab alias.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserListValueNode.GetPromptListName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt result.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid Property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserListValueNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserListValueNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.PutParserValueNode">
+            <summary>
+            Used with Put Test Results Node to enter result values with workflow.
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.ParameterComponentName">
+            <summary>
+            The parameter component name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.ParameterParserVariable">
+            <summary>
+            The parameter parser variable
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.ParameterResultType">
+            <summary>
+            The parameter result type
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutParserValueNode.ParameterAlias">
+            <summary>
+            The parameter alias
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserValueNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.PutParserValueNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserValueNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserValueNode.ComponentName">
+            <summary>
+            Gets or sets the name of the component.
+            </summary>
+            <value>
+            The name of the component.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserValueNode.VariableName">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserValueNode.ResultType">
+            <summary>
+            Gets or sets the type of the result.
+            </summary>
+            <value>
+            The type of the result.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutParserValueNode.LabAlias">
+            <summary>
+            Gets or sets the lab alias.
+            </summary>
+            <value>
+            The lab alias.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserValueNode.GetPromptVariableName(Thermo.SampleManager.Library.SampleManagerTask,Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,Thermo.SampleManager.Common.Data.IEntity,Thermo.SampleManager.Library.ClientControls.DataGridColumn)">
+            <summary>
+            Gets the name of the prompt result.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="node">The node.</param>
+            <param name="rowEntity">The row entity.</param>
+            <param name="gridProperty">The grid Property.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserValueNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutParserValueNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.PutResultNode">
+            <summary>
+            Used with Put Test Results Node to enter result values with workflow.
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutResultNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutResultNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutResultNode.ParameterComponentName">
+            <summary>
+            The parameter component name
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutResultNode.ParameterValue">
+            <summary>
+            The parameter value
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutResultNode.ParameterResultType">
+            <summary>
+            The parameter result type
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutResultNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.ReportNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutResultNode.EntityName">
+            <summary>
+            Gets or sets the name of the entity.
+            </summary>
+            <value>
+            The name of the entity.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutResultNode.ComponentName">
+            <summary>
+            Gets or sets the name of the component.
+            </summary>
+            <value>
+            The name of the component.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutResultNode.Value">
+            <summary>
+            Gets or sets the name of the component.
+            </summary>
+            <value>
+            The name of the component.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutResultNode.ResultType">
+            <summary>
+            Gets or sets the type of the result.
+            </summary>
+            <value>
+            The type of the result.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutResultNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutResultNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.PutTestResultsNode">
+            <summary>
+            Processes child nodes to store result values with the VGL command PUT_TEST_RESULTS.
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutTestResultsNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutTestResultsNode.ParameterEntityName">
+            <summary>
+            Entity Name Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.PutTestResultsNode.ParameterStoreWarnings">
+            <summary>
+            Parameter Name
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Server.Workflow.Nodes.ReportNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.PutTestResultsNode.StoreWarnings">
+            <summary>
+            Determines if Report is Previewed
+            </summary>
+            <value>
+            The report is shown
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.PutResults(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,System.Collections.Generic.ICollection{System.Object})">
+            <summary>
+            Puts the results.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="resultValues">The result values.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.PutParsedValue(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,System.Collections.Generic.ICollection{System.Object})">
+            <summary>
+            Puts the parsed value.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="resultValues">The result values.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.PutParsedListValue(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal,System.Collections.Generic.ICollection{System.Object})">
+            <summary>
+            Puts the parsed list value.
+            </summary>
+            <param name="node">The node.</param>
+            <param name="resultValues">The result values.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.HandleResults(Thermo.SampleManager.Library.EntityDefinition.TestBase,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Handles the results.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="resultValues">The result values.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.PutTestResultsNode.GetFollowers(System.Boolean)">
+            <summary>
+            Gets the valid following node types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Workflow.RunImportDefinitionNode">
+            <summary>
+            Run Import Definition Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.RunImportDefinitionNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.RunImportDefinitionNode.ParameterImportDefinition">
+            <summary>
+            The parameter import definition
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Workflow.RunImportDefinitionNode.ParameterCustomInput">
+            <summary>
+            The parameter custom input
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.RunImportDefinitionNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.RunImportDefinitionNode.ImportDefinition">
+            <summary>
+            Gets or sets the import definition.
+            </summary>
+            <value>
+            The import definition.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Workflow.RunImportDefinitionNode.CustomInput">
+            <summary>
+            Gets or sets the custom input.
+            </summary>
+            <value>
+            The custom input.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.ReportWorkflowError(System.String)">
+            <summary>
+            Reports the workflow error.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Workflow.RunImportDefinitionNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode">
+            <summary>
+            Export collect to file node
+            </summary>
+            <seealso cref="T:Thermo.SampleManager.Server.Workflow.Nodes.Node" />
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode.NodeType">
+            <summary>
+            The node type
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode.ExportFile">
+            <summary>
+            The node type
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode" /> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportCreateExportNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Core.Workflow.ExportLineNode">
+            <summary>
+            Export line
+            </summary>
+            <seealso cref="T:Thermo.SampleManager.Server.Workflow.Nodes.Node" />
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportLineNode.NodeType">
+            <summary>
+            The node type
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportLineNode.ParameterFormula">
+            <summary>
+            The parameter formula
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportLineNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode" /> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.ExportLineNode.Formula">
+            <summary>
+            Gets or sets the formula.
+            </summary>
+            <value>
+            The formula.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportLineNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportLineNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Core.Workflow.ExportWriteNode">
+            <summary>
+            Write export
+            </summary>
+            <seealso cref="T:Thermo.SampleManager.Server.Workflow.Nodes.Node" />
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportWriteNode.NodeType">
+            <summary>
+            The node type
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportWriteNode.ParameterClientFile">
+            <summary>
+            The parameter client file
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.ExportWriteNode.ParameterFileName">
+            <summary>
+            The parameter file name
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportWriteNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Workflow.LabDataSourceNode" /> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.ExportWriteNode.ClientFile">
+            <summary>
+            Gets or sets a value indicating whether [prompt for file].
+            </summary>
+            <value>
+              <c>true</c> if [prompt for file]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.ExportWriteNode.FileName">
+            <summary>
+            Gets or sets the name of the file.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportWriteNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportWriteNode.WriteClientFile(System.String,System.String)">
+            <summary>
+            Writes the file.
+            </summary>
+            <param name="exportContents">The export contents.</param>
+            <param name="exportFilename">The export filename.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportWriteNode.WriteServerFile(System.String,System.String)">
+            <summary>
+            Writes the server file.
+            </summary>
+            <param name="exportContents">The export contents.</param>
+            <param name="exportFilename">The export filename.</param>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.ExportWriteNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode">
+            <summary>
+            Get Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.ParameterParameter">
+            <summary>
+            Parameter Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.ParameterStep">
+            <summary>
+            Step Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.StepExpression">
+            <summary>
+            Gets or sets the the Step
+            </summary>
+            <value>
+            The the Parameter.
+            </value>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.ParameterExpression">
+            <summary>
+            Gets or sets the the Parameter.
+            </summary>
+            <value>
+            The the Step Parameter.
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabGetParameterByFormulaNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode">
+            <summary>
+            Set Next Step Node
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.NodeType">
+            <summary>
+            The workflow node type this node implements
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.ParameterLabMethod">
+            <summary>
+            Task Template Parameter
+            </summary>
+        </member>
+        <member name="F:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.ParameterNextLabMethodStepExpression">
+            <summary>
+            Next Task Step Template Parameter
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.#ctor(Thermo.SampleManager.Server.Workflow.Definition.WorkflowNodeInternal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode"/> class.
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="P:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.NextLabMethodStepExpression">
+            <summary>
+            Gets or sets the Next Lab Method Step
+            </summary>
+            <value>
+            Next Lab Method Step
+            </value>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.PerformNode">
+            <summary>
+            Performs the workflow node activity
+            </summary>
+            <returns>
+            true if the child nodes should be processed
+            </returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.AutoName">
+            <summary>
+            Auto Node naming.
+            </summary>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.GetMessage(System.String)">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Thermo.SampleManager.Core.Workflow.LabSetNextStepByFormulaNode.GetMessage(System.String,System.Object[])">
+            <summary>
+            Gets the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
